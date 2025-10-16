@@ -20,10 +20,10 @@ In this 75 minute lab, you will step into the role of a data engineer for the Fo
 - **Implements "reverse ETL"** to push enriched insights back into Cosmos DB for low latency serving to applications
 - **TODO: Bonus step**: Add a bonus step here if you have time
 
-This lab contains 5 exercises, each with multiple steps. Complete all the steps in each exercise before moving on to the next one. The exercises are designed to be completed in sequence, building on the work from previous exercises. 
+This lab contains 5 exercises, each with multiple steps. Complete all the steps in each exercise before moving on to the next one. The exercises are designed to be completed in sequence, building on the work from previous exercises.
 
-1. **Exercise 1**: Provisioning Cosmos DB in Fabric (Operational Data Store)    
+1. **Exercise 1**: Provisioning Cosmos DB in Fabric (Operational Data Store)
 1. **Exercise 2**: Cross-database analytics with Cosmos DB and Relational Data (Cosmos DB + SQL)
-1. **Exercise 3**: Real-time event processing with Fabric Eventstreams
+1. **Exercise 3**: Real-Time Streaming and Visualization of POS Events
 1. **Exercise 4**: Reverse ETL to Cosmos DB (Operational Serving)
-1. **Exercise 5**: TODO: Add a bonus step here if you have time
+1. **Exercise 5**: TODO: Add a bonus step here if we have time
