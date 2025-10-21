@@ -1,0 +1,749 @@
+[
+  {
+    "id": "item-001",
+    "menuItemId": "item-001",
+    "name": "Latte",
+    "description": "Classic espresso with steamed milk and a light foam",
+    "category": "Hot Beverages",
+    "subcategory": "Espresso Drinks",
+    "price": 4.00,
+    "sizes": [
+      {"size": "Small", "price": 3.00},
+      {"size": "Medium", "price": 4.00},
+      {"size": "Large", "price": 5.00}
+    ],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Espresso",
+      "Steamed Milk",
+      "Milk Foam"
+    ],
+    "allergens": ["Milk"],
+    "nutritionalInfo": {
+      "calories": 190,
+      "protein": 9,
+      "carbs": 18,
+      "fat": 7
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/latte.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-002",
+    "menuItemId": "item-002",
+    "name": "Cappuccino",
+    "description": "Bold espresso with equal parts steamed milk and thick foam",
+    "category": "Hot Beverages",
+    "subcategory": "Espresso Drinks",
+    "price": 4.25,
+    "sizes": [
+      {"size": "Small", "price": 3.25},
+      {"size": "Medium", "price": 4.25},
+      {"size": "Large", "price": 5.25}
+    ],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Espresso",
+      "Steamed Milk",
+      "Milk Foam"
+    ],
+    "allergens": ["Milk"],
+    "nutritionalInfo": {
+      "calories": 120,
+      "protein": 6,
+      "carbs": 10,
+      "fat": 4
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/cappuccino.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-003",
+    "menuItemId": "item-003",
+    "name": "Espresso",
+    "description": "Rich, full-bodied shot of pure espresso",
+    "category": "Hot Beverages",
+    "subcategory": "Espresso Drinks",
+    "price": 3.00,
+    "sizes": [
+      {"size": "Single", "price": 3.00},
+      {"size": "Double", "price": 4.50}
+    ],
+    "isRecommended": false,
+    "isSeasonal": false,
+    "ingredients": [
+      "Espresso"
+    ],
+    "allergens": [],
+    "nutritionalInfo": {
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/espresso.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-004",
+    "menuItemId": "item-004",
+    "name": "Mocha",
+    "description": "Espresso with chocolate syrup, steamed milk, and whipped cream",
+    "category": "Hot Beverages",
+    "subcategory": "Espresso Drinks",
+    "price": 4.75,
+    "sizes": [
+      {"size": "Small", "price": 3.75},
+      {"size": "Medium", "price": 4.75},
+      {"size": "Large", "price": 5.75}
+    ],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Espresso",
+      "Chocolate Syrup",
+      "Steamed Milk",
+      "Whipped Cream"
+    ],
+    "allergens": ["Milk"],
+    "nutritionalInfo": {
+      "calories": 290,
+      "protein": 10,
+      "carbs": 40,
+      "fat": 10
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/mocha.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-005",
+    "menuItemId": "item-005",
+    "name": "Chai Latte",
+    "description": "Spiced chai tea with steamed milk and a touch of sweetness",
+    "category": "Hot Beverages",
+    "subcategory": "Tea Drinks",
+    "price": 4.50,
+    "sizes": [
+      {"size": "Small", "price": 3.50},
+      {"size": "Medium", "price": 4.50},
+      {"size": "Large", "price": 5.50}
+    ],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Chai Tea",
+      "Steamed Milk",
+      "Spices",
+      "Sugar"
+    ],
+    "allergens": ["Milk"],
+    "nutritionalInfo": {
+      "calories": 240,
+      "protein": 8,
+      "carbs": 42,
+      "fat": 5
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/chai-latte.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-006",
+    "menuItemId": "item-006",
+    "name": "Matcha",
+    "description": "Premium Japanese matcha green tea latte",
+    "category": "Hot Beverages",
+    "subcategory": "Tea Drinks",
+    "price": 5.00,
+    "sizes": [
+      {"size": "Small", "price": 4.00},
+      {"size": "Medium", "price": 5.00},
+      {"size": "Large", "price": 6.00}
+    ],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Matcha Powder",
+      "Steamed Milk",
+      "Sugar"
+    ],
+    "allergens": ["Milk"],
+    "nutritionalInfo": {
+      "calories": 210,
+      "protein": 8,
+      "carbs": 30,
+      "fat": 6
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/matcha.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-007",
+    "menuItemId": "item-007",
+    "name": "Caramel Macchiato",
+    "description": "Rich espresso with vanilla syrup and caramel drizzle",
+    "category": "Hot Beverages",
+    "subcategory": "Espresso Drinks",
+    "price": 4.50,
+    "sizes": [
+      {"size": "Small", "price": 3.50},
+      {"size": "Medium", "price": 4.50},
+      {"size": "Large", "price": 5.50}
+    ],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Espresso",
+      "Steamed Milk",
+      "Vanilla Syrup",
+      "Caramel Drizzle"
+    ],
+    "allergens": ["Milk"],
+    "nutritionalInfo": {
+      "calories": 250,
+      "protein": 9,
+      "carbs": 34,
+      "fat": 7
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/caramel-macchiato.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-008",
+    "menuItemId": "item-008",
+    "name": "Americano",
+    "description": "Espresso diluted with hot water for a smooth finish",
+    "category": "Hot Beverages",
+    "subcategory": "Espresso Drinks",
+    "price": 3.50,
+    "sizes": [
+      {"size": "Small", "price": 2.50},
+      {"size": "Medium", "price": 3.50},
+      {"size": "Large", "price": 4.50}
+    ],
+    "isRecommended": false,
+    "isSeasonal": false,
+    "ingredients": [
+      "Espresso",
+      "Hot Water"
+    ],
+    "allergens": [],
+    "nutritionalInfo": {
+      "calories": 10,
+      "protein": 1,
+      "carbs": 2,
+      "fat": 0
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/americano.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-009",
+    "menuItemId": "item-009",
+    "name": "Cold Brew",
+    "description": "Smooth, cold-steeped coffee served over ice",
+    "category": "Cold Beverages",
+    "subcategory": "Iced Coffee",
+    "price": 4.25,
+    "sizes": [
+      {"size": "Medium", "price": 4.25},
+      {"size": "Large", "price": 5.25}
+    ],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Cold Brew Coffee",
+      "Ice"
+    ],
+    "allergens": [],
+    "nutritionalInfo": {
+      "calories": 5,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/cold-brew.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-010",
+    "menuItemId": "item-010",
+    "name": "Iced Latte",
+    "description": "Espresso with cold milk and ice",
+    "category": "Cold Beverages",
+    "subcategory": "Iced Coffee",
+    "price": 4.50,
+    "sizes": [
+      {"size": "Medium", "price": 4.50},
+      {"size": "Large", "price": 5.50}
+    ],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Espresso",
+      "Cold Milk",
+      "Ice"
+    ],
+    "allergens": ["Milk"],
+    "nutritionalInfo": {
+      "calories": 130,
+      "protein": 8,
+      "carbs": 13,
+      "fat": 5
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/iced-latte.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-011",
+    "menuItemId": "item-011",
+    "name": "Croissant",
+    "description": "Buttery, flaky French pastry",
+    "category": "Pastries",
+    "subcategory": "Baked Goods",
+    "price": 3.00,
+    "sizes": [],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Flour",
+      "Butter",
+      "Yeast",
+      "Sugar"
+    ],
+    "allergens": ["Wheat", "Milk"],
+    "nutritionalInfo": {
+      "calories": 230,
+      "protein": 5,
+      "carbs": 26,
+      "fat": 12
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": false,
+      "startTime": "06:00:00",
+      "endTime": "14:00:00"
+    },
+    "imageUrl": "https://cdn.example.com/menu/croissant.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-012",
+    "menuItemId": "item-012",
+    "name": "Blueberry Muffin",
+    "description": "Moist muffin loaded with fresh blueberries",
+    "category": "Pastries",
+    "subcategory": "Baked Goods",
+    "price": 3.50,
+    "sizes": [],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Flour",
+      "Blueberries",
+      "Sugar",
+      "Eggs",
+      "Butter"
+    ],
+    "allergens": ["Wheat", "Eggs", "Milk"],
+    "nutritionalInfo": {
+      "calories": 360,
+      "protein": 6,
+      "carbs": 54,
+      "fat": 14
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": false,
+      "startTime": "06:00:00",
+      "endTime": "14:00:00"
+    },
+    "imageUrl": "https://cdn.example.com/menu/blueberry-muffin.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-013",
+    "menuItemId": "item-013",
+    "name": "Bagel",
+    "description": "Fresh baked bagel with choice of cream cheese",
+    "category": "Pastries",
+    "subcategory": "Baked Goods",
+    "price": 2.50,
+    "sizes": [],
+    "isRecommended": false,
+    "isSeasonal": false,
+    "ingredients": [
+      "Flour",
+      "Yeast",
+      "Salt",
+      "Malt"
+    ],
+    "allergens": ["Wheat"],
+    "nutritionalInfo": {
+      "calories": 270,
+      "protein": 10,
+      "carbs": 53,
+      "fat": 2
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": false,
+      "startTime": "06:00:00",
+      "endTime": "14:00:00"
+    },
+    "imageUrl": "https://cdn.example.com/menu/bagel.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-014",
+    "menuItemId": "item-014",
+    "name": "Chocolate Chip Cookie",
+    "description": "Classic cookie loaded with chocolate chips",
+    "category": "Pastries",
+    "subcategory": "Cookies",
+    "price": 2.75,
+    "sizes": [],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Flour",
+      "Chocolate Chips",
+      "Butter",
+      "Sugar",
+      "Eggs"
+    ],
+    "allergens": ["Wheat", "Eggs", "Milk", "Soy"],
+    "nutritionalInfo": {
+      "calories": 320,
+      "protein": 4,
+      "carbs": 45,
+      "fat": 15
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/chocolate-chip-cookie.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-015",
+    "menuItemId": "item-015",
+    "name": "Breakfast Sandwich",
+    "description": "Egg, cheese, and bacon on an English muffin",
+    "category": "Food",
+    "subcategory": "Breakfast",
+    "price": 5.50,
+    "sizes": [],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Egg",
+      "Cheese",
+      "Bacon",
+      "English Muffin"
+    ],
+    "allergens": ["Wheat", "Eggs", "Milk"],
+    "nutritionalInfo": {
+      "calories": 450,
+      "protein": 22,
+      "carbs": 30,
+      "fat": 25
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": false,
+      "startTime": "06:00:00",
+      "endTime": "11:00:00"
+    },
+    "imageUrl": "https://cdn.example.com/menu/breakfast-sandwich.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-016",
+    "menuItemId": "item-016",
+    "name": "Avocado Toast",
+    "description": "Smashed avocado on artisan bread with everything seasoning",
+    "category": "Food",
+    "subcategory": "Lunch",
+    "price": 6.50,
+    "sizes": [],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Avocado",
+      "Artisan Bread",
+      "Everything Seasoning",
+      "Lemon"
+    ],
+    "allergens": ["Wheat"],
+    "nutritionalInfo": {
+      "calories": 310,
+      "protein": 8,
+      "carbs": 32,
+      "fat": 18
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/avocado-toast.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-017",
+    "menuItemId": "item-017",
+    "name": "Turkey Club Sandwich",
+    "description": "Sliced turkey, bacon, lettuce, tomato on toasted bread",
+    "category": "Food",
+    "subcategory": "Lunch",
+    "price": 8.00,
+    "sizes": [],
+    "isRecommended": true,
+    "isSeasonal": false,
+    "ingredients": [
+      "Turkey",
+      "Bacon",
+      "Lettuce",
+      "Tomato",
+      "Bread",
+      "Mayo"
+    ],
+    "allergens": ["Wheat", "Eggs"],
+    "nutritionalInfo": {
+      "calories": 520,
+      "protein": 35,
+      "carbs": 42,
+      "fat": 22
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": false,
+      "startTime": "11:00:00",
+      "endTime": "18:00:00"
+    },
+    "imageUrl": "https://cdn.example.com/menu/turkey-club.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-018",
+    "menuItemId": "item-018",
+    "name": "Caesar Salad",
+    "description": "Crisp romaine with Caesar dressing, parmesan, and croutons",
+    "category": "Food",
+    "subcategory": "Salads",
+    "price": 7.00,
+    "sizes": [],
+    "isRecommended": false,
+    "isSeasonal": false,
+    "ingredients": [
+      "Romaine Lettuce",
+      "Caesar Dressing",
+      "Parmesan Cheese",
+      "Croutons"
+    ],
+    "allergens": ["Wheat", "Eggs", "Milk", "Fish"],
+    "nutritionalInfo": {
+      "calories": 380,
+      "protein": 12,
+      "carbs": 24,
+      "fat": 27
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": false,
+      "startTime": "11:00:00",
+      "endTime": "18:00:00"
+    },
+    "imageUrl": "https://cdn.example.com/menu/caesar-salad.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-019",
+    "menuItemId": "item-019",
+    "name": "Bottled Water",
+    "description": "Refreshing spring water",
+    "category": "Cold Beverages",
+    "subcategory": "Bottled Drinks",
+    "price": 2.00,
+    "sizes": [],
+    "isRecommended": false,
+    "isSeasonal": false,
+    "ingredients": [
+      "Water"
+    ],
+    "allergens": [],
+    "nutritionalInfo": {
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": true,
+      "startTime": null,
+      "endTime": null
+    },
+    "imageUrl": "https://cdn.example.com/menu/bottled-water.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  },
+  {
+    "id": "item-020",
+    "menuItemId": "item-020",
+    "name": "Orange Juice",
+    "description": "Fresh-squeezed orange juice",
+    "category": "Cold Beverages",
+    "subcategory": "Juice",
+    "price": 3.50,
+    "sizes": [
+      {"size": "Small", "price": 3.00},
+      {"size": "Large", "price": 4.50}
+    ],
+    "isRecommended": false,
+    "isSeasonal": false,
+    "ingredients": [
+      "Orange Juice"
+    ],
+    "allergens": [],
+    "nutritionalInfo": {
+      "calories": 110,
+      "protein": 2,
+      "carbs": 26,
+      "fat": 0
+    },
+    "isActive": true,
+    "shopId": "shop-001",
+    "availability": {
+      "allDay": false,
+      "startTime": "06:00:00",
+      "endTime": "14:00:00"
+    },
+    "imageUrl": "https://cdn.example.com/menu/orange-juice.jpg",
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-10-01T12:30:00Z",
+    "_partitionKey": "shop-001"
+  }
+]
