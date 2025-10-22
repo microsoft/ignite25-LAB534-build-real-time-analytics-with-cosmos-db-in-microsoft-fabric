@@ -29,33 +29,15 @@ menuItemKey,menuItemId,menuItemName,category,subcategory,size,price,isActive,cre
 10,item-010,Iced Latte,Cold Beverages,Iced Coffee,Small,3.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
 10,item-010,Iced Latte,Cold Beverages,Iced Coffee,Medium,4.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
 10,item-010,Iced Latte,Cold Beverages,Iced Coffee,Large,5.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-11,item-011,Croissant,Pastries,Baked Goods,Small,2.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-11,item-011,Croissant,Pastries,Baked Goods,Medium,3.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-11,item-011,Croissant,Pastries,Baked Goods,Large,3.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-12,item-012,Blueberry Muffin,Pastries,Baked Goods,Small,2.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-12,item-012,Blueberry Muffin,Pastries,Baked Goods,Medium,3.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-12,item-012,Blueberry Muffin,Pastries,Baked Goods,Large,4.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-13,item-013,Bagel,Pastries,Baked Goods,Small,1.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-13,item-013,Bagel,Pastries,Baked Goods,Medium,2.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-13,item-013,Bagel,Pastries,Baked Goods,Large,3.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-14,item-014,Chocolate Chip Cookie,Pastries,Cookies,Small,2.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-14,item-014,Chocolate Chip Cookie,Pastries,Cookies,Medium,2.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-14,item-014,Chocolate Chip Cookie,Pastries,Cookies,Large,3.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-15,item-015,Breakfast Sandwich,Food,Breakfast,Small,4.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-15,item-015,Breakfast Sandwich,Food,Breakfast,Medium,5.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-15,item-015,Breakfast Sandwich,Food,Breakfast,Large,6.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-16,item-016,Avocado Toast,Food,Lunch,Small,5.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-16,item-016,Avocado Toast,Food,Lunch,Medium,6.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-16,item-016,Avocado Toast,Food,Lunch,Large,7.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-17,item-017,Turkey Club Sandwich,Food,Lunch,Small,7.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-17,item-017,Turkey Club Sandwich,Food,Lunch,Medium,8.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-17,item-017,Turkey Club Sandwich,Food,Lunch,Large,8.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-18,item-018,Caesar Salad,Food,Salads,Small,6.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-18,item-018,Caesar Salad,Food,Salads,Medium,7.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-18,item-018,Caesar Salad,Food,Salads,Large,7.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-19,item-019,Bottled Water,Cold Beverages,Bottled Drinks,Small,1.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-19,item-019,Bottled Water,Cold Beverages,Bottled Drinks,Medium,2.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
-19,item-019,Bottled Water,Cold Beverages,Bottled Drinks,Large,2.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+11,item-011,Croissant,Pastries,Baked Goods,,2.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+12,item-012,Blueberry Muffin,Pastries,Baked Goods,,2.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+13,item-013,Bagel,Pastries,Baked Goods,,1.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+14,item-014,Chocolate Chip Cookie,Pastries,Cookies,,2.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+15,item-015,Breakfast Sandwich,Food,Breakfast,,4.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+16,item-016,Avocado Toast,Food,Lunch,,5.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+17,item-017,Turkey Club Sandwich,Food,Lunch,,7.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+18,item-018,Caesar Salad,Food,Salads,,6.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+19,item-019,Bottled Water,Cold Beverages,Bottled Drinks,,1.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
 20,item-020,Orange Juice,Cold Beverages,Juice,Small,3.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
 20,item-020,Orange Juice,Cold Beverages,Juice,Medium,3.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
 20,item-020,Orange Juice,Cold Beverages,Juice,Large,4.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
