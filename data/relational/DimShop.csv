@@ -1,0 +1,11 @@
+ShopKey,ShopId,ShopName,AirportId,AirportName,Terminal,Timezone,IsActive,CreatedAt,UpdatedAt
+1,shop-001,Coffee Express Terminal 4,JFK,John F. Kennedy International Airport,Terminal 4,America/New_York,1,2023-06-15T00:00:00Z,2025-10-15T10:00:00Z
+2,shop-002,Coffee Express Terminal 1,JFK,John F. Kennedy International Airport,Terminal 1,America/New_York,1,2022-03-20T00:00:00Z,2025-10-15T10:00:00Z
+3,shop-003,Coffee Express Terminal B,LAX,Los Angeles International Airport,Terminal B,America/Los_Angeles,1,2023-01-10T00:00:00Z,2025-10-15T10:00:00Z
+4,shop-004,Coffee Express Terminal 7,LAX,Los Angeles International Airport,Terminal 7,America/Los_Angeles,1,2024-05-22T00:00:00Z,2025-10-15T10:00:00Z
+5,shop-005,Coffee Express Terminal 1,ORD,Chicago O'Hare International Airport,Terminal 1,America/Chicago,1,2022-11-08T00:00:00Z,2025-10-15T10:00:00Z
+6,shop-006,Coffee Express Terminal 3,ORD,Chicago O'Hare International Airport,Terminal 3,America/Chicago,1,2023-09-12T00:00:00Z,2025-10-15T10:00:00Z
+7,shop-007,Coffee Express Concourse B,ATL,Hartsfield–Jackson Atlanta International Airport,Concourse B,America/New_York,1,2023-04-18T00:00:00Z,2025-10-15T10:00:00Z
+8,shop-008,Coffee Express Terminal A,DFW,Dallas/Fort Worth International Airport,Terminal A,America/Chicago,1,2024-02-14T00:00:00Z,2025-10-15T10:00:00Z
+9,shop-009,Coffee Express Terminal 2,SFO,San Francisco International Airport,Terminal 2,America/Los_Angeles,1,2023-07-25T00:00:00Z,2025-10-15T10:00:00Z
+10,shop-010,Coffee Express Concourse C,SEA,Seattle–Tacoma International Airport,Concourse C,America/Los_Angeles,1,2024-08-30T00:00:00Z,2025-10-15T10:00:00Z

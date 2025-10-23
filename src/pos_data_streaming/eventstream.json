@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "name": "LocalStreamSource",
+      "type": "CustomEndpoint",
+      "properties": {}
+    }
+  ],
+  "destinations": [],
+  "streams": [
+    {
+      "name": "pos-event-stream-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "LocalStreamSource"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.1"
+}
