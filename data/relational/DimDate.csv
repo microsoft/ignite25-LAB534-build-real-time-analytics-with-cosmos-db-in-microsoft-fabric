@@ -1,5 +1,5 @@
 DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,IsHoliday
-20240101,2024-01-01,1,Monday,1,January,1,2024,0,0
+20240101,2024-01-01,1,Monday,1,January,1,2024,0,1
 20240102,2024-01-02,2,Tuesday,1,January,1,2024,0,0
 20240103,2024-01-03,3,Wednesday,1,January,1,2024,0,0
 20240104,2024-01-04,4,Thursday,1,January,1,2024,0,0
@@ -13,7 +13,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20240112,2024-01-12,5,Friday,1,January,1,2024,0,0
 20240113,2024-01-13,6,Saturday,1,January,1,2024,1,0
 20240114,2024-01-14,7,Sunday,1,January,1,2024,1,0
-20240115,2024-01-15,1,Monday,1,January,1,2024,0,0
+20240115,2024-01-15,1,Monday,1,January,1,2024,0,1
 20240116,2024-01-16,2,Tuesday,1,January,1,2024,0,0
 20240117,2024-01-17,3,Wednesday,1,January,1,2024,0,0
 20240118,2024-01-18,4,Thursday,1,January,1,2024,0,0
@@ -48,7 +48,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20240216,2024-02-16,5,Friday,2,February,1,2024,0,0
 20240217,2024-02-17,6,Saturday,2,February,1,2024,1,0
 20240218,2024-02-18,7,Sunday,2,February,1,2024,1,0
-20240219,2024-02-19,1,Monday,2,February,1,2024,0,0
+20240219,2024-02-19,1,Monday,2,February,1,2024,0,1
 20240220,2024-02-20,2,Tuesday,2,February,1,2024,0,0
 20240221,2024-02-21,3,Wednesday,2,February,1,2024,0,0
 20240222,2024-02-22,4,Thursday,2,February,1,2024,0,0
@@ -146,7 +146,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20240524,2024-05-24,5,Friday,5,May,2,2024,0,0
 20240525,2024-05-25,6,Saturday,5,May,2,2024,1,0
 20240526,2024-05-26,7,Sunday,5,May,2,2024,1,0
-20240527,2024-05-27,1,Monday,5,May,2,2024,0,0
+20240527,2024-05-27,1,Monday,5,May,2,2024,0,1
 20240528,2024-05-28,2,Tuesday,5,May,2,2024,0,0
 20240529,2024-05-29,3,Wednesday,5,May,2,2024,0,0
 20240530,2024-05-30,4,Thursday,5,May,2,2024,0,0
@@ -169,7 +169,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20240616,2024-06-16,7,Sunday,6,June,2,2024,1,0
 20240617,2024-06-17,1,Monday,6,June,2,2024,0,0
 20240618,2024-06-18,2,Tuesday,6,June,2,2024,0,0
-20240619,2024-06-19,3,Wednesday,6,June,2,2024,0,0
+20240619,2024-06-19,3,Wednesday,6,June,2,2024,0,1
 20240620,2024-06-20,4,Thursday,6,June,2,2024,0,0
 20240621,2024-06-21,5,Friday,6,June,2,2024,0,0
 20240622,2024-06-22,6,Saturday,6,June,2,2024,1,0
@@ -184,7 +184,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20240701,2024-07-01,1,Monday,7,July,3,2024,0,0
 20240702,2024-07-02,2,Tuesday,7,July,3,2024,0,0
 20240703,2024-07-03,3,Wednesday,7,July,3,2024,0,0
-20240704,2024-07-04,4,Thursday,7,July,3,2024,0,0
+20240704,2024-07-04,4,Thursday,7,July,3,2024,0,1
 20240705,2024-07-05,5,Friday,7,July,3,2024,0,0
 20240706,2024-07-06,6,Saturday,7,July,3,2024,1,0
 20240707,2024-07-07,7,Sunday,7,July,3,2024,1,0
@@ -244,7 +244,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20240830,2024-08-30,5,Friday,8,August,3,2024,0,0
 20240831,2024-08-31,6,Saturday,8,August,3,2024,1,0
 20240901,2024-09-01,7,Sunday,9,September,3,2024,1,0
-20240902,2024-09-02,1,Monday,9,September,3,2024,0,0
+20240902,2024-09-02,1,Monday,9,September,3,2024,0,1
 20240903,2024-09-03,2,Tuesday,9,September,3,2024,0,0
 20240904,2024-09-04,3,Wednesday,9,September,3,2024,0,0
 20240905,2024-09-05,4,Thursday,9,September,3,2024,0,0
@@ -286,7 +286,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20241011,2024-10-11,5,Friday,10,October,4,2024,0,0
 20241012,2024-10-12,6,Saturday,10,October,4,2024,1,0
 20241013,2024-10-13,7,Sunday,10,October,4,2024,1,0
-20241014,2024-10-14,1,Monday,10,October,4,2024,0,0
+20241014,2024-10-14,1,Monday,10,October,4,2024,0,1
 20241015,2024-10-15,2,Tuesday,10,October,4,2024,0,0
 20241016,2024-10-16,3,Wednesday,10,October,4,2024,0,0
 20241017,2024-10-17,4,Thursday,10,October,4,2024,0,0
@@ -314,7 +314,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20241108,2024-11-08,5,Friday,11,November,4,2024,0,0
 20241109,2024-11-09,6,Saturday,11,November,4,2024,1,0
 20241110,2024-11-10,7,Sunday,11,November,4,2024,1,0
-20241111,2024-11-11,1,Monday,11,November,4,2024,0,0
+20241111,2024-11-11,1,Monday,11,November,4,2024,0,1
 20241112,2024-11-12,2,Tuesday,11,November,4,2024,0,0
 20241113,2024-11-13,3,Wednesday,11,November,4,2024,0,0
 20241114,2024-11-14,4,Thursday,11,November,4,2024,0,0
@@ -331,7 +331,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20241125,2024-11-25,1,Monday,11,November,4,2024,0,0
 20241126,2024-11-26,2,Tuesday,11,November,4,2024,0,0
 20241127,2024-11-27,3,Wednesday,11,November,4,2024,0,0
-20241128,2024-11-28,4,Thursday,11,November,4,2024,0,0
+20241128,2024-11-28,4,Thursday,11,November,4,2024,0,1
 20241129,2024-11-29,5,Friday,11,November,4,2024,0,0
 20241130,2024-11-30,6,Saturday,11,November,4,2024,1,0
 20241201,2024-12-01,7,Sunday,12,December,4,2024,1,0
@@ -358,14 +358,14 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20241222,2024-12-22,7,Sunday,12,December,4,2024,1,0
 20241223,2024-12-23,1,Monday,12,December,4,2024,0,0
 20241224,2024-12-24,2,Tuesday,12,December,4,2024,0,0
-20241225,2024-12-25,3,Wednesday,12,December,4,2024,0,0
+20241225,2024-12-25,3,Wednesday,12,December,4,2024,0,1
 20241226,2024-12-26,4,Thursday,12,December,4,2024,0,0
 20241227,2024-12-27,5,Friday,12,December,4,2024,0,0
 20241228,2024-12-28,6,Saturday,12,December,4,2024,1,0
 20241229,2024-12-29,7,Sunday,12,December,4,2024,1,0
 20241230,2024-12-30,1,Monday,12,December,4,2024,0,0
 20241231,2024-12-31,2,Tuesday,12,December,4,2024,0,0
-20250101,2025-01-01,3,Wednesday,1,January,1,2025,0,0
+20250101,2025-01-01,3,Wednesday,1,January,1,2025,0,1
 20250102,2025-01-02,4,Thursday,1,January,1,2025,0,0
 20250103,2025-01-03,5,Friday,1,January,1,2025,0,0
 20250104,2025-01-04,6,Saturday,1,January,1,2025,1,0
@@ -384,7 +384,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20250117,2025-01-17,5,Friday,1,January,1,2025,0,0
 20250118,2025-01-18,6,Saturday,1,January,1,2025,1,0
 20250119,2025-01-19,7,Sunday,1,January,1,2025,1,0
-20250120,2025-01-20,1,Monday,1,January,1,2025,0,0
+20250120,2025-01-20,1,Monday,1,January,1,2025,0,1
 20250121,2025-01-21,2,Tuesday,1,January,1,2025,0,0
 20250122,2025-01-22,3,Wednesday,1,January,1,2025,0,0
 20250123,2025-01-23,4,Thursday,1,January,1,2025,0,0
@@ -412,7 +412,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20250214,2025-02-14,5,Friday,2,February,1,2025,0,0
 20250215,2025-02-15,6,Saturday,2,February,1,2025,1,0
 20250216,2025-02-16,7,Sunday,2,February,1,2025,1,0
-20250217,2025-02-17,1,Monday,2,February,1,2025,0,0
+20250217,2025-02-17,1,Monday,2,February,1,2025,0,1
 20250218,2025-02-18,2,Tuesday,2,February,1,2025,0,0
 20250219,2025-02-19,3,Wednesday,2,February,1,2025,0,0
 20250220,2025-02-20,4,Thursday,2,February,1,2025,0,0
@@ -510,7 +510,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20250523,2025-05-23,5,Friday,5,May,2,2025,0,0
 20250524,2025-05-24,6,Saturday,5,May,2,2025,1,0
 20250525,2025-05-25,7,Sunday,5,May,2,2025,1,0
-20250526,2025-05-26,1,Monday,5,May,2,2025,0,0
+20250526,2025-05-26,1,Monday,5,May,2,2025,0,1
 20250527,2025-05-27,2,Tuesday,5,May,2,2025,0,0
 20250528,2025-05-28,3,Wednesday,5,May,2,2025,0,0
 20250529,2025-05-29,4,Thursday,5,May,2,2025,0,0
@@ -534,7 +534,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20250616,2025-06-16,1,Monday,6,June,2,2025,0,0
 20250617,2025-06-17,2,Tuesday,6,June,2,2025,0,0
 20250618,2025-06-18,3,Wednesday,6,June,2,2025,0,0
-20250619,2025-06-19,4,Thursday,6,June,2,2025,0,0
+20250619,2025-06-19,4,Thursday,6,June,2,2025,0,1
 20250620,2025-06-20,5,Friday,6,June,2,2025,0,0
 20250621,2025-06-21,6,Saturday,6,June,2,2025,1,0
 20250622,2025-06-22,7,Sunday,6,June,2,2025,1,0
@@ -549,7 +549,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20250701,2025-07-01,2,Tuesday,7,July,3,2025,0,0
 20250702,2025-07-02,3,Wednesday,7,July,3,2025,0,0
 20250703,2025-07-03,4,Thursday,7,July,3,2025,0,0
-20250704,2025-07-04,5,Friday,7,July,3,2025,0,0
+20250704,2025-07-04,5,Friday,7,July,3,2025,0,1
 20250705,2025-07-05,6,Saturday,7,July,3,2025,1,0
 20250706,2025-07-06,7,Sunday,7,July,3,2025,1,0
 20250707,2025-07-07,1,Monday,7,July,3,2025,0,0
@@ -608,7 +608,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20250829,2025-08-29,5,Friday,8,August,3,2025,0,0
 20250830,2025-08-30,6,Saturday,8,August,3,2025,1,0
 20250831,2025-08-31,7,Sunday,8,August,3,2025,1,0
-20250901,2025-09-01,1,Monday,9,September,3,2025,0,0
+20250901,2025-09-01,1,Monday,9,September,3,2025,0,1
 20250902,2025-09-02,2,Tuesday,9,September,3,2025,0,0
 20250903,2025-09-03,3,Wednesday,9,September,3,2025,0,0
 20250904,2025-09-04,4,Thursday,9,September,3,2025,0,0
@@ -650,7 +650,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20251010,2025-10-10,5,Friday,10,October,4,2025,0,0
 20251011,2025-10-11,6,Saturday,10,October,4,2025,1,0
 20251012,2025-10-12,7,Sunday,10,October,4,2025,1,0
-20251013,2025-10-13,1,Monday,10,October,4,2025,0,0
+20251013,2025-10-13,1,Monday,10,October,4,2025,0,1
 20251014,2025-10-14,2,Tuesday,10,October,4,2025,0,0
 20251015,2025-10-15,3,Wednesday,10,October,4,2025,0,0
 20251016,2025-10-16,4,Thursday,10,October,4,2025,0,0
@@ -679,7 +679,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20251108,2025-11-08,6,Saturday,11,November,4,2025,1,0
 20251109,2025-11-09,7,Sunday,11,November,4,2025,1,0
 20251110,2025-11-10,1,Monday,11,November,4,2025,0,0
-20251111,2025-11-11,2,Tuesday,11,November,4,2025,0,0
+20251111,2025-11-11,2,Tuesday,11,November,4,2025,0,1
 20251112,2025-11-12,3,Wednesday,11,November,4,2025,0,0
 20251113,2025-11-13,4,Thursday,11,November,4,2025,0,0
 20251114,2025-11-14,5,Friday,11,November,4,2025,0,0
@@ -695,7 +695,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20251124,2025-11-24,1,Monday,11,November,4,2025,0,0
 20251125,2025-11-25,2,Tuesday,11,November,4,2025,0,0
 20251126,2025-11-26,3,Wednesday,11,November,4,2025,0,0
-20251127,2025-11-27,4,Thursday,11,November,4,2025,0,0
+20251127,2025-11-27,4,Thursday,11,November,4,2025,0,1
 20251128,2025-11-28,5,Friday,11,November,4,2025,0,0
 20251129,2025-11-29,6,Saturday,11,November,4,2025,1,0
 20251130,2025-11-30,7,Sunday,11,November,4,2025,1,0
@@ -723,7 +723,7 @@ DateKey,FullDate,DayOfWeek,DayName,MonthNumber,MonthName,Quarter,Year,IsWeekend,
 20251222,2025-12-22,1,Monday,12,December,4,2025,0,0
 20251223,2025-12-23,2,Tuesday,12,December,4,2025,0,0
 20251224,2025-12-24,3,Wednesday,12,December,4,2025,0,0
-20251225,2025-12-25,4,Thursday,12,December,4,2025,0,0
+20251225,2025-12-25,4,Thursday,12,December,4,2025,0,1
 20251226,2025-12-26,5,Friday,12,December,4,2025,0,0
 20251227,2025-12-27,6,Saturday,12,December,4,2025,1,0
 20251228,2025-12-28,7,Sunday,12,December,4,2025,1,0
