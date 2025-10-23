@@ -30,3 +30,42 @@ This lab contains 5 exercises, each with multiple steps. Complete all the steps 
 1. **Exercise 4**: Build Personalization Model and Implement Reverse ETL
 1. **Exercise 5 (Optional)**: Serve Personalized Recommendations from Cosmos DB
 
+Don't worry if you run out of time to complete the entire lab. All of these exercises available on [our repo](https://aka.ms/). <!--TODO: Add aka.ms link to repo-->
+
+## Get Started
+
+> [!TIP]
+> As you follow the instructions in this pane, whenever you see a `icon`, you can use it to copy text from the instruction pane into the virtual machine interface. This is particularly useful to copy code; but bear in mind you may need to modify the pasted code to fix indent levels or formatting before running it!
+
+## Sign into Windows
+
+1. In the virtual machine, sign into Windows using the following credentials:
+
+   - Username: `@lab.VirtualMachine(Win11-Pro-Base-VM2).Username`
+   - Password: `@lab.VirtualMachine(Win11-Pro-Base-VM2).Password`
+
+Select **Next >** to go to set up your Fabric Environment.
+
+===
+
+!INSTRUCTIONS [Fabric Environment Setup](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+
+===
+
+!INSTRUCTIONS [Exercise 1: Provisioning Cosmos DB in Fabric (Operational Data Store)](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+
+===
+
+!INSTRUCTIONS [Exercise 2: Batch Data Loading and Cross-Database Analytics (Cosmos DB to Data Warehouse)](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+
+===
+
+!INSTRUCTIONS [Exercise 3: Real-Time Streaming and Visualization of POS Events](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+
+===
+
+!INSTRUCTIONS [Exercise 4: Build Personalization Model and Implement Reverse ETL](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+
+===
+
+!INSTRUCTIONS [Exercise 5 (Optional): Serve Personalized Recommendations from Cosmos DB](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)

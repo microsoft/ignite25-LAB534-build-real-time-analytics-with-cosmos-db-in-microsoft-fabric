@@ -40,8 +40,6 @@ using Microsoft.Fabric.Api.Core.Models;
 using Microsoft.Fabric.Api.Warehouse.Models;
 using Microsoft.Extensions.Logging;
 
-const string DefaultCapacityName = "fabricteamcapacity";
-const string WorkspaceName = "Fourth Coffee Commerce - Lab 534";
 const string WarehouseName = "fc-commerce-wh";
 
 using var loggerFactory = LoggerFactory.Create(builder =>
@@ -57,42 +55,30 @@ using var loggerFactory = LoggerFactory.Create(builder =>
 });
 var logger = loggerFactory.CreateLogger("LoadWarehouseData");
 
+
+var workspaceName = Environment.GetEnvironmentVariable("FABRIC_WORKSPACE_NAME");
+if (string.IsNullOrWhiteSpace(workspaceName))
+{
+    logger.LogError("Environment variable FABRIC_WORKSPACE_NAME is not set. Set it to the target Fabric workspace name.");
+    return;
+}
+
 var credential = new AzureCliCredential();
 var fabricClient = new FabricClient(credential);
-logger.LogInformation("Starting provisioning workflow for warehouse {WarehouseName} in workspace {WorkspaceName}", WarehouseName, WorkspaceName);
-
-
-
-var fabricCapacity = fabricClient.Core.Capacities
-    .ListCapacities()
-    .FirstOrDefault(c => c.DisplayName == DefaultCapacityName);
-if (fabricCapacity is null)
-{
-    logger.LogError("Capacity {CapacityName} not found", DefaultCapacityName);
-    throw new InvalidOperationException($"Capacity '{DefaultCapacityName}' not found.");
-}
-logger.LogInformation("Resolved capacity {CapacityName} with Id {CapacityId}", DefaultCapacityName, fabricCapacity.Id);
-
+logger.LogInformation("Starting provisioning workflow for warehouse {WarehouseName} in workspace {workspaceName}", WarehouseName, workspaceName);
 
 var workspace = fabricClient.Core.Workspaces
     .ListWorkspaces()
-    .FirstOrDefault(w => w.DisplayName == WorkspaceName);
+    .FirstOrDefault(w => w.DisplayName == workspaceName);
 
 if (workspace is null)
 {
-    logger.LogInformation("Workspace {WorkspaceName} not found; creating in capacity {CapacityId}", WorkspaceName, fabricCapacity.Id);
-    var createWorkspaceRequest = new CreateWorkspaceRequest(WorkspaceName)
-    {
-        CapacityId = fabricCapacity.Id,
-    };
-
-    var workspaceCreationResponse = await fabricClient.Core.Workspaces.CreateWorkspaceAsync(createWorkspaceRequest);
-    workspace = workspaceCreationResponse.Value;
-    logger.LogInformation("Created workspace {WorkspaceName} with Id {WorkspaceId}", WorkspaceName, workspace.Id);
+    logger.LogInformation("Workspace {workspaceName} not found; follow the provided lab instruction to create one on the web", workspaceName);
+    return;
 }
 else
 {
-    logger.LogInformation("Using existing workspace {WorkspaceName} with Id {WorkspaceId}", WorkspaceName, workspace.Id);
+    logger.LogInformation("Successfully retrieved the workspace {workspaceName} with Id {WorkspaceId}", workspaceName, workspace.Id);
 }
 
 
