@@ -44,9 +44,6 @@ const string DefaultCapacityName = "fabricteamcapacity";
 const string WorkspaceName = "Fourth Coffee Commerce - Lab 534";
 const string WarehouseName = "fc-commerce-wh";
 
-var credential = new AzureCliCredential();
-
-
 using var loggerFactory = LoggerFactory.Create(builder =>
 {
     builder
@@ -58,8 +55,9 @@ using var loggerFactory = LoggerFactory.Create(builder =>
             options.TimestampFormat = "HH:mm:ss ";
         });
 });
-var logger = loggerFactory.CreateLogger("LoadData");
+var logger = loggerFactory.CreateLogger("LoadWarehouseData");
 
+var credential = new AzureCliCredential();
 var fabricClient = new FabricClient(credential);
 logger.LogInformation("Starting provisioning workflow for warehouse {WarehouseName} in workspace {WorkspaceName}", WarehouseName, WorkspaceName);
 
@@ -112,8 +110,8 @@ catch (Exception ex) when (ex.Message.Contains("Failure getting LRO status", Str
     // TODO: Investigate further why this exception occurs yet the warehouse is created successfully.
     // Try to retrieve the warehouse that was likely created despite the exception
     logger.LogWarning(ex, "LRO status failure while creating warehouse {WarehouseName}; attempting lookup", WarehouseName);
-    warehouse = fabricClient.Warehouse.Items.ListWarehouses(workspace.Id)
-        .FirstOrDefault(w => w.DisplayName == WarehouseName);
+    warehouse = await fabricClient.Warehouse.Items.ListWarehousesAsync(workspace.Id)
+        .FirstOrDefaultAsync(w => w.DisplayName == WarehouseName);
     if (warehouse is not null)
         logger.LogInformation("Recovered warehouse after LRO issue: {WarehouseName} Id {WarehouseId}", WarehouseName, warehouse.Id);
 }
