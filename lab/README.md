@@ -23,30 +23,10 @@ In this 75 minute lab, you will step into the role of a data engineer for the Fo
 
 This lab contains 5 exercises, each with multiple steps. Complete all the steps in each exercise before moving on to the next one. The exercises are designed to be completed in sequence, building on the work from previous exercises.
 
+1. **Fabric Environment Setup**: Automated setup of the Fabric items needed for the lab.
 1. **Exercise 1**: Provisioning Cosmos DB in Fabric (Operational Data Store)
 1. **Exercise 2**: Batch Data Loading and Cross-Database Analytics (Cosmos DB to Data Warehouse)
 1. **Exercise 3**: Real-Time Streaming and Visualization of POS Events
 1. **Exercise 4**: Build Personalization Model and Implement Reverse ETL
 1. **Exercise 5 (Optional)**: Serve Personalized Recommendations from Cosmos DB
 
-## Pre-Requisites
-
-To participate in this workshop, you will need:
-
-1. Your own laptop.
-   * It need only be capable of running a browser and GitHub Codespaces, so almost any laptop will do.
-   * A recent version of Edge, Chrome or Safari is recommended.
-2. Prerequisite #2
-3. Prerequisite #3
-
-## Get Started
-
-To get started you will need to
-
-## Discussions
-
-Build your first agent with Azure AI Agent Service is an open source project supported by Microsoft. See the [SUPPORT.md](../SUPPORT.md) file for details on how to raise issues or contribute. If you enjoyed this workshop please give the repository a ⭐ and share it with others.
-
-## Source code
-
-The source code for this session can be found in the [src folder](../src) of this repo.
