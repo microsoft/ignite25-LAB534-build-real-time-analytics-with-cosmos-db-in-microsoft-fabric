@@ -1,5 +1,6 @@
 [
   {
+    "customerKey": 1,
     "id": "customer-001",
     "customerId": "customer-001",
     "name": "Olivia Doe",
@@ -35,10 +36,10 @@
       }
     ],
     "registeredAt": "2024-07-04T00:00:00Z",
-    "updatedAt": "2025-10-06T13:02:00Z",
-    "_partitionKey": "customer-001"
+    "updatedAt": "2025-10-06T13:02:00Z"
   },
   {
+    "customerKey": 2,
     "id": "customer-002",
     "customerId": "customer-002",
     "name": "Noah Brown",
@@ -74,10 +75,10 @@
       }
     ],
     "registeredAt": "2024-08-31T00:00:00Z",
-    "updatedAt": "2025-10-04T08:44:00Z",
-    "_partitionKey": "customer-002"
+    "updatedAt": "2025-10-04T08:44:00Z"
   },
   {
+    "customerKey": 3,
     "id": "customer-003",
     "customerId": "customer-003",
     "name": "Olivia Jones",
@@ -106,10 +107,10 @@
       }
     ],
     "registeredAt": "2025-04-19T00:00:00Z",
-    "updatedAt": "2025-10-05T12:42:00Z",
-    "_partitionKey": "customer-003"
+    "updatedAt": "2025-10-05T12:42:00Z"
   },
   {
+    "customerKey": 4,
     "id": "customer-004",
     "customerId": "customer-004",
     "name": "Jane Jones",
@@ -152,10 +153,10 @@
       }
     ],
     "registeredAt": "2025-03-14T00:00:00Z",
-    "updatedAt": "2025-10-06T17:28:00Z",
-    "_partitionKey": "customer-004"
+    "updatedAt": "2025-10-06T17:28:00Z"
   },
   {
+    "customerKey": 5,
     "id": "customer-005",
     "customerId": "customer-005",
     "name": "Ava Jones",
@@ -196,10 +197,10 @@
       }
     ],
     "registeredAt": "2025-04-04T00:00:00Z",
-    "updatedAt": "2025-10-19T12:20:00Z",
-    "_partitionKey": "customer-005"
+    "updatedAt": "2025-10-19T12:20:00Z"
   },
   {
+    "customerKey": 6,
     "id": "customer-006",
     "customerId": "customer-006",
     "name": "Jane Brown",
@@ -242,10 +243,10 @@
       }
     ],
     "registeredAt": "2024-09-18T00:00:00Z",
-    "updatedAt": "2025-10-11T19:24:00Z",
-    "_partitionKey": "customer-006"
+    "updatedAt": "2025-10-11T19:24:00Z"
   },
   {
+    "customerKey": 7,
     "id": "customer-007",
     "customerId": "customer-007",
     "name": "Jane Johnson",
@@ -274,10 +275,10 @@
       }
     ],
     "registeredAt": "2024-06-08T00:00:00Z",
-    "updatedAt": "2025-10-15T15:59:00Z",
-    "_partitionKey": "customer-007"
+    "updatedAt": "2025-10-15T15:59:00Z"
   },
   {
+    "customerKey": 8,
     "id": "customer-008",
     "customerId": "customer-008",
     "name": "Emma Doe",
@@ -306,10 +307,10 @@
       }
     ],
     "registeredAt": "2024-10-30T00:00:00Z",
-    "updatedAt": "2025-10-17T09:05:00Z",
-    "_partitionKey": "customer-008"
+    "updatedAt": "2025-10-17T09:05:00Z"
   },
   {
+    "customerKey": 9,
     "id": "customer-009",
     "customerId": "customer-009",
     "name": "Ava Williams",
@@ -345,10 +346,10 @@
       }
     ],
     "registeredAt": "2024-10-15T00:00:00Z",
-    "updatedAt": "2025-10-13T10:44:00Z",
-    "_partitionKey": "customer-009"
+    "updatedAt": "2025-10-13T10:44:00Z"
   },
   {
+    "customerKey": 10,
     "id": "customer-010",
     "customerId": "customer-010",
     "name": "Jane Johnson",
@@ -391,10 +392,10 @@
       }
     ],
     "registeredAt": "2024-11-20T00:00:00Z",
-    "updatedAt": "2025-10-15T09:58:00Z",
-    "_partitionKey": "customer-010"
+    "updatedAt": "2025-10-15T09:58:00Z"
   },
   {
+    "customerKey": 11,
     "id": "customer-011",
     "customerId": "customer-011",
     "name": "Emma Jones",
@@ -430,10 +431,10 @@
       }
     ],
     "registeredAt": "2025-02-02T00:00:00Z",
-    "updatedAt": "2025-10-15T17:41:00Z",
-    "_partitionKey": "customer-011"
+    "updatedAt": "2025-10-15T17:41:00Z"
   },
   {
+    "customerKey": 12,
     "id": "customer-012",
     "customerId": "customer-012",
     "name": "Sophia Williams",
@@ -476,10 +477,10 @@
       }
     ],
     "registeredAt": "2024-03-30T00:00:00Z",
-    "updatedAt": "2025-10-15T09:00:00Z",
-    "_partitionKey": "customer-012"
+    "updatedAt": "2025-10-15T09:00:00Z"
   },
   {
+    "customerKey": 13,
     "id": "customer-013",
     "customerId": "customer-013",
     "name": "Mason Brown",
@@ -520,10 +521,10 @@
       }
     ],
     "registeredAt": "2024-11-06T00:00:00Z",
-    "updatedAt": "2025-10-05T17:18:00Z",
-    "_partitionKey": "customer-013"
+    "updatedAt": "2025-10-05T17:18:00Z"
   },
   {
+    "customerKey": 14,
     "id": "customer-014",
     "customerId": "customer-014",
     "name": "Lucas Johnson",
@@ -559,10 +560,10 @@
       }
     ],
     "registeredAt": "2024-06-14T00:00:00Z",
-    "updatedAt": "2025-10-14T16:47:00Z",
-    "_partitionKey": "customer-014"
+    "updatedAt": "2025-10-14T16:47:00Z"
   },
   {
+    "customerKey": 15,
     "id": "customer-015",
     "customerId": "customer-015",
     "name": "Ava Jones",
@@ -598,10 +599,10 @@
       }
     ],
     "registeredAt": "2024-12-27T00:00:00Z",
-    "updatedAt": "2025-10-21T15:52:00Z",
-    "_partitionKey": "customer-015"
+    "updatedAt": "2025-10-21T15:52:00Z"
   },
   {
+    "customerKey": 16,
     "id": "customer-016",
     "customerId": "customer-016",
     "name": "Olivia Brown",
@@ -644,10 +645,10 @@
       }
     ],
     "registeredAt": "2024-08-23T00:00:00Z",
-    "updatedAt": "2025-10-01T12:56:00Z",
-    "_partitionKey": "customer-016"
+    "updatedAt": "2025-10-01T12:56:00Z"
   },
   {
+    "customerKey": 17,
     "id": "customer-017",
     "customerId": "customer-017",
     "name": "Emma Doe",
@@ -674,10 +675,10 @@
       }
     ],
     "registeredAt": "2024-08-25T00:00:00Z",
-    "updatedAt": "2025-10-21T08:21:00Z",
-    "_partitionKey": "customer-017"
+    "updatedAt": "2025-10-21T08:21:00Z"
   },
   {
+    "customerKey": 18,
     "id": "customer-018",
     "customerId": "customer-018",
     "name": "Liam Brown",
@@ -720,10 +721,10 @@
       }
     ],
     "registeredAt": "2024-12-08T00:00:00Z",
-    "updatedAt": "2025-10-10T16:36:00Z",
-    "_partitionKey": "customer-018"
+    "updatedAt": "2025-10-10T16:36:00Z"
   },
   {
+    "customerKey": 19,
     "id": "customer-019",
     "customerId": "customer-019",
     "name": "Ava Jones",
@@ -752,10 +753,10 @@
       }
     ],
     "registeredAt": "2024-10-05T00:00:00Z",
-    "updatedAt": "2025-10-11T15:57:00Z",
-    "_partitionKey": "customer-019"
+    "updatedAt": "2025-10-11T15:57:00Z"
   },
   {
+    "customerKey": 20,
     "id": "customer-020",
     "customerId": "customer-020",
     "name": "Liam Garcia",
@@ -784,10 +785,10 @@
       }
     ],
     "registeredAt": "2024-08-20T00:00:00Z",
-    "updatedAt": "2025-10-13T20:26:00Z",
-    "_partitionKey": "customer-020"
+    "updatedAt": "2025-10-13T20:26:00Z"
   },
   {
+    "customerKey": 21,
     "id": "customer-021",
     "customerId": "customer-021",
     "name": "Sophia Brown",
@@ -830,10 +831,10 @@
       }
     ],
     "registeredAt": "2024-04-04T00:00:00Z",
-    "updatedAt": "2025-10-14T10:16:00Z",
-    "_partitionKey": "customer-021"
+    "updatedAt": "2025-10-14T10:16:00Z"
   },
   {
+    "customerKey": 22,
     "id": "customer-022",
     "customerId": "customer-022",
     "name": "Jane Smith",
@@ -862,10 +863,10 @@
       }
     ],
     "registeredAt": "2025-01-25T00:00:00Z",
-    "updatedAt": "2025-10-21T12:17:00Z",
-    "_partitionKey": "customer-022"
+    "updatedAt": "2025-10-21T12:17:00Z"
   },
   {
+    "customerKey": 23,
     "id": "customer-023",
     "customerId": "customer-023",
     "name": "Sophia Doe",
@@ -908,10 +909,10 @@
       }
     ],
     "registeredAt": "2024-07-03T00:00:00Z",
-    "updatedAt": "2025-10-19T13:07:00Z",
-    "_partitionKey": "customer-023"
+    "updatedAt": "2025-10-19T13:07:00Z"
   },
   {
+    "customerKey": 24,
     "id": "customer-024",
     "customerId": "customer-024",
     "name": "Emma Johnson",
@@ -947,10 +948,10 @@
       }
     ],
     "registeredAt": "2024-04-09T00:00:00Z",
-    "updatedAt": "2025-10-12T17:32:00Z",
-    "_partitionKey": "customer-024"
+    "updatedAt": "2025-10-12T17:32:00Z"
   },
   {
+    "customerKey": 25,
     "id": "customer-025",
     "customerId": "customer-025",
     "name": "Sophia Doe",
@@ -986,10 +987,10 @@
       }
     ],
     "registeredAt": "2024-03-25T00:00:00Z",
-    "updatedAt": "2025-10-14T14:34:00Z",
-    "_partitionKey": "customer-025"
+    "updatedAt": "2025-10-14T14:34:00Z"
   },
   {
+    "customerKey": 26,
     "id": "customer-026",
     "customerId": "customer-026",
     "name": "Mason Smith",
@@ -1025,10 +1026,10 @@
       }
     ],
     "registeredAt": "2024-12-29T00:00:00Z",
-    "updatedAt": "2025-10-18T20:16:00Z",
-    "_partitionKey": "customer-026"
+    "updatedAt": "2025-10-18T20:16:00Z"
   },
   {
+    "customerKey": 27,
     "id": "customer-027",
     "customerId": "customer-027",
     "name": "Sophia Garcia",
@@ -1064,10 +1065,10 @@
       }
     ],
     "registeredAt": "2025-01-09T00:00:00Z",
-    "updatedAt": "2025-10-15T10:29:00Z",
-    "_partitionKey": "customer-027"
+    "updatedAt": "2025-10-15T10:29:00Z"
   },
   {
+    "customerKey": 28,
     "id": "customer-028",
     "customerId": "customer-028",
     "name": "Lucas Miller",
@@ -1110,10 +1111,10 @@
       }
     ],
     "registeredAt": "2024-05-13T00:00:00Z",
-    "updatedAt": "2025-10-03T10:50:00Z",
-    "_partitionKey": "customer-028"
+    "updatedAt": "2025-10-03T10:50:00Z"
   },
   {
+    "customerKey": 29,
     "id": "customer-029",
     "customerId": "customer-029",
     "name": "Sophia Garcia",
@@ -1147,10 +1148,10 @@
       }
     ],
     "registeredAt": "2024-08-15T00:00:00Z",
-    "updatedAt": "2025-10-10T16:24:00Z",
-    "_partitionKey": "customer-029"
+    "updatedAt": "2025-10-10T16:24:00Z"
   },
   {
+    "customerKey": 30,
     "id": "customer-030",
     "customerId": "customer-030",
     "name": "Sophia Doe",
@@ -1186,10 +1187,10 @@
       }
     ],
     "registeredAt": "2024-12-08T00:00:00Z",
-    "updatedAt": "2025-10-04T08:38:00Z",
-    "_partitionKey": "customer-030"
+    "updatedAt": "2025-10-04T08:38:00Z"
   },
   {
+    "customerKey": 31,
     "id": "customer-031",
     "customerId": "customer-031",
     "name": "John Smith",
@@ -1218,10 +1219,10 @@
       }
     ],
     "registeredAt": "2024-07-02T00:00:00Z",
-    "updatedAt": "2025-10-07T09:44:00Z",
-    "_partitionKey": "customer-031"
+    "updatedAt": "2025-10-07T09:44:00Z"
   },
   {
+    "customerKey": 32,
     "id": "customer-032",
     "customerId": "customer-032",
     "name": "Noah Doe",
@@ -1250,10 +1251,10 @@
       }
     ],
     "registeredAt": "2024-11-12T00:00:00Z",
-    "updatedAt": "2025-10-18T09:43:00Z",
-    "_partitionKey": "customer-032"
+    "updatedAt": "2025-10-18T09:43:00Z"
   },
   {
+    "customerKey": 33,
     "id": "customer-033",
     "customerId": "customer-033",
     "name": "Mason Miller",
@@ -1282,10 +1283,10 @@
       }
     ],
     "registeredAt": "2024-10-25T00:00:00Z",
-    "updatedAt": "2025-10-15T10:27:00Z",
-    "_partitionKey": "customer-033"
+    "updatedAt": "2025-10-15T10:27:00Z"
   },
   {
+    "customerKey": 34,
     "id": "customer-034",
     "customerId": "customer-034",
     "name": "Mason Doe",
@@ -1314,10 +1315,10 @@
       }
     ],
     "registeredAt": "2025-03-23T00:00:00Z",
-    "updatedAt": "2025-10-10T16:37:00Z",
-    "_partitionKey": "customer-034"
+    "updatedAt": "2025-10-10T16:37:00Z"
   },
   {
+    "customerKey": 35,
     "id": "customer-035",
     "customerId": "customer-035",
     "name": "Jane Doe",
@@ -1360,10 +1361,10 @@
       }
     ],
     "registeredAt": "2025-03-26T00:00:00Z",
-    "updatedAt": "2025-10-17T16:38:00Z",
-    "_partitionKey": "customer-035"
+    "updatedAt": "2025-10-17T16:38:00Z"
   },
   {
+    "customerKey": 36,
     "id": "customer-036",
     "customerId": "customer-036",
     "name": "John Jones",
@@ -1399,10 +1400,10 @@
       }
     ],
     "registeredAt": "2024-06-17T00:00:00Z",
-    "updatedAt": "2025-10-03T13:28:00Z",
-    "_partitionKey": "customer-036"
+    "updatedAt": "2025-10-03T13:28:00Z"
   },
   {
+    "customerKey": 37,
     "id": "customer-037",
     "customerId": "customer-037",
     "name": "Sophia Williams",
@@ -1431,10 +1432,10 @@
       }
     ],
     "registeredAt": "2025-03-23T00:00:00Z",
-    "updatedAt": "2025-10-18T18:11:00Z",
-    "_partitionKey": "customer-037"
+    "updatedAt": "2025-10-18T18:11:00Z"
   },
   {
+    "customerKey": 38,
     "id": "customer-038",
     "customerId": "customer-038",
     "name": "Jane Garcia",
@@ -1461,10 +1462,10 @@
       }
     ],
     "registeredAt": "2024-08-15T00:00:00Z",
-    "updatedAt": "2025-10-14T14:54:00Z",
-    "_partitionKey": "customer-038"
+    "updatedAt": "2025-10-14T14:54:00Z"
   },
   {
+    "customerKey": 39,
     "id": "customer-039",
     "customerId": "customer-039",
     "name": "Jane Doe",
@@ -1500,10 +1501,10 @@
       }
     ],
     "registeredAt": "2024-10-19T00:00:00Z",
-    "updatedAt": "2025-10-21T15:21:00Z",
-    "_partitionKey": "customer-039"
+    "updatedAt": "2025-10-21T15:21:00Z"
   },
   {
+    "customerKey": 40,
     "id": "customer-040",
     "customerId": "customer-040",
     "name": "Olivia Jones",
@@ -1539,10 +1540,10 @@
       }
     ],
     "registeredAt": "2025-01-03T00:00:00Z",
-    "updatedAt": "2025-10-05T10:04:00Z",
-    "_partitionKey": "customer-040"
+    "updatedAt": "2025-10-05T10:04:00Z"
   },
   {
+    "customerKey": 41,
     "id": "customer-041",
     "customerId": "customer-041",
     "name": "Noah Jones",
@@ -1571,10 +1572,10 @@
       }
     ],
     "registeredAt": "2024-08-06T00:00:00Z",
-    "updatedAt": "2025-10-07T13:52:00Z",
-    "_partitionKey": "customer-041"
+    "updatedAt": "2025-10-07T13:52:00Z"
   },
   {
+    "customerKey": 42,
     "id": "customer-042",
     "customerId": "customer-042",
     "name": "Noah Williams",
@@ -1603,10 +1604,10 @@
       }
     ],
     "registeredAt": "2024-09-20T00:00:00Z",
-    "updatedAt": "2025-10-21T08:13:00Z",
-    "_partitionKey": "customer-042"
+    "updatedAt": "2025-10-21T08:13:00Z"
   },
   {
+    "customerKey": 43,
     "id": "customer-043",
     "customerId": "customer-043",
     "name": "John Doe",
@@ -1635,10 +1636,10 @@
       }
     ],
     "registeredAt": "2025-03-12T00:00:00Z",
-    "updatedAt": "2025-10-04T13:57:00Z",
-    "_partitionKey": "customer-043"
+    "updatedAt": "2025-10-04T13:57:00Z"
   },
   {
+    "customerKey": 44,
     "id": "customer-044",
     "customerId": "customer-044",
     "name": "Sophia Doe",
@@ -1679,10 +1680,10 @@
       }
     ],
     "registeredAt": "2025-03-17T00:00:00Z",
-    "updatedAt": "2025-10-03T10:38:00Z",
-    "_partitionKey": "customer-044"
+    "updatedAt": "2025-10-03T10:38:00Z"
   },
   {
+    "customerKey": 45,
     "id": "customer-045",
     "customerId": "customer-045",
     "name": "Noah Doe",
@@ -1718,10 +1719,10 @@
       }
     ],
     "registeredAt": "2024-11-23T00:00:00Z",
-    "updatedAt": "2025-10-14T11:30:00Z",
-    "_partitionKey": "customer-045"
+    "updatedAt": "2025-10-14T11:30:00Z"
   },
   {
+    "customerKey": 46,
     "id": "customer-046",
     "customerId": "customer-046",
     "name": "Emma Smith",
@@ -1750,10 +1751,10 @@
       }
     ],
     "registeredAt": "2025-03-25T00:00:00Z",
-    "updatedAt": "2025-10-15T16:28:00Z",
-    "_partitionKey": "customer-046"
+    "updatedAt": "2025-10-15T16:28:00Z"
   },
   {
+    "customerKey": 47,
     "id": "customer-047",
     "customerId": "customer-047",
     "name": "Ava Williams",
@@ -1794,10 +1795,10 @@
       }
     ],
     "registeredAt": "2024-05-01T00:00:00Z",
-    "updatedAt": "2025-10-14T20:07:00Z",
-    "_partitionKey": "customer-047"
+    "updatedAt": "2025-10-14T20:07:00Z"
   },
   {
+    "customerKey": 48,
     "id": "customer-048",
     "customerId": "customer-048",
     "name": "Mason Williams",
@@ -1840,10 +1841,10 @@
       }
     ],
     "registeredAt": "2024-09-26T00:00:00Z",
-    "updatedAt": "2025-10-12T16:13:00Z",
-    "_partitionKey": "customer-048"
+    "updatedAt": "2025-10-12T16:13:00Z"
   },
   {
+    "customerKey": 49,
     "id": "customer-049",
     "customerId": "customer-049",
     "name": "Jane Smith",
@@ -1886,10 +1887,10 @@
       }
     ],
     "registeredAt": "2025-03-13T00:00:00Z",
-    "updatedAt": "2025-10-12T20:16:00Z",
-    "_partitionKey": "customer-049"
+    "updatedAt": "2025-10-12T20:16:00Z"
   },
   {
+    "customerKey": 50,
     "id": "customer-050",
     "customerId": "customer-050",
     "name": "Sophia Miller",
@@ -1925,10 +1926,10 @@
       }
     ],
     "registeredAt": "2024-08-02T00:00:00Z",
-    "updatedAt": "2025-10-09T16:25:00Z",
-    "_partitionKey": "customer-050"
+    "updatedAt": "2025-10-09T16:25:00Z"
   },
   {
+    "customerKey": 51,
     "id": "customer-051",
     "customerId": "customer-051",
     "name": "Emma Miller",
@@ -1964,10 +1965,10 @@
       }
     ],
     "registeredAt": "2024-08-10T00:00:00Z",
-    "updatedAt": "2025-10-21T11:02:00Z",
-    "_partitionKey": "customer-051"
+    "updatedAt": "2025-10-21T11:02:00Z"
   },
   {
+    "customerKey": 52,
     "id": "customer-052",
     "customerId": "customer-052",
     "name": "Lucas Johnson",
@@ -1994,10 +1995,10 @@
       }
     ],
     "registeredAt": "2025-01-22T00:00:00Z",
-    "updatedAt": "2025-10-12T18:49:00Z",
-    "_partitionKey": "customer-052"
+    "updatedAt": "2025-10-12T18:49:00Z"
   },
   {
+    "customerKey": 53,
     "id": "customer-053",
     "customerId": "customer-053",
     "name": "Olivia Doe",
@@ -2038,10 +2039,10 @@
       }
     ],
     "registeredAt": "2024-05-30T00:00:00Z",
-    "updatedAt": "2025-10-16T12:58:00Z",
-    "_partitionKey": "customer-053"
+    "updatedAt": "2025-10-16T12:58:00Z"
   },
   {
+    "customerKey": 54,
     "id": "customer-054",
     "customerId": "customer-054",
     "name": "Jane Brown",
@@ -2077,10 +2078,10 @@
       }
     ],
     "registeredAt": "2025-04-17T00:00:00Z",
-    "updatedAt": "2025-10-07T17:11:00Z",
-    "_partitionKey": "customer-054"
+    "updatedAt": "2025-10-07T17:11:00Z"
   },
   {
+    "customerKey": 55,
     "id": "customer-055",
     "customerId": "customer-055",
     "name": "John Johnson",
@@ -2109,10 +2110,10 @@
       }
     ],
     "registeredAt": "2024-09-08T00:00:00Z",
-    "updatedAt": "2025-10-21T19:17:00Z",
-    "_partitionKey": "customer-055"
+    "updatedAt": "2025-10-21T19:17:00Z"
   },
   {
+    "customerKey": 56,
     "id": "customer-056",
     "customerId": "customer-056",
     "name": "Olivia Williams",
@@ -2155,10 +2156,10 @@
       }
     ],
     "registeredAt": "2024-09-25T00:00:00Z",
-    "updatedAt": "2025-10-21T13:03:00Z",
-    "_partitionKey": "customer-056"
+    "updatedAt": "2025-10-21T13:03:00Z"
   },
   {
+    "customerKey": 57,
     "id": "customer-057",
     "customerId": "customer-057",
     "name": "Lucas Doe",
@@ -2187,10 +2188,10 @@
       }
     ],
     "registeredAt": "2024-05-13T00:00:00Z",
-    "updatedAt": "2025-10-15T13:36:00Z",
-    "_partitionKey": "customer-057"
+    "updatedAt": "2025-10-15T13:36:00Z"
   },
   {
+    "customerKey": 58,
     "id": "customer-058",
     "customerId": "customer-058",
     "name": "Sophia Jones",
@@ -2233,10 +2234,10 @@
       }
     ],
     "registeredAt": "2024-07-21T00:00:00Z",
-    "updatedAt": "2025-10-19T11:10:00Z",
-    "_partitionKey": "customer-058"
+    "updatedAt": "2025-10-19T11:10:00Z"
   },
   {
+    "customerKey": 59,
     "id": "customer-059",
     "customerId": "customer-059",
     "name": "Mason Jones",
@@ -2265,10 +2266,10 @@
       }
     ],
     "registeredAt": "2024-08-31T00:00:00Z",
-    "updatedAt": "2025-10-21T16:48:00Z",
-    "_partitionKey": "customer-059"
+    "updatedAt": "2025-10-21T16:48:00Z"
   },
   {
+    "customerKey": 60,
     "id": "customer-060",
     "customerId": "customer-060",
     "name": "Liam Garcia",
@@ -2311,10 +2312,10 @@
       }
     ],
     "registeredAt": "2024-10-20T00:00:00Z",
-    "updatedAt": "2025-10-20T13:35:00Z",
-    "_partitionKey": "customer-060"
+    "updatedAt": "2025-10-20T13:35:00Z"
   },
   {
+    "customerKey": 61,
     "id": "customer-061",
     "customerId": "customer-061",
     "name": "Noah Miller",
@@ -2357,10 +2358,10 @@
       }
     ],
     "registeredAt": "2025-01-03T00:00:00Z",
-    "updatedAt": "2025-10-16T18:01:00Z",
-    "_partitionKey": "customer-061"
+    "updatedAt": "2025-10-16T18:01:00Z"
   },
   {
+    "customerKey": 62,
     "id": "customer-062",
     "customerId": "customer-062",
     "name": "Emma Williams",
@@ -2403,10 +2404,10 @@
       }
     ],
     "registeredAt": "2024-11-03T00:00:00Z",
-    "updatedAt": "2025-10-18T15:47:00Z",
-    "_partitionKey": "customer-062"
+    "updatedAt": "2025-10-18T15:47:00Z"
   },
   {
+    "customerKey": 63,
     "id": "customer-063",
     "customerId": "customer-063",
     "name": "Mason Garcia",
@@ -2442,10 +2443,10 @@
       }
     ],
     "registeredAt": "2025-04-14T00:00:00Z",
-    "updatedAt": "2025-10-11T11:16:00Z",
-    "_partitionKey": "customer-063"
+    "updatedAt": "2025-10-11T11:16:00Z"
   },
   {
+    "customerKey": 64,
     "id": "customer-064",
     "customerId": "customer-064",
     "name": "Lucas Garcia",
@@ -2479,10 +2480,10 @@
       }
     ],
     "registeredAt": "2024-07-21T00:00:00Z",
-    "updatedAt": "2025-10-02T08:53:00Z",
-    "_partitionKey": "customer-064"
+    "updatedAt": "2025-10-02T08:53:00Z"
   },
   {
+    "customerKey": 65,
     "id": "customer-065",
     "customerId": "customer-065",
     "name": "John Johnson",
@@ -2511,10 +2512,10 @@
       }
     ],
     "registeredAt": "2024-05-25T00:00:00Z",
-    "updatedAt": "2025-10-21T14:56:00Z",
-    "_partitionKey": "customer-065"
+    "updatedAt": "2025-10-21T14:56:00Z"
   },
   {
+    "customerKey": 66,
     "id": "customer-066",
     "customerId": "customer-066",
     "name": "Mason Smith",
@@ -2550,10 +2551,10 @@
       }
     ],
     "registeredAt": "2025-03-06T00:00:00Z",
-    "updatedAt": "2025-10-17T16:04:00Z",
-    "_partitionKey": "customer-066"
+    "updatedAt": "2025-10-17T16:04:00Z"
   },
   {
+    "customerKey": 67,
     "id": "customer-067",
     "customerId": "customer-067",
     "name": "John Williams",
@@ -2582,10 +2583,10 @@
       }
     ],
     "registeredAt": "2025-03-22T00:00:00Z",
-    "updatedAt": "2025-10-14T19:15:00Z",
-    "_partitionKey": "customer-067"
+    "updatedAt": "2025-10-14T19:15:00Z"
   },
   {
+    "customerKey": 68,
     "id": "customer-068",
     "customerId": "customer-068",
     "name": "Olivia Brown",
@@ -2614,10 +2615,10 @@
       }
     ],
     "registeredAt": "2024-11-07T00:00:00Z",
-    "updatedAt": "2025-10-06T11:06:00Z",
-    "_partitionKey": "customer-068"
+    "updatedAt": "2025-10-06T11:06:00Z"
   },
   {
+    "customerKey": 69,
     "id": "customer-069",
     "customerId": "customer-069",
     "name": "Lucas Jones",
@@ -2653,10 +2654,10 @@
       }
     ],
     "registeredAt": "2024-06-26T00:00:00Z",
-    "updatedAt": "2025-10-16T10:31:00Z",
-    "_partitionKey": "customer-069"
+    "updatedAt": "2025-10-16T10:31:00Z"
   },
   {
+    "customerKey": 70,
     "id": "customer-070",
     "customerId": "customer-070",
     "name": "Ava Miller",
@@ -2692,10 +2693,10 @@
       }
     ],
     "registeredAt": "2025-04-02T00:00:00Z",
-    "updatedAt": "2025-10-20T19:07:00Z",
-    "_partitionKey": "customer-070"
+    "updatedAt": "2025-10-20T19:07:00Z"
   },
   {
+    "customerKey": 71,
     "id": "customer-071",
     "customerId": "customer-071",
     "name": "Liam Brown",
@@ -2731,10 +2732,10 @@
       }
     ],
     "registeredAt": "2024-05-19T00:00:00Z",
-    "updatedAt": "2025-10-03T15:48:00Z",
-    "_partitionKey": "customer-071"
+    "updatedAt": "2025-10-03T15:48:00Z"
   },
   {
+    "customerKey": 72,
     "id": "customer-072",
     "customerId": "customer-072",
     "name": "Mason Smith",
@@ -2763,10 +2764,10 @@
       }
     ],
     "registeredAt": "2024-08-10T00:00:00Z",
-    "updatedAt": "2025-10-04T12:25:00Z",
-    "_partitionKey": "customer-072"
+    "updatedAt": "2025-10-04T12:25:00Z"
   },
   {
+    "customerKey": 73,
     "id": "customer-073",
     "customerId": "customer-073",
     "name": "Sophia Johnson",
@@ -2809,10 +2810,10 @@
       }
     ],
     "registeredAt": "2025-03-27T00:00:00Z",
-    "updatedAt": "2025-10-17T15:47:00Z",
-    "_partitionKey": "customer-073"
+    "updatedAt": "2025-10-17T15:47:00Z"
   },
   {
+    "customerKey": 74,
     "id": "customer-074",
     "customerId": "customer-074",
     "name": "Olivia Garcia",
@@ -2841,10 +2842,10 @@
       }
     ],
     "registeredAt": "2024-05-21T00:00:00Z",
-    "updatedAt": "2025-10-03T15:02:00Z",
-    "_partitionKey": "customer-074"
+    "updatedAt": "2025-10-03T15:02:00Z"
   },
   {
+    "customerKey": 75,
     "id": "customer-075",
     "customerId": "customer-075",
     "name": "John Smith",
@@ -2880,10 +2881,10 @@
       }
     ],
     "registeredAt": "2024-07-20T00:00:00Z",
-    "updatedAt": "2025-10-21T18:25:00Z",
-    "_partitionKey": "customer-075"
+    "updatedAt": "2025-10-21T18:25:00Z"
   },
   {
+    "customerKey": 76,
     "id": "customer-076",
     "customerId": "customer-076",
     "name": "Lucas Doe",
@@ -2912,10 +2913,10 @@
       }
     ],
     "registeredAt": "2024-08-22T00:00:00Z",
-    "updatedAt": "2025-10-17T08:26:00Z",
-    "_partitionKey": "customer-076"
+    "updatedAt": "2025-10-17T08:26:00Z"
   },
   {
+    "customerKey": 77,
     "id": "customer-077",
     "customerId": "customer-077",
     "name": "Ava Doe",
@@ -2944,10 +2945,10 @@
       }
     ],
     "registeredAt": "2024-04-01T00:00:00Z",
-    "updatedAt": "2025-10-03T10:02:00Z",
-    "_partitionKey": "customer-077"
+    "updatedAt": "2025-10-03T10:02:00Z"
   },
   {
+    "customerKey": 78,
     "id": "customer-078",
     "customerId": "customer-078",
     "name": "John Johnson",
@@ -2983,10 +2984,10 @@
       }
     ],
     "registeredAt": "2024-07-04T00:00:00Z",
-    "updatedAt": "2025-10-02T16:39:00Z",
-    "_partitionKey": "customer-078"
+    "updatedAt": "2025-10-02T16:39:00Z"
   },
   {
+    "customerKey": 79,
     "id": "customer-079",
     "customerId": "customer-079",
     "name": "John Garcia",
@@ -3020,10 +3021,10 @@
       }
     ],
     "registeredAt": "2024-11-21T00:00:00Z",
-    "updatedAt": "2025-10-14T11:04:00Z",
-    "_partitionKey": "customer-079"
+    "updatedAt": "2025-10-14T11:04:00Z"
   },
   {
+    "customerKey": 80,
     "id": "customer-080",
     "customerId": "customer-080",
     "name": "Mason Doe",
@@ -3050,10 +3051,10 @@
       }
     ],
     "registeredAt": "2025-01-18T00:00:00Z",
-    "updatedAt": "2025-10-10T13:49:00Z",
-    "_partitionKey": "customer-080"
+    "updatedAt": "2025-10-10T13:49:00Z"
   },
   {
+    "customerKey": 81,
     "id": "customer-081",
     "customerId": "customer-081",
     "name": "Sophia Miller",
@@ -3089,10 +3090,10 @@
       }
     ],
     "registeredAt": "2024-08-06T00:00:00Z",
-    "updatedAt": "2025-10-14T10:54:00Z",
-    "_partitionKey": "customer-081"
+    "updatedAt": "2025-10-14T10:54:00Z"
   },
   {
+    "customerKey": 82,
     "id": "customer-082",
     "customerId": "customer-082",
     "name": "John Smith",
@@ -3119,10 +3120,10 @@
       }
     ],
     "registeredAt": "2025-02-02T00:00:00Z",
-    "updatedAt": "2025-10-02T11:44:00Z",
-    "_partitionKey": "customer-082"
+    "updatedAt": "2025-10-02T11:44:00Z"
   },
   {
+    "customerKey": 83,
     "id": "customer-083",
     "customerId": "customer-083",
     "name": "Jane Garcia",
@@ -3158,10 +3159,10 @@
       }
     ],
     "registeredAt": "2024-10-16T00:00:00Z",
-    "updatedAt": "2025-10-16T19:33:00Z",
-    "_partitionKey": "customer-083"
+    "updatedAt": "2025-10-16T19:33:00Z"
   },
   {
+    "customerKey": 84,
     "id": "customer-084",
     "customerId": "customer-084",
     "name": "Noah Williams",
@@ -3204,10 +3205,10 @@
       }
     ],
     "registeredAt": "2024-12-14T00:00:00Z",
-    "updatedAt": "2025-10-09T13:04:00Z",
-    "_partitionKey": "customer-084"
+    "updatedAt": "2025-10-09T13:04:00Z"
   },
   {
+    "customerKey": 85,
     "id": "customer-085",
     "customerId": "customer-085",
     "name": "Liam Jones",
@@ -3234,10 +3235,10 @@
       }
     ],
     "registeredAt": "2025-03-13T00:00:00Z",
-    "updatedAt": "2025-10-08T14:12:00Z",
-    "_partitionKey": "customer-085"
+    "updatedAt": "2025-10-08T14:12:00Z"
   },
   {
+    "customerKey": 86,
     "id": "customer-086",
     "customerId": "customer-086",
     "name": "Sophia Williams",
@@ -3273,10 +3274,10 @@
       }
     ],
     "registeredAt": "2025-01-31T00:00:00Z",
-    "updatedAt": "2025-10-12T13:10:00Z",
-    "_partitionKey": "customer-086"
+    "updatedAt": "2025-10-12T13:10:00Z"
   },
   {
+    "customerKey": 87,
     "id": "customer-087",
     "customerId": "customer-087",
     "name": "Emma Doe",
@@ -3312,10 +3313,10 @@
       }
     ],
     "registeredAt": "2024-10-28T00:00:00Z",
-    "updatedAt": "2025-10-13T13:36:00Z",
-    "_partitionKey": "customer-087"
+    "updatedAt": "2025-10-13T13:36:00Z"
   },
   {
+    "customerKey": 88,
     "id": "customer-088",
     "customerId": "customer-088",
     "name": "Sophia Johnson",
@@ -3344,10 +3345,10 @@
       }
     ],
     "registeredAt": "2024-12-18T00:00:00Z",
-    "updatedAt": "2025-10-10T20:54:00Z",
-    "_partitionKey": "customer-088"
+    "updatedAt": "2025-10-10T20:54:00Z"
   },
   {
+    "customerKey": 89,
     "id": "customer-089",
     "customerId": "customer-089",
     "name": "Mason Garcia",
@@ -3390,10 +3391,10 @@
       }
     ],
     "registeredAt": "2024-12-15T00:00:00Z",
-    "updatedAt": "2025-10-05T13:37:00Z",
-    "_partitionKey": "customer-089"
+    "updatedAt": "2025-10-05T13:37:00Z"
   },
   {
+    "customerKey": 90,
     "id": "customer-090",
     "customerId": "customer-090",
     "name": "Liam Doe",
@@ -3429,10 +3430,10 @@
       }
     ],
     "registeredAt": "2024-11-10T00:00:00Z",
-    "updatedAt": "2025-10-09T11:37:00Z",
-    "_partitionKey": "customer-090"
+    "updatedAt": "2025-10-09T11:37:00Z"
   },
   {
+    "customerKey": 91,
     "id": "customer-091",
     "customerId": "customer-091",
     "name": "Liam Jones",
@@ -3468,10 +3469,10 @@
       }
     ],
     "registeredAt": "2025-03-12T00:00:00Z",
-    "updatedAt": "2025-10-09T10:13:00Z",
-    "_partitionKey": "customer-091"
+    "updatedAt": "2025-10-09T10:13:00Z"
   },
   {
+    "customerKey": 92,
     "id": "customer-092",
     "customerId": "customer-092",
     "name": "Jane Smith",
@@ -3500,10 +3501,10 @@
       }
     ],
     "registeredAt": "2024-07-01T00:00:00Z",
-    "updatedAt": "2025-10-13T14:23:00Z",
-    "_partitionKey": "customer-092"
+    "updatedAt": "2025-10-13T14:23:00Z"
   },
   {
+    "customerKey": 93,
     "id": "customer-093",
     "customerId": "customer-093",
     "name": "Emma Smith",
@@ -3539,10 +3540,10 @@
       }
     ],
     "registeredAt": "2024-04-21T00:00:00Z",
-    "updatedAt": "2025-10-15T09:13:00Z",
-    "_partitionKey": "customer-093"
+    "updatedAt": "2025-10-15T09:13:00Z"
   },
   {
+    "customerKey": 94,
     "id": "customer-094",
     "customerId": "customer-094",
     "name": "Noah Williams",
@@ -3571,10 +3572,10 @@
       }
     ],
     "registeredAt": "2024-08-11T00:00:00Z",
-    "updatedAt": "2025-10-10T16:04:00Z",
-    "_partitionKey": "customer-094"
+    "updatedAt": "2025-10-10T16:04:00Z"
   },
   {
+    "customerKey": 95,
     "id": "customer-095",
     "customerId": "customer-095",
     "name": "Mason Williams",
@@ -3617,10 +3618,10 @@
       }
     ],
     "registeredAt": "2024-07-20T00:00:00Z",
-    "updatedAt": "2025-10-12T20:39:00Z",
-    "_partitionKey": "customer-095"
+    "updatedAt": "2025-10-12T20:39:00Z"
   },
   {
+    "customerKey": 96,
     "id": "customer-096",
     "customerId": "customer-096",
     "name": "Noah Brown",
@@ -3663,10 +3664,10 @@
       }
     ],
     "registeredAt": "2024-07-04T00:00:00Z",
-    "updatedAt": "2025-10-18T18:02:00Z",
-    "_partitionKey": "customer-096"
+    "updatedAt": "2025-10-18T18:02:00Z"
   },
   {
+    "customerKey": 97,
     "id": "customer-097",
     "customerId": "customer-097",
     "name": "Jane Jones",
@@ -3702,10 +3703,10 @@
       }
     ],
     "registeredAt": "2024-11-16T00:00:00Z",
-    "updatedAt": "2025-10-14T11:56:00Z",
-    "_partitionKey": "customer-097"
+    "updatedAt": "2025-10-14T11:56:00Z"
   },
   {
+    "customerKey": 98,
     "id": "customer-098",
     "customerId": "customer-098",
     "name": "Emma Johnson",
@@ -3741,10 +3742,10 @@
       }
     ],
     "registeredAt": "2024-04-26T00:00:00Z",
-    "updatedAt": "2025-10-19T18:15:00Z",
-    "_partitionKey": "customer-098"
+    "updatedAt": "2025-10-19T18:15:00Z"
   },
   {
+    "customerKey": 99,
     "id": "customer-099",
     "customerId": "customer-099",
     "name": "Emma Johnson",
@@ -3773,10 +3774,10 @@
       }
     ],
     "registeredAt": "2024-11-02T00:00:00Z",
-    "updatedAt": "2025-10-06T19:36:00Z",
-    "_partitionKey": "customer-099"
+    "updatedAt": "2025-10-06T19:36:00Z"
   },
   {
+    "customerKey": 100,
     "id": "customer-100",
     "customerId": "customer-100",
     "name": "Noah Johnson",
@@ -3803,10 +3804,10 @@
       }
     ],
     "registeredAt": "2024-05-01T00:00:00Z",
-    "updatedAt": "2025-10-03T20:41:00Z",
-    "_partitionKey": "customer-100"
+    "updatedAt": "2025-10-03T20:41:00Z"
   },
   {
+    "customerKey": 101,
     "id": "customer-101",
     "customerId": "customer-101",
     "name": "John Doe",
@@ -3842,10 +3843,10 @@
       }
     ],
     "registeredAt": "2025-03-22T00:00:00Z",
-    "updatedAt": "2025-10-17T13:21:00Z",
-    "_partitionKey": "customer-101"
+    "updatedAt": "2025-10-17T13:21:00Z"
   },
   {
+    "customerKey": 102,
     "id": "customer-102",
     "customerId": "customer-102",
     "name": "Mason Brown",
@@ -3874,10 +3875,10 @@
       }
     ],
     "registeredAt": "2024-05-11T00:00:00Z",
-    "updatedAt": "2025-10-19T09:53:00Z",
-    "_partitionKey": "customer-102"
+    "updatedAt": "2025-10-19T09:53:00Z"
   },
   {
+    "customerKey": 103,
     "id": "customer-103",
     "customerId": "customer-103",
     "name": "Liam Garcia",
@@ -3913,10 +3914,10 @@
       }
     ],
     "registeredAt": "2025-03-02T00:00:00Z",
-    "updatedAt": "2025-10-02T14:52:00Z",
-    "_partitionKey": "customer-103"
+    "updatedAt": "2025-10-02T14:52:00Z"
   },
   {
+    "customerKey": 104,
     "id": "customer-104",
     "customerId": "customer-104",
     "name": "Noah Garcia",
@@ -3959,10 +3960,10 @@
       }
     ],
     "registeredAt": "2025-02-21T00:00:00Z",
-    "updatedAt": "2025-10-04T08:38:00Z",
-    "_partitionKey": "customer-104"
+    "updatedAt": "2025-10-04T08:38:00Z"
   },
   {
+    "customerKey": 105,
     "id": "customer-105",
     "customerId": "customer-105",
     "name": "Ava Miller",
@@ -4003,10 +4004,10 @@
       }
     ],
     "registeredAt": "2024-09-27T00:00:00Z",
-    "updatedAt": "2025-10-19T13:28:00Z",
-    "_partitionKey": "customer-105"
+    "updatedAt": "2025-10-19T13:28:00Z"
   },
   {
+    "customerKey": 106,
     "id": "customer-106",
     "customerId": "customer-106",
     "name": "Liam Williams",
@@ -4042,10 +4043,10 @@
       }
     ],
     "registeredAt": "2024-11-22T00:00:00Z",
-    "updatedAt": "2025-10-21T15:33:00Z",
-    "_partitionKey": "customer-106"
+    "updatedAt": "2025-10-21T15:33:00Z"
   },
   {
+    "customerKey": 107,
     "id": "customer-107",
     "customerId": "customer-107",
     "name": "Emma Smith",
@@ -4074,10 +4075,10 @@
       }
     ],
     "registeredAt": "2024-11-01T00:00:00Z",
-    "updatedAt": "2025-10-17T15:55:00Z",
-    "_partitionKey": "customer-107"
+    "updatedAt": "2025-10-17T15:55:00Z"
   },
   {
+    "customerKey": 108,
     "id": "customer-108",
     "customerId": "customer-108",
     "name": "John Johnson",
@@ -4120,10 +4121,10 @@
       }
     ],
     "registeredAt": "2025-01-09T00:00:00Z",
-    "updatedAt": "2025-10-16T17:47:00Z",
-    "_partitionKey": "customer-108"
+    "updatedAt": "2025-10-16T17:47:00Z"
   },
   {
+    "customerKey": 109,
     "id": "customer-109",
     "customerId": "customer-109",
     "name": "Sophia Jones",
@@ -4159,10 +4160,10 @@
       }
     ],
     "registeredAt": "2024-03-15T00:00:00Z",
-    "updatedAt": "2025-10-19T20:48:00Z",
-    "_partitionKey": "customer-109"
+    "updatedAt": "2025-10-19T20:48:00Z"
   },
   {
+    "customerKey": 110,
     "id": "customer-110",
     "customerId": "customer-110",
     "name": "John Brown",
@@ -4205,10 +4206,10 @@
       }
     ],
     "registeredAt": "2024-06-24T00:00:00Z",
-    "updatedAt": "2025-10-12T16:18:00Z",
-    "_partitionKey": "customer-110"
+    "updatedAt": "2025-10-12T16:18:00Z"
   },
   {
+    "customerKey": 111,
     "id": "customer-111",
     "customerId": "customer-111",
     "name": "Emma Williams",
@@ -4242,10 +4243,10 @@
       }
     ],
     "registeredAt": "2025-03-20T00:00:00Z",
-    "updatedAt": "2025-10-17T15:00:00Z",
-    "_partitionKey": "customer-111"
+    "updatedAt": "2025-10-17T15:00:00Z"
   },
   {
+    "customerKey": 112,
     "id": "customer-112",
     "customerId": "customer-112",
     "name": "Noah Jones",
@@ -4281,10 +4282,10 @@
       }
     ],
     "registeredAt": "2024-04-06T00:00:00Z",
-    "updatedAt": "2025-10-05T10:43:00Z",
-    "_partitionKey": "customer-112"
+    "updatedAt": "2025-10-05T10:43:00Z"
   },
   {
+    "customerKey": 113,
     "id": "customer-113",
     "customerId": "customer-113",
     "name": "Mason Jones",
@@ -4320,10 +4321,10 @@
       }
     ],
     "registeredAt": "2024-07-11T00:00:00Z",
-    "updatedAt": "2025-10-01T20:57:00Z",
-    "_partitionKey": "customer-113"
+    "updatedAt": "2025-10-01T20:57:00Z"
   },
   {
+    "customerKey": 114,
     "id": "customer-114",
     "customerId": "customer-114",
     "name": "Liam Williams",
@@ -4364,10 +4365,10 @@
       }
     ],
     "registeredAt": "2024-11-06T00:00:00Z",
-    "updatedAt": "2025-10-21T11:21:00Z",
-    "_partitionKey": "customer-114"
+    "updatedAt": "2025-10-21T11:21:00Z"
   },
   {
+    "customerKey": 115,
     "id": "customer-115",
     "customerId": "customer-115",
     "name": "Jane Doe",
@@ -4410,10 +4411,10 @@
       }
     ],
     "registeredAt": "2024-04-10T00:00:00Z",
-    "updatedAt": "2025-10-15T19:44:00Z",
-    "_partitionKey": "customer-115"
+    "updatedAt": "2025-10-15T19:44:00Z"
   },
   {
+    "customerKey": 116,
     "id": "customer-116",
     "customerId": "customer-116",
     "name": "Lucas Doe",
@@ -4442,10 +4443,10 @@
       }
     ],
     "registeredAt": "2024-05-22T00:00:00Z",
-    "updatedAt": "2025-10-02T16:57:00Z",
-    "_partitionKey": "customer-116"
+    "updatedAt": "2025-10-02T16:57:00Z"
   },
   {
+    "customerKey": 117,
     "id": "customer-117",
     "customerId": "customer-117",
     "name": "Mason Miller",
@@ -4474,10 +4475,10 @@
       }
     ],
     "registeredAt": "2024-04-15T00:00:00Z",
-    "updatedAt": "2025-10-15T15:07:00Z",
-    "_partitionKey": "customer-117"
+    "updatedAt": "2025-10-15T15:07:00Z"
   },
   {
+    "customerKey": 118,
     "id": "customer-118",
     "customerId": "customer-118",
     "name": "Emma Doe",
@@ -4506,10 +4507,10 @@
       }
     ],
     "registeredAt": "2024-09-02T00:00:00Z",
-    "updatedAt": "2025-10-13T10:06:00Z",
-    "_partitionKey": "customer-118"
+    "updatedAt": "2025-10-13T10:06:00Z"
   },
   {
+    "customerKey": 119,
     "id": "customer-119",
     "customerId": "customer-119",
     "name": "Liam Doe",
@@ -4538,10 +4539,10 @@
       }
     ],
     "registeredAt": "2024-12-31T00:00:00Z",
-    "updatedAt": "2025-10-15T14:53:00Z",
-    "_partitionKey": "customer-119"
+    "updatedAt": "2025-10-15T14:53:00Z"
   },
   {
+    "customerKey": 120,
     "id": "customer-120",
     "customerId": "customer-120",
     "name": "Sophia Doe",
@@ -4570,10 +4571,10 @@
       }
     ],
     "registeredAt": "2024-12-08T00:00:00Z",
-    "updatedAt": "2025-10-15T13:43:00Z",
-    "_partitionKey": "customer-120"
+    "updatedAt": "2025-10-15T13:43:00Z"
   },
   {
+    "customerKey": 121,
     "id": "customer-121",
     "customerId": "customer-121",
     "name": "Olivia Garcia",
@@ -4609,10 +4610,10 @@
       }
     ],
     "registeredAt": "2024-08-30T00:00:00Z",
-    "updatedAt": "2025-10-15T18:54:00Z",
-    "_partitionKey": "customer-121"
+    "updatedAt": "2025-10-15T18:54:00Z"
   },
   {
+    "customerKey": 122,
     "id": "customer-122",
     "customerId": "customer-122",
     "name": "Ava Doe",
@@ -4655,10 +4656,10 @@
       }
     ],
     "registeredAt": "2024-10-24T00:00:00Z",
-    "updatedAt": "2025-10-21T10:06:00Z",
-    "_partitionKey": "customer-122"
+    "updatedAt": "2025-10-21T10:06:00Z"
   },
   {
+    "customerKey": 123,
     "id": "customer-123",
     "customerId": "customer-123",
     "name": "Ava Williams",
@@ -4694,10 +4695,10 @@
       }
     ],
     "registeredAt": "2025-01-15T00:00:00Z",
-    "updatedAt": "2025-10-17T08:25:00Z",
-    "_partitionKey": "customer-123"
+    "updatedAt": "2025-10-17T08:25:00Z"
   },
   {
+    "customerKey": 124,
     "id": "customer-124",
     "customerId": "customer-124",
     "name": "Jane Miller",
@@ -4726,10 +4727,10 @@
       }
     ],
     "registeredAt": "2024-12-12T00:00:00Z",
-    "updatedAt": "2025-10-11T20:25:00Z",
-    "_partitionKey": "customer-124"
+    "updatedAt": "2025-10-11T20:25:00Z"
   },
   {
+    "customerKey": 125,
     "id": "customer-125",
     "customerId": "customer-125",
     "name": "John Johnson",
@@ -4758,10 +4759,10 @@
       }
     ],
     "registeredAt": "2024-04-09T00:00:00Z",
-    "updatedAt": "2025-10-20T14:31:00Z",
-    "_partitionKey": "customer-125"
+    "updatedAt": "2025-10-20T14:31:00Z"
   },
   {
+    "customerKey": 126,
     "id": "customer-126",
     "customerId": "customer-126",
     "name": "Olivia Williams",
@@ -4795,10 +4796,10 @@
       }
     ],
     "registeredAt": "2024-11-20T00:00:00Z",
-    "updatedAt": "2025-10-16T20:33:00Z",
-    "_partitionKey": "customer-126"
+    "updatedAt": "2025-10-16T20:33:00Z"
   },
   {
+    "customerKey": 127,
     "id": "customer-127",
     "customerId": "customer-127",
     "name": "Liam Doe",
@@ -4841,10 +4842,10 @@
       }
     ],
     "registeredAt": "2025-04-11T00:00:00Z",
-    "updatedAt": "2025-10-18T12:25:00Z",
-    "_partitionKey": "customer-127"
+    "updatedAt": "2025-10-18T12:25:00Z"
   },
   {
+    "customerKey": 128,
     "id": "customer-128",
     "customerId": "customer-128",
     "name": "Ava Doe",
@@ -4880,10 +4881,10 @@
       }
     ],
     "registeredAt": "2024-10-05T00:00:00Z",
-    "updatedAt": "2025-10-20T11:47:00Z",
-    "_partitionKey": "customer-128"
+    "updatedAt": "2025-10-20T11:47:00Z"
   },
   {
+    "customerKey": 129,
     "id": "customer-129",
     "customerId": "customer-129",
     "name": "Mason Doe",
@@ -4917,10 +4918,10 @@
       }
     ],
     "registeredAt": "2025-03-12T00:00:00Z",
-    "updatedAt": "2025-10-21T12:15:00Z",
-    "_partitionKey": "customer-129"
+    "updatedAt": "2025-10-21T12:15:00Z"
   },
   {
+    "customerKey": 130,
     "id": "customer-130",
     "customerId": "customer-130",
     "name": "John Doe",
@@ -4947,10 +4948,10 @@
       }
     ],
     "registeredAt": "2024-11-30T00:00:00Z",
-    "updatedAt": "2025-10-08T15:35:00Z",
-    "_partitionKey": "customer-130"
+    "updatedAt": "2025-10-08T15:35:00Z"
   },
   {
+    "customerKey": 131,
     "id": "customer-131",
     "customerId": "customer-131",
     "name": "Lucas Garcia",
@@ -4979,10 +4980,10 @@
       }
     ],
     "registeredAt": "2024-07-01T00:00:00Z",
-    "updatedAt": "2025-10-20T16:50:00Z",
-    "_partitionKey": "customer-131"
+    "updatedAt": "2025-10-20T16:50:00Z"
   },
   {
+    "customerKey": 132,
     "id": "customer-132",
     "customerId": "customer-132",
     "name": "Sophia Williams",
@@ -5023,10 +5024,10 @@
       }
     ],
     "registeredAt": "2025-03-02T00:00:00Z",
-    "updatedAt": "2025-10-10T17:04:00Z",
-    "_partitionKey": "customer-132"
+    "updatedAt": "2025-10-10T17:04:00Z"
   },
   {
+    "customerKey": 133,
     "id": "customer-133",
     "customerId": "customer-133",
     "name": "Jane Brown",
@@ -5067,10 +5068,10 @@
       }
     ],
     "registeredAt": "2024-12-15T00:00:00Z",
-    "updatedAt": "2025-10-07T10:20:00Z",
-    "_partitionKey": "customer-133"
+    "updatedAt": "2025-10-07T10:20:00Z"
   },
   {
+    "customerKey": 134,
     "id": "customer-134",
     "customerId": "customer-134",
     "name": "Lucas Brown",
@@ -5106,10 +5107,10 @@
       }
     ],
     "registeredAt": "2025-03-25T00:00:00Z",
-    "updatedAt": "2025-10-08T14:59:00Z",
-    "_partitionKey": "customer-134"
+    "updatedAt": "2025-10-08T14:59:00Z"
   },
   {
+    "customerKey": 135,
     "id": "customer-135",
     "customerId": "customer-135",
     "name": "Ava Garcia",
@@ -5138,10 +5139,10 @@
       }
     ],
     "registeredAt": "2024-11-24T00:00:00Z",
-    "updatedAt": "2025-10-15T20:37:00Z",
-    "_partitionKey": "customer-135"
+    "updatedAt": "2025-10-15T20:37:00Z"
   },
   {
+    "customerKey": 136,
     "id": "customer-136",
     "customerId": "customer-136",
     "name": "Lucas Smith",
@@ -5170,10 +5171,10 @@
       }
     ],
     "registeredAt": "2024-08-22T00:00:00Z",
-    "updatedAt": "2025-10-14T18:59:00Z",
-    "_partitionKey": "customer-136"
+    "updatedAt": "2025-10-14T18:59:00Z"
   },
   {
+    "customerKey": 137,
     "id": "customer-137",
     "customerId": "customer-137",
     "name": "Olivia Johnson",
@@ -5216,10 +5217,10 @@
       }
     ],
     "registeredAt": "2024-09-28T00:00:00Z",
-    "updatedAt": "2025-10-17T13:32:00Z",
-    "_partitionKey": "customer-137"
+    "updatedAt": "2025-10-17T13:32:00Z"
   },
   {
+    "customerKey": 138,
     "id": "customer-138",
     "customerId": "customer-138",
     "name": "Liam Doe",
@@ -5255,10 +5256,10 @@
       }
     ],
     "registeredAt": "2024-10-12T00:00:00Z",
-    "updatedAt": "2025-10-07T18:45:00Z",
-    "_partitionKey": "customer-138"
+    "updatedAt": "2025-10-07T18:45:00Z"
   },
   {
+    "customerKey": 139,
     "id": "customer-139",
     "customerId": "customer-139",
     "name": "Sophia Johnson",
@@ -5301,10 +5302,10 @@
       }
     ],
     "registeredAt": "2024-03-16T00:00:00Z",
-    "updatedAt": "2025-10-08T18:41:00Z",
-    "_partitionKey": "customer-139"
+    "updatedAt": "2025-10-08T18:41:00Z"
   },
   {
+    "customerKey": 140,
     "id": "customer-140",
     "customerId": "customer-140",
     "name": "Olivia Miller",
@@ -5333,10 +5334,10 @@
       }
     ],
     "registeredAt": "2025-01-20T00:00:00Z",
-    "updatedAt": "2025-10-04T19:38:00Z",
-    "_partitionKey": "customer-140"
+    "updatedAt": "2025-10-04T19:38:00Z"
   },
   {
+    "customerKey": 141,
     "id": "customer-141",
     "customerId": "customer-141",
     "name": "Sophia Brown",
@@ -5363,10 +5364,10 @@
       }
     ],
     "registeredAt": "2024-11-21T00:00:00Z",
-    "updatedAt": "2025-10-18T12:41:00Z",
-    "_partitionKey": "customer-141"
+    "updatedAt": "2025-10-18T12:41:00Z"
   },
   {
+    "customerKey": 142,
     "id": "customer-142",
     "customerId": "customer-142",
     "name": "Emma Garcia",
@@ -5395,10 +5396,10 @@
       }
     ],
     "registeredAt": "2024-08-01T00:00:00Z",
-    "updatedAt": "2025-10-09T18:39:00Z",
-    "_partitionKey": "customer-142"
+    "updatedAt": "2025-10-09T18:39:00Z"
   },
   {
+    "customerKey": 143,
     "id": "customer-143",
     "customerId": "customer-143",
     "name": "Noah Brown",
@@ -5427,10 +5428,10 @@
       }
     ],
     "registeredAt": "2025-03-12T00:00:00Z",
-    "updatedAt": "2025-10-16T19:17:00Z",
-    "_partitionKey": "customer-143"
+    "updatedAt": "2025-10-16T19:17:00Z"
   },
   {
+    "customerKey": 144,
     "id": "customer-144",
     "customerId": "customer-144",
     "name": "Jane Brown",
@@ -5459,10 +5460,10 @@
       }
     ],
     "registeredAt": "2024-04-16T00:00:00Z",
-    "updatedAt": "2025-10-13T20:35:00Z",
-    "_partitionKey": "customer-144"
+    "updatedAt": "2025-10-13T20:35:00Z"
   },
   {
+    "customerKey": 145,
     "id": "customer-145",
     "customerId": "customer-145",
     "name": "Mason Williams",
@@ -5498,10 +5499,10 @@
       }
     ],
     "registeredAt": "2024-09-24T00:00:00Z",
-    "updatedAt": "2025-10-07T11:07:00Z",
-    "_partitionKey": "customer-145"
+    "updatedAt": "2025-10-07T11:07:00Z"
   },
   {
+    "customerKey": 146,
     "id": "customer-146",
     "customerId": "customer-146",
     "name": "Noah Miller",
@@ -5530,10 +5531,10 @@
       }
     ],
     "registeredAt": "2024-03-17T00:00:00Z",
-    "updatedAt": "2025-10-08T16:45:00Z",
-    "_partitionKey": "customer-146"
+    "updatedAt": "2025-10-08T16:45:00Z"
   },
   {
+    "customerKey": 147,
     "id": "customer-147",
     "customerId": "customer-147",
     "name": "Liam Doe",
@@ -5569,10 +5570,10 @@
       }
     ],
     "registeredAt": "2025-01-23T00:00:00Z",
-    "updatedAt": "2025-10-12T19:10:00Z",
-    "_partitionKey": "customer-147"
+    "updatedAt": "2025-10-12T19:10:00Z"
   },
   {
+    "customerKey": 148,
     "id": "customer-148",
     "customerId": "customer-148",
     "name": "Ava Jones",
@@ -5606,10 +5607,10 @@
       }
     ],
     "registeredAt": "2024-11-29T00:00:00Z",
-    "updatedAt": "2025-10-11T10:21:00Z",
-    "_partitionKey": "customer-148"
+    "updatedAt": "2025-10-11T10:21:00Z"
   },
   {
+    "customerKey": 149,
     "id": "customer-149",
     "customerId": "customer-149",
     "name": "Emma Johnson",
@@ -5638,10 +5639,10 @@
       }
     ],
     "registeredAt": "2024-03-26T00:00:00Z",
-    "updatedAt": "2025-10-21T12:13:00Z",
-    "_partitionKey": "customer-149"
+    "updatedAt": "2025-10-21T12:13:00Z"
   },
   {
+    "customerKey": 150,
     "id": "customer-150",
     "customerId": "customer-150",
     "name": "Mason Doe",
@@ -5677,10 +5678,10 @@
       }
     ],
     "registeredAt": "2024-12-12T00:00:00Z",
-    "updatedAt": "2025-10-01T11:58:00Z",
-    "_partitionKey": "customer-150"
+    "updatedAt": "2025-10-01T11:58:00Z"
   },
   {
+    "customerKey": 151,
     "id": "customer-151",
     "customerId": "customer-151",
     "name": "Jane Jones",
@@ -5716,10 +5717,10 @@
       }
     ],
     "registeredAt": "2024-06-18T00:00:00Z",
-    "updatedAt": "2025-10-03T09:57:00Z",
-    "_partitionKey": "customer-151"
+    "updatedAt": "2025-10-03T09:57:00Z"
   },
   {
+    "customerKey": 152,
     "id": "customer-152",
     "customerId": "customer-152",
     "name": "John Williams",
@@ -5755,10 +5756,10 @@
       }
     ],
     "registeredAt": "2024-06-02T00:00:00Z",
-    "updatedAt": "2025-10-19T11:41:00Z",
-    "_partitionKey": "customer-152"
+    "updatedAt": "2025-10-19T11:41:00Z"
   },
   {
+    "customerKey": 153,
     "id": "customer-153",
     "customerId": "customer-153",
     "name": "Emma Brown",
@@ -5794,10 +5795,10 @@
       }
     ],
     "registeredAt": "2024-12-13T00:00:00Z",
-    "updatedAt": "2025-10-05T10:09:00Z",
-    "_partitionKey": "customer-153"
+    "updatedAt": "2025-10-05T10:09:00Z"
   },
   {
+    "customerKey": 154,
     "id": "customer-154",
     "customerId": "customer-154",
     "name": "Mason Williams",
@@ -5833,10 +5834,10 @@
       }
     ],
     "registeredAt": "2025-02-08T00:00:00Z",
-    "updatedAt": "2025-10-12T12:59:00Z",
-    "_partitionKey": "customer-154"
+    "updatedAt": "2025-10-12T12:59:00Z"
   },
   {
+    "customerKey": 155,
     "id": "customer-155",
     "customerId": "customer-155",
     "name": "Lucas Miller",
@@ -5870,10 +5871,10 @@
       }
     ],
     "registeredAt": "2024-11-07T00:00:00Z",
-    "updatedAt": "2025-10-21T16:23:00Z",
-    "_partitionKey": "customer-155"
+    "updatedAt": "2025-10-21T16:23:00Z"
   },
   {
+    "customerKey": 156,
     "id": "customer-156",
     "customerId": "customer-156",
     "name": "Lucas Garcia",
@@ -5909,10 +5910,10 @@
       }
     ],
     "registeredAt": "2024-11-12T00:00:00Z",
-    "updatedAt": "2025-10-05T14:37:00Z",
-    "_partitionKey": "customer-156"
+    "updatedAt": "2025-10-05T14:37:00Z"
   },
   {
+    "customerKey": 157,
     "id": "customer-157",
     "customerId": "customer-157",
     "name": "Ava Miller",
@@ -5955,10 +5956,10 @@
       }
     ],
     "registeredAt": "2025-01-08T00:00:00Z",
-    "updatedAt": "2025-10-13T17:13:00Z",
-    "_partitionKey": "customer-157"
+    "updatedAt": "2025-10-13T17:13:00Z"
   },
   {
+    "customerKey": 158,
     "id": "customer-158",
     "customerId": "customer-158",
     "name": "Ava Johnson",
@@ -5987,10 +5988,10 @@
       }
     ],
     "registeredAt": "2024-11-01T00:00:00Z",
-    "updatedAt": "2025-10-18T08:35:00Z",
-    "_partitionKey": "customer-158"
+    "updatedAt": "2025-10-18T08:35:00Z"
   },
   {
+    "customerKey": 159,
     "id": "customer-159",
     "customerId": "customer-159",
     "name": "Olivia Williams",
@@ -6026,10 +6027,10 @@
       }
     ],
     "registeredAt": "2025-01-12T00:00:00Z",
-    "updatedAt": "2025-10-13T10:07:00Z",
-    "_partitionKey": "customer-159"
+    "updatedAt": "2025-10-13T10:07:00Z"
   },
   {
+    "customerKey": 160,
     "id": "customer-160",
     "customerId": "customer-160",
     "name": "Liam Williams",
@@ -6058,10 +6059,10 @@
       }
     ],
     "registeredAt": "2024-06-17T00:00:00Z",
-    "updatedAt": "2025-10-03T09:41:00Z",
-    "_partitionKey": "customer-160"
+    "updatedAt": "2025-10-03T09:41:00Z"
   },
   {
+    "customerKey": 161,
     "id": "customer-161",
     "customerId": "customer-161",
     "name": "Olivia Jones",
@@ -6104,10 +6105,10 @@
       }
     ],
     "registeredAt": "2024-11-14T00:00:00Z",
-    "updatedAt": "2025-10-08T11:03:00Z",
-    "_partitionKey": "customer-161"
+    "updatedAt": "2025-10-08T11:03:00Z"
   },
   {
+    "customerKey": 162,
     "id": "customer-162",
     "customerId": "customer-162",
     "name": "John Miller",
@@ -6143,10 +6144,10 @@
       }
     ],
     "registeredAt": "2025-04-04T00:00:00Z",
-    "updatedAt": "2025-10-18T14:20:00Z",
-    "_partitionKey": "customer-162"
+    "updatedAt": "2025-10-18T14:20:00Z"
   },
   {
+    "customerKey": 163,
     "id": "customer-163",
     "customerId": "customer-163",
     "name": "Mason Brown",
@@ -6187,10 +6188,10 @@
       }
     ],
     "registeredAt": "2024-09-06T00:00:00Z",
-    "updatedAt": "2025-10-05T14:07:00Z",
-    "_partitionKey": "customer-163"
+    "updatedAt": "2025-10-05T14:07:00Z"
   },
   {
+    "customerKey": 164,
     "id": "customer-164",
     "customerId": "customer-164",
     "name": "Olivia Brown",
@@ -6233,10 +6234,10 @@
       }
     ],
     "registeredAt": "2025-03-11T00:00:00Z",
-    "updatedAt": "2025-10-19T13:08:00Z",
-    "_partitionKey": "customer-164"
+    "updatedAt": "2025-10-19T13:08:00Z"
   },
   {
+    "customerKey": 165,
     "id": "customer-165",
     "customerId": "customer-165",
     "name": "Sophia Garcia",
@@ -6272,10 +6273,10 @@
       }
     ],
     "registeredAt": "2024-11-06T00:00:00Z",
-    "updatedAt": "2025-10-17T20:13:00Z",
-    "_partitionKey": "customer-165"
+    "updatedAt": "2025-10-17T20:13:00Z"
   },
   {
+    "customerKey": 166,
     "id": "customer-166",
     "customerId": "customer-166",
     "name": "Sophia Williams",
@@ -6311,10 +6312,10 @@
       }
     ],
     "registeredAt": "2024-10-13T00:00:00Z",
-    "updatedAt": "2025-10-21T16:26:00Z",
-    "_partitionKey": "customer-166"
+    "updatedAt": "2025-10-21T16:26:00Z"
   },
   {
+    "customerKey": 167,
     "id": "customer-167",
     "customerId": "customer-167",
     "name": "Jane Jones",
@@ -6357,10 +6358,10 @@
       }
     ],
     "registeredAt": "2024-11-03T00:00:00Z",
-    "updatedAt": "2025-10-15T14:02:00Z",
-    "_partitionKey": "customer-167"
+    "updatedAt": "2025-10-15T14:02:00Z"
   },
   {
+    "customerKey": 168,
     "id": "customer-168",
     "customerId": "customer-168",
     "name": "Olivia Doe",
@@ -6403,10 +6404,10 @@
       }
     ],
     "registeredAt": "2024-08-21T00:00:00Z",
-    "updatedAt": "2025-10-18T11:21:00Z",
-    "_partitionKey": "customer-168"
+    "updatedAt": "2025-10-18T11:21:00Z"
   },
   {
+    "customerKey": 169,
     "id": "customer-169",
     "customerId": "customer-169",
     "name": "Jane Doe",
@@ -6442,10 +6443,10 @@
       }
     ],
     "registeredAt": "2024-08-31T00:00:00Z",
-    "updatedAt": "2025-10-02T17:31:00Z",
-    "_partitionKey": "customer-169"
+    "updatedAt": "2025-10-02T17:31:00Z"
   },
   {
+    "customerKey": 170,
     "id": "customer-170",
     "customerId": "customer-170",
     "name": "Mason Garcia",
@@ -6474,10 +6475,10 @@
       }
     ],
     "registeredAt": "2025-03-28T00:00:00Z",
-    "updatedAt": "2025-10-14T11:49:00Z",
-    "_partitionKey": "customer-170"
+    "updatedAt": "2025-10-14T11:49:00Z"
   },
   {
+    "customerKey": 171,
     "id": "customer-171",
     "customerId": "customer-171",
     "name": "Noah Miller",
@@ -6506,10 +6507,10 @@
       }
     ],
     "registeredAt": "2024-10-26T00:00:00Z",
-    "updatedAt": "2025-10-13T14:32:00Z",
-    "_partitionKey": "customer-171"
+    "updatedAt": "2025-10-13T14:32:00Z"
   },
   {
+    "customerKey": 172,
     "id": "customer-172",
     "customerId": "customer-172",
     "name": "Liam Miller",
@@ -6543,10 +6544,10 @@
       }
     ],
     "registeredAt": "2025-03-12T00:00:00Z",
-    "updatedAt": "2025-10-20T20:33:00Z",
-    "_partitionKey": "customer-172"
+    "updatedAt": "2025-10-20T20:33:00Z"
   },
   {
+    "customerKey": 173,
     "id": "customer-173",
     "customerId": "customer-173",
     "name": "John Johnson",
@@ -6582,10 +6583,10 @@
       }
     ],
     "registeredAt": "2024-07-22T00:00:00Z",
-    "updatedAt": "2025-10-09T15:42:00Z",
-    "_partitionKey": "customer-173"
+    "updatedAt": "2025-10-09T15:42:00Z"
   },
   {
+    "customerKey": 174,
     "id": "customer-174",
     "customerId": "customer-174",
     "name": "Emma Garcia",
@@ -6614,10 +6615,10 @@
       }
     ],
     "registeredAt": "2025-02-06T00:00:00Z",
-    "updatedAt": "2025-10-20T19:58:00Z",
-    "_partitionKey": "customer-174"
+    "updatedAt": "2025-10-20T19:58:00Z"
   },
   {
+    "customerKey": 175,
     "id": "customer-175",
     "customerId": "customer-175",
     "name": "Liam Johnson",
@@ -6646,10 +6647,10 @@
       }
     ],
     "registeredAt": "2024-03-30T00:00:00Z",
-    "updatedAt": "2025-10-15T12:36:00Z",
-    "_partitionKey": "customer-175"
+    "updatedAt": "2025-10-15T12:36:00Z"
   },
   {
+    "customerKey": 176,
     "id": "customer-176",
     "customerId": "customer-176",
     "name": "Noah Johnson",
@@ -6678,10 +6679,10 @@
       }
     ],
     "registeredAt": "2025-03-07T00:00:00Z",
-    "updatedAt": "2025-10-20T08:51:00Z",
-    "_partitionKey": "customer-176"
+    "updatedAt": "2025-10-20T08:51:00Z"
   },
   {
+    "customerKey": 177,
     "id": "customer-177",
     "customerId": "customer-177",
     "name": "Ava Jones",
@@ -6724,10 +6725,10 @@
       }
     ],
     "registeredAt": "2024-04-28T00:00:00Z",
-    "updatedAt": "2025-10-04T14:04:00Z",
-    "_partitionKey": "customer-177"
+    "updatedAt": "2025-10-04T14:04:00Z"
   },
   {
+    "customerKey": 178,
     "id": "customer-178",
     "customerId": "customer-178",
     "name": "Lucas Jones",
@@ -6763,10 +6764,10 @@
       }
     ],
     "registeredAt": "2024-05-21T00:00:00Z",
-    "updatedAt": "2025-10-10T18:29:00Z",
-    "_partitionKey": "customer-178"
+    "updatedAt": "2025-10-10T18:29:00Z"
   },
   {
+    "customerKey": 179,
     "id": "customer-179",
     "customerId": "customer-179",
     "name": "Mason Brown",
@@ -6802,10 +6803,10 @@
       }
     ],
     "registeredAt": "2024-05-25T00:00:00Z",
-    "updatedAt": "2025-10-16T20:18:00Z",
-    "_partitionKey": "customer-179"
+    "updatedAt": "2025-10-16T20:18:00Z"
   },
   {
+    "customerKey": 180,
     "id": "customer-180",
     "customerId": "customer-180",
     "name": "Sophia Johnson",
@@ -6841,10 +6842,10 @@
       }
     ],
     "registeredAt": "2024-09-14T00:00:00Z",
-    "updatedAt": "2025-10-09T10:39:00Z",
-    "_partitionKey": "customer-180"
+    "updatedAt": "2025-10-09T10:39:00Z"
   },
   {
+    "customerKey": 181,
     "id": "customer-181",
     "customerId": "customer-181",
     "name": "Liam Garcia",
@@ -6873,10 +6874,10 @@
       }
     ],
     "registeredAt": "2024-11-21T00:00:00Z",
-    "updatedAt": "2025-10-02T14:47:00Z",
-    "_partitionKey": "customer-181"
+    "updatedAt": "2025-10-02T14:47:00Z"
   },
   {
+    "customerKey": 182,
     "id": "customer-182",
     "customerId": "customer-182",
     "name": "Liam Miller",
@@ -6903,10 +6904,10 @@
       }
     ],
     "registeredAt": "2024-11-28T00:00:00Z",
-    "updatedAt": "2025-10-16T13:31:00Z",
-    "_partitionKey": "customer-182"
+    "updatedAt": "2025-10-16T13:31:00Z"
   },
   {
+    "customerKey": 183,
     "id": "customer-183",
     "customerId": "customer-183",
     "name": "John Jones",
@@ -6940,10 +6941,10 @@
       }
     ],
     "registeredAt": "2025-03-26T00:00:00Z",
-    "updatedAt": "2025-10-17T20:03:00Z",
-    "_partitionKey": "customer-183"
+    "updatedAt": "2025-10-17T20:03:00Z"
   },
   {
+    "customerKey": 184,
     "id": "customer-184",
     "customerId": "customer-184",
     "name": "Mason Miller",
@@ -6986,10 +6987,10 @@
       }
     ],
     "registeredAt": "2024-06-20T00:00:00Z",
-    "updatedAt": "2025-10-11T13:39:00Z",
-    "_partitionKey": "customer-184"
+    "updatedAt": "2025-10-11T13:39:00Z"
   },
   {
+    "customerKey": 185,
     "id": "customer-185",
     "customerId": "customer-185",
     "name": "Ava Doe",
@@ -7025,10 +7026,10 @@
       }
     ],
     "registeredAt": "2024-05-18T00:00:00Z",
-    "updatedAt": "2025-10-10T17:47:00Z",
-    "_partitionKey": "customer-185"
+    "updatedAt": "2025-10-10T17:47:00Z"
   },
   {
+    "customerKey": 186,
     "id": "customer-186",
     "customerId": "customer-186",
     "name": "Jane Jones",
@@ -7062,10 +7063,10 @@
       }
     ],
     "registeredAt": "2024-04-27T00:00:00Z",
-    "updatedAt": "2025-10-06T10:48:00Z",
-    "_partitionKey": "customer-186"
+    "updatedAt": "2025-10-06T10:48:00Z"
   },
   {
+    "customerKey": 187,
     "id": "customer-187",
     "customerId": "customer-187",
     "name": "Liam Johnson",
@@ -7106,10 +7107,10 @@
       }
     ],
     "registeredAt": "2024-04-20T00:00:00Z",
-    "updatedAt": "2025-10-12T14:34:00Z",
-    "_partitionKey": "customer-187"
+    "updatedAt": "2025-10-12T14:34:00Z"
   },
   {
+    "customerKey": 188,
     "id": "customer-188",
     "customerId": "customer-188",
     "name": "John Miller",
@@ -7138,10 +7139,10 @@
       }
     ],
     "registeredAt": "2024-07-27T00:00:00Z",
-    "updatedAt": "2025-10-17T08:34:00Z",
-    "_partitionKey": "customer-188"
+    "updatedAt": "2025-10-17T08:34:00Z"
   },
   {
+    "customerKey": 189,
     "id": "customer-189",
     "customerId": "customer-189",
     "name": "Sophia Williams",
@@ -7170,10 +7171,10 @@
       }
     ],
     "registeredAt": "2024-11-18T00:00:00Z",
-    "updatedAt": "2025-10-02T15:31:00Z",
-    "_partitionKey": "customer-189"
+    "updatedAt": "2025-10-02T15:31:00Z"
   },
   {
+    "customerKey": 190,
     "id": "customer-190",
     "customerId": "customer-190",
     "name": "Sophia Miller",
@@ -7209,10 +7210,10 @@
       }
     ],
     "registeredAt": "2025-03-17T00:00:00Z",
-    "updatedAt": "2025-10-08T20:56:00Z",
-    "_partitionKey": "customer-190"
+    "updatedAt": "2025-10-08T20:56:00Z"
   },
   {
+    "customerKey": 191,
     "id": "customer-191",
     "customerId": "customer-191",
     "name": "Noah Williams",
@@ -7248,10 +7249,10 @@
       }
     ],
     "registeredAt": "2024-04-13T00:00:00Z",
-    "updatedAt": "2025-10-21T09:04:00Z",
-    "_partitionKey": "customer-191"
+    "updatedAt": "2025-10-21T09:04:00Z"
   },
   {
+    "customerKey": 192,
     "id": "customer-192",
     "customerId": "customer-192",
     "name": "Jane Doe",
@@ -7280,10 +7281,10 @@
       }
     ],
     "registeredAt": "2024-04-21T00:00:00Z",
-    "updatedAt": "2025-10-08T08:18:00Z",
-    "_partitionKey": "customer-192"
+    "updatedAt": "2025-10-08T08:18:00Z"
   },
   {
+    "customerKey": 193,
     "id": "customer-193",
     "customerId": "customer-193",
     "name": "Mason Brown",
@@ -7319,10 +7320,10 @@
       }
     ],
     "registeredAt": "2024-10-30T00:00:00Z",
-    "updatedAt": "2025-10-11T10:22:00Z",
-    "_partitionKey": "customer-193"
+    "updatedAt": "2025-10-11T10:22:00Z"
   },
   {
+    "customerKey": 194,
     "id": "customer-194",
     "customerId": "customer-194",
     "name": "Olivia Johnson",
@@ -7365,10 +7366,10 @@
       }
     ],
     "registeredAt": "2024-08-25T00:00:00Z",
-    "updatedAt": "2025-10-11T18:15:00Z",
-    "_partitionKey": "customer-194"
+    "updatedAt": "2025-10-11T18:15:00Z"
   },
   {
+    "customerKey": 195,
     "id": "customer-195",
     "customerId": "customer-195",
     "name": "Emma Garcia",
@@ -7397,10 +7398,10 @@
       }
     ],
     "registeredAt": "2025-03-18T00:00:00Z",
-    "updatedAt": "2025-10-09T14:34:00Z",
-    "_partitionKey": "customer-195"
+    "updatedAt": "2025-10-09T14:34:00Z"
   },
   {
+    "customerKey": 196,
     "id": "customer-196",
     "customerId": "customer-196",
     "name": "Jane Doe",
@@ -7436,10 +7437,10 @@
       }
     ],
     "registeredAt": "2025-01-12T00:00:00Z",
-    "updatedAt": "2025-10-05T18:43:00Z",
-    "_partitionKey": "customer-196"
+    "updatedAt": "2025-10-05T18:43:00Z"
   },
   {
+    "customerKey": 197,
     "id": "customer-197",
     "customerId": "customer-197",
     "name": "Olivia Brown",
@@ -7475,10 +7476,10 @@
       }
     ],
     "registeredAt": "2024-05-01T00:00:00Z",
-    "updatedAt": "2025-10-12T19:12:00Z",
-    "_partitionKey": "customer-197"
+    "updatedAt": "2025-10-12T19:12:00Z"
   },
   {
+    "customerKey": 198,
     "id": "customer-198",
     "customerId": "customer-198",
     "name": "Noah Johnson",
@@ -7505,10 +7506,10 @@
       }
     ],
     "registeredAt": "2025-04-17T00:00:00Z",
-    "updatedAt": "2025-10-18T11:27:00Z",
-    "_partitionKey": "customer-198"
+    "updatedAt": "2025-10-18T11:27:00Z"
   },
   {
+    "customerKey": 199,
     "id": "customer-199",
     "customerId": "customer-199",
     "name": "Emma Jones",
@@ -7537,10 +7538,10 @@
       }
     ],
     "registeredAt": "2024-09-30T00:00:00Z",
-    "updatedAt": "2025-10-04T10:25:00Z",
-    "_partitionKey": "customer-199"
+    "updatedAt": "2025-10-04T10:25:00Z"
   },
   {
+    "customerKey": 200,
     "id": "customer-200",
     "customerId": "customer-200",
     "name": "Mason Jones",
@@ -7583,10 +7584,10 @@
       }
     ],
     "registeredAt": "2024-09-29T00:00:00Z",
-    "updatedAt": "2025-10-04T20:01:00Z",
-    "_partitionKey": "customer-200"
+    "updatedAt": "2025-10-04T20:01:00Z"
   },
   {
+    "customerKey": 201,
     "id": "customer-201",
     "customerId": "customer-201",
     "name": "Emma Garcia",
@@ -7615,10 +7616,10 @@
       }
     ],
     "registeredAt": "2025-01-09T00:00:00Z",
-    "updatedAt": "2025-10-10T15:53:00Z",
-    "_partitionKey": "customer-201"
+    "updatedAt": "2025-10-10T15:53:00Z"
   },
   {
+    "customerKey": 202,
     "id": "customer-202",
     "customerId": "customer-202",
     "name": "Ava Smith",
@@ -7654,10 +7655,10 @@
       }
     ],
     "registeredAt": "2025-02-18T00:00:00Z",
-    "updatedAt": "2025-10-03T09:38:00Z",
-    "_partitionKey": "customer-202"
+    "updatedAt": "2025-10-03T09:38:00Z"
   },
   {
+    "customerKey": 203,
     "id": "customer-203",
     "customerId": "customer-203",
     "name": "Lucas Miller",
@@ -7693,10 +7694,10 @@
       }
     ],
     "registeredAt": "2024-04-22T00:00:00Z",
-    "updatedAt": "2025-10-18T16:52:00Z",
-    "_partitionKey": "customer-203"
+    "updatedAt": "2025-10-18T16:52:00Z"
   },
   {
+    "customerKey": 204,
     "id": "customer-204",
     "customerId": "customer-204",
     "name": "Noah Williams",
@@ -7732,10 +7733,10 @@
       }
     ],
     "registeredAt": "2024-04-27T00:00:00Z",
-    "updatedAt": "2025-10-15T17:24:00Z",
-    "_partitionKey": "customer-204"
+    "updatedAt": "2025-10-15T17:24:00Z"
   },
   {
+    "customerKey": 205,
     "id": "customer-205",
     "customerId": "customer-205",
     "name": "Noah Smith",
@@ -7764,10 +7765,10 @@
       }
     ],
     "registeredAt": "2024-04-08T00:00:00Z",
-    "updatedAt": "2025-10-07T09:20:00Z",
-    "_partitionKey": "customer-205"
+    "updatedAt": "2025-10-07T09:20:00Z"
   },
   {
+    "customerKey": 206,
     "id": "customer-206",
     "customerId": "customer-206",
     "name": "Emma Johnson",
@@ -7803,10 +7804,10 @@
       }
     ],
     "registeredAt": "2024-10-10T00:00:00Z",
-    "updatedAt": "2025-10-16T12:58:00Z",
-    "_partitionKey": "customer-206"
+    "updatedAt": "2025-10-16T12:58:00Z"
   },
   {
+    "customerKey": 207,
     "id": "customer-207",
     "customerId": "customer-207",
     "name": "Noah Jones",
@@ -7840,10 +7841,10 @@
       }
     ],
     "registeredAt": "2025-01-12T00:00:00Z",
-    "updatedAt": "2025-10-14T15:24:00Z",
-    "_partitionKey": "customer-207"
+    "updatedAt": "2025-10-14T15:24:00Z"
   },
   {
+    "customerKey": 208,
     "id": "customer-208",
     "customerId": "customer-208",
     "name": "Mason Brown",
@@ -7879,10 +7880,10 @@
       }
     ],
     "registeredAt": "2025-02-02T00:00:00Z",
-    "updatedAt": "2025-10-08T08:01:00Z",
-    "_partitionKey": "customer-208"
+    "updatedAt": "2025-10-08T08:01:00Z"
   },
   {
+    "customerKey": 209,
     "id": "customer-209",
     "customerId": "customer-209",
     "name": "Sophia Smith",
@@ -7925,10 +7926,10 @@
       }
     ],
     "registeredAt": "2024-07-25T00:00:00Z",
-    "updatedAt": "2025-10-17T09:30:00Z",
-    "_partitionKey": "customer-209"
+    "updatedAt": "2025-10-17T09:30:00Z"
   },
   {
+    "customerKey": 210,
     "id": "customer-210",
     "customerId": "customer-210",
     "name": "Noah Miller",
@@ -7971,10 +7972,10 @@
       }
     ],
     "registeredAt": "2024-06-30T00:00:00Z",
-    "updatedAt": "2025-10-13T18:01:00Z",
-    "_partitionKey": "customer-210"
+    "updatedAt": "2025-10-13T18:01:00Z"
   },
   {
+    "customerKey": 211,
     "id": "customer-211",
     "customerId": "customer-211",
     "name": "Sophia Garcia",
@@ -8003,10 +8004,10 @@
       }
     ],
     "registeredAt": "2024-05-12T00:00:00Z",
-    "updatedAt": "2025-10-18T17:06:00Z",
-    "_partitionKey": "customer-211"
+    "updatedAt": "2025-10-18T17:06:00Z"
   },
   {
+    "customerKey": 212,
     "id": "customer-212",
     "customerId": "customer-212",
     "name": "Emma Brown",
@@ -8042,10 +8043,10 @@
       }
     ],
     "registeredAt": "2024-04-14T00:00:00Z",
-    "updatedAt": "2025-10-19T16:25:00Z",
-    "_partitionKey": "customer-212"
+    "updatedAt": "2025-10-19T16:25:00Z"
   },
   {
+    "customerKey": 213,
     "id": "customer-213",
     "customerId": "customer-213",
     "name": "Liam Brown",
@@ -8074,10 +8075,10 @@
       }
     ],
     "registeredAt": "2024-08-23T00:00:00Z",
-    "updatedAt": "2025-10-10T13:58:00Z",
-    "_partitionKey": "customer-213"
+    "updatedAt": "2025-10-10T13:58:00Z"
   },
   {
+    "customerKey": 214,
     "id": "customer-214",
     "customerId": "customer-214",
     "name": "Olivia Williams",
@@ -8120,10 +8121,10 @@
       }
     ],
     "registeredAt": "2024-06-08T00:00:00Z",
-    "updatedAt": "2025-10-16T18:04:00Z",
-    "_partitionKey": "customer-214"
+    "updatedAt": "2025-10-16T18:04:00Z"
   },
   {
+    "customerKey": 215,
     "id": "customer-215",
     "customerId": "customer-215",
     "name": "Ava Garcia",
@@ -8157,10 +8158,10 @@
       }
     ],
     "registeredAt": "2024-06-22T00:00:00Z",
-    "updatedAt": "2025-10-14T16:14:00Z",
-    "_partitionKey": "customer-215"
+    "updatedAt": "2025-10-14T16:14:00Z"
   },
   {
+    "customerKey": 216,
     "id": "customer-216",
     "customerId": "customer-216",
     "name": "Ava Smith",
@@ -8189,10 +8190,10 @@
       }
     ],
     "registeredAt": "2024-12-25T00:00:00Z",
-    "updatedAt": "2025-10-12T12:35:00Z",
-    "_partitionKey": "customer-216"
+    "updatedAt": "2025-10-12T12:35:00Z"
   },
   {
+    "customerKey": 217,
     "id": "customer-217",
     "customerId": "customer-217",
     "name": "Liam Jones",
@@ -8235,10 +8236,10 @@
       }
     ],
     "registeredAt": "2025-03-02T00:00:00Z",
-    "updatedAt": "2025-10-13T15:03:00Z",
-    "_partitionKey": "customer-217"
+    "updatedAt": "2025-10-13T15:03:00Z"
   },
   {
+    "customerKey": 218,
     "id": "customer-218",
     "customerId": "customer-218",
     "name": "Emma Garcia",
@@ -8267,10 +8268,10 @@
       }
     ],
     "registeredAt": "2025-01-09T00:00:00Z",
-    "updatedAt": "2025-10-12T14:56:00Z",
-    "_partitionKey": "customer-218"
+    "updatedAt": "2025-10-12T14:56:00Z"
   },
   {
+    "customerKey": 219,
     "id": "customer-219",
     "customerId": "customer-219",
     "name": "Sophia Garcia",
@@ -8299,10 +8300,10 @@
       }
     ],
     "registeredAt": "2024-10-25T00:00:00Z",
-    "updatedAt": "2025-10-11T15:58:00Z",
-    "_partitionKey": "customer-219"
+    "updatedAt": "2025-10-11T15:58:00Z"
   },
   {
+    "customerKey": 220,
     "id": "customer-220",
     "customerId": "customer-220",
     "name": "Emma Johnson",
@@ -8345,10 +8346,10 @@
       }
     ],
     "registeredAt": "2025-02-14T00:00:00Z",
-    "updatedAt": "2025-10-03T13:27:00Z",
-    "_partitionKey": "customer-220"
+    "updatedAt": "2025-10-03T13:27:00Z"
   },
   {
+    "customerKey": 221,
     "id": "customer-221",
     "customerId": "customer-221",
     "name": "Lucas Garcia",
@@ -8382,10 +8383,10 @@
       }
     ],
     "registeredAt": "2024-08-25T00:00:00Z",
-    "updatedAt": "2025-10-15T18:17:00Z",
-    "_partitionKey": "customer-221"
+    "updatedAt": "2025-10-15T18:17:00Z"
   },
   {
+    "customerKey": 222,
     "id": "customer-222",
     "customerId": "customer-222",
     "name": "John Williams",
@@ -8421,10 +8422,10 @@
       }
     ],
     "registeredAt": "2024-07-01T00:00:00Z",
-    "updatedAt": "2025-10-16T15:21:00Z",
-    "_partitionKey": "customer-222"
+    "updatedAt": "2025-10-16T15:21:00Z"
   },
   {
+    "customerKey": 223,
     "id": "customer-223",
     "customerId": "customer-223",
     "name": "John Williams",
@@ -8467,10 +8468,10 @@
       }
     ],
     "registeredAt": "2024-11-30T00:00:00Z",
-    "updatedAt": "2025-10-20T10:14:00Z",
-    "_partitionKey": "customer-223"
+    "updatedAt": "2025-10-20T10:14:00Z"
   },
   {
+    "customerKey": 224,
     "id": "customer-224",
     "customerId": "customer-224",
     "name": "Sophia Garcia",
@@ -8513,10 +8514,10 @@
       }
     ],
     "registeredAt": "2024-06-16T00:00:00Z",
-    "updatedAt": "2025-10-11T13:37:00Z",
-    "_partitionKey": "customer-224"
+    "updatedAt": "2025-10-11T13:37:00Z"
   },
   {
+    "customerKey": 225,
     "id": "customer-225",
     "customerId": "customer-225",
     "name": "Mason Jones",
@@ -8550,10 +8551,10 @@
       }
     ],
     "registeredAt": "2024-12-24T00:00:00Z",
-    "updatedAt": "2025-10-06T08:51:00Z",
-    "_partitionKey": "customer-225"
+    "updatedAt": "2025-10-06T08:51:00Z"
   },
   {
+    "customerKey": 226,
     "id": "customer-226",
     "customerId": "customer-226",
     "name": "John Doe",
@@ -8589,10 +8590,10 @@
       }
     ],
     "registeredAt": "2024-04-24T00:00:00Z",
-    "updatedAt": "2025-10-07T08:43:00Z",
-    "_partitionKey": "customer-226"
+    "updatedAt": "2025-10-07T08:43:00Z"
   },
   {
+    "customerKey": 227,
     "id": "customer-227",
     "customerId": "customer-227",
     "name": "Ava Miller",
@@ -8621,10 +8622,10 @@
       }
     ],
     "registeredAt": "2024-10-03T00:00:00Z",
-    "updatedAt": "2025-10-05T18:25:00Z",
-    "_partitionKey": "customer-227"
+    "updatedAt": "2025-10-05T18:25:00Z"
   },
   {
+    "customerKey": 228,
     "id": "customer-228",
     "customerId": "customer-228",
     "name": "Sophia Brown",
@@ -8658,10 +8659,10 @@
       }
     ],
     "registeredAt": "2025-01-12T00:00:00Z",
-    "updatedAt": "2025-10-10T11:45:00Z",
-    "_partitionKey": "customer-228"
+    "updatedAt": "2025-10-10T11:45:00Z"
   },
   {
+    "customerKey": 229,
     "id": "customer-229",
     "customerId": "customer-229",
     "name": "Mason Jones",
@@ -8690,10 +8691,10 @@
       }
     ],
     "registeredAt": "2024-09-15T00:00:00Z",
-    "updatedAt": "2025-10-01T12:43:00Z",
-    "_partitionKey": "customer-229"
+    "updatedAt": "2025-10-01T12:43:00Z"
   },
   {
+    "customerKey": 230,
     "id": "customer-230",
     "customerId": "customer-230",
     "name": "Sophia Miller",
@@ -8729,10 +8730,10 @@
       }
     ],
     "registeredAt": "2025-03-04T00:00:00Z",
-    "updatedAt": "2025-10-18T10:21:00Z",
-    "_partitionKey": "customer-230"
+    "updatedAt": "2025-10-18T10:21:00Z"
   },
   {
+    "customerKey": 231,
     "id": "customer-231",
     "customerId": "customer-231",
     "name": "Noah Johnson",
@@ -8761,10 +8762,10 @@
       }
     ],
     "registeredAt": "2024-06-21T00:00:00Z",
-    "updatedAt": "2025-10-11T15:19:00Z",
-    "_partitionKey": "customer-231"
+    "updatedAt": "2025-10-11T15:19:00Z"
   },
   {
+    "customerKey": 232,
     "id": "customer-232",
     "customerId": "customer-232",
     "name": "John Doe",
@@ -8807,10 +8808,10 @@
       }
     ],
     "registeredAt": "2024-05-08T00:00:00Z",
-    "updatedAt": "2025-10-13T19:32:00Z",
-    "_partitionKey": "customer-232"
+    "updatedAt": "2025-10-13T19:32:00Z"
   },
   {
+    "customerKey": 233,
     "id": "customer-233",
     "customerId": "customer-233",
     "name": "Emma Garcia",
@@ -8853,10 +8854,10 @@
       }
     ],
     "registeredAt": "2024-09-12T00:00:00Z",
-    "updatedAt": "2025-10-07T11:44:00Z",
-    "_partitionKey": "customer-233"
+    "updatedAt": "2025-10-07T11:44:00Z"
   },
   {
+    "customerKey": 234,
     "id": "customer-234",
     "customerId": "customer-234",
     "name": "Mason Garcia",
@@ -8899,10 +8900,10 @@
       }
     ],
     "registeredAt": "2025-02-13T00:00:00Z",
-    "updatedAt": "2025-10-05T15:21:00Z",
-    "_partitionKey": "customer-234"
+    "updatedAt": "2025-10-05T15:21:00Z"
   },
   {
+    "customerKey": 235,
     "id": "customer-235",
     "customerId": "customer-235",
     "name": "John Doe",
@@ -8931,10 +8932,10 @@
       }
     ],
     "registeredAt": "2025-03-17T00:00:00Z",
-    "updatedAt": "2025-10-18T08:02:00Z",
-    "_partitionKey": "customer-235"
+    "updatedAt": "2025-10-18T08:02:00Z"
   },
   {
+    "customerKey": 236,
     "id": "customer-236",
     "customerId": "customer-236",
     "name": "Olivia Williams",
@@ -8970,10 +8971,10 @@
       }
     ],
     "registeredAt": "2024-11-23T00:00:00Z",
-    "updatedAt": "2025-10-04T14:06:00Z",
-    "_partitionKey": "customer-236"
+    "updatedAt": "2025-10-04T14:06:00Z"
   },
   {
+    "customerKey": 237,
     "id": "customer-237",
     "customerId": "customer-237",
     "name": "Sophia Garcia",
@@ -9009,10 +9010,10 @@
       }
     ],
     "registeredAt": "2024-10-08T00:00:00Z",
-    "updatedAt": "2025-10-10T18:06:00Z",
-    "_partitionKey": "customer-237"
+    "updatedAt": "2025-10-10T18:06:00Z"
   },
   {
+    "customerKey": 238,
     "id": "customer-238",
     "customerId": "customer-238",
     "name": "Lucas Smith",
@@ -9041,10 +9042,10 @@
       }
     ],
     "registeredAt": "2025-02-27T00:00:00Z",
-    "updatedAt": "2025-10-19T17:00:00Z",
-    "_partitionKey": "customer-238"
+    "updatedAt": "2025-10-19T17:00:00Z"
   },
   {
+    "customerKey": 239,
     "id": "customer-239",
     "customerId": "customer-239",
     "name": "Lucas Johnson",
@@ -9087,10 +9088,10 @@
       }
     ],
     "registeredAt": "2024-09-07T00:00:00Z",
-    "updatedAt": "2025-10-16T16:53:00Z",
-    "_partitionKey": "customer-239"
+    "updatedAt": "2025-10-16T16:53:00Z"
   },
   {
+    "customerKey": 240,
     "id": "customer-240",
     "customerId": "customer-240",
     "name": "Liam Miller",
@@ -9133,10 +9134,10 @@
       }
     ],
     "registeredAt": "2024-11-07T00:00:00Z",
-    "updatedAt": "2025-10-16T12:41:00Z",
-    "_partitionKey": "customer-240"
+    "updatedAt": "2025-10-16T12:41:00Z"
   },
   {
+    "customerKey": 241,
     "id": "customer-241",
     "customerId": "customer-241",
     "name": "Ava Doe",
@@ -9179,10 +9180,10 @@
       }
     ],
     "registeredAt": "2024-05-30T00:00:00Z",
-    "updatedAt": "2025-10-05T13:01:00Z",
-    "_partitionKey": "customer-241"
+    "updatedAt": "2025-10-05T13:01:00Z"
   },
   {
+    "customerKey": 242,
     "id": "customer-242",
     "customerId": "customer-242",
     "name": "Liam Doe",
@@ -9223,10 +9224,10 @@
       }
     ],
     "registeredAt": "2024-03-19T00:00:00Z",
-    "updatedAt": "2025-10-05T08:40:00Z",
-    "_partitionKey": "customer-242"
+    "updatedAt": "2025-10-05T08:40:00Z"
   },
   {
+    "customerKey": 243,
     "id": "customer-243",
     "customerId": "customer-243",
     "name": "Liam Brown",
@@ -9269,10 +9270,10 @@
       }
     ],
     "registeredAt": "2024-10-03T00:00:00Z",
-    "updatedAt": "2025-10-12T12:46:00Z",
-    "_partitionKey": "customer-243"
+    "updatedAt": "2025-10-12T12:46:00Z"
   },
   {
+    "customerKey": 244,
     "id": "customer-244",
     "customerId": "customer-244",
     "name": "Emma Brown",
@@ -9308,10 +9309,10 @@
       }
     ],
     "registeredAt": "2024-04-30T00:00:00Z",
-    "updatedAt": "2025-10-03T18:26:00Z",
-    "_partitionKey": "customer-244"
+    "updatedAt": "2025-10-03T18:26:00Z"
   },
   {
+    "customerKey": 245,
     "id": "customer-245",
     "customerId": "customer-245",
     "name": "Olivia Johnson",
@@ -9347,10 +9348,10 @@
       }
     ],
     "registeredAt": "2024-05-06T00:00:00Z",
-    "updatedAt": "2025-10-13T15:12:00Z",
-    "_partitionKey": "customer-245"
+    "updatedAt": "2025-10-13T15:12:00Z"
   },
   {
+    "customerKey": 246,
     "id": "customer-246",
     "customerId": "customer-246",
     "name": "Mason Garcia",
@@ -9393,10 +9394,10 @@
       }
     ],
     "registeredAt": "2025-03-08T00:00:00Z",
-    "updatedAt": "2025-10-01T16:17:00Z",
-    "_partitionKey": "customer-246"
+    "updatedAt": "2025-10-01T16:17:00Z"
   },
   {
+    "customerKey": 247,
     "id": "customer-247",
     "customerId": "customer-247",
     "name": "John Williams",
@@ -9439,10 +9440,10 @@
       }
     ],
     "registeredAt": "2024-12-31T00:00:00Z",
-    "updatedAt": "2025-10-14T09:14:00Z",
-    "_partitionKey": "customer-247"
+    "updatedAt": "2025-10-14T09:14:00Z"
   },
   {
+    "customerKey": 248,
     "id": "customer-248",
     "customerId": "customer-248",
     "name": "Liam Williams",
@@ -9485,10 +9486,10 @@
       }
     ],
     "registeredAt": "2024-06-04T00:00:00Z",
-    "updatedAt": "2025-10-15T12:55:00Z",
-    "_partitionKey": "customer-248"
+    "updatedAt": "2025-10-15T12:55:00Z"
   },
   {
+    "customerKey": 249,
     "id": "customer-249",
     "customerId": "customer-249",
     "name": "John Jones",
@@ -9522,10 +9523,10 @@
       }
     ],
     "registeredAt": "2024-05-19T00:00:00Z",
-    "updatedAt": "2025-10-07T09:24:00Z",
-    "_partitionKey": "customer-249"
+    "updatedAt": "2025-10-07T09:24:00Z"
   },
   {
+    "customerKey": 250,
     "id": "customer-250",
     "customerId": "customer-250",
     "name": "Jane Smith",
@@ -9554,10 +9555,10 @@
       }
     ],
     "registeredAt": "2024-07-13T00:00:00Z",
-    "updatedAt": "2025-10-20T13:24:00Z",
-    "_partitionKey": "customer-250"
+    "updatedAt": "2025-10-20T13:24:00Z"
   },
   {
+    "customerKey": 251,
     "id": "customer-251",
     "customerId": "customer-251",
     "name": "Lucas Garcia",
@@ -9598,10 +9599,10 @@
       }
     ],
     "registeredAt": "2025-03-08T00:00:00Z",
-    "updatedAt": "2025-10-08T08:50:00Z",
-    "_partitionKey": "customer-251"
+    "updatedAt": "2025-10-08T08:50:00Z"
   },
   {
+    "customerKey": 252,
     "id": "customer-252",
     "customerId": "customer-252",
     "name": "Emma Smith",
@@ -9637,10 +9638,10 @@
       }
     ],
     "registeredAt": "2025-01-25T00:00:00Z",
-    "updatedAt": "2025-10-03T08:15:00Z",
-    "_partitionKey": "customer-252"
+    "updatedAt": "2025-10-03T08:15:00Z"
   },
   {
+    "customerKey": 253,
     "id": "customer-253",
     "customerId": "customer-253",
     "name": "John Johnson",
@@ -9683,10 +9684,10 @@
       }
     ],
     "registeredAt": "2025-03-23T00:00:00Z",
-    "updatedAt": "2025-10-16T08:50:00Z",
-    "_partitionKey": "customer-253"
+    "updatedAt": "2025-10-16T08:50:00Z"
   },
   {
+    "customerKey": 254,
     "id": "customer-254",
     "customerId": "customer-254",
     "name": "Lucas Johnson",
@@ -9729,10 +9730,10 @@
       }
     ],
     "registeredAt": "2024-09-30T00:00:00Z",
-    "updatedAt": "2025-10-13T08:12:00Z",
-    "_partitionKey": "customer-254"
+    "updatedAt": "2025-10-13T08:12:00Z"
   },
   {
+    "customerKey": 255,
     "id": "customer-255",
     "customerId": "customer-255",
     "name": "John Smith",
@@ -9761,10 +9762,10 @@
       }
     ],
     "registeredAt": "2025-01-22T00:00:00Z",
-    "updatedAt": "2025-10-20T14:29:00Z",
-    "_partitionKey": "customer-255"
+    "updatedAt": "2025-10-20T14:29:00Z"
   },
   {
+    "customerKey": 256,
     "id": "customer-256",
     "customerId": "customer-256",
     "name": "Olivia Johnson",
@@ -9800,10 +9801,10 @@
       }
     ],
     "registeredAt": "2024-10-13T00:00:00Z",
-    "updatedAt": "2025-10-03T12:03:00Z",
-    "_partitionKey": "customer-256"
+    "updatedAt": "2025-10-03T12:03:00Z"
   },
   {
+    "customerKey": 257,
     "id": "customer-257",
     "customerId": "customer-257",
     "name": "Jane Garcia",
@@ -9832,10 +9833,10 @@
       }
     ],
     "registeredAt": "2024-06-06T00:00:00Z",
-    "updatedAt": "2025-10-02T08:15:00Z",
-    "_partitionKey": "customer-257"
+    "updatedAt": "2025-10-02T08:15:00Z"
   },
   {
+    "customerKey": 258,
     "id": "customer-258",
     "customerId": "customer-258",
     "name": "Olivia Miller",
@@ -9862,10 +9863,10 @@
       }
     ],
     "registeredAt": "2024-08-15T00:00:00Z",
-    "updatedAt": "2025-10-11T09:15:00Z",
-    "_partitionKey": "customer-258"
+    "updatedAt": "2025-10-11T09:15:00Z"
   },
   {
+    "customerKey": 259,
     "id": "customer-259",
     "customerId": "customer-259",
     "name": "Lucas Smith",
@@ -9894,10 +9895,10 @@
       }
     ],
     "registeredAt": "2024-10-07T00:00:00Z",
-    "updatedAt": "2025-10-15T09:24:00Z",
-    "_partitionKey": "customer-259"
+    "updatedAt": "2025-10-15T09:24:00Z"
   },
   {
+    "customerKey": 260,
     "id": "customer-260",
     "customerId": "customer-260",
     "name": "John Jones",
@@ -9940,10 +9941,10 @@
       }
     ],
     "registeredAt": "2024-12-12T00:00:00Z",
-    "updatedAt": "2025-10-18T15:20:00Z",
-    "_partitionKey": "customer-260"
+    "updatedAt": "2025-10-18T15:20:00Z"
   },
   {
+    "customerKey": 261,
     "id": "customer-261",
     "customerId": "customer-261",
     "name": "Ava Johnson",
@@ -9984,10 +9985,10 @@
       }
     ],
     "registeredAt": "2024-07-19T00:00:00Z",
-    "updatedAt": "2025-10-08T20:36:00Z",
-    "_partitionKey": "customer-261"
+    "updatedAt": "2025-10-08T20:36:00Z"
   },
   {
+    "customerKey": 262,
     "id": "customer-262",
     "customerId": "customer-262",
     "name": "Noah Doe",
@@ -10016,10 +10017,10 @@
       }
     ],
     "registeredAt": "2024-12-16T00:00:00Z",
-    "updatedAt": "2025-10-08T18:01:00Z",
-    "_partitionKey": "customer-262"
+    "updatedAt": "2025-10-08T18:01:00Z"
   },
   {
+    "customerKey": 263,
     "id": "customer-263",
     "customerId": "customer-263",
     "name": "Olivia Williams",
@@ -10048,10 +10049,10 @@
       }
     ],
     "registeredAt": "2025-01-23T00:00:00Z",
-    "updatedAt": "2025-10-02T08:21:00Z",
-    "_partitionKey": "customer-263"
+    "updatedAt": "2025-10-02T08:21:00Z"
   },
   {
+    "customerKey": 264,
     "id": "customer-264",
     "customerId": "customer-264",
     "name": "Mason Smith",
@@ -10087,10 +10088,10 @@
       }
     ],
     "registeredAt": "2024-04-08T00:00:00Z",
-    "updatedAt": "2025-10-15T16:53:00Z",
-    "_partitionKey": "customer-264"
+    "updatedAt": "2025-10-15T16:53:00Z"
   },
   {
+    "customerKey": 265,
     "id": "customer-265",
     "customerId": "customer-265",
     "name": "Lucas Miller",
@@ -10126,10 +10127,10 @@
       }
     ],
     "registeredAt": "2025-02-22T00:00:00Z",
-    "updatedAt": "2025-10-13T15:48:00Z",
-    "_partitionKey": "customer-265"
+    "updatedAt": "2025-10-13T15:48:00Z"
   },
   {
+    "customerKey": 266,
     "id": "customer-266",
     "customerId": "customer-266",
     "name": "Jane Jones",
@@ -10172,10 +10173,10 @@
       }
     ],
     "registeredAt": "2024-12-19T00:00:00Z",
-    "updatedAt": "2025-10-08T20:27:00Z",
-    "_partitionKey": "customer-266"
+    "updatedAt": "2025-10-08T20:27:00Z"
   },
   {
+    "customerKey": 267,
     "id": "customer-267",
     "customerId": "customer-267",
     "name": "Jane Jones",
@@ -10204,10 +10205,10 @@
       }
     ],
     "registeredAt": "2025-04-17T00:00:00Z",
-    "updatedAt": "2025-10-05T11:37:00Z",
-    "_partitionKey": "customer-267"
+    "updatedAt": "2025-10-05T11:37:00Z"
   },
   {
+    "customerKey": 268,
     "id": "customer-268",
     "customerId": "customer-268",
     "name": "Liam Johnson",
@@ -10236,10 +10237,10 @@
       }
     ],
     "registeredAt": "2025-04-06T00:00:00Z",
-    "updatedAt": "2025-10-15T20:07:00Z",
-    "_partitionKey": "customer-268"
+    "updatedAt": "2025-10-15T20:07:00Z"
   },
   {
+    "customerKey": 269,
     "id": "customer-269",
     "customerId": "customer-269",
     "name": "Jane Brown",
@@ -10282,10 +10283,10 @@
       }
     ],
     "registeredAt": "2024-04-15T00:00:00Z",
-    "updatedAt": "2025-10-02T17:58:00Z",
-    "_partitionKey": "customer-269"
+    "updatedAt": "2025-10-02T17:58:00Z"
   },
   {
+    "customerKey": 270,
     "id": "customer-270",
     "customerId": "customer-270",
     "name": "John Miller",
@@ -10314,10 +10315,10 @@
       }
     ],
     "registeredAt": "2024-04-14T00:00:00Z",
-    "updatedAt": "2025-10-19T15:30:00Z",
-    "_partitionKey": "customer-270"
+    "updatedAt": "2025-10-19T15:30:00Z"
   },
   {
+    "customerKey": 271,
     "id": "customer-271",
     "customerId": "customer-271",
     "name": "Olivia Garcia",
@@ -10353,10 +10354,10 @@
       }
     ],
     "registeredAt": "2025-02-24T00:00:00Z",
-    "updatedAt": "2025-10-16T18:37:00Z",
-    "_partitionKey": "customer-271"
+    "updatedAt": "2025-10-16T18:37:00Z"
   },
   {
+    "customerKey": 272,
     "id": "customer-272",
     "customerId": "customer-272",
     "name": "Emma Brown",
@@ -10392,10 +10393,10 @@
       }
     ],
     "registeredAt": "2024-11-21T00:00:00Z",
-    "updatedAt": "2025-10-20T19:58:00Z",
-    "_partitionKey": "customer-272"
+    "updatedAt": "2025-10-20T19:58:00Z"
   },
   {
+    "customerKey": 273,
     "id": "customer-273",
     "customerId": "customer-273",
     "name": "Olivia Jones",
@@ -10438,10 +10439,10 @@
       }
     ],
     "registeredAt": "2024-03-15T00:00:00Z",
-    "updatedAt": "2025-10-05T16:47:00Z",
-    "_partitionKey": "customer-273"
+    "updatedAt": "2025-10-05T16:47:00Z"
   },
   {
+    "customerKey": 274,
     "id": "customer-274",
     "customerId": "customer-274",
     "name": "Liam Johnson",
@@ -10484,10 +10485,10 @@
       }
     ],
     "registeredAt": "2024-10-06T00:00:00Z",
-    "updatedAt": "2025-10-06T09:56:00Z",
-    "_partitionKey": "customer-274"
+    "updatedAt": "2025-10-06T09:56:00Z"
   },
   {
+    "customerKey": 275,
     "id": "customer-275",
     "customerId": "customer-275",
     "name": "Emma Smith",
@@ -10530,10 +10531,10 @@
       }
     ],
     "registeredAt": "2024-08-26T00:00:00Z",
-    "updatedAt": "2025-10-14T12:18:00Z",
-    "_partitionKey": "customer-275"
+    "updatedAt": "2025-10-14T12:18:00Z"
   },
   {
+    "customerKey": 276,
     "id": "customer-276",
     "customerId": "customer-276",
     "name": "Noah Garcia",
@@ -10576,10 +10577,10 @@
       }
     ],
     "registeredAt": "2024-11-26T00:00:00Z",
-    "updatedAt": "2025-10-11T20:48:00Z",
-    "_partitionKey": "customer-276"
+    "updatedAt": "2025-10-11T20:48:00Z"
   },
   {
+    "customerKey": 277,
     "id": "customer-277",
     "customerId": "customer-277",
     "name": "John Williams",
@@ -10615,10 +10616,10 @@
       }
     ],
     "registeredAt": "2024-03-18T00:00:00Z",
-    "updatedAt": "2025-10-19T17:33:00Z",
-    "_partitionKey": "customer-277"
+    "updatedAt": "2025-10-19T17:33:00Z"
   },
   {
+    "customerKey": 278,
     "id": "customer-278",
     "customerId": "customer-278",
     "name": "Liam Jones",
@@ -10647,10 +10648,10 @@
       }
     ],
     "registeredAt": "2024-08-04T00:00:00Z",
-    "updatedAt": "2025-10-01T10:11:00Z",
-    "_partitionKey": "customer-278"
+    "updatedAt": "2025-10-01T10:11:00Z"
   },
   {
+    "customerKey": 279,
     "id": "customer-279",
     "customerId": "customer-279",
     "name": "Olivia Johnson",
@@ -10677,10 +10678,10 @@
       }
     ],
     "registeredAt": "2024-11-19T00:00:00Z",
-    "updatedAt": "2025-10-04T10:19:00Z",
-    "_partitionKey": "customer-279"
+    "updatedAt": "2025-10-04T10:19:00Z"
   },
   {
+    "customerKey": 280,
     "id": "customer-280",
     "customerId": "customer-280",
     "name": "Mason Jones",
@@ -10707,10 +10708,10 @@
       }
     ],
     "registeredAt": "2024-12-25T00:00:00Z",
-    "updatedAt": "2025-10-19T09:39:00Z",
-    "_partitionKey": "customer-280"
+    "updatedAt": "2025-10-19T09:39:00Z"
   },
   {
+    "customerKey": 281,
     "id": "customer-281",
     "customerId": "customer-281",
     "name": "Lucas Jones",
@@ -10751,10 +10752,10 @@
       }
     ],
     "registeredAt": "2025-04-16T00:00:00Z",
-    "updatedAt": "2025-10-14T19:18:00Z",
-    "_partitionKey": "customer-281"
+    "updatedAt": "2025-10-14T19:18:00Z"
   },
   {
+    "customerKey": 282,
     "id": "customer-282",
     "customerId": "customer-282",
     "name": "John Jones",
@@ -10790,10 +10791,10 @@
       }
     ],
     "registeredAt": "2024-11-10T00:00:00Z",
-    "updatedAt": "2025-10-15T20:03:00Z",
-    "_partitionKey": "customer-282"
+    "updatedAt": "2025-10-15T20:03:00Z"
   },
   {
+    "customerKey": 283,
     "id": "customer-283",
     "customerId": "customer-283",
     "name": "Liam Johnson",
@@ -10829,10 +10830,10 @@
       }
     ],
     "registeredAt": "2024-03-16T00:00:00Z",
-    "updatedAt": "2025-10-06T15:16:00Z",
-    "_partitionKey": "customer-283"
+    "updatedAt": "2025-10-06T15:16:00Z"
   },
   {
+    "customerKey": 284,
     "id": "customer-284",
     "customerId": "customer-284",
     "name": "Olivia Doe",
@@ -10866,10 +10867,10 @@
       }
     ],
     "registeredAt": "2024-11-04T00:00:00Z",
-    "updatedAt": "2025-10-14T18:56:00Z",
-    "_partitionKey": "customer-284"
+    "updatedAt": "2025-10-14T18:56:00Z"
   },
   {
+    "customerKey": 285,
     "id": "customer-285",
     "customerId": "customer-285",
     "name": "Emma Doe",
@@ -10905,10 +10906,10 @@
       }
     ],
     "registeredAt": "2024-07-14T00:00:00Z",
-    "updatedAt": "2025-10-04T11:25:00Z",
-    "_partitionKey": "customer-285"
+    "updatedAt": "2025-10-04T11:25:00Z"
   },
   {
+    "customerKey": 286,
     "id": "customer-286",
     "customerId": "customer-286",
     "name": "Ava Smith",
@@ -10944,10 +10945,10 @@
       }
     ],
     "registeredAt": "2024-10-10T00:00:00Z",
-    "updatedAt": "2025-10-11T20:49:00Z",
-    "_partitionKey": "customer-286"
+    "updatedAt": "2025-10-11T20:49:00Z"
   },
   {
+    "customerKey": 287,
     "id": "customer-287",
     "customerId": "customer-287",
     "name": "Emma Jones",
@@ -10990,10 +10991,10 @@
       }
     ],
     "registeredAt": "2024-03-15T00:00:00Z",
-    "updatedAt": "2025-10-15T14:44:00Z",
-    "_partitionKey": "customer-287"
+    "updatedAt": "2025-10-15T14:44:00Z"
   },
   {
+    "customerKey": 288,
     "id": "customer-288",
     "customerId": "customer-288",
     "name": "Mason Jones",
@@ -11029,10 +11030,10 @@
       }
     ],
     "registeredAt": "2025-02-04T00:00:00Z",
-    "updatedAt": "2025-10-17T13:28:00Z",
-    "_partitionKey": "customer-288"
+    "updatedAt": "2025-10-17T13:28:00Z"
   },
   {
+    "customerKey": 289,
     "id": "customer-289",
     "customerId": "customer-289",
     "name": "Olivia Brown",
@@ -11068,10 +11069,10 @@
       }
     ],
     "registeredAt": "2024-09-18T00:00:00Z",
-    "updatedAt": "2025-10-13T16:04:00Z",
-    "_partitionKey": "customer-289"
+    "updatedAt": "2025-10-13T16:04:00Z"
   },
   {
+    "customerKey": 290,
     "id": "customer-290",
     "customerId": "customer-290",
     "name": "Emma Doe",
@@ -11112,10 +11113,10 @@
       }
     ],
     "registeredAt": "2025-03-19T00:00:00Z",
-    "updatedAt": "2025-10-03T09:03:00Z",
-    "_partitionKey": "customer-290"
+    "updatedAt": "2025-10-03T09:03:00Z"
   },
   {
+    "customerKey": 291,
     "id": "customer-291",
     "customerId": "customer-291",
     "name": "Liam Brown",
@@ -11151,10 +11152,10 @@
       }
     ],
     "registeredAt": "2025-01-13T00:00:00Z",
-    "updatedAt": "2025-10-14T15:10:00Z",
-    "_partitionKey": "customer-291"
+    "updatedAt": "2025-10-14T15:10:00Z"
   },
   {
+    "customerKey": 292,
     "id": "customer-292",
     "customerId": "customer-292",
     "name": "Sophia Jones",
@@ -11197,10 +11198,10 @@
       }
     ],
     "registeredAt": "2024-06-21T00:00:00Z",
-    "updatedAt": "2025-10-21T13:47:00Z",
-    "_partitionKey": "customer-292"
+    "updatedAt": "2025-10-21T13:47:00Z"
   },
   {
+    "customerKey": 293,
     "id": "customer-293",
     "customerId": "customer-293",
     "name": "Mason Smith",
@@ -11229,10 +11230,10 @@
       }
     ],
     "registeredAt": "2024-09-19T00:00:00Z",
-    "updatedAt": "2025-10-19T16:03:00Z",
-    "_partitionKey": "customer-293"
+    "updatedAt": "2025-10-19T16:03:00Z"
   },
   {
+    "customerKey": 294,
     "id": "customer-294",
     "customerId": "customer-294",
     "name": "Jane Miller",
@@ -11268,10 +11269,10 @@
       }
     ],
     "registeredAt": "2024-11-23T00:00:00Z",
-    "updatedAt": "2025-10-19T14:11:00Z",
-    "_partitionKey": "customer-294"
+    "updatedAt": "2025-10-19T14:11:00Z"
   },
   {
+    "customerKey": 295,
     "id": "customer-295",
     "customerId": "customer-295",
     "name": "John Doe",
@@ -11298,10 +11299,10 @@
       }
     ],
     "registeredAt": "2024-09-23T00:00:00Z",
-    "updatedAt": "2025-10-01T15:50:00Z",
-    "_partitionKey": "customer-295"
+    "updatedAt": "2025-10-01T15:50:00Z"
   },
   {
+    "customerKey": 296,
     "id": "customer-296",
     "customerId": "customer-296",
     "name": "Mason Garcia",
@@ -11335,10 +11336,10 @@
       }
     ],
     "registeredAt": "2025-01-06T00:00:00Z",
-    "updatedAt": "2025-10-09T09:14:00Z",
-    "_partitionKey": "customer-296"
+    "updatedAt": "2025-10-09T09:14:00Z"
   },
   {
+    "customerKey": 297,
     "id": "customer-297",
     "customerId": "customer-297",
     "name": "Mason Miller",
@@ -11365,10 +11366,10 @@
       }
     ],
     "registeredAt": "2025-01-09T00:00:00Z",
-    "updatedAt": "2025-10-20T18:13:00Z",
-    "_partitionKey": "customer-297"
+    "updatedAt": "2025-10-20T18:13:00Z"
   },
   {
+    "customerKey": 298,
     "id": "customer-298",
     "customerId": "customer-298",
     "name": "Jane Miller",
@@ -11404,10 +11405,10 @@
       }
     ],
     "registeredAt": "2024-06-30T00:00:00Z",
-    "updatedAt": "2025-10-15T14:40:00Z",
-    "_partitionKey": "customer-298"
+    "updatedAt": "2025-10-15T14:40:00Z"
   },
   {
+    "customerKey": 299,
     "id": "customer-299",
     "customerId": "customer-299",
     "name": "Olivia Doe",
@@ -11434,10 +11435,10 @@
       }
     ],
     "registeredAt": "2024-05-04T00:00:00Z",
-    "updatedAt": "2025-10-10T10:55:00Z",
-    "_partitionKey": "customer-299"
+    "updatedAt": "2025-10-10T10:55:00Z"
   },
   {
+    "customerKey": 300,
     "id": "customer-300",
     "customerId": "customer-300",
     "name": "Ava Johnson",
@@ -11466,10 +11467,10 @@
       }
     ],
     "registeredAt": "2024-04-17T00:00:00Z",
-    "updatedAt": "2025-10-04T08:05:00Z",
-    "_partitionKey": "customer-300"
+    "updatedAt": "2025-10-04T08:05:00Z"
   },
   {
+    "customerKey": 301,
     "id": "customer-301",
     "customerId": "customer-301",
     "name": "Ava Brown",
@@ -11512,10 +11513,10 @@
       }
     ],
     "registeredAt": "2024-11-21T00:00:00Z",
-    "updatedAt": "2025-10-21T08:55:00Z",
-    "_partitionKey": "customer-301"
+    "updatedAt": "2025-10-21T08:55:00Z"
   },
   {
+    "customerKey": 302,
     "id": "customer-302",
     "customerId": "customer-302",
     "name": "John Miller",
@@ -11551,10 +11552,10 @@
       }
     ],
     "registeredAt": "2024-11-29T00:00:00Z",
-    "updatedAt": "2025-10-21T20:56:00Z",
-    "_partitionKey": "customer-302"
+    "updatedAt": "2025-10-21T20:56:00Z"
   },
   {
+    "customerKey": 303,
     "id": "customer-303",
     "customerId": "customer-303",
     "name": "Emma Miller",
@@ -11583,10 +11584,10 @@
       }
     ],
     "registeredAt": "2025-03-20T00:00:00Z",
-    "updatedAt": "2025-10-08T13:55:00Z",
-    "_partitionKey": "customer-303"
+    "updatedAt": "2025-10-08T13:55:00Z"
   },
   {
+    "customerKey": 304,
     "id": "customer-304",
     "customerId": "customer-304",
     "name": "Jane Jones",
@@ -11622,10 +11623,10 @@
       }
     ],
     "registeredAt": "2024-09-09T00:00:00Z",
-    "updatedAt": "2025-10-10T14:11:00Z",
-    "_partitionKey": "customer-304"
+    "updatedAt": "2025-10-10T14:11:00Z"
   },
   {
+    "customerKey": 305,
     "id": "customer-305",
     "customerId": "customer-305",
     "name": "Jane Brown",
@@ -11661,10 +11662,10 @@
       }
     ],
     "registeredAt": "2024-09-23T00:00:00Z",
-    "updatedAt": "2025-10-17T14:32:00Z",
-    "_partitionKey": "customer-305"
+    "updatedAt": "2025-10-17T14:32:00Z"
   },
   {
+    "customerKey": 306,
     "id": "customer-306",
     "customerId": "customer-306",
     "name": "Jane Jones",
@@ -11707,10 +11708,10 @@
       }
     ],
     "registeredAt": "2024-11-07T00:00:00Z",
-    "updatedAt": "2025-10-05T13:40:00Z",
-    "_partitionKey": "customer-306"
+    "updatedAt": "2025-10-05T13:40:00Z"
   },
   {
+    "customerKey": 307,
     "id": "customer-307",
     "customerId": "customer-307",
     "name": "Mason Brown",
@@ -11739,10 +11740,10 @@
       }
     ],
     "registeredAt": "2025-01-02T00:00:00Z",
-    "updatedAt": "2025-10-07T12:26:00Z",
-    "_partitionKey": "customer-307"
+    "updatedAt": "2025-10-07T12:26:00Z"
   },
   {
+    "customerKey": 308,
     "id": "customer-308",
     "customerId": "customer-308",
     "name": "Olivia Williams",
@@ -11778,10 +11779,10 @@
       }
     ],
     "registeredAt": "2024-07-20T00:00:00Z",
-    "updatedAt": "2025-10-18T14:45:00Z",
-    "_partitionKey": "customer-308"
+    "updatedAt": "2025-10-18T14:45:00Z"
   },
   {
+    "customerKey": 309,
     "id": "customer-309",
     "customerId": "customer-309",
     "name": "Olivia Doe",
@@ -11824,10 +11825,10 @@
       }
     ],
     "registeredAt": "2024-03-28T00:00:00Z",
-    "updatedAt": "2025-10-05T14:45:00Z",
-    "_partitionKey": "customer-309"
+    "updatedAt": "2025-10-05T14:45:00Z"
   },
   {
+    "customerKey": 310,
     "id": "customer-310",
     "customerId": "customer-310",
     "name": "Lucas Jones",
@@ -11856,10 +11857,10 @@
       }
     ],
     "registeredAt": "2024-10-04T00:00:00Z",
-    "updatedAt": "2025-10-17T10:50:00Z",
-    "_partitionKey": "customer-310"
+    "updatedAt": "2025-10-17T10:50:00Z"
   },
   {
+    "customerKey": 311,
     "id": "customer-311",
     "customerId": "customer-311",
     "name": "Emma Jones",
@@ -11895,10 +11896,10 @@
       }
     ],
     "registeredAt": "2024-09-05T00:00:00Z",
-    "updatedAt": "2025-10-07T17:15:00Z",
-    "_partitionKey": "customer-311"
+    "updatedAt": "2025-10-07T17:15:00Z"
   },
   {
+    "customerKey": 312,
     "id": "customer-312",
     "customerId": "customer-312",
     "name": "Ava Jones",
@@ -11939,10 +11940,10 @@
       }
     ],
     "registeredAt": "2024-09-28T00:00:00Z",
-    "updatedAt": "2025-10-17T15:12:00Z",
-    "_partitionKey": "customer-312"
+    "updatedAt": "2025-10-17T15:12:00Z"
   },
   {
+    "customerKey": 313,
     "id": "customer-313",
     "customerId": "customer-313",
     "name": "Emma Johnson",
@@ -11978,10 +11979,10 @@
       }
     ],
     "registeredAt": "2024-10-04T00:00:00Z",
-    "updatedAt": "2025-10-05T18:31:00Z",
-    "_partitionKey": "customer-313"
+    "updatedAt": "2025-10-05T18:31:00Z"
   },
   {
+    "customerKey": 314,
     "id": "customer-314",
     "customerId": "customer-314",
     "name": "Noah Smith",
@@ -12022,10 +12023,10 @@
       }
     ],
     "registeredAt": "2024-06-18T00:00:00Z",
-    "updatedAt": "2025-10-07T08:08:00Z",
-    "_partitionKey": "customer-314"
+    "updatedAt": "2025-10-07T08:08:00Z"
   },
   {
+    "customerKey": 315,
     "id": "customer-315",
     "customerId": "customer-315",
     "name": "Emma Williams",
@@ -12061,10 +12062,10 @@
       }
     ],
     "registeredAt": "2024-06-30T00:00:00Z",
-    "updatedAt": "2025-10-06T15:30:00Z",
-    "_partitionKey": "customer-315"
+    "updatedAt": "2025-10-06T15:30:00Z"
   },
   {
+    "customerKey": 316,
     "id": "customer-316",
     "customerId": "customer-316",
     "name": "Jane Brown",
@@ -12100,10 +12101,10 @@
       }
     ],
     "registeredAt": "2025-01-07T00:00:00Z",
-    "updatedAt": "2025-10-16T08:15:00Z",
-    "_partitionKey": "customer-316"
+    "updatedAt": "2025-10-16T08:15:00Z"
   },
   {
+    "customerKey": 317,
     "id": "customer-317",
     "customerId": "customer-317",
     "name": "Liam Johnson",
@@ -12139,10 +12140,10 @@
       }
     ],
     "registeredAt": "2025-01-07T00:00:00Z",
-    "updatedAt": "2025-10-10T08:22:00Z",
-    "_partitionKey": "customer-317"
+    "updatedAt": "2025-10-10T08:22:00Z"
   },
   {
+    "customerKey": 318,
     "id": "customer-318",
     "customerId": "customer-318",
     "name": "Noah Jones",
@@ -12171,10 +12172,10 @@
       }
     ],
     "registeredAt": "2024-11-12T00:00:00Z",
-    "updatedAt": "2025-10-08T16:47:00Z",
-    "_partitionKey": "customer-318"
+    "updatedAt": "2025-10-08T16:47:00Z"
   },
   {
+    "customerKey": 319,
     "id": "customer-319",
     "customerId": "customer-319",
     "name": "John Doe",
@@ -12203,10 +12204,10 @@
       }
     ],
     "registeredAt": "2024-09-15T00:00:00Z",
-    "updatedAt": "2025-10-02T15:40:00Z",
-    "_partitionKey": "customer-319"
+    "updatedAt": "2025-10-02T15:40:00Z"
   },
   {
+    "customerKey": 320,
     "id": "customer-320",
     "customerId": "customer-320",
     "name": "Mason Miller",
@@ -12242,10 +12243,10 @@
       }
     ],
     "registeredAt": "2024-04-22T00:00:00Z",
-    "updatedAt": "2025-10-06T16:46:00Z",
-    "_partitionKey": "customer-320"
+    "updatedAt": "2025-10-06T16:46:00Z"
   },
   {
+    "customerKey": 321,
     "id": "customer-321",
     "customerId": "customer-321",
     "name": "Lucas Williams",
@@ -12281,10 +12282,10 @@
       }
     ],
     "registeredAt": "2024-09-17T00:00:00Z",
-    "updatedAt": "2025-10-08T08:46:00Z",
-    "_partitionKey": "customer-321"
+    "updatedAt": "2025-10-08T08:46:00Z"
   },
   {
+    "customerKey": 322,
     "id": "customer-322",
     "customerId": "customer-322",
     "name": "Liam Williams",
@@ -12313,10 +12314,10 @@
       }
     ],
     "registeredAt": "2024-07-09T00:00:00Z",
-    "updatedAt": "2025-10-16T10:15:00Z",
-    "_partitionKey": "customer-322"
+    "updatedAt": "2025-10-16T10:15:00Z"
   },
   {
+    "customerKey": 323,
     "id": "customer-323",
     "customerId": "customer-323",
     "name": "Ava Jones",
@@ -12345,10 +12346,10 @@
       }
     ],
     "registeredAt": "2024-10-15T00:00:00Z",
-    "updatedAt": "2025-10-19T08:32:00Z",
-    "_partitionKey": "customer-323"
+    "updatedAt": "2025-10-19T08:32:00Z"
   },
   {
+    "customerKey": 324,
     "id": "customer-324",
     "customerId": "customer-324",
     "name": "Jane Brown",
@@ -12382,10 +12383,10 @@
       }
     ],
     "registeredAt": "2024-10-18T00:00:00Z",
-    "updatedAt": "2025-10-19T19:00:00Z",
-    "_partitionKey": "customer-324"
+    "updatedAt": "2025-10-19T19:00:00Z"
   },
   {
+    "customerKey": 325,
     "id": "customer-325",
     "customerId": "customer-325",
     "name": "Ava Brown",
@@ -12419,10 +12420,10 @@
       }
     ],
     "registeredAt": "2024-04-30T00:00:00Z",
-    "updatedAt": "2025-10-07T15:34:00Z",
-    "_partitionKey": "customer-325"
+    "updatedAt": "2025-10-07T15:34:00Z"
   },
   {
+    "customerKey": 326,
     "id": "customer-326",
     "customerId": "customer-326",
     "name": "Lucas Garcia",
@@ -12463,10 +12464,10 @@
       }
     ],
     "registeredAt": "2025-03-07T00:00:00Z",
-    "updatedAt": "2025-10-21T15:33:00Z",
-    "_partitionKey": "customer-326"
+    "updatedAt": "2025-10-21T15:33:00Z"
   },
   {
+    "customerKey": 327,
     "id": "customer-327",
     "customerId": "customer-327",
     "name": "Liam Garcia",
@@ -12495,10 +12496,10 @@
       }
     ],
     "registeredAt": "2025-02-24T00:00:00Z",
-    "updatedAt": "2025-10-16T18:56:00Z",
-    "_partitionKey": "customer-327"
+    "updatedAt": "2025-10-16T18:56:00Z"
   },
   {
+    "customerKey": 328,
     "id": "customer-328",
     "customerId": "customer-328",
     "name": "Sophia Jones",
@@ -12541,10 +12542,10 @@
       }
     ],
     "registeredAt": "2025-03-29T00:00:00Z",
-    "updatedAt": "2025-10-16T15:39:00Z",
-    "_partitionKey": "customer-328"
+    "updatedAt": "2025-10-16T15:39:00Z"
   },
   {
+    "customerKey": 329,
     "id": "customer-329",
     "customerId": "customer-329",
     "name": "Ava Garcia",
@@ -12587,10 +12588,10 @@
       }
     ],
     "registeredAt": "2025-04-17T00:00:00Z",
-    "updatedAt": "2025-10-10T12:04:00Z",
-    "_partitionKey": "customer-329"
+    "updatedAt": "2025-10-10T12:04:00Z"
   },
   {
+    "customerKey": 330,
     "id": "customer-330",
     "customerId": "customer-330",
     "name": "Mason Brown",
@@ -12626,10 +12627,10 @@
       }
     ],
     "registeredAt": "2024-12-07T00:00:00Z",
-    "updatedAt": "2025-10-08T20:32:00Z",
-    "_partitionKey": "customer-330"
+    "updatedAt": "2025-10-08T20:32:00Z"
   },
   {
+    "customerKey": 331,
     "id": "customer-331",
     "customerId": "customer-331",
     "name": "Lucas Brown",
@@ -12672,10 +12673,10 @@
       }
     ],
     "registeredAt": "2024-04-20T00:00:00Z",
-    "updatedAt": "2025-10-09T18:45:00Z",
-    "_partitionKey": "customer-331"
+    "updatedAt": "2025-10-09T18:45:00Z"
   },
   {
+    "customerKey": 332,
     "id": "customer-332",
     "customerId": "customer-332",
     "name": "Jane Brown",
@@ -12711,10 +12712,10 @@
       }
     ],
     "registeredAt": "2025-02-14T00:00:00Z",
-    "updatedAt": "2025-10-15T09:51:00Z",
-    "_partitionKey": "customer-332"
+    "updatedAt": "2025-10-15T09:51:00Z"
   },
   {
+    "customerKey": 333,
     "id": "customer-333",
     "customerId": "customer-333",
     "name": "Liam Johnson",
@@ -12743,10 +12744,10 @@
       }
     ],
     "registeredAt": "2024-11-03T00:00:00Z",
-    "updatedAt": "2025-10-13T08:25:00Z",
-    "_partitionKey": "customer-333"
+    "updatedAt": "2025-10-13T08:25:00Z"
   },
   {
+    "customerKey": 334,
     "id": "customer-334",
     "customerId": "customer-334",
     "name": "John Brown",
@@ -12782,10 +12783,10 @@
       }
     ],
     "registeredAt": "2025-01-30T00:00:00Z",
-    "updatedAt": "2025-10-03T15:35:00Z",
-    "_partitionKey": "customer-334"
+    "updatedAt": "2025-10-03T15:35:00Z"
   },
   {
+    "customerKey": 335,
     "id": "customer-335",
     "customerId": "customer-335",
     "name": "Sophia Jones",
@@ -12821,10 +12822,10 @@
       }
     ],
     "registeredAt": "2024-08-15T00:00:00Z",
-    "updatedAt": "2025-10-18T10:41:00Z",
-    "_partitionKey": "customer-335"
+    "updatedAt": "2025-10-18T10:41:00Z"
   },
   {
+    "customerKey": 336,
     "id": "customer-336",
     "customerId": "customer-336",
     "name": "Liam Smith",
@@ -12853,10 +12854,10 @@
       }
     ],
     "registeredAt": "2024-08-31T00:00:00Z",
-    "updatedAt": "2025-10-17T15:58:00Z",
-    "_partitionKey": "customer-336"
+    "updatedAt": "2025-10-17T15:58:00Z"
   },
   {
+    "customerKey": 337,
     "id": "customer-337",
     "customerId": "customer-337",
     "name": "Mason Miller",
@@ -12885,10 +12886,10 @@
       }
     ],
     "registeredAt": "2025-03-26T00:00:00Z",
-    "updatedAt": "2025-10-11T09:33:00Z",
-    "_partitionKey": "customer-337"
+    "updatedAt": "2025-10-11T09:33:00Z"
   },
   {
+    "customerKey": 338,
     "id": "customer-338",
     "customerId": "customer-338",
     "name": "Olivia Doe",
@@ -12917,10 +12918,10 @@
       }
     ],
     "registeredAt": "2024-04-12T00:00:00Z",
-    "updatedAt": "2025-10-09T15:59:00Z",
-    "_partitionKey": "customer-338"
+    "updatedAt": "2025-10-09T15:59:00Z"
   },
   {
+    "customerKey": 339,
     "id": "customer-339",
     "customerId": "customer-339",
     "name": "Olivia Brown",
@@ -12963,10 +12964,10 @@
       }
     ],
     "registeredAt": "2024-08-08T00:00:00Z",
-    "updatedAt": "2025-10-19T16:55:00Z",
-    "_partitionKey": "customer-339"
+    "updatedAt": "2025-10-19T16:55:00Z"
   },
   {
+    "customerKey": 340,
     "id": "customer-340",
     "customerId": "customer-340",
     "name": "Ava Brown",
@@ -12995,10 +12996,10 @@
       }
     ],
     "registeredAt": "2024-06-02T00:00:00Z",
-    "updatedAt": "2025-10-07T19:29:00Z",
-    "_partitionKey": "customer-340"
+    "updatedAt": "2025-10-07T19:29:00Z"
   },
   {
+    "customerKey": 341,
     "id": "customer-341",
     "customerId": "customer-341",
     "name": "Noah Johnson",
@@ -13039,10 +13040,10 @@
       }
     ],
     "registeredAt": "2024-12-28T00:00:00Z",
-    "updatedAt": "2025-10-02T14:01:00Z",
-    "_partitionKey": "customer-341"
+    "updatedAt": "2025-10-02T14:01:00Z"
   },
   {
+    "customerKey": 342,
     "id": "customer-342",
     "customerId": "customer-342",
     "name": "Jane Brown",
@@ -13071,10 +13072,10 @@
       }
     ],
     "registeredAt": "2024-11-24T00:00:00Z",
-    "updatedAt": "2025-10-03T20:17:00Z",
-    "_partitionKey": "customer-342"
+    "updatedAt": "2025-10-03T20:17:00Z"
   },
   {
+    "customerKey": 343,
     "id": "customer-343",
     "customerId": "customer-343",
     "name": "Mason Johnson",
@@ -13103,10 +13104,10 @@
       }
     ],
     "registeredAt": "2024-04-02T00:00:00Z",
-    "updatedAt": "2025-10-14T17:39:00Z",
-    "_partitionKey": "customer-343"
+    "updatedAt": "2025-10-14T17:39:00Z"
   },
   {
+    "customerKey": 344,
     "id": "customer-344",
     "customerId": "customer-344",
     "name": "Noah Brown",
@@ -13133,10 +13134,10 @@
       }
     ],
     "registeredAt": "2024-04-01T00:00:00Z",
-    "updatedAt": "2025-10-08T20:07:00Z",
-    "_partitionKey": "customer-344"
+    "updatedAt": "2025-10-08T20:07:00Z"
   },
   {
+    "customerKey": 345,
     "id": "customer-345",
     "customerId": "customer-345",
     "name": "Mason Smith",
@@ -13179,10 +13180,10 @@
       }
     ],
     "registeredAt": "2024-04-15T00:00:00Z",
-    "updatedAt": "2025-10-17T20:29:00Z",
-    "_partitionKey": "customer-345"
+    "updatedAt": "2025-10-17T20:29:00Z"
   },
   {
+    "customerKey": 346,
     "id": "customer-346",
     "customerId": "customer-346",
     "name": "Ava Doe",
@@ -13225,10 +13226,10 @@
       }
     ],
     "registeredAt": "2025-01-12T00:00:00Z",
-    "updatedAt": "2025-10-12T12:24:00Z",
-    "_partitionKey": "customer-346"
+    "updatedAt": "2025-10-12T12:24:00Z"
   },
   {
+    "customerKey": 347,
     "id": "customer-347",
     "customerId": "customer-347",
     "name": "Lucas Brown",
@@ -13264,10 +13265,10 @@
       }
     ],
     "registeredAt": "2024-04-03T00:00:00Z",
-    "updatedAt": "2025-10-05T15:53:00Z",
-    "_partitionKey": "customer-347"
+    "updatedAt": "2025-10-05T15:53:00Z"
   },
   {
+    "customerKey": 348,
     "id": "customer-348",
     "customerId": "customer-348",
     "name": "Sophia Miller",
@@ -13296,10 +13297,10 @@
       }
     ],
     "registeredAt": "2024-04-17T00:00:00Z",
-    "updatedAt": "2025-10-21T17:33:00Z",
-    "_partitionKey": "customer-348"
+    "updatedAt": "2025-10-21T17:33:00Z"
   },
   {
+    "customerKey": 349,
     "id": "customer-349",
     "customerId": "customer-349",
     "name": "Lucas Miller",
@@ -13335,10 +13336,10 @@
       }
     ],
     "registeredAt": "2025-04-07T00:00:00Z",
-    "updatedAt": "2025-10-06T17:28:00Z",
-    "_partitionKey": "customer-349"
+    "updatedAt": "2025-10-06T17:28:00Z"
   },
   {
+    "customerKey": 350,
     "id": "customer-350",
     "customerId": "customer-350",
     "name": "Noah Smith",
@@ -13374,10 +13375,10 @@
       }
     ],
     "registeredAt": "2025-02-06T00:00:00Z",
-    "updatedAt": "2025-10-20T10:30:00Z",
-    "_partitionKey": "customer-350"
+    "updatedAt": "2025-10-20T10:30:00Z"
   },
   {
+    "customerKey": 351,
     "id": "customer-351",
     "customerId": "customer-351",
     "name": "Lucas Williams",
@@ -13411,10 +13412,10 @@
       }
     ],
     "registeredAt": "2024-05-26T00:00:00Z",
-    "updatedAt": "2025-10-16T14:38:00Z",
-    "_partitionKey": "customer-351"
+    "updatedAt": "2025-10-16T14:38:00Z"
   },
   {
+    "customerKey": 352,
     "id": "customer-352",
     "customerId": "customer-352",
     "name": "Sophia Brown",
@@ -13457,10 +13458,10 @@
       }
     ],
     "registeredAt": "2024-11-15T00:00:00Z",
-    "updatedAt": "2025-10-02T16:38:00Z",
-    "_partitionKey": "customer-352"
+    "updatedAt": "2025-10-02T16:38:00Z"
   },
   {
+    "customerKey": 353,
     "id": "customer-353",
     "customerId": "customer-353",
     "name": "John Johnson",
@@ -13501,10 +13502,10 @@
       }
     ],
     "registeredAt": "2024-09-14T00:00:00Z",
-    "updatedAt": "2025-10-19T20:40:00Z",
-    "_partitionKey": "customer-353"
+    "updatedAt": "2025-10-19T20:40:00Z"
   },
   {
+    "customerKey": 354,
     "id": "customer-354",
     "customerId": "customer-354",
     "name": "John Johnson",
@@ -13547,10 +13548,10 @@
       }
     ],
     "registeredAt": "2024-04-05T00:00:00Z",
-    "updatedAt": "2025-10-15T18:32:00Z",
-    "_partitionKey": "customer-354"
+    "updatedAt": "2025-10-15T18:32:00Z"
   },
   {
+    "customerKey": 355,
     "id": "customer-355",
     "customerId": "customer-355",
     "name": "Noah Miller",
@@ -13579,10 +13580,10 @@
       }
     ],
     "registeredAt": "2024-12-08T00:00:00Z",
-    "updatedAt": "2025-10-09T19:26:00Z",
-    "_partitionKey": "customer-355"
+    "updatedAt": "2025-10-09T19:26:00Z"
   },
   {
+    "customerKey": 356,
     "id": "customer-356",
     "customerId": "customer-356",
     "name": "Lucas Doe",
@@ -13618,10 +13619,10 @@
       }
     ],
     "registeredAt": "2025-03-10T00:00:00Z",
-    "updatedAt": "2025-10-08T17:14:00Z",
-    "_partitionKey": "customer-356"
+    "updatedAt": "2025-10-08T17:14:00Z"
   },
   {
+    "customerKey": 357,
     "id": "customer-357",
     "customerId": "customer-357",
     "name": "Olivia Smith",
@@ -13655,10 +13656,10 @@
       }
     ],
     "registeredAt": "2024-11-02T00:00:00Z",
-    "updatedAt": "2025-10-06T17:31:00Z",
-    "_partitionKey": "customer-357"
+    "updatedAt": "2025-10-06T17:31:00Z"
   },
   {
+    "customerKey": 358,
     "id": "customer-358",
     "customerId": "customer-358",
     "name": "Mason Miller",
@@ -13694,10 +13695,10 @@
       }
     ],
     "registeredAt": "2024-06-13T00:00:00Z",
-    "updatedAt": "2025-10-18T14:15:00Z",
-    "_partitionKey": "customer-358"
+    "updatedAt": "2025-10-18T14:15:00Z"
   },
   {
+    "customerKey": 359,
     "id": "customer-359",
     "customerId": "customer-359",
     "name": "Ava Garcia",
@@ -13738,10 +13739,10 @@
       }
     ],
     "registeredAt": "2024-06-07T00:00:00Z",
-    "updatedAt": "2025-10-06T18:42:00Z",
-    "_partitionKey": "customer-359"
+    "updatedAt": "2025-10-06T18:42:00Z"
   },
   {
+    "customerKey": 360,
     "id": "customer-360",
     "customerId": "customer-360",
     "name": "Ava Williams",
@@ -13775,10 +13776,10 @@
       }
     ],
     "registeredAt": "2024-11-13T00:00:00Z",
-    "updatedAt": "2025-10-17T12:17:00Z",
-    "_partitionKey": "customer-360"
+    "updatedAt": "2025-10-17T12:17:00Z"
   },
   {
+    "customerKey": 361,
     "id": "customer-361",
     "customerId": "customer-361",
     "name": "Olivia Doe",
@@ -13819,10 +13820,10 @@
       }
     ],
     "registeredAt": "2025-03-02T00:00:00Z",
-    "updatedAt": "2025-10-08T14:41:00Z",
-    "_partitionKey": "customer-361"
+    "updatedAt": "2025-10-08T14:41:00Z"
   },
   {
+    "customerKey": 362,
     "id": "customer-362",
     "customerId": "customer-362",
     "name": "Liam Williams",
@@ -13863,10 +13864,10 @@
       }
     ],
     "registeredAt": "2025-01-23T00:00:00Z",
-    "updatedAt": "2025-10-11T19:10:00Z",
-    "_partitionKey": "customer-362"
+    "updatedAt": "2025-10-11T19:10:00Z"
   },
   {
+    "customerKey": 363,
     "id": "customer-363",
     "customerId": "customer-363",
     "name": "Noah Garcia",
@@ -13900,10 +13901,10 @@
       }
     ],
     "registeredAt": "2024-10-06T00:00:00Z",
-    "updatedAt": "2025-10-10T17:37:00Z",
-    "_partitionKey": "customer-363"
+    "updatedAt": "2025-10-10T17:37:00Z"
   },
   {
+    "customerKey": 364,
     "id": "customer-364",
     "customerId": "customer-364",
     "name": "Emma Smith",
@@ -13932,10 +13933,10 @@
       }
     ],
     "registeredAt": "2024-11-28T00:00:00Z",
-    "updatedAt": "2025-10-12T18:28:00Z",
-    "_partitionKey": "customer-364"
+    "updatedAt": "2025-10-12T18:28:00Z"
   },
   {
+    "customerKey": 365,
     "id": "customer-365",
     "customerId": "customer-365",
     "name": "Ava Jones",
@@ -13971,10 +13972,10 @@
       }
     ],
     "registeredAt": "2024-04-05T00:00:00Z",
-    "updatedAt": "2025-10-09T15:17:00Z",
-    "_partitionKey": "customer-365"
+    "updatedAt": "2025-10-09T15:17:00Z"
   },
   {
+    "customerKey": 366,
     "id": "customer-366",
     "customerId": "customer-366",
     "name": "Emma Garcia",
@@ -14010,10 +14011,10 @@
       }
     ],
     "registeredAt": "2024-05-16T00:00:00Z",
-    "updatedAt": "2025-10-20T09:22:00Z",
-    "_partitionKey": "customer-366"
+    "updatedAt": "2025-10-20T09:22:00Z"
   },
   {
+    "customerKey": 367,
     "id": "customer-367",
     "customerId": "customer-367",
     "name": "Mason Smith",
@@ -14049,10 +14050,10 @@
       }
     ],
     "registeredAt": "2025-03-08T00:00:00Z",
-    "updatedAt": "2025-10-13T19:46:00Z",
-    "_partitionKey": "customer-367"
+    "updatedAt": "2025-10-13T19:46:00Z"
   },
   {
+    "customerKey": 368,
     "id": "customer-368",
     "customerId": "customer-368",
     "name": "Liam Jones",
@@ -14095,10 +14096,10 @@
       }
     ],
     "registeredAt": "2025-02-09T00:00:00Z",
-    "updatedAt": "2025-10-05T17:22:00Z",
-    "_partitionKey": "customer-368"
+    "updatedAt": "2025-10-05T17:22:00Z"
   },
   {
+    "customerKey": 369,
     "id": "customer-369",
     "customerId": "customer-369",
     "name": "Liam Jones",
@@ -14134,10 +14135,10 @@
       }
     ],
     "registeredAt": "2024-08-11T00:00:00Z",
-    "updatedAt": "2025-10-03T19:23:00Z",
-    "_partitionKey": "customer-369"
+    "updatedAt": "2025-10-03T19:23:00Z"
   },
   {
+    "customerKey": 370,
     "id": "customer-370",
     "customerId": "customer-370",
     "name": "Jane Williams",
@@ -14173,10 +14174,10 @@
       }
     ],
     "registeredAt": "2024-05-24T00:00:00Z",
-    "updatedAt": "2025-10-11T09:01:00Z",
-    "_partitionKey": "customer-370"
+    "updatedAt": "2025-10-11T09:01:00Z"
   },
   {
+    "customerKey": 371,
     "id": "customer-371",
     "customerId": "customer-371",
     "name": "John Brown",
@@ -14212,10 +14213,10 @@
       }
     ],
     "registeredAt": "2024-06-27T00:00:00Z",
-    "updatedAt": "2025-10-21T19:16:00Z",
-    "_partitionKey": "customer-371"
+    "updatedAt": "2025-10-21T19:16:00Z"
   },
   {
+    "customerKey": 372,
     "id": "customer-372",
     "customerId": "customer-372",
     "name": "Liam Smith",
@@ -14249,10 +14250,10 @@
       }
     ],
     "registeredAt": "2024-11-02T00:00:00Z",
-    "updatedAt": "2025-10-03T16:29:00Z",
-    "_partitionKey": "customer-372"
+    "updatedAt": "2025-10-03T16:29:00Z"
   },
   {
+    "customerKey": 373,
     "id": "customer-373",
     "customerId": "customer-373",
     "name": "Jane Miller",
@@ -14288,10 +14289,10 @@
       }
     ],
     "registeredAt": "2025-03-28T00:00:00Z",
-    "updatedAt": "2025-10-01T18:29:00Z",
-    "_partitionKey": "customer-373"
+    "updatedAt": "2025-10-01T18:29:00Z"
   },
   {
+    "customerKey": 374,
     "id": "customer-374",
     "customerId": "customer-374",
     "name": "Mason Smith",
@@ -14332,10 +14333,10 @@
       }
     ],
     "registeredAt": "2025-01-23T00:00:00Z",
-    "updatedAt": "2025-10-12T17:03:00Z",
-    "_partitionKey": "customer-374"
+    "updatedAt": "2025-10-12T17:03:00Z"
   },
   {
+    "customerKey": 375,
     "id": "customer-375",
     "customerId": "customer-375",
     "name": "Olivia Doe",
@@ -14364,10 +14365,10 @@
       }
     ],
     "registeredAt": "2024-11-26T00:00:00Z",
-    "updatedAt": "2025-10-07T15:51:00Z",
-    "_partitionKey": "customer-375"
+    "updatedAt": "2025-10-07T15:51:00Z"
   },
   {
+    "customerKey": 376,
     "id": "customer-376",
     "customerId": "customer-376",
     "name": "John Jones",
@@ -14396,10 +14397,10 @@
       }
     ],
     "registeredAt": "2024-11-09T00:00:00Z",
-    "updatedAt": "2025-10-20T12:06:00Z",
-    "_partitionKey": "customer-376"
+    "updatedAt": "2025-10-20T12:06:00Z"
   },
   {
+    "customerKey": 377,
     "id": "customer-377",
     "customerId": "customer-377",
     "name": "Mason Miller",
@@ -14428,10 +14429,10 @@
       }
     ],
     "registeredAt": "2024-08-26T00:00:00Z",
-    "updatedAt": "2025-10-16T17:22:00Z",
-    "_partitionKey": "customer-377"
+    "updatedAt": "2025-10-16T17:22:00Z"
   },
   {
+    "customerKey": 378,
     "id": "customer-378",
     "customerId": "customer-378",
     "name": "Sophia Garcia",
@@ -14460,10 +14461,10 @@
       }
     ],
     "registeredAt": "2024-11-16T00:00:00Z",
-    "updatedAt": "2025-10-05T17:01:00Z",
-    "_partitionKey": "customer-378"
+    "updatedAt": "2025-10-05T17:01:00Z"
   },
   {
+    "customerKey": 379,
     "id": "customer-379",
     "customerId": "customer-379",
     "name": "Mason Smith",
@@ -14499,10 +14500,10 @@
       }
     ],
     "registeredAt": "2024-09-19T00:00:00Z",
-    "updatedAt": "2025-10-16T15:27:00Z",
-    "_partitionKey": "customer-379"
+    "updatedAt": "2025-10-16T15:27:00Z"
   },
   {
+    "customerKey": 380,
     "id": "customer-380",
     "customerId": "customer-380",
     "name": "Sophia Williams",
@@ -14543,10 +14544,10 @@
       }
     ],
     "registeredAt": "2024-07-24T00:00:00Z",
-    "updatedAt": "2025-10-06T19:41:00Z",
-    "_partitionKey": "customer-380"
+    "updatedAt": "2025-10-06T19:41:00Z"
   },
   {
+    "customerKey": 381,
     "id": "customer-381",
     "customerId": "customer-381",
     "name": "Lucas Smith",
@@ -14589,10 +14590,10 @@
       }
     ],
     "registeredAt": "2024-09-10T00:00:00Z",
-    "updatedAt": "2025-10-19T20:24:00Z",
-    "_partitionKey": "customer-381"
+    "updatedAt": "2025-10-19T20:24:00Z"
   },
   {
+    "customerKey": 382,
     "id": "customer-382",
     "customerId": "customer-382",
     "name": "Noah Smith",
@@ -14635,10 +14636,10 @@
       }
     ],
     "registeredAt": "2024-11-25T00:00:00Z",
-    "updatedAt": "2025-10-12T18:36:00Z",
-    "_partitionKey": "customer-382"
+    "updatedAt": "2025-10-12T18:36:00Z"
   },
   {
+    "customerKey": 383,
     "id": "customer-383",
     "customerId": "customer-383",
     "name": "Noah Johnson",
@@ -14674,10 +14675,10 @@
       }
     ],
     "registeredAt": "2024-08-27T00:00:00Z",
-    "updatedAt": "2025-10-16T12:07:00Z",
-    "_partitionKey": "customer-383"
+    "updatedAt": "2025-10-16T12:07:00Z"
   },
   {
+    "customerKey": 384,
     "id": "customer-384",
     "customerId": "customer-384",
     "name": "Sophia Brown",
@@ -14713,10 +14714,10 @@
       }
     ],
     "registeredAt": "2025-02-14T00:00:00Z",
-    "updatedAt": "2025-10-20T18:24:00Z",
-    "_partitionKey": "customer-384"
+    "updatedAt": "2025-10-20T18:24:00Z"
   },
   {
+    "customerKey": 385,
     "id": "customer-385",
     "customerId": "customer-385",
     "name": "Jane Johnson",
@@ -14745,10 +14746,10 @@
       }
     ],
     "registeredAt": "2024-06-01T00:00:00Z",
-    "updatedAt": "2025-10-08T12:19:00Z",
-    "_partitionKey": "customer-385"
+    "updatedAt": "2025-10-08T12:19:00Z"
   },
   {
+    "customerKey": 386,
     "id": "customer-386",
     "customerId": "customer-386",
     "name": "Olivia Brown",
@@ -14784,10 +14785,10 @@
       }
     ],
     "registeredAt": "2025-01-03T00:00:00Z",
-    "updatedAt": "2025-10-06T17:26:00Z",
-    "_partitionKey": "customer-386"
+    "updatedAt": "2025-10-06T17:26:00Z"
   },
   {
+    "customerKey": 387,
     "id": "customer-387",
     "customerId": "customer-387",
     "name": "John Jones",
@@ -14816,10 +14817,10 @@
       }
     ],
     "registeredAt": "2024-08-29T00:00:00Z",
-    "updatedAt": "2025-10-14T15:47:00Z",
-    "_partitionKey": "customer-387"
+    "updatedAt": "2025-10-14T15:47:00Z"
   },
   {
+    "customerKey": 388,
     "id": "customer-388",
     "customerId": "customer-388",
     "name": "John Brown",
@@ -14848,10 +14849,10 @@
       }
     ],
     "registeredAt": "2024-10-02T00:00:00Z",
-    "updatedAt": "2025-10-21T09:20:00Z",
-    "_partitionKey": "customer-388"
+    "updatedAt": "2025-10-21T09:20:00Z"
   },
   {
+    "customerKey": 389,
     "id": "customer-389",
     "customerId": "customer-389",
     "name": "John Jones",
@@ -14885,10 +14886,10 @@
       }
     ],
     "registeredAt": "2024-06-20T00:00:00Z",
-    "updatedAt": "2025-10-01T13:52:00Z",
-    "_partitionKey": "customer-389"
+    "updatedAt": "2025-10-01T13:52:00Z"
   },
   {
+    "customerKey": 390,
     "id": "customer-390",
     "customerId": "customer-390",
     "name": "Lucas Doe",
@@ -14929,10 +14930,10 @@
       }
     ],
     "registeredAt": "2024-11-17T00:00:00Z",
-    "updatedAt": "2025-10-13T14:30:00Z",
-    "_partitionKey": "customer-390"
+    "updatedAt": "2025-10-13T14:30:00Z"
   },
   {
+    "customerKey": 391,
     "id": "customer-391",
     "customerId": "customer-391",
     "name": "Ava Miller",
@@ -14959,10 +14960,10 @@
       }
     ],
     "registeredAt": "2025-02-23T00:00:00Z",
-    "updatedAt": "2025-10-16T20:16:00Z",
-    "_partitionKey": "customer-391"
+    "updatedAt": "2025-10-16T20:16:00Z"
   },
   {
+    "customerKey": 392,
     "id": "customer-392",
     "customerId": "customer-392",
     "name": "Lucas Garcia",
@@ -15003,10 +15004,10 @@
       }
     ],
     "registeredAt": "2024-03-16T00:00:00Z",
-    "updatedAt": "2025-10-02T18:41:00Z",
-    "_partitionKey": "customer-392"
+    "updatedAt": "2025-10-02T18:41:00Z"
   },
   {
+    "customerKey": 393,
     "id": "customer-393",
     "customerId": "customer-393",
     "name": "Noah Williams",
@@ -15040,10 +15041,10 @@
       }
     ],
     "registeredAt": "2024-06-17T00:00:00Z",
-    "updatedAt": "2025-10-12T14:40:00Z",
-    "_partitionKey": "customer-393"
+    "updatedAt": "2025-10-12T14:40:00Z"
   },
   {
+    "customerKey": 394,
     "id": "customer-394",
     "customerId": "customer-394",
     "name": "Liam Jones",
@@ -15072,10 +15073,10 @@
       }
     ],
     "registeredAt": "2025-01-09T00:00:00Z",
-    "updatedAt": "2025-10-01T12:17:00Z",
-    "_partitionKey": "customer-394"
+    "updatedAt": "2025-10-01T12:17:00Z"
   },
   {
+    "customerKey": 395,
     "id": "customer-395",
     "customerId": "customer-395",
     "name": "Liam Jones",
@@ -15111,10 +15112,10 @@
       }
     ],
     "registeredAt": "2024-11-26T00:00:00Z",
-    "updatedAt": "2025-10-12T15:48:00Z",
-    "_partitionKey": "customer-395"
+    "updatedAt": "2025-10-12T15:48:00Z"
   },
   {
+    "customerKey": 396,
     "id": "customer-396",
     "customerId": "customer-396",
     "name": "Sophia Doe",
@@ -15157,10 +15158,10 @@
       }
     ],
     "registeredAt": "2025-03-16T00:00:00Z",
-    "updatedAt": "2025-10-16T15:07:00Z",
-    "_partitionKey": "customer-396"
+    "updatedAt": "2025-10-16T15:07:00Z"
   },
   {
+    "customerKey": 397,
     "id": "customer-397",
     "customerId": "customer-397",
     "name": "John Doe",
@@ -15189,10 +15190,10 @@
       }
     ],
     "registeredAt": "2025-01-01T00:00:00Z",
-    "updatedAt": "2025-10-15T15:57:00Z",
-    "_partitionKey": "customer-397"
+    "updatedAt": "2025-10-15T15:57:00Z"
   },
   {
+    "customerKey": 398,
     "id": "customer-398",
     "customerId": "customer-398",
     "name": "Jane Smith",
@@ -15235,10 +15236,10 @@
       }
     ],
     "registeredAt": "2024-11-29T00:00:00Z",
-    "updatedAt": "2025-10-08T10:37:00Z",
-    "_partitionKey": "customer-398"
+    "updatedAt": "2025-10-08T10:37:00Z"
   },
   {
+    "customerKey": 399,
     "id": "customer-399",
     "customerId": "customer-399",
     "name": "Liam Johnson",
@@ -15272,10 +15273,10 @@
       }
     ],
     "registeredAt": "2024-03-28T00:00:00Z",
-    "updatedAt": "2025-10-05T14:45:00Z",
-    "_partitionKey": "customer-399"
+    "updatedAt": "2025-10-05T14:45:00Z"
   },
   {
+    "customerKey": 400,
     "id": "customer-400",
     "customerId": "customer-400",
     "name": "Olivia Garcia",
@@ -15304,10 +15305,10 @@
       }
     ],
     "registeredAt": "2024-10-29T00:00:00Z",
-    "updatedAt": "2025-10-09T08:21:00Z",
-    "_partitionKey": "customer-400"
+    "updatedAt": "2025-10-09T08:21:00Z"
   },
   {
+    "customerKey": 401,
     "id": "customer-401",
     "customerId": "customer-401",
     "name": "Olivia Brown",
@@ -15348,10 +15349,10 @@
       }
     ],
     "registeredAt": "2024-07-09T00:00:00Z",
-    "updatedAt": "2025-10-08T19:22:00Z",
-    "_partitionKey": "customer-401"
+    "updatedAt": "2025-10-08T19:22:00Z"
   },
   {
+    "customerKey": 402,
     "id": "customer-402",
     "customerId": "customer-402",
     "name": "Noah Smith",
@@ -15378,10 +15379,10 @@
       }
     ],
     "registeredAt": "2025-03-31T00:00:00Z",
-    "updatedAt": "2025-10-19T18:43:00Z",
-    "_partitionKey": "customer-402"
+    "updatedAt": "2025-10-19T18:43:00Z"
   },
   {
+    "customerKey": 403,
     "id": "customer-403",
     "customerId": "customer-403",
     "name": "Liam Smith",
@@ -15422,10 +15423,10 @@
       }
     ],
     "registeredAt": "2024-08-30T00:00:00Z",
-    "updatedAt": "2025-10-20T17:56:00Z",
-    "_partitionKey": "customer-403"
+    "updatedAt": "2025-10-20T17:56:00Z"
   },
   {
+    "customerKey": 404,
     "id": "customer-404",
     "customerId": "customer-404",
     "name": "Emma Miller",
@@ -15468,10 +15469,10 @@
       }
     ],
     "registeredAt": "2024-07-23T00:00:00Z",
-    "updatedAt": "2025-10-16T16:53:00Z",
-    "_partitionKey": "customer-404"
+    "updatedAt": "2025-10-16T16:53:00Z"
   },
   {
+    "customerKey": 405,
     "id": "customer-405",
     "customerId": "customer-405",
     "name": "Liam Williams",
@@ -15507,10 +15508,10 @@
       }
     ],
     "registeredAt": "2024-07-17T00:00:00Z",
-    "updatedAt": "2025-10-19T08:59:00Z",
-    "_partitionKey": "customer-405"
+    "updatedAt": "2025-10-19T08:59:00Z"
   },
   {
+    "customerKey": 406,
     "id": "customer-406",
     "customerId": "customer-406",
     "name": "Liam Doe",
@@ -15544,10 +15545,10 @@
       }
     ],
     "registeredAt": "2025-03-01T00:00:00Z",
-    "updatedAt": "2025-10-10T08:46:00Z",
-    "_partitionKey": "customer-406"
+    "updatedAt": "2025-10-10T08:46:00Z"
   },
   {
+    "customerKey": 407,
     "id": "customer-407",
     "customerId": "customer-407",
     "name": "Liam Jones",
@@ -15576,10 +15577,10 @@
       }
     ],
     "registeredAt": "2024-07-31T00:00:00Z",
-    "updatedAt": "2025-10-20T15:51:00Z",
-    "_partitionKey": "customer-407"
+    "updatedAt": "2025-10-20T15:51:00Z"
   },
   {
+    "customerKey": 408,
     "id": "customer-408",
     "customerId": "customer-408",
     "name": "Ava Smith",
@@ -15613,10 +15614,10 @@
       }
     ],
     "registeredAt": "2025-04-16T00:00:00Z",
-    "updatedAt": "2025-10-17T12:58:00Z",
-    "_partitionKey": "customer-408"
+    "updatedAt": "2025-10-17T12:58:00Z"
   },
   {
+    "customerKey": 409,
     "id": "customer-409",
     "customerId": "customer-409",
     "name": "Lucas Brown",
@@ -15659,10 +15660,10 @@
       }
     ],
     "registeredAt": "2025-03-04T00:00:00Z",
-    "updatedAt": "2025-10-04T09:45:00Z",
-    "_partitionKey": "customer-409"
+    "updatedAt": "2025-10-04T09:45:00Z"
   },
   {
+    "customerKey": 410,
     "id": "customer-410",
     "customerId": "customer-410",
     "name": "Emma Johnson",
@@ -15705,10 +15706,10 @@
       }
     ],
     "registeredAt": "2024-03-26T00:00:00Z",
-    "updatedAt": "2025-10-13T12:37:00Z",
-    "_partitionKey": "customer-410"
+    "updatedAt": "2025-10-13T12:37:00Z"
   },
   {
+    "customerKey": 411,
     "id": "customer-411",
     "customerId": "customer-411",
     "name": "Noah Miller",
@@ -15749,10 +15750,10 @@
       }
     ],
     "registeredAt": "2024-04-24T00:00:00Z",
-    "updatedAt": "2025-10-07T14:48:00Z",
-    "_partitionKey": "customer-411"
+    "updatedAt": "2025-10-07T14:48:00Z"
   },
   {
+    "customerKey": 412,
     "id": "customer-412",
     "customerId": "customer-412",
     "name": "Ava Doe",
@@ -15795,10 +15796,10 @@
       }
     ],
     "registeredAt": "2024-06-19T00:00:00Z",
-    "updatedAt": "2025-10-20T12:12:00Z",
-    "_partitionKey": "customer-412"
+    "updatedAt": "2025-10-20T12:12:00Z"
   },
   {
+    "customerKey": 413,
     "id": "customer-413",
     "customerId": "customer-413",
     "name": "Sophia Jones",
@@ -15841,10 +15842,10 @@
       }
     ],
     "registeredAt": "2024-05-24T00:00:00Z",
-    "updatedAt": "2025-10-08T19:17:00Z",
-    "_partitionKey": "customer-413"
+    "updatedAt": "2025-10-08T19:17:00Z"
   },
   {
+    "customerKey": 414,
     "id": "customer-414",
     "customerId": "customer-414",
     "name": "Liam Williams",
@@ -15887,10 +15888,10 @@
       }
     ],
     "registeredAt": "2024-06-08T00:00:00Z",
-    "updatedAt": "2025-10-05T19:51:00Z",
-    "_partitionKey": "customer-414"
+    "updatedAt": "2025-10-05T19:51:00Z"
   },
   {
+    "customerKey": 415,
     "id": "customer-415",
     "customerId": "customer-415",
     "name": "Emma Johnson",
@@ -15933,10 +15934,10 @@
       }
     ],
     "registeredAt": "2024-04-14T00:00:00Z",
-    "updatedAt": "2025-10-07T16:53:00Z",
-    "_partitionKey": "customer-415"
+    "updatedAt": "2025-10-07T16:53:00Z"
   },
   {
+    "customerKey": 416,
     "id": "customer-416",
     "customerId": "customer-416",
     "name": "Lucas Jones",
@@ -15965,10 +15966,10 @@
       }
     ],
     "registeredAt": "2025-01-03T00:00:00Z",
-    "updatedAt": "2025-10-18T11:59:00Z",
-    "_partitionKey": "customer-416"
+    "updatedAt": "2025-10-18T11:59:00Z"
   },
   {
+    "customerKey": 417,
     "id": "customer-417",
     "customerId": "customer-417",
     "name": "Emma Johnson",
@@ -15995,10 +15996,10 @@
       }
     ],
     "registeredAt": "2024-12-25T00:00:00Z",
-    "updatedAt": "2025-10-09T08:26:00Z",
-    "_partitionKey": "customer-417"
+    "updatedAt": "2025-10-09T08:26:00Z"
   },
   {
+    "customerKey": 418,
     "id": "customer-418",
     "customerId": "customer-418",
     "name": "Mason Garcia",
@@ -16032,10 +16033,10 @@
       }
     ],
     "registeredAt": "2024-08-25T00:00:00Z",
-    "updatedAt": "2025-10-19T13:34:00Z",
-    "_partitionKey": "customer-418"
+    "updatedAt": "2025-10-19T13:34:00Z"
   },
   {
+    "customerKey": 419,
     "id": "customer-419",
     "customerId": "customer-419",
     "name": "John Brown",
@@ -16078,10 +16079,10 @@
       }
     ],
     "registeredAt": "2024-08-06T00:00:00Z",
-    "updatedAt": "2025-10-08T13:51:00Z",
-    "_partitionKey": "customer-419"
+    "updatedAt": "2025-10-08T13:51:00Z"
   },
   {
+    "customerKey": 420,
     "id": "customer-420",
     "customerId": "customer-420",
     "name": "Noah Garcia",
@@ -16124,10 +16125,10 @@
       }
     ],
     "registeredAt": "2024-05-07T00:00:00Z",
-    "updatedAt": "2025-10-15T20:06:00Z",
-    "_partitionKey": "customer-420"
+    "updatedAt": "2025-10-15T20:06:00Z"
   },
   {
+    "customerKey": 421,
     "id": "customer-421",
     "customerId": "customer-421",
     "name": "John Miller",
@@ -16168,10 +16169,10 @@
       }
     ],
     "registeredAt": "2024-07-26T00:00:00Z",
-    "updatedAt": "2025-10-09T13:22:00Z",
-    "_partitionKey": "customer-421"
+    "updatedAt": "2025-10-09T13:22:00Z"
   },
   {
+    "customerKey": 422,
     "id": "customer-422",
     "customerId": "customer-422",
     "name": "Sophia Brown",
@@ -16198,10 +16199,10 @@
       }
     ],
     "registeredAt": "2024-10-11T00:00:00Z",
-    "updatedAt": "2025-10-15T16:22:00Z",
-    "_partitionKey": "customer-422"
+    "updatedAt": "2025-10-15T16:22:00Z"
   },
   {
+    "customerKey": 423,
     "id": "customer-423",
     "customerId": "customer-423",
     "name": "Ava Doe",
@@ -16242,10 +16243,10 @@
       }
     ],
     "registeredAt": "2025-02-10T00:00:00Z",
-    "updatedAt": "2025-10-16T18:45:00Z",
-    "_partitionKey": "customer-423"
+    "updatedAt": "2025-10-16T18:45:00Z"
   },
   {
+    "customerKey": 424,
     "id": "customer-424",
     "customerId": "customer-424",
     "name": "Olivia Brown",
@@ -16281,10 +16282,10 @@
       }
     ],
     "registeredAt": "2025-02-01T00:00:00Z",
-    "updatedAt": "2025-10-10T09:20:00Z",
-    "_partitionKey": "customer-424"
+    "updatedAt": "2025-10-10T09:20:00Z"
   },
   {
+    "customerKey": 425,
     "id": "customer-425",
     "customerId": "customer-425",
     "name": "John Brown",
@@ -16313,10 +16314,10 @@
       }
     ],
     "registeredAt": "2025-02-22T00:00:00Z",
-    "updatedAt": "2025-10-08T15:09:00Z",
-    "_partitionKey": "customer-425"
+    "updatedAt": "2025-10-08T15:09:00Z"
   },
   {
+    "customerKey": 426,
     "id": "customer-426",
     "customerId": "customer-426",
     "name": "Ava Doe",
@@ -16359,10 +16360,10 @@
       }
     ],
     "registeredAt": "2024-09-03T00:00:00Z",
-    "updatedAt": "2025-10-01T10:23:00Z",
-    "_partitionKey": "customer-426"
+    "updatedAt": "2025-10-01T10:23:00Z"
   },
   {
+    "customerKey": 427,
     "id": "customer-427",
     "customerId": "customer-427",
     "name": "John Miller",
@@ -16398,10 +16399,10 @@
       }
     ],
     "registeredAt": "2024-07-25T00:00:00Z",
-    "updatedAt": "2025-10-14T09:16:00Z",
-    "_partitionKey": "customer-427"
+    "updatedAt": "2025-10-14T09:16:00Z"
   },
   {
+    "customerKey": 428,
     "id": "customer-428",
     "customerId": "customer-428",
     "name": "Sophia Doe",
@@ -16444,10 +16445,10 @@
       }
     ],
     "registeredAt": "2025-04-17T00:00:00Z",
-    "updatedAt": "2025-10-15T09:53:00Z",
-    "_partitionKey": "customer-428"
+    "updatedAt": "2025-10-15T09:53:00Z"
   },
   {
+    "customerKey": 429,
     "id": "customer-429",
     "customerId": "customer-429",
     "name": "Ava Garcia",
@@ -16483,10 +16484,10 @@
       }
     ],
     "registeredAt": "2025-02-04T00:00:00Z",
-    "updatedAt": "2025-10-18T08:56:00Z",
-    "_partitionKey": "customer-429"
+    "updatedAt": "2025-10-18T08:56:00Z"
   },
   {
+    "customerKey": 430,
     "id": "customer-430",
     "customerId": "customer-430",
     "name": "John Miller",
@@ -16529,10 +16530,10 @@
       }
     ],
     "registeredAt": "2025-02-15T00:00:00Z",
-    "updatedAt": "2025-10-16T18:55:00Z",
-    "_partitionKey": "customer-430"
+    "updatedAt": "2025-10-16T18:55:00Z"
   },
   {
+    "customerKey": 431,
     "id": "customer-431",
     "customerId": "customer-431",
     "name": "Olivia Miller",
@@ -16566,10 +16567,10 @@
       }
     ],
     "registeredAt": "2024-05-10T00:00:00Z",
-    "updatedAt": "2025-10-05T18:23:00Z",
-    "_partitionKey": "customer-431"
+    "updatedAt": "2025-10-05T18:23:00Z"
   },
   {
+    "customerKey": 432,
     "id": "customer-432",
     "customerId": "customer-432",
     "name": "Mason Smith",
@@ -16603,10 +16604,10 @@
       }
     ],
     "registeredAt": "2024-09-09T00:00:00Z",
-    "updatedAt": "2025-10-06T11:25:00Z",
-    "_partitionKey": "customer-432"
+    "updatedAt": "2025-10-06T11:25:00Z"
   },
   {
+    "customerKey": 433,
     "id": "customer-433",
     "customerId": "customer-433",
     "name": "Liam Jones",
@@ -16642,10 +16643,10 @@
       }
     ],
     "registeredAt": "2024-10-16T00:00:00Z",
-    "updatedAt": "2025-10-07T10:16:00Z",
-    "_partitionKey": "customer-433"
+    "updatedAt": "2025-10-07T10:16:00Z"
   },
   {
+    "customerKey": 434,
     "id": "customer-434",
     "customerId": "customer-434",
     "name": "Liam Miller",
@@ -16674,10 +16675,10 @@
       }
     ],
     "registeredAt": "2024-04-21T00:00:00Z",
-    "updatedAt": "2025-10-08T14:20:00Z",
-    "_partitionKey": "customer-434"
+    "updatedAt": "2025-10-08T14:20:00Z"
   },
   {
+    "customerKey": 435,
     "id": "customer-435",
     "customerId": "customer-435",
     "name": "Noah Garcia",
@@ -16713,10 +16714,10 @@
       }
     ],
     "registeredAt": "2024-04-18T00:00:00Z",
-    "updatedAt": "2025-10-16T14:02:00Z",
-    "_partitionKey": "customer-435"
+    "updatedAt": "2025-10-16T14:02:00Z"
   },
   {
+    "customerKey": 436,
     "id": "customer-436",
     "customerId": "customer-436",
     "name": "John Garcia",
@@ -16743,10 +16744,10 @@
       }
     ],
     "registeredAt": "2024-04-02T00:00:00Z",
-    "updatedAt": "2025-10-08T10:41:00Z",
-    "_partitionKey": "customer-436"
+    "updatedAt": "2025-10-08T10:41:00Z"
   },
   {
+    "customerKey": 437,
     "id": "customer-437",
     "customerId": "customer-437",
     "name": "Olivia Miller",
@@ -16789,10 +16790,10 @@
       }
     ],
     "registeredAt": "2024-05-23T00:00:00Z",
-    "updatedAt": "2025-10-20T18:06:00Z",
-    "_partitionKey": "customer-437"
+    "updatedAt": "2025-10-20T18:06:00Z"
   },
   {
+    "customerKey": 438,
     "id": "customer-438",
     "customerId": "customer-438",
     "name": "Sophia Jones",
@@ -16835,10 +16836,10 @@
       }
     ],
     "registeredAt": "2024-10-21T00:00:00Z",
-    "updatedAt": "2025-10-06T17:02:00Z",
-    "_partitionKey": "customer-438"
+    "updatedAt": "2025-10-06T17:02:00Z"
   },
   {
+    "customerKey": 439,
     "id": "customer-439",
     "customerId": "customer-439",
     "name": "Lucas Doe",
@@ -16881,10 +16882,10 @@
       }
     ],
     "registeredAt": "2024-06-12T00:00:00Z",
-    "updatedAt": "2025-10-21T09:08:00Z",
-    "_partitionKey": "customer-439"
+    "updatedAt": "2025-10-21T09:08:00Z"
   },
   {
+    "customerKey": 440,
     "id": "customer-440",
     "customerId": "customer-440",
     "name": "Lucas Brown",
@@ -16920,10 +16921,10 @@
       }
     ],
     "registeredAt": "2024-04-10T00:00:00Z",
-    "updatedAt": "2025-10-20T11:38:00Z",
-    "_partitionKey": "customer-440"
+    "updatedAt": "2025-10-20T11:38:00Z"
   },
   {
+    "customerKey": 441,
     "id": "customer-441",
     "customerId": "customer-441",
     "name": "Olivia Brown",
@@ -16959,10 +16960,10 @@
       }
     ],
     "registeredAt": "2024-10-20T00:00:00Z",
-    "updatedAt": "2025-10-19T20:51:00Z",
-    "_partitionKey": "customer-441"
+    "updatedAt": "2025-10-19T20:51:00Z"
   },
   {
+    "customerKey": 442,
     "id": "customer-442",
     "customerId": "customer-442",
     "name": "Noah Miller",
@@ -16998,10 +16999,10 @@
       }
     ],
     "registeredAt": "2025-02-26T00:00:00Z",
-    "updatedAt": "2025-10-15T14:42:00Z",
-    "_partitionKey": "customer-442"
+    "updatedAt": "2025-10-15T14:42:00Z"
   },
   {
+    "customerKey": 443,
     "id": "customer-443",
     "customerId": "customer-443",
     "name": "Liam Jones",
@@ -17030,10 +17031,10 @@
       }
     ],
     "registeredAt": "2024-04-16T00:00:00Z",
-    "updatedAt": "2025-10-14T11:42:00Z",
-    "_partitionKey": "customer-443"
+    "updatedAt": "2025-10-14T11:42:00Z"
   },
   {
+    "customerKey": 444,
     "id": "customer-444",
     "customerId": "customer-444",
     "name": "Mason Williams",
@@ -17062,10 +17063,10 @@
       }
     ],
     "registeredAt": "2024-05-27T00:00:00Z",
-    "updatedAt": "2025-10-18T17:07:00Z",
-    "_partitionKey": "customer-444"
+    "updatedAt": "2025-10-18T17:07:00Z"
   },
   {
+    "customerKey": 445,
     "id": "customer-445",
     "customerId": "customer-445",
     "name": "Ava Williams",
@@ -17099,10 +17100,10 @@
       }
     ],
     "registeredAt": "2024-03-23T00:00:00Z",
-    "updatedAt": "2025-10-15T11:03:00Z",
-    "_partitionKey": "customer-445"
+    "updatedAt": "2025-10-15T11:03:00Z"
   },
   {
+    "customerKey": 446,
     "id": "customer-446",
     "customerId": "customer-446",
     "name": "Lucas Johnson",
@@ -17145,10 +17146,10 @@
       }
     ],
     "registeredAt": "2025-04-03T00:00:00Z",
-    "updatedAt": "2025-10-11T12:30:00Z",
-    "_partitionKey": "customer-446"
+    "updatedAt": "2025-10-11T12:30:00Z"
   },
   {
+    "customerKey": 447,
     "id": "customer-447",
     "customerId": "customer-447",
     "name": "Lucas Brown",
@@ -17189,10 +17190,10 @@
       }
     ],
     "registeredAt": "2024-04-25T00:00:00Z",
-    "updatedAt": "2025-10-16T20:07:00Z",
-    "_partitionKey": "customer-447"
+    "updatedAt": "2025-10-16T20:07:00Z"
   },
   {
+    "customerKey": 448,
     "id": "customer-448",
     "customerId": "customer-448",
     "name": "Noah Brown",
@@ -17226,10 +17227,10 @@
       }
     ],
     "registeredAt": "2024-07-27T00:00:00Z",
-    "updatedAt": "2025-10-03T18:30:00Z",
-    "_partitionKey": "customer-448"
+    "updatedAt": "2025-10-03T18:30:00Z"
   },
   {
+    "customerKey": 449,
     "id": "customer-449",
     "customerId": "customer-449",
     "name": "Mason Williams",
@@ -17270,10 +17271,10 @@
       }
     ],
     "registeredAt": "2024-08-10T00:00:00Z",
-    "updatedAt": "2025-10-13T20:37:00Z",
-    "_partitionKey": "customer-449"
+    "updatedAt": "2025-10-13T20:37:00Z"
   },
   {
+    "customerKey": 450,
     "id": "customer-450",
     "customerId": "customer-450",
     "name": "Jane Doe",
@@ -17307,10 +17308,10 @@
       }
     ],
     "registeredAt": "2024-10-25T00:00:00Z",
-    "updatedAt": "2025-10-11T15:45:00Z",
-    "_partitionKey": "customer-450"
+    "updatedAt": "2025-10-11T15:45:00Z"
   },
   {
+    "customerKey": 451,
     "id": "customer-451",
     "customerId": "customer-451",
     "name": "Noah Miller",
@@ -17339,10 +17340,10 @@
       }
     ],
     "registeredAt": "2025-02-23T00:00:00Z",
-    "updatedAt": "2025-10-02T15:24:00Z",
-    "_partitionKey": "customer-451"
+    "updatedAt": "2025-10-02T15:24:00Z"
   },
   {
+    "customerKey": 452,
     "id": "customer-452",
     "customerId": "customer-452",
     "name": "Sophia Garcia",
@@ -17385,10 +17386,10 @@
       }
     ],
     "registeredAt": "2024-09-03T00:00:00Z",
-    "updatedAt": "2025-10-06T12:08:00Z",
-    "_partitionKey": "customer-452"
+    "updatedAt": "2025-10-06T12:08:00Z"
   },
   {
+    "customerKey": 453,
     "id": "customer-453",
     "customerId": "customer-453",
     "name": "John Williams",
@@ -17431,10 +17432,10 @@
       }
     ],
     "registeredAt": "2024-08-17T00:00:00Z",
-    "updatedAt": "2025-10-13T20:29:00Z",
-    "_partitionKey": "customer-453"
+    "updatedAt": "2025-10-13T20:29:00Z"
   },
   {
+    "customerKey": 454,
     "id": "customer-454",
     "customerId": "customer-454",
     "name": "Jane Brown",
@@ -17468,10 +17469,10 @@
       }
     ],
     "registeredAt": "2024-05-09T00:00:00Z",
-    "updatedAt": "2025-10-06T15:43:00Z",
-    "_partitionKey": "customer-454"
+    "updatedAt": "2025-10-06T15:43:00Z"
   },
   {
+    "customerKey": 455,
     "id": "customer-455",
     "customerId": "customer-455",
     "name": "Jane Jones",
@@ -17507,10 +17508,10 @@
       }
     ],
     "registeredAt": "2025-03-02T00:00:00Z",
-    "updatedAt": "2025-10-01T13:17:00Z",
-    "_partitionKey": "customer-455"
+    "updatedAt": "2025-10-01T13:17:00Z"
   },
   {
+    "customerKey": 456,
     "id": "customer-456",
     "customerId": "customer-456",
     "name": "Emma Williams",
@@ -17546,10 +17547,10 @@
       }
     ],
     "registeredAt": "2025-02-20T00:00:00Z",
-    "updatedAt": "2025-10-08T15:44:00Z",
-    "_partitionKey": "customer-456"
+    "updatedAt": "2025-10-08T15:44:00Z"
   },
   {
+    "customerKey": 457,
     "id": "customer-457",
     "customerId": "customer-457",
     "name": "Noah Johnson",
@@ -17585,10 +17586,10 @@
       }
     ],
     "registeredAt": "2025-01-06T00:00:00Z",
-    "updatedAt": "2025-10-06T12:54:00Z",
-    "_partitionKey": "customer-457"
+    "updatedAt": "2025-10-06T12:54:00Z"
   },
   {
+    "customerKey": 458,
     "id": "customer-458",
     "customerId": "customer-458",
     "name": "Lucas Williams",
@@ -17624,10 +17625,10 @@
       }
     ],
     "registeredAt": "2024-05-01T00:00:00Z",
-    "updatedAt": "2025-10-01T13:02:00Z",
-    "_partitionKey": "customer-458"
+    "updatedAt": "2025-10-01T13:02:00Z"
   },
   {
+    "customerKey": 459,
     "id": "customer-459",
     "customerId": "customer-459",
     "name": "Mason Miller",
@@ -17668,10 +17669,10 @@
       }
     ],
     "registeredAt": "2024-09-20T00:00:00Z",
-    "updatedAt": "2025-10-09T15:21:00Z",
-    "_partitionKey": "customer-459"
+    "updatedAt": "2025-10-09T15:21:00Z"
   },
   {
+    "customerKey": 460,
     "id": "customer-460",
     "customerId": "customer-460",
     "name": "Emma Doe",
@@ -17707,10 +17708,10 @@
       }
     ],
     "registeredAt": "2024-05-22T00:00:00Z",
-    "updatedAt": "2025-10-01T18:13:00Z",
-    "_partitionKey": "customer-460"
+    "updatedAt": "2025-10-01T18:13:00Z"
   },
   {
+    "customerKey": 461,
     "id": "customer-461",
     "customerId": "customer-461",
     "name": "Jane Williams",
@@ -17753,10 +17754,10 @@
       }
     ],
     "registeredAt": "2024-09-08T00:00:00Z",
-    "updatedAt": "2025-10-03T18:52:00Z",
-    "_partitionKey": "customer-461"
+    "updatedAt": "2025-10-03T18:52:00Z"
   },
   {
+    "customerKey": 462,
     "id": "customer-462",
     "customerId": "customer-462",
     "name": "Jane Jones",
@@ -17792,10 +17793,10 @@
       }
     ],
     "registeredAt": "2024-04-20T00:00:00Z",
-    "updatedAt": "2025-10-11T08:25:00Z",
-    "_partitionKey": "customer-462"
+    "updatedAt": "2025-10-11T08:25:00Z"
   },
   {
+    "customerKey": 463,
     "id": "customer-463",
     "customerId": "customer-463",
     "name": "Lucas Garcia",
@@ -17836,10 +17837,10 @@
       }
     ],
     "registeredAt": "2024-04-23T00:00:00Z",
-    "updatedAt": "2025-10-06T09:45:00Z",
-    "_partitionKey": "customer-463"
+    "updatedAt": "2025-10-06T09:45:00Z"
   },
   {
+    "customerKey": 464,
     "id": "customer-464",
     "customerId": "customer-464",
     "name": "Liam Brown",
@@ -17868,10 +17869,10 @@
       }
     ],
     "registeredAt": "2024-12-15T00:00:00Z",
-    "updatedAt": "2025-10-17T19:28:00Z",
-    "_partitionKey": "customer-464"
+    "updatedAt": "2025-10-17T19:28:00Z"
   },
   {
+    "customerKey": 465,
     "id": "customer-465",
     "customerId": "customer-465",
     "name": "Ava Johnson",
@@ -17912,10 +17913,10 @@
       }
     ],
     "registeredAt": "2024-08-10T00:00:00Z",
-    "updatedAt": "2025-10-06T19:58:00Z",
-    "_partitionKey": "customer-465"
+    "updatedAt": "2025-10-06T19:58:00Z"
   },
   {
+    "customerKey": 466,
     "id": "customer-466",
     "customerId": "customer-466",
     "name": "Noah Williams",
@@ -17958,10 +17959,10 @@
       }
     ],
     "registeredAt": "2024-07-03T00:00:00Z",
-    "updatedAt": "2025-10-17T08:51:00Z",
-    "_partitionKey": "customer-466"
+    "updatedAt": "2025-10-17T08:51:00Z"
   },
   {
+    "customerKey": 467,
     "id": "customer-467",
     "customerId": "customer-467",
     "name": "Noah Smith",
@@ -18004,10 +18005,10 @@
       }
     ],
     "registeredAt": "2025-04-17T00:00:00Z",
-    "updatedAt": "2025-10-16T10:44:00Z",
-    "_partitionKey": "customer-467"
+    "updatedAt": "2025-10-16T10:44:00Z"
   },
   {
+    "customerKey": 468,
     "id": "customer-468",
     "customerId": "customer-468",
     "name": "Mason Williams",
@@ -18043,10 +18044,10 @@
       }
     ],
     "registeredAt": "2024-04-02T00:00:00Z",
-    "updatedAt": "2025-10-19T10:29:00Z",
-    "_partitionKey": "customer-468"
+    "updatedAt": "2025-10-19T10:29:00Z"
   },
   {
+    "customerKey": 469,
     "id": "customer-469",
     "customerId": "customer-469",
     "name": "Liam Brown",
@@ -18075,10 +18076,10 @@
       }
     ],
     "registeredAt": "2025-01-03T00:00:00Z",
-    "updatedAt": "2025-10-17T19:08:00Z",
-    "_partitionKey": "customer-469"
+    "updatedAt": "2025-10-17T19:08:00Z"
   },
   {
+    "customerKey": 470,
     "id": "customer-470",
     "customerId": "customer-470",
     "name": "Sophia Garcia",
@@ -18107,10 +18108,10 @@
       }
     ],
     "registeredAt": "2025-02-23T00:00:00Z",
-    "updatedAt": "2025-10-18T10:39:00Z",
-    "_partitionKey": "customer-470"
+    "updatedAt": "2025-10-18T10:39:00Z"
   },
   {
+    "customerKey": 471,
     "id": "customer-471",
     "customerId": "customer-471",
     "name": "Ava Johnson",
@@ -18153,10 +18154,10 @@
       }
     ],
     "registeredAt": "2024-05-31T00:00:00Z",
-    "updatedAt": "2025-10-07T19:11:00Z",
-    "_partitionKey": "customer-471"
+    "updatedAt": "2025-10-07T19:11:00Z"
   },
   {
+    "customerKey": 472,
     "id": "customer-472",
     "customerId": "customer-472",
     "name": "Mason Smith",
@@ -18199,10 +18200,10 @@
       }
     ],
     "registeredAt": "2024-09-09T00:00:00Z",
-    "updatedAt": "2025-10-11T17:03:00Z",
-    "_partitionKey": "customer-472"
+    "updatedAt": "2025-10-11T17:03:00Z"
   },
   {
+    "customerKey": 473,
     "id": "customer-473",
     "customerId": "customer-473",
     "name": "Olivia Johnson",
@@ -18238,10 +18239,10 @@
       }
     ],
     "registeredAt": "2024-08-28T00:00:00Z",
-    "updatedAt": "2025-10-08T17:17:00Z",
-    "_partitionKey": "customer-473"
+    "updatedAt": "2025-10-08T17:17:00Z"
   },
   {
+    "customerKey": 474,
     "id": "customer-474",
     "customerId": "customer-474",
     "name": "John Williams",
@@ -18282,10 +18283,10 @@
       }
     ],
     "registeredAt": "2024-10-26T00:00:00Z",
-    "updatedAt": "2025-10-14T12:31:00Z",
-    "_partitionKey": "customer-474"
+    "updatedAt": "2025-10-14T12:31:00Z"
   },
   {
+    "customerKey": 475,
     "id": "customer-475",
     "customerId": "customer-475",
     "name": "Liam Miller",
@@ -18319,10 +18320,10 @@
       }
     ],
     "registeredAt": "2025-04-06T00:00:00Z",
-    "updatedAt": "2025-10-21T13:22:00Z",
-    "_partitionKey": "customer-475"
+    "updatedAt": "2025-10-21T13:22:00Z"
   },
   {
+    "customerKey": 476,
     "id": "customer-476",
     "customerId": "customer-476",
     "name": "John Johnson",
@@ -18356,10 +18357,10 @@
       }
     ],
     "registeredAt": "2025-02-14T00:00:00Z",
-    "updatedAt": "2025-10-03T19:30:00Z",
-    "_partitionKey": "customer-476"
+    "updatedAt": "2025-10-03T19:30:00Z"
   },
   {
+    "customerKey": 477,
     "id": "customer-477",
     "customerId": "customer-477",
     "name": "Olivia Garcia",
@@ -18402,10 +18403,10 @@
       }
     ],
     "registeredAt": "2025-04-03T00:00:00Z",
-    "updatedAt": "2025-10-16T08:54:00Z",
-    "_partitionKey": "customer-477"
+    "updatedAt": "2025-10-16T08:54:00Z"
   },
   {
+    "customerKey": 478,
     "id": "customer-478",
     "customerId": "customer-478",
     "name": "Liam Smith",
@@ -18434,10 +18435,10 @@
       }
     ],
     "registeredAt": "2024-11-20T00:00:00Z",
-    "updatedAt": "2025-10-15T09:24:00Z",
-    "_partitionKey": "customer-478"
+    "updatedAt": "2025-10-15T09:24:00Z"
   },
   {
+    "customerKey": 479,
     "id": "customer-479",
     "customerId": "customer-479",
     "name": "Mason Williams",
@@ -18473,10 +18474,10 @@
       }
     ],
     "registeredAt": "2024-06-13T00:00:00Z",
-    "updatedAt": "2025-10-20T15:43:00Z",
-    "_partitionKey": "customer-479"
+    "updatedAt": "2025-10-20T15:43:00Z"
   },
   {
+    "customerKey": 480,
     "id": "customer-480",
     "customerId": "customer-480",
     "name": "Jane Brown",
@@ -18512,10 +18513,10 @@
       }
     ],
     "registeredAt": "2025-04-07T00:00:00Z",
-    "updatedAt": "2025-10-01T09:22:00Z",
-    "_partitionKey": "customer-480"
+    "updatedAt": "2025-10-01T09:22:00Z"
   },
   {
+    "customerKey": 481,
     "id": "customer-481",
     "customerId": "customer-481",
     "name": "Olivia Jones",
@@ -18549,10 +18550,10 @@
       }
     ],
     "registeredAt": "2025-04-11T00:00:00Z",
-    "updatedAt": "2025-10-05T16:09:00Z",
-    "_partitionKey": "customer-481"
+    "updatedAt": "2025-10-05T16:09:00Z"
   },
   {
+    "customerKey": 482,
     "id": "customer-482",
     "customerId": "customer-482",
     "name": "John Garcia",
@@ -18593,10 +18594,10 @@
       }
     ],
     "registeredAt": "2025-01-11T00:00:00Z",
-    "updatedAt": "2025-10-05T08:48:00Z",
-    "_partitionKey": "customer-482"
+    "updatedAt": "2025-10-05T08:48:00Z"
   },
   {
+    "customerKey": 483,
     "id": "customer-483",
     "customerId": "customer-483",
     "name": "Sophia Brown",
@@ -18639,10 +18640,10 @@
       }
     ],
     "registeredAt": "2024-03-21T00:00:00Z",
-    "updatedAt": "2025-10-02T12:52:00Z",
-    "_partitionKey": "customer-483"
+    "updatedAt": "2025-10-02T12:52:00Z"
   },
   {
+    "customerKey": 484,
     "id": "customer-484",
     "customerId": "customer-484",
     "name": "Jane Brown",
@@ -18685,10 +18686,10 @@
       }
     ],
     "registeredAt": "2024-06-20T00:00:00Z",
-    "updatedAt": "2025-10-13T08:46:00Z",
-    "_partitionKey": "customer-484"
+    "updatedAt": "2025-10-13T08:46:00Z"
   },
   {
+    "customerKey": 485,
     "id": "customer-485",
     "customerId": "customer-485",
     "name": "Sophia Garcia",
@@ -18724,10 +18725,10 @@
       }
     ],
     "registeredAt": "2025-04-14T00:00:00Z",
-    "updatedAt": "2025-10-08T08:22:00Z",
-    "_partitionKey": "customer-485"
+    "updatedAt": "2025-10-08T08:22:00Z"
   },
   {
+    "customerKey": 486,
     "id": "customer-486",
     "customerId": "customer-486",
     "name": "Liam Jones",
@@ -18756,10 +18757,10 @@
       }
     ],
     "registeredAt": "2024-08-09T00:00:00Z",
-    "updatedAt": "2025-10-13T16:03:00Z",
-    "_partitionKey": "customer-486"
+    "updatedAt": "2025-10-13T16:03:00Z"
   },
   {
+    "customerKey": 487,
     "id": "customer-487",
     "customerId": "customer-487",
     "name": "Sophia Brown",
@@ -18802,10 +18803,10 @@
       }
     ],
     "registeredAt": "2025-03-16T00:00:00Z",
-    "updatedAt": "2025-10-13T20:15:00Z",
-    "_partitionKey": "customer-487"
+    "updatedAt": "2025-10-13T20:15:00Z"
   },
   {
+    "customerKey": 488,
     "id": "customer-488",
     "customerId": "customer-488",
     "name": "Olivia Smith",
@@ -18841,10 +18842,10 @@
       }
     ],
     "registeredAt": "2024-08-19T00:00:00Z",
-    "updatedAt": "2025-10-17T15:35:00Z",
-    "_partitionKey": "customer-488"
+    "updatedAt": "2025-10-17T15:35:00Z"
   },
   {
+    "customerKey": 489,
     "id": "customer-489",
     "customerId": "customer-489",
     "name": "Liam Doe",
@@ -18873,10 +18874,10 @@
       }
     ],
     "registeredAt": "2025-03-03T00:00:00Z",
-    "updatedAt": "2025-10-14T15:14:00Z",
-    "_partitionKey": "customer-489"
+    "updatedAt": "2025-10-14T15:14:00Z"
   },
   {
+    "customerKey": 490,
     "id": "customer-490",
     "customerId": "customer-490",
     "name": "Sophia Jones",
@@ -18912,10 +18913,10 @@
       }
     ],
     "registeredAt": "2024-06-11T00:00:00Z",
-    "updatedAt": "2025-10-07T11:15:00Z",
-    "_partitionKey": "customer-490"
+    "updatedAt": "2025-10-07T11:15:00Z"
   },
   {
+    "customerKey": 491,
     "id": "customer-491",
     "customerId": "customer-491",
     "name": "Olivia Doe",
@@ -18951,10 +18952,10 @@
       }
     ],
     "registeredAt": "2024-04-24T00:00:00Z",
-    "updatedAt": "2025-10-08T12:39:00Z",
-    "_partitionKey": "customer-491"
+    "updatedAt": "2025-10-08T12:39:00Z"
   },
   {
+    "customerKey": 492,
     "id": "customer-492",
     "customerId": "customer-492",
     "name": "Lucas Miller",
@@ -18983,10 +18984,10 @@
       }
     ],
     "registeredAt": "2025-01-18T00:00:00Z",
-    "updatedAt": "2025-10-12T18:42:00Z",
-    "_partitionKey": "customer-492"
+    "updatedAt": "2025-10-12T18:42:00Z"
   },
   {
+    "customerKey": 493,
     "id": "customer-493",
     "customerId": "customer-493",
     "name": "Jane Jones",
@@ -19029,10 +19030,10 @@
       }
     ],
     "registeredAt": "2024-05-12T00:00:00Z",
-    "updatedAt": "2025-10-06T15:52:00Z",
-    "_partitionKey": "customer-493"
+    "updatedAt": "2025-10-06T15:52:00Z"
   },
   {
+    "customerKey": 494,
     "id": "customer-494",
     "customerId": "customer-494",
     "name": "Ava Garcia",
@@ -19059,10 +19060,10 @@
       }
     ],
     "registeredAt": "2025-01-17T00:00:00Z",
-    "updatedAt": "2025-10-04T15:52:00Z",
-    "_partitionKey": "customer-494"
+    "updatedAt": "2025-10-04T15:52:00Z"
   },
   {
+    "customerKey": 495,
     "id": "customer-495",
     "customerId": "customer-495",
     "name": "Emma Johnson",
@@ -19098,10 +19099,10 @@
       }
     ],
     "registeredAt": "2024-07-12T00:00:00Z",
-    "updatedAt": "2025-10-11T09:09:00Z",
-    "_partitionKey": "customer-495"
+    "updatedAt": "2025-10-11T09:09:00Z"
   },
   {
+    "customerKey": 496,
     "id": "customer-496",
     "customerId": "customer-496",
     "name": "Liam Doe",
@@ -19137,10 +19138,10 @@
       }
     ],
     "registeredAt": "2024-12-17T00:00:00Z",
-    "updatedAt": "2025-10-11T10:21:00Z",
-    "_partitionKey": "customer-496"
+    "updatedAt": "2025-10-11T10:21:00Z"
   },
   {
+    "customerKey": 497,
     "id": "customer-497",
     "customerId": "customer-497",
     "name": "Sophia Jones",
@@ -19183,10 +19184,10 @@
       }
     ],
     "registeredAt": "2024-10-17T00:00:00Z",
-    "updatedAt": "2025-10-03T13:53:00Z",
-    "_partitionKey": "customer-497"
+    "updatedAt": "2025-10-03T13:53:00Z"
   },
   {
+    "customerKey": 498,
     "id": "customer-498",
     "customerId": "customer-498",
     "name": "John Miller",
@@ -19222,10 +19223,10 @@
       }
     ],
     "registeredAt": "2024-07-09T00:00:00Z",
-    "updatedAt": "2025-10-08T16:33:00Z",
-    "_partitionKey": "customer-498"
+    "updatedAt": "2025-10-08T16:33:00Z"
   },
   {
+    "customerKey": 499,
     "id": "customer-499",
     "customerId": "customer-499",
     "name": "Jane Williams",
@@ -19261,10 +19262,10 @@
       }
     ],
     "registeredAt": "2024-03-27T00:00:00Z",
-    "updatedAt": "2025-10-20T08:04:00Z",
-    "_partitionKey": "customer-499"
+    "updatedAt": "2025-10-20T08:04:00Z"
   },
   {
+    "customerKey": 500,
     "id": "customer-500",
     "customerId": "customer-500",
     "name": "Sophia Garcia",
@@ -19300,7 +19301,6 @@
       }
     ],
     "registeredAt": "2024-05-28T00:00:00Z",
-    "updatedAt": "2025-10-18T17:16:00Z",
-    "_partitionKey": "customer-500"
+    "updatedAt": "2025-10-18T17:16:00Z"
   }
 ]
