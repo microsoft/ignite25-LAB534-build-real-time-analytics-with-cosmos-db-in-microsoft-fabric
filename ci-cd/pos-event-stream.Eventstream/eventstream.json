@@ -1,0 +1,26 @@
+{
+  "sources": [
+    {
+      "id": "a926b9cc-f858-4b8f-b7e3-2e92afa914df",
+      "name": "LocalStreamSource",
+      "type": "CustomEndpoint",
+      "properties": {}
+    }
+  ],
+  "destinations": [],
+  "streams": [
+    {
+      "id": "ba911c9e-c091-4bec-b726-a51fd2f46e1c",
+      "name": "pos-event-stream-stream",
+      "type": "DefaultStream",
+      "properties": {},
+      "inputNodes": [
+        {
+          "name": "LocalStreamSource"
+        }
+      ]
+    }
+  ],
+  "operators": [],
+  "compatibilityLevel": "1.1"
+}

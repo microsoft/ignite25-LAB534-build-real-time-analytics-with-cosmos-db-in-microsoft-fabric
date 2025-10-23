@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "Eventstream",
-    "displayName": "fc-pos-event-stream"
+    "displayName": "pos-event-stream"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "99b1b5d4-5cb9-a45d-4311-2895d5576c47"
+    "logicalId": "a76e27e3-b034-906b-4c62-b8c452b81036"
   }
 }
