@@ -1,12 +1,13 @@
 //
-// FabricPOSDatatStreaming.cs — Create an Eventstream and send sample POS telemetry to its local source.
+// FabricPOSDatatStreaming.cs — Create an Eventstream and send sample POS transaction data to its local source.
 //
 // Pipeline
 // 1) Authenticate via Azure CLI
 // 2) Resolve Workspace
 // 3) Create Eventstream from JSON definition (recover from transient LRO status issue)
 // 4) Resolve LocalStreamSource connection
-// 5) Send JSON payloads to Event Hubs every 3 seconds until cancelled (Ctrl+C)
+// 5) Load seed data (customers, shops, menu items)
+// 6) Send realistic transaction JSON payloads to Event Hubs every 3 seconds until cancelled (Ctrl+C)
 //
 // Usage
 //   dotnet run .\src\pos_data_streaming\FabricPOSDatatStreaming.cs
@@ -35,8 +36,13 @@ using Microsoft.Extensions.Logging;
 // -----------------------
 const string WorkspaceName = "Fourth Coffee Commerce - Lab 534";
 const string EventstreamName = "sample-pos-stream";
-const string DeviceId = "dev-001";
 const int SendIntervalMs = 3000; // 3s cadence
+
+// Data file paths
+var currentDir = Directory.GetCurrentDirectory();
+var customersFilePath = Path.Combine(currentDir, "data", "nosql", "customers_container.json");
+var shopsFilePath = Path.Combine(currentDir, "data", "nosql", "shops_container.json");
+var menuFilePath = Path.Combine(currentDir, "data", "nosql", "menu_container.json");
 
 // Logger setup (simple console)
 using var loggerFactory = LoggerFactory.Create(builder =>
@@ -55,7 +61,30 @@ var logger = loggerFactory.CreateLogger("FabricPOSDatatStreaming");
 // Azure auth and client
 var credential = new AzureCliCredential();
 var fabricClient = new FabricClient(credential);
-logger.LogInformation("Starting POS data streaming. Workspace: {Workspace}", WorkspaceName);
+logger.LogInformation("Starting POS transaction streaming. Workspace: {Workspace}", WorkspaceName);
+
+// Load seed data
+logger.LogInformation("Loading seed data...");
+if (!File.Exists(customersFilePath))
+    throw new FileNotFoundException($"Customers file not found: {customersFilePath}");
+if (!File.Exists(shopsFilePath))
+    throw new FileNotFoundException($"Shops file not found: {shopsFilePath}");
+if (!File.Exists(menuFilePath))
+    throw new FileNotFoundException($"Menu file not found: {menuFilePath}");
+
+var customersJson = await File.ReadAllTextAsync(customersFilePath);
+var shopsJson = await File.ReadAllTextAsync(shopsFilePath);
+var menuJson = await File.ReadAllTextAsync(menuFilePath);
+
+var customers = JsonSerializer.Deserialize(customersJson, TransactionJsonContext.Default.CustomerArray)!;
+var shops = JsonSerializer.Deserialize(shopsJson, TransactionJsonContext.Default.ShopArray)!;
+var menuItems = JsonSerializer.Deserialize(menuJson, TransactionJsonContext.Default.MenuItemArray)!;
+
+logger.LogInformation("Loaded {CustomerCount} customers, {ShopCount} shops, {MenuCount} menu items", 
+    customers.Length, shops.Length, menuItems.Length);
+
+// Transaction generator
+var transactionGenerator = new TransactionGenerator(customers, shops, menuItems);
 
 // Resolve workspace
 var workspace = fabricClient.Core.Workspaces
@@ -141,24 +170,24 @@ await using var producer = new EventHubProducerClient(
 using var cts = new CancellationTokenSource();
 Console.CancelKeyPress += (_, e) => { e.Cancel = true; cts.Cancel(); };
 
-var random = new Random();
-logger.LogInformation("Sending messages every {Interval} ms. Press Ctrl+C to stop...", SendIntervalMs);
+logger.LogInformation("Sending transaction messages every {Interval} ms. Press Ctrl+C to stop...", SendIntervalMs);
 
 while (!cts.IsCancellationRequested)
 {
     try
     {
-        var payload = new PayloadData(DeviceId, DateTimeOffset.UtcNow, random.Next(1, 101));
+        var transaction = transactionGenerator.GenerateTransaction();
         using var batch = await producer.CreateBatchAsync(cts.Token);
-        var payloadBytes = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(payload, PayloadJsonContext.Default.PayloadData));
+        var payloadBytes = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(transaction, TransactionJsonContext.Default.Transaction));
         if (!batch.TryAdd(new EventData(payloadBytes)))
         {
-            logger.LogWarning("Payload too large for batch; skipping message");
+            logger.LogWarning("Transaction payload too large for batch; skipping message");
         }
         else
         {
             await producer.SendAsync(batch, cts.Token);
-            logger.LogInformation("Sent: {Payload}", JsonSerializer.Serialize(payload, PayloadJsonContext.Default.PayloadData));
+            logger.LogInformation("Sent transaction: {TransactionId} for customer {CustomerId} at {ShopId}", 
+                transaction.TransactionId, transaction.CustomerId, transaction.ShopId);
         }
     }
     catch (OperationCanceledException) when (cts.IsCancellationRequested)
@@ -168,17 +197,169 @@ while (!cts.IsCancellationRequested)
     }
     catch (Exception ex)
     {
-        logger.LogError(ex, "Error while sending event; continuing");
+        logger.LogError(ex, "Error while sending transaction event; continuing");
     }
 
     await Task.Delay(SendIntervalMs, cts.Token);
 }
 
-logger.LogInformation("Stopped POS data streaming");
+logger.LogInformation("Stopped POS transaction streaming");
 
-// Define a record for the payload
-internal readonly record struct PayloadData(string deviceId, DateTimeOffset ts, int value);
+// Data models for seed data
+internal record Customer(
+    [property: JsonPropertyName("customerId")] string CustomerId,
+    [property: JsonPropertyName("name")] string Name,
+    [property: JsonPropertyName("loyaltyPoints")] int LoyaltyPoints,
+    [property: JsonPropertyName("preferences")] CustomerPreferences Preferences
+);
+
+internal record CustomerPreferences(
+    [property: JsonPropertyName("airport")] string Airport
+);
+
+internal record Shop(
+    [property: JsonPropertyName("shopId")] string ShopId,
+    [property: JsonPropertyName("airportId")] string AirportId
+);
+
+internal record MenuItem(
+    [property: JsonPropertyName("menuItemId")] string MenuItemId,
+    [property: JsonPropertyName("menuItemName")] string MenuItemName,
+    [property: JsonPropertyName("category")] string Category,
+    [property: JsonPropertyName("sizes")] MenuItemSize[] Sizes
+);
+
+internal record MenuItemSize(
+    [property: JsonPropertyName("size")] string Size,
+    [property: JsonPropertyName("price")] decimal Price
+);
+
+// Transaction models
+internal record Transaction(
+    [property: JsonPropertyName("id")] string Id,
+    [property: JsonPropertyName("transactionId")] string TransactionId,
+    [property: JsonPropertyName("timestamp")] string Timestamp,
+    [property: JsonPropertyName("customerId")] string CustomerId,
+    [property: JsonPropertyName("shopId")] string ShopId,
+    [property: JsonPropertyName("airportId")] string AirportId,
+    [property: JsonPropertyName("transactionType")] string TransactionType,
+    [property: JsonPropertyName("items")] TransactionItem[] Items,
+    [property: JsonPropertyName("totalAmount")] decimal TotalAmount,
+    [property: JsonPropertyName("paymentMethod")] string PaymentMethod,
+    [property: JsonPropertyName("loyaltyPointsEarned")] int LoyaltyPointsEarned,
+    [property: JsonPropertyName("loyaltyPointsRedeemed")] int LoyaltyPointsRedeemed,
+    [property: JsonPropertyName("status")] string Status,
+    [property: JsonPropertyName("metadata")] TransactionMetadata Metadata
+);
+
+internal record TransactionItem(
+    [property: JsonPropertyName("menuItemId")] string MenuItemId,
+    [property: JsonPropertyName("name")] string Name,
+    [property: JsonPropertyName("category")] string Category,
+    [property: JsonPropertyName("quantity")] int Quantity,
+    [property: JsonPropertyName("unitPrice")] decimal UnitPrice,
+    [property: JsonPropertyName("totalPrice")] decimal TotalPrice,
+    [property: JsonPropertyName("size")] string Size
+);
+
+internal record TransactionMetadata(
+    [property: JsonPropertyName("deviceId")] string DeviceId,
+    [property: JsonPropertyName("employeeId")] string EmployeeId,
+    [property: JsonPropertyName("orderNumber")] string OrderNumber
+);
+
+// Transaction generator
+internal class TransactionGenerator
+{
+    private readonly Customer[] _customers;
+    private readonly Shop[] _shops;
+    private readonly MenuItem[] _menuItems;
+    private readonly Random _random;
+    private readonly string[] _transactionTypes = ["purchase", "refund"];
+    private readonly string[] _paymentMethods = ["CreditCard", "Cash", "MobilePayment"];
+
+    public TransactionGenerator(Customer[] customers, Shop[] shops, MenuItem[] menuItems)
+    {
+        _customers = customers;
+        _shops = shops;
+        _menuItems = menuItems;
+        _random = new Random();
+    }
+
+    public Transaction GenerateTransaction()
+    {
+        var customer = _customers[_random.Next(_customers.Length)];
+        var airportId = customer.Preferences.Airport;
+        
+        // Find shops at customer's preferred airport
+        var airportShops = _shops.Where(s => s.AirportId == airportId).ToArray();
+        if (airportShops.Length == 0)
+            airportShops = _shops; // Fallback to any shop
+        
+        var shop = airportShops[_random.Next(airportShops.Length)];
+        var transactionId = $"txn-{_random.Next(10000, 99999)}";
+        var transactionType = _transactionTypes[_random.Next(_transactionTypes.Length)];
+        var paymentMethod = _paymentMethods[_random.Next(_paymentMethods.Length)];
+        
+        // Generate random timestamp within last week
+        var timestamp = DateTimeOffset.UtcNow.AddMinutes(-_random.Next(1, 10080));
+        
+        // Select random menu items
+        var numItems = _random.Next(1, 5);
+        var selectedItems = _menuItems.OrderBy(x => _random.Next()).Take(numItems).ToArray();
+        
+        var items = new List<TransactionItem>();
+        foreach (var menuItem in selectedItems)
+        {
+            var quantity = _random.Next(1, 4);
+            var size = menuItem.Sizes[_random.Next(menuItem.Sizes.Length)];
+            var unitPrice = size.Price;
+            var totalPrice = Math.Round(quantity * unitPrice, 2);
+            
+            items.Add(new TransactionItem(
+                menuItem.MenuItemId,
+                menuItem.MenuItemName,
+                menuItem.Category,
+                quantity,
+                unitPrice,
+                totalPrice,
+                size.Size
+            ));
+        }
+        
+        var totalAmount = Math.Round(items.Sum(i => i.TotalPrice), 2);
+        var loyaltyPointsEarned = transactionType == "purchase" ? (int)totalAmount : 0;
+        var loyaltyPointsRedeemed = transactionType == "purchase" ? _random.Next(0, Math.Min(11, customer.LoyaltyPoints + 1)) : 0;
+        var status = transactionType == "purchase" ? "completed" : "refunded";
+        
+        var metadata = new TransactionMetadata(
+            $"pos-terminal-{_random.Next(1, 16):D2}",
+            $"emp-{_random.Next(100, 1000)}",
+            $"ORD-{timestamp:yyyyMMdd}-{_random.Next(1000, 10000)}"
+        );
+        
+        return new Transaction(
+            transactionId,
+            transactionId,
+            timestamp.ToString("yyyy-MM-ddTHH:mm:ss.fffZ"),
+            customer.CustomerId,
+            shop.ShopId,
+            airportId,
+            transactionType,
+            items.ToArray(),
+            totalAmount,
+            paymentMethod,
+            loyaltyPointsEarned,
+            loyaltyPointsRedeemed,
+            status,
+            metadata
+        );
+    }
+}
 
 // JSON source generator context
-[JsonSerializable(typeof(PayloadData))]
-internal partial class PayloadJsonContext : JsonSerializerContext { }
+[JsonSerializable(typeof(Transaction))]
+[JsonSerializable(typeof(Customer[]))]
+[JsonSerializable(typeof(Shop[]))]
+[JsonSerializable(typeof(MenuItem[]))]
+internal partial class TransactionJsonContext : JsonSerializerContext { }
