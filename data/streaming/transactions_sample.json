@@ -1,0 +1,40 @@
+
+{
+  "id": "txn-001",
+  "transactionId": "txn-001",
+  "timestamp": "2025-10-15T09:45:00Z",
+  "customerId": "customer-123",
+  "shopId": "shop-007",
+  "airportId": "ATL",
+  "transactionType": "purchase",
+  "items": [
+    {
+      "menuItemId": "item-007",
+      "name": "Caramel Macchiato",
+      "category": "Hot Beverages",
+      "quantity": 2,
+      "unitPrice": 4.50,
+      "totalPrice": 9.00,
+      "size": "Medium"
+    },
+    {
+      "menuItemId": "item-012",
+      "name": "Blueberry Muffin",
+      "category": "Pastries",
+      "quantity": 1,
+      "unitPrice": 3.50,
+      "totalPrice": 3.50,
+      "size": "Medium"
+    }
+  ],
+  "totalAmount": 12.50,
+  "paymentMethod": "CreditCard",
+  "loyaltyPointsEarned": 12,
+  "loyaltyPointsRedeemed": 0,
+  "status": "completed",
+  "metadata": {
+    "deviceId": "pos-terminal-04",
+    "employeeId": "emp-567",
+    "orderNumber": "ORD-2025-1015-0234"
+  }
+}

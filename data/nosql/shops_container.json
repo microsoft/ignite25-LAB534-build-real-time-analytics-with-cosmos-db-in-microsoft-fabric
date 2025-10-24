@@ -1,0 +1,668 @@
+[
+  {
+    "id": "shop-001",
+    "shopId": "shop-001",
+    "airportId": "JFK",
+    "shopName": "Coffee Express Terminal 4",
+    "location": {
+      "airport": "JFK",
+      "terminal": "Terminal 4",
+      "gate": "B22",
+      "floor": "Departures",
+      "coordinates": {
+        "latitude": 40.6413,
+        "longitude": -73.7781
+      }
+    },
+    "openDate": "2023-06-15T00:00:00Z",
+    "isActive": true,
+    "operatingHours": {
+      "monday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "tuesday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "wednesday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "thursday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "friday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "22:00"
+      },
+      "sunday": {
+        "open": "06:00",
+        "close": "22:00"
+      }
+    },
+    "contact": {
+      "phone": "+1-555-0199",
+      "email": "shop001@coffeeexpress.com",
+      "managerId": "mgr-045"
+    },
+    "capacity": {
+      "seating": 25,
+      "staff": 8
+    },
+    "facilities": [
+      "WiFi",
+      "Charging Stations",
+      "Mobile Ordering"
+    ],
+    "timezone": "America/New_York",
+    "updatedAt": "2025-10-15T10:00:00Z",
+    "_partitionKey": "JFK",
+    "shopKey": 1
+  },
+  {
+    "id": "shop-002",
+    "shopId": "shop-002",
+    "airportId": "JFK",
+    "shopName": "Coffee Express Terminal 1",
+    "location": {
+      "airport": "JFK",
+      "terminal": "Terminal 1",
+      "gate": "A15",
+      "floor": "Departures",
+      "coordinates": {
+        "latitude": 40.6398,
+        "longitude": -73.7789
+      }
+    },
+    "openDate": "2022-03-20T00:00:00Z",
+    "isActive": true,
+    "operatingHours": {
+      "monday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "tuesday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "wednesday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "thursday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "friday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "05:00",
+        "close": "23:00"
+      },
+      "sunday": {
+        "open": "05:00",
+        "close": "23:00"
+      }
+    },
+    "contact": {
+      "phone": "+1-555-0200",
+      "email": "shop002@coffeeexpress.com",
+      "managerId": "mgr-023"
+    },
+    "capacity": {
+      "seating": 30,
+      "staff": 10
+    },
+    "facilities": [
+      "WiFi",
+      "Charging Stations",
+      "Mobile Ordering",
+      "Drive-Through"
+    ],
+    "timezone": "America/New_York",
+    "updatedAt": "2025-10-15T10:00:00Z",
+    "_partitionKey": "JFK",
+    "shopKey": 2
+  },
+  {
+    "id": "shop-003",
+    "shopId": "shop-003",
+    "airportId": "LAX",
+    "shopName": "Coffee Express Terminal B",
+    "location": {
+      "airport": "LAX",
+      "terminal": "Terminal B",
+      "gate": "B45",
+      "floor": "Departures",
+      "coordinates": {
+        "latitude": 33.9425,
+        "longitude": -118.4081
+      }
+    },
+    "openDate": "2023-01-10T00:00:00Z",
+    "isActive": true,
+    "operatingHours": {
+      "monday": {
+        "open": "04:00",
+        "close": "23:30"
+      },
+      "tuesday": {
+        "open": "04:00",
+        "close": "23:30"
+      },
+      "wednesday": {
+        "open": "04:00",
+        "close": "23:30"
+      },
+      "thursday": {
+        "open": "04:00",
+        "close": "23:30"
+      },
+      "friday": {
+        "open": "04:00",
+        "close": "23:30"
+      },
+      "saturday": {
+        "open": "04:00",
+        "close": "23:30"
+      },
+      "sunday": {
+        "open": "04:00",
+        "close": "23:30"
+      }
+    },
+    "contact": {
+      "phone": "+1-555-0201",
+      "email": "shop003@coffeeexpress.com",
+      "managerId": "mgr-067"
+    },
+    "capacity": {
+      "seating": 40,
+      "staff": 12
+    },
+    "facilities": [
+      "WiFi",
+      "Charging Stations",
+      "Mobile Ordering",
+      "Outdoor Seating"
+    ],
+    "timezone": "America/Los_Angeles",
+    "updatedAt": "2025-10-15T10:00:00Z",
+    "_partitionKey": "LAX",
+    "shopKey": 3
+  },
+  {
+    "id": "shop-004",
+    "shopId": "shop-004",
+    "airportId": "LAX",
+    "shopName": "Coffee Express Terminal 7",
+    "location": {
+      "airport": "LAX",
+      "terminal": "Terminal 7",
+      "gate": "C32",
+      "floor": "Departures",
+      "coordinates": {
+        "latitude": 33.9416,
+        "longitude": -118.4085
+      }
+    },
+    "openDate": "2024-05-22T00:00:00Z",
+    "isActive": true,
+    "operatingHours": {
+      "monday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "tuesday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "wednesday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "thursday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "friday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "22:00"
+      },
+      "sunday": {
+        "open": "06:00",
+        "close": "22:00"
+      }
+    },
+    "contact": {
+      "phone": "+1-555-0202",
+      "email": "shop004@coffeeexpress.com",
+      "managerId": "mgr-089"
+    },
+    "capacity": {
+      "seating": 20,
+      "staff": 7
+    },
+    "facilities": [
+      "WiFi",
+      "Charging Stations",
+      "Mobile Ordering"
+    ],
+    "timezone": "America/Los_Angeles",
+    "updatedAt": "2025-10-15T10:00:00Z",
+    "_partitionKey": "LAX",
+    "shopKey": 4
+  },
+  {
+    "id": "shop-005",
+    "shopId": "shop-005",
+    "airportId": "ORD",
+    "shopName": "Coffee Express Terminal 1",
+    "location": {
+      "airport": "ORD",
+      "terminal": "Terminal 1",
+      "gate": "B18",
+      "floor": "Departures",
+      "coordinates": {
+        "latitude": 41.9742,
+        "longitude": -87.9073
+      }
+    },
+    "openDate": "2022-11-08T00:00:00Z",
+    "isActive": true,
+    "operatingHours": {
+      "monday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "tuesday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "wednesday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "thursday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "friday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "05:00",
+        "close": "22:30"
+      },
+      "sunday": {
+        "open": "05:00",
+        "close": "22:30"
+      }
+    },
+    "contact": {
+      "phone": "+1-555-0203",
+      "email": "shop005@coffeeexpress.com",
+      "managerId": "mgr-112"
+    },
+    "capacity": {
+      "seating": 35,
+      "staff": 11
+    },
+    "facilities": [
+      "WiFi",
+      "Charging Stations",
+      "Mobile Ordering",
+      "Express Pickup"
+    ],
+    "timezone": "America/Chicago",
+    "updatedAt": "2025-10-15T10:00:00Z",
+    "_partitionKey": "ORD",
+    "shopKey": 5
+  },
+  {
+    "id": "shop-006",
+    "shopId": "shop-006",
+    "airportId": "ORD",
+    "shopName": "Coffee Express Terminal 3",
+    "location": {
+      "airport": "ORD",
+      "terminal": "Terminal 3",
+      "gate": "H14",
+      "floor": "Departures",
+      "coordinates": {
+        "latitude": 41.9786,
+        "longitude": -87.9048
+      }
+    },
+    "openDate": "2023-09-12T00:00:00Z",
+    "isActive": true,
+    "operatingHours": {
+      "monday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "tuesday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "wednesday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "thursday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "friday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "21:00"
+      },
+      "sunday": {
+        "open": "06:00",
+        "close": "21:00"
+      }
+    },
+    "contact": {
+      "phone": "+1-555-0204",
+      "email": "shop006@coffeeexpress.com",
+      "managerId": "mgr-134"
+    },
+    "capacity": {
+      "seating": 28,
+      "staff": 9
+    },
+    "facilities": [
+      "WiFi",
+      "Charging Stations",
+      "Mobile Ordering"
+    ],
+    "timezone": "America/Chicago",
+    "updatedAt": "2025-10-15T10:00:00Z",
+    "_partitionKey": "ORD",
+    "shopKey": 6
+  },
+  {
+    "id": "shop-007",
+    "shopId": "shop-007",
+    "airportId": "ATL",
+    "shopName": "Coffee Express Concourse B",
+    "location": {
+      "airport": "ATL",
+      "terminal": "Concourse B",
+      "gate": "B28",
+      "floor": "Main",
+      "coordinates": {
+        "latitude": 33.6407,
+        "longitude": -84.4277
+      }
+    },
+    "openDate": "2023-04-18T00:00:00Z",
+    "isActive": true,
+    "operatingHours": {
+      "monday": {
+        "open": "04:00",
+        "close": "23:30"
+      },
+      "tuesday": {
+        "open": "04:00",
+        "close": "23:30"
+      },
+      "wednesday": {
+        "open": "04:00",
+        "close": "23:30"
+      },
+      "thursday": {
+        "open": "04:00",
+        "close": "23:30"
+      },
+      "friday": {
+        "open": "04:00",
+        "close": "23:30"
+      },
+      "saturday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "sunday": {
+        "open": "04:30",
+        "close": "23:00"
+      }
+    },
+    "contact": {
+      "phone": "+1-555-0205",
+      "email": "shop007@coffeeexpress.com",
+      "managerId": "mgr-156"
+    },
+    "capacity": {
+      "seating": 45,
+      "staff": 14
+    },
+    "facilities": [
+      "WiFi",
+      "Charging Stations",
+      "Mobile Ordering",
+      "Express Pickup",
+      "Outdoor Seating"
+    ],
+    "timezone": "America/New_York",
+    "updatedAt": "2025-10-15T10:00:00Z",
+    "_partitionKey": "ATL",
+    "shopKey": 7
+  },
+  {
+    "id": "shop-008",
+    "shopId": "shop-008",
+    "airportId": "DFW",
+    "shopName": "Coffee Express Terminal A",
+    "location": {
+      "airport": "DFW",
+      "terminal": "Terminal A",
+      "gate": "A21",
+      "floor": "Departures",
+      "coordinates": {
+        "latitude": 32.8998,
+        "longitude": -97.0403
+      }
+    },
+    "openDate": "2024-02-14T00:00:00Z",
+    "isActive": true,
+    "operatingHours": {
+      "monday": {
+        "open": "05:00",
+        "close": "22:30"
+      },
+      "tuesday": {
+        "open": "05:00",
+        "close": "22:30"
+      },
+      "wednesday": {
+        "open": "05:00",
+        "close": "22:30"
+      },
+      "thursday": {
+        "open": "05:00",
+        "close": "22:30"
+      },
+      "friday": {
+        "open": "05:00",
+        "close": "22:30"
+      },
+      "saturday": {
+        "open": "05:30",
+        "close": "22:00"
+      },
+      "sunday": {
+        "open": "05:30",
+        "close": "22:00"
+      }
+    },
+    "contact": {
+      "phone": "+1-555-0206",
+      "email": "shop008@coffeeexpress.com",
+      "managerId": "mgr-178"
+    },
+    "capacity": {
+      "seating": 32,
+      "staff": 10
+    },
+    "facilities": [
+      "WiFi",
+      "Charging Stations",
+      "Mobile Ordering"
+    ],
+    "timezone": "America/Chicago",
+    "updatedAt": "2025-10-15T10:00:00Z",
+    "_partitionKey": "DFW",
+    "shopKey": 8
+  },
+  {
+    "id": "shop-009",
+    "shopId": "shop-009",
+    "airportId": "SFO",
+    "shopName": "Coffee Express Terminal 2",
+    "location": {
+      "airport": "SFO",
+      "terminal": "Terminal 2",
+      "gate": "D12",
+      "floor": "Departures",
+      "coordinates": {
+        "latitude": 37.6213,
+        "longitude": -122.379
+      }
+    },
+    "openDate": "2023-07-25T00:00:00Z",
+    "isActive": true,
+    "operatingHours": {
+      "monday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "tuesday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "wednesday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "thursday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "friday": {
+        "open": "04:30",
+        "close": "23:00"
+      },
+      "saturday": {
+        "open": "05:00",
+        "close": "23:00"
+      },
+      "sunday": {
+        "open": "05:00",
+        "close": "23:00"
+      }
+    },
+    "contact": {
+      "phone": "+1-555-0207",
+      "email": "shop009@coffeeexpress.com",
+      "managerId": "mgr-190"
+    },
+    "capacity": {
+      "seating": 38,
+      "staff": 12
+    },
+    "facilities": [
+      "WiFi",
+      "Charging Stations",
+      "Mobile Ordering",
+      "Express Pickup"
+    ],
+    "timezone": "America/Los_Angeles",
+    "updatedAt": "2025-10-15T10:00:00Z",
+    "_partitionKey": "SFO",
+    "shopKey": 9
+  },
+  {
+    "id": "shop-010",
+    "shopId": "shop-010",
+    "airportId": "SEA",
+    "shopName": "Coffee Express Concourse C",
+    "location": {
+      "airport": "SEA",
+      "terminal": "Concourse C",
+      "gate": "C8",
+      "floor": "Main",
+      "coordinates": {
+        "latitude": 47.4502,
+        "longitude": -122.3088
+      }
+    },
+    "openDate": "2024-08-30T00:00:00Z",
+    "isActive": true,
+    "operatingHours": {
+      "monday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "tuesday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "wednesday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "thursday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "friday": {
+        "open": "05:00",
+        "close": "22:00"
+      },
+      "saturday": {
+        "open": "06:00",
+        "close": "21:00"
+      },
+      "sunday": {
+        "open": "06:00",
+        "close": "21:00"
+      }
+    },
+    "contact": {
+      "phone": "+1-555-0208",
+      "email": "shop010@coffeeexpress.com",
+      "managerId": "mgr-212"
+    },
+    "capacity": {
+      "seating": 26,
+      "staff": 8
+    },
+    "facilities": [
+      "WiFi",
+      "Charging Stations",
+      "Mobile Ordering"
+    ],
+    "timezone": "America/Los_Angeles",
+    "updatedAt": "2025-10-15T10:00:00Z",
+    "_partitionKey": "SEA",
+    "shopKey": 10
+  }
+]

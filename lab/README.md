@@ -23,30 +23,49 @@ In this 75 minute lab, you will step into the role of a data engineer for the Fo
 
 This lab contains 5 exercises, each with multiple steps. Complete all the steps in each exercise before moving on to the next one. The exercises are designed to be completed in sequence, building on the work from previous exercises.
 
+1. **Fabric Environment Setup**: Automated setup of the Fabric items needed for the lab.
 1. **Exercise 1**: Provisioning Cosmos DB in Fabric (Operational Data Store)
 1. **Exercise 2**: Batch Data Loading and Cross-Database Analytics (Cosmos DB to Data Warehouse)
 1. **Exercise 3**: Real-Time Streaming and Visualization of POS Events
 1. **Exercise 4**: Build Personalization Model and Implement Reverse ETL
 1. **Exercise 5 (Optional)**: Serve Personalized Recommendations from Cosmos DB
 
-## Pre-Requisites
-
-To participate in this workshop, you will need:
-
-1. Your own laptop.
-   * It need only be capable of running a browser and GitHub Codespaces, so almost any laptop will do.
-   * A recent version of Edge, Chrome or Safari is recommended.
-2. Prerequisite #2
-3. Prerequisite #3
+Don't worry if you run out of time to complete the entire lab. All of these exercises available on [our repo](https://aka.ms/). <!--TODO: Add aka.ms link to repo-->
 
 ## Get Started
 
-To get started you will need to
+> [!TIP]
+> As you follow the instructions in this pane, whenever you see a `icon`, you can use it to copy text from the instruction pane into the virtual machine interface. This is particularly useful to copy code; but bear in mind you may need to modify the pasted code to fix indent levels or formatting before running it!
 
-## Discussions
+## Sign into Windows
 
-Build your first agent with Azure AI Agent Service is an open source project supported by Microsoft. See the [SUPPORT.md](../SUPPORT.md) file for details on how to raise issues or contribute. If you enjoyed this workshop please give the repository a ⭐ and share it with others.
+1. In the virtual machine, sign into Windows using the following credentials:
 
-## Source code
+   - Username: `@lab.VirtualMachine(Win11-Pro-Base-VM2).Username`
+   - Password: `@lab.VirtualMachine(Win11-Pro-Base-VM2).Password`
 
-The source code for this session can be found in the [src folder](../src) of this repo.
+Select **Next >** to go to set up your Fabric Environment.
+
+===
+
+!INSTRUCTIONS [Fabric Environment Setup](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+
+===
+
+!INSTRUCTIONS [Exercise 1: Provisioning Cosmos DB in Fabric (Operational Data Store)](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+
+===
+
+!INSTRUCTIONS [Exercise 2: Batch Data Loading and Cross-Database Analytics (Cosmos DB to Data Warehouse)](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+
+===
+
+!INSTRUCTIONS [Exercise 3: Real-Time Streaming and Visualization of POS Events](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+
+===
+
+!INSTRUCTIONS [Exercise 4: Build Personalization Model and Implement Reverse ETL](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+
+===
+
+!INSTRUCTIONS [Exercise 5 (Optional): Serve Personalized Recommendations from Cosmos DB](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)

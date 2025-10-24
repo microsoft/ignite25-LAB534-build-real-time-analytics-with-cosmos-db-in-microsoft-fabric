@@ -1,0 +1,43 @@
+menuItemKey,menuItemId,menuItemName,category,subcategory,size,price,isActive,createdAt,updatedAt
+1,item-001,Latte,Hot Beverages,Espresso Drinks,Small,3.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+1,item-001,Latte,Hot Beverages,Espresso Drinks,Medium,4.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+1,item-001,Latte,Hot Beverages,Espresso Drinks,Large,5.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+2,item-002,Cappuccino,Hot Beverages,Espresso Drinks,Small,3.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+2,item-002,Cappuccino,Hot Beverages,Espresso Drinks,Medium,4.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+2,item-002,Cappuccino,Hot Beverages,Espresso Drinks,Large,5.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+3,item-003,Espresso,Hot Beverages,Espresso Drinks,Small,2.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+3,item-003,Espresso,Hot Beverages,Espresso Drinks,Medium,3.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+3,item-003,Espresso,Hot Beverages,Espresso Drinks,Large,4.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+4,item-004,Mocha,Hot Beverages,Espresso Drinks,Small,3.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+4,item-004,Mocha,Hot Beverages,Espresso Drinks,Medium,4.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+4,item-004,Mocha,Hot Beverages,Espresso Drinks,Large,5.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+5,item-005,Chai Latte,Hot Beverages,Tea Drinks,Small,3.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+5,item-005,Chai Latte,Hot Beverages,Tea Drinks,Medium,4.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+5,item-005,Chai Latte,Hot Beverages,Tea Drinks,Large,5.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+6,item-006,Matcha,Hot Beverages,Tea Drinks,Small,4.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+6,item-006,Matcha,Hot Beverages,Tea Drinks,Medium,5.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+6,item-006,Matcha,Hot Beverages,Tea Drinks,Large,6.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+7,item-007,Caramel Macchiato,Hot Beverages,Espresso Drinks,Small,3.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+7,item-007,Caramel Macchiato,Hot Beverages,Espresso Drinks,Medium,4.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+7,item-007,Caramel Macchiato,Hot Beverages,Espresso Drinks,Large,5.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+8,item-008,Americano,Hot Beverages,Espresso Drinks,Small,2.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+8,item-008,Americano,Hot Beverages,Espresso Drinks,Medium,3.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+8,item-008,Americano,Hot Beverages,Espresso Drinks,Large,4.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+9,item-009,Cold Brew,Cold Beverages,Iced Coffee,Small,3.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+9,item-009,Cold Brew,Cold Beverages,Iced Coffee,Medium,4.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+9,item-009,Cold Brew,Cold Beverages,Iced Coffee,Large,5.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+10,item-010,Iced Latte,Cold Beverages,Iced Coffee,Small,3.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+10,item-010,Iced Latte,Cold Beverages,Iced Coffee,Medium,4.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+10,item-010,Iced Latte,Cold Beverages,Iced Coffee,Large,5.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+11,item-011,Croissant,Pastries,Baked Goods,,2.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+12,item-012,Blueberry Muffin,Pastries,Baked Goods,,2.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+13,item-013,Bagel,Pastries,Baked Goods,,1.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+14,item-014,Chocolate Chip Cookie,Pastries,Cookies,,2.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+15,item-015,Breakfast Sandwich,Food,Breakfast,,4.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+16,item-016,Avocado Toast,Food,Lunch,,5.75,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+17,item-017,Turkey Club Sandwich,Food,Lunch,,7.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+18,item-018,Caesar Salad,Food,Salads,,6.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+19,item-019,Bottled Water,Cold Beverages,Bottled Drinks,,1.25,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+20,item-020,Orange Juice,Cold Beverages,Juice,Small,3.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+20,item-020,Orange Juice,Cold Beverages,Juice,Medium,3.00,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
+20,item-020,Orange Juice,Cold Beverages,Juice,Large,4.50,1,2025-01-15T08:00:00Z,2025-10-01T12:30:00Z
