@@ -1,20 +1,25 @@
 import json
 import random
 import time
+import os
 from datetime import datetime, timedelta
 
+# Get the script directory and construct paths relative to it
+script_dir = os.path.dirname(os.path.abspath(__file__))
+data_dir = os.path.dirname(script_dir)
+
 # Load customer data from customers_container.json
-CUSTOMERS_FILE = "../customers_container.json"
+CUSTOMERS_FILE = os.path.join(data_dir, "nosql", "customers_container.json")
 with open(CUSTOMERS_FILE, "r") as file:
     customers = json.load(file)
 
 # Load shops data from shops_container.json
-SHOPS_FILE = "../shops_container.json"
+SHOPS_FILE = os.path.join(data_dir, "nosql", "shops_container.json")
 with open(SHOPS_FILE, "r") as file:
     shops = json.load(file)
 
 # Load menu data from menu_container.json
-MENU_FILE = "../menu_container.json"
+MENU_FILE = os.path.join(data_dir, "nosql", "menu_container.json")
 with open(MENU_FILE, "r") as file:
     menu_items = json.load(file)
 
@@ -50,26 +55,20 @@ def generate_transaction(customer):
     items = []
     for menu_item in selected_items:
         quantity = random.randint(1, 3)
-        # Handle items with sizes
-        if menu_item.get("sizes") and len(menu_item["sizes"]) > 0:
-            size_option = random.choice(menu_item["sizes"])
-            unit_price = size_option["price"]
-            size_name = size_option["size"]
-        else:
-            unit_price = menu_item["price"]
-            size_name = None
+        # All menu items have sizes in the data structure
+        size_option = random.choice(menu_item["sizes"])
+        unit_price = size_option["price"]
+        size_name = size_option["size"]
         
         item = {
             "menuItemId": menu_item["menuItemId"],
-            "name": menu_item["name"],
+            "name": menu_item["menuItemName"],  # Use menuItemName from the actual data
             "category": menu_item["category"],
             "quantity": quantity,
             "unitPrice": unit_price,
-            "totalPrice": round(quantity * unit_price, 2)
+            "totalPrice": round(quantity * unit_price, 2),
+            "size": size_name
         }
-        
-        if size_name:
-            item["size"] = size_name
         
         items.append(item)
     
