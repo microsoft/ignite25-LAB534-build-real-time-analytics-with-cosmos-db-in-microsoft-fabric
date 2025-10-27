@@ -41,8 +41,8 @@ Don't worry if you run out of time to complete the entire lab. All of these exer
 
 1. In the virtual machine, sign into Windows using the following credentials:
 
-   - Username: `@lab.VirtualMachine(Win11-Pro-Base-VM2).Username`
-   - Password: `@lab.VirtualMachine(Win11-Pro-Base-VM2).Password`
+   - Username: `@lab.VirtualMachine(Win11-Pro-Base).Username`
+   - Password: `@lab.VirtualMachine(Win11-Pro-Base).Password`
 
 Select **Next >** to go to set up your Fabric Environment.
 

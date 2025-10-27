@@ -51,4 +51,12 @@ On your virtual machine, you will find the lab repo pre-cloned on the desktop un
     > [!TIP]
     > Do not close the terminal windows even after completion. You will use this terminal again in later exercises to avoid setting up the environment variable again.
 
-1. Once the script has 
+1. Once the script has completed, navigate back to the Fabric Workspace in the web browser and inside the workspace, notice that a new Fabric Data Warehouse named *fc-commerce-wh* has been created. Select it to open.
+
+1. On the left explorer pane, expand **dbo > Tables** to see the list of tables that have been created and loaded with data. Select any table to preview the data.
+
+    ![Screenshot showing the tables in the Fabric Data Warehouse](media/warehouse-tables.png)
+
+## Next step
+
+> Select **Next >** in these instructions to go to the next part of the lab: **Exercise 1: Provisioning Cosmos DB in Fabric (Operational Data Store)**.
