@@ -40,9 +40,7 @@ using Microsoft.Fabric.Api.Core.Models;
 using Microsoft.Fabric.Api.Warehouse.Models;
 using Microsoft.Extensions.Logging;
 
-const string DefaultCapacityName = "fabricteamcapacity";
-const string WorkspaceName = "Fourth Coffee Commerce - Lab 534";
-const string WarehouseName = "fc-commerce-wh";
+const string WarehouseName = "fc_commerce_wh";
 
 using var loggerFactory = LoggerFactory.Create(builder =>
 {
@@ -59,20 +57,13 @@ var logger = loggerFactory.CreateLogger("LoadWarehouseData");
 
 var credential = new AzureCliCredential();
 var fabricClient = new FabricClient(credential);
-logger.LogInformation("Starting provisioning workflow for warehouse {WarehouseName} in workspace {WorkspaceName}", WarehouseName, WorkspaceName);
 
-
-
-var fabricCapacity = fabricClient.Core.Capacities
-    .ListCapacities()
-    .FirstOrDefault(c => c.DisplayName == DefaultCapacityName);
-if (fabricCapacity is null)
+var WorkspaceName = Environment.GetEnvironmentVariable("FABRIC_WORKSPACE_NAME");
+if (string.IsNullOrWhiteSpace(WorkspaceName))
 {
-    logger.LogError("Capacity {CapacityName} not found", DefaultCapacityName);
-    throw new InvalidOperationException($"Capacity '{DefaultCapacityName}' not found.");
+    logger.LogError("Environment variable FABRIC_WORKSPACE_NAME is not set. Please set it to the target workspace name.");
+    return;
 }
-logger.LogInformation("Resolved capacity {CapacityName} with Id {CapacityId}", DefaultCapacityName, fabricCapacity.Id);
-
 
 var workspace = fabricClient.Core.Workspaces
     .ListWorkspaces()
@@ -80,19 +71,12 @@ var workspace = fabricClient.Core.Workspaces
 
 if (workspace is null)
 {
-    logger.LogInformation("Workspace {WorkspaceName} not found; creating in capacity {CapacityId}", WorkspaceName, fabricCapacity.Id);
-    var createWorkspaceRequest = new CreateWorkspaceRequest(WorkspaceName)
-    {
-        CapacityId = fabricCapacity.Id,
-    };
-
-    var workspaceCreationResponse = await fabricClient.Core.Workspaces.CreateWorkspaceAsync(createWorkspaceRequest);
-    workspace = workspaceCreationResponse.Value;
-    logger.LogInformation("Created workspace {WorkspaceName} with Id {WorkspaceId}", WorkspaceName, workspace.Id);
+    logger.LogError("Workspace {WorkspaceName} not found. Follow the lab instructions to create it from the web", WorkspaceName);
+    return;
 }
 else
 {
-    logger.LogInformation("Using existing workspace {WorkspaceName} with Id {WorkspaceId}", WorkspaceName, workspace.Id);
+    logger.LogInformation("Successfully retrieved workspace {WorkspaceName} with Id {WorkspaceId}", WorkspaceName, workspace.Id);
 }
 
 
