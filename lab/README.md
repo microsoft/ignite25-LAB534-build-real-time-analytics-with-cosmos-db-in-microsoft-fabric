@@ -41,31 +41,31 @@ Don't worry if you run out of time to complete the entire lab. All of these exer
 
 1. In the virtual machine, sign into Windows using the following credentials:
 
-   - Username: `@lab.VirtualMachine(Win11-Pro-Base-VM2).Username`
-   - Password: `@lab.VirtualMachine(Win11-Pro-Base-VM2).Password`
+   - Username: `@lab.VirtualMachine(Win11-Pro-Base).Username`
+   - Password: `@lab.VirtualMachine(Win11-Pro-Base).Password`
 
 Select **Next >** to go to set up your Fabric Environment.
 
 ===
 
-!INSTRUCTIONS [Fabric Environment Setup](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+!INSTRUCTIONS [Fabric Environment Setup](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/refs/heads/main/lab/instructions/fabric-environment-setup.md)
 
 ===
 
-!INSTRUCTIONS [Exercise 1: Provisioning Cosmos DB in Fabric (Operational Data Store)](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+!INSTRUCTIONS [Exercise 1: Provisioning Cosmos DB in Fabric (Operational Data Store)](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/refs/heads/main/lab/instructions/exercise-1.md)
 
 ===
 
-!INSTRUCTIONS [Exercise 2: Batch Data Loading and Cross-Database Analytics (Cosmos DB to Data Warehouse)](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+!INSTRUCTIONS [Exercise 2: Batch Data Loading and Cross-Database Analytics (Cosmos DB to Data Warehouse)](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/refs/heads/main/lab/instructions/exercise-2.md)
 
 ===
 
-!INSTRUCTIONS [Exercise 3: Real-Time Streaming and Visualization of POS Events](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+!INSTRUCTIONS [Exercise 3: Real-Time Streaming and Visualization of POS Events](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/refs/heads/main/lab/instructions/exercise-3.md)
 
 ===
 
-!INSTRUCTIONS [Exercise 4: Build Personalization Model and Implement Reverse ETL](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+!INSTRUCTIONS [Exercise 4: Build Personalization Model and Implement Reverse ETL](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/refs/heads/main/lab/instructions/exercise-4.md)
 
 ===
 
-!INSTRUCTIONS [Exercise 5 (Optional): Serve Personalized Recommendations from Cosmos DB](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/..)
+!INSTRUCTIONS [Exercise 5 (Optional): Serve Personalized Recommendations from Cosmos DB](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/refs/heads/main/lab/instructions/exercise-5.md)

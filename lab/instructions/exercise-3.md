@@ -19,3 +19,5 @@ This includes creating a new *Fabric workspace*, automated creation of a *Fabric
 +++TransactionsLive 
 | take 10+++
 
+
+### Update loyalty transactions and balances in Cosmos DB
