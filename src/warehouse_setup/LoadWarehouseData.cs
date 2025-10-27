@@ -40,7 +40,7 @@ using Microsoft.Fabric.Api.Core.Models;
 using Microsoft.Fabric.Api.Warehouse.Models;
 using Microsoft.Extensions.Logging;
 
-const string WarehouseName = "fc-commerce-wh";
+const string WarehouseName = "fc_commerce_wh";
 
 using var loggerFactory = LoggerFactory.Create(builder =>
 {

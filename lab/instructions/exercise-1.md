@@ -10,7 +10,7 @@ This is the first exercise in the lab where you will create a Cosmos DB database
 
     ![Screenshot showing how to create a new Cosmos DB in Microsoft Fabric](media/create-cosmos-db.png)
 
-1. Name the new database +++*fc-commerce-cosmos*+++ and select **Create**.
+1. Name the new database +++*fc_commerce_cosmos*+++ and select **Create**.
 
 1. Once the Cosmos DB database has been created, it will open in a new tab in Fabric.
 
@@ -31,10 +31,6 @@ This is the first exercise in the lab where you will create a Cosmos DB database
         - **Container id**: +++*recommendations*+++
         - **Partition key**: +++*/customerId*+++
 
-    1. **Transactions** container
-        - **Container id**: +++*transactions*+++
-        - **Partition key**: +++*/shopId*+++
-
     1. **Menu Items** container
         - **Container id**: +++*menuitems*+++
         - **Partition key**: +++*/shopId*+++
@@ -47,7 +43,7 @@ This is the first exercise in the lab where you will create a Cosmos DB database
 
 You will now load initial data into the Cosmos DB containers you just created by uploading JSON files.
 
-1. On the left explorer pane, select the **customers** container to open it then select **items**. 
+1. On the left explorer pane, select the **customers** container to open it then select **items**.
 
 1. From the top menu ribbon, select **Upload item**. On the **Upload item** pane that opens on the right side, select the folder icon to browse for the file to upload.
 
@@ -60,7 +56,6 @@ You will now load initial data into the Cosmos DB containers you just created by
 1. Repeat the previous steps to upload the following files into their respective containers:
 
     - **recommendations** container: *recommendations_container.json*
-    - **transactions** container: *transactions_container.json* <!--TODO:we do not have this file do we remove this container?-->
     - **menuitems** container: *menu_container.json*
     - **shops** container: *shops_container.json*
 
