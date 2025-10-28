@@ -1,13 +1,12 @@
 # Real-Time Streaming of POS Events
 
-In this exercise, you will ingest, transform, and query the streaming data and apply medallion architecture.
+In this exercise, you will ingest and query the streaming data and use the Kusto Query Language (KQL) to analyze it.
 
 By the end of this exercise, you'll be able to:
 
-- Perform Transformations on streaming data within an eventstream
-- Architect a medalliion archtectioe 
-- Set up an eventhouse
-- Query streaming data using KQL 
+- Store streaming data in an Eventhouse
+- Query streaming data using the Kusto Query Language (KQL)
+- Build a Silver layer for analytics using KQL functions
 
 
 ## Create an Eventhouse
@@ -91,4 +90,77 @@ By the end of this exercise, you'll be able to:
 
 ![Screenshot of querying with code in eventhouse](media/take-100-query.png)
 
+## Build the Silver Layer for Analytics
+1. Replace the existing query in the query editor with the following KQL code to create a Silver layer table that aggregates total sales by menu item:
 
++++*
+.create-or-alter function with (folder="Silver") vw_Pos_Silver() {
+    transactions_live
+    | where transactionType == "purchase"
+    | summarize arg_max(timestamp, *) by transactionId
+    | project
+        TransactionId  = tostring(transactionId),
+        EventTimestamp = todatetime(timestamp),
+        CustomerId     = tostring(customerId),
+        ShopId         = tostring(shopId),
+        AirportId      = tostring(airportId),
+        PaymentMethod  = tostring(paymentMethod),
+        TotalAmount    = todouble(totalAmount),
+        LoyaltyPointsEarned   = toint(coalesce(loyaltyPointsEarned, 0)),
+        LoyaltyPointsRedeemed = toint(coalesce(loyaltyPointsRedeemed, 0)),
+        DateKey        = toint(format_datetime(todatetime(timestamp), "yyyyMMdd")),
+        TimeKey        = toint(format_datetime(todatetime(timestamp), "HHmmss")),
+        SourceSystem   = "CosmosDB",
+        CreatedAt      = todatetime(timestamp)
+}
+
+.create-or-alter function with (folder="Silver") vw_Pos_LineItems() {
+    let base =
+        transactions_live
+        | extend EventTs = coalesce(
+            todatetime(column_ifexists("timestamp", datetime(null))),
+            todatetime(column_ifexists("EventEnqueuedUtcTime", datetime(null))),
+            todatetime(column_ifexists("EventProcessedUtcTime", datetime(null))),
+            ingestion_time()
+          )
+        | where tostring(column_ifexists("transactionType","")) == "purchase"
+        | extend items = column_ifexists("items", dynamic(null))
+        | where isnotnull(items)
+        | mv-expand items;
+    base
+    | extend
+        TransactionId  = tostring(column_ifexists("transactionId","")),
+        EventTimestamp = EventTs,
+        CustomerId     = tostring(column_ifexists("customerId","")),
+        ShopId         = tostring(column_ifexists("shopId","")),
+        AirportId      = tostring(column_ifexists("airportId","")),
+        PaymentMethod  = tostring(column_ifexists("paymentMethod","")),
+        MenuItemId     = tostring(todynamic(items)["menuItemId"]),
+        ItemName       = tostring(todynamic(items)["name"]),
+        Size           = tostring(coalesce(todynamic(items)["size"], "")),
+        Quantity       = toint(coalesce(todynamic(items)["quantity"], 1)),
+        UnitPrice      = todouble(coalesce(todynamic(items)["unitPrice"], 0.0))
+    | extend
+        LineTotal    = todouble(coalesce(todynamic(items)["totalPrice"], Quantity * UnitPrice)),
+        DateKey      = toint(format_datetime(EventTimestamp, "yyyyMMdd")),
+        TimeKey      = toint(format_datetime(EventTimestamp, "HHmmss")),
+        SourceSystem = "CosmosDB",
+        CreatedAt    = EventTimestamp
+    | project TransactionId, EventTimestamp, CustomerId, ShopId, AirportId,
+              MenuItemId, ItemName, Size, Quantity, UnitPrice, LineTotal,
+              PaymentMethod, DateKey, TimeKey, SourceSystem, CreatedAt
+}
+*+++
+
+1. Select **Run** to execute the code and create the Silver layer functions.
+![Screenshot of creating silver layer functions in eventhouse](media/create-silver-layer-functions.png)
+
+1. You can now query the Silver layer views to perform analytics on the ingested streaming data. For example, to get total sales by menu item, use the following query:
+
++++*
+vw_Pos_LineItems()
+| summarize TotalSales = sum(LineTotal), TotalQuantity = sum(Quantity) by MenuItemId, ItemName
+| order by TotalSales desc
+*+++
+
+1. Select **Run** to execute the query and view the results.
