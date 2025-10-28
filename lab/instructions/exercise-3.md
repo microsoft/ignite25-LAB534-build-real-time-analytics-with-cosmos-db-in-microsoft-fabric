@@ -94,6 +94,15 @@ By the end of this exercise, you'll be able to:
 1. Replace the existing query in the query editor with the following KQL code to create a Silver layer table that aggregates total sales by menu item:
 
 +++*
+CREATE OR ALTER VIEW dbo.vDimCustomerKey AS
+SELECT CustomerId, CustomerKey, IsActive FROM dbo.DimCustomer;
+
+CREATE OR ALTER VIEW dbo.vDimShopKey AS
+SELECT ShopId, ShopKey, IsActive FROM dbo.DimShop;
+
+CREATE OR ALTER VIEW dbo.vDimMenuItemKey AS
+SELECT MenuItemId, MenuItemKey, IsActive FROM dbo.DimMenuItem;
+
 .create-or-alter function with (folder="Silver") vw_Pos_Silver() {
     transactions_live
     | where transactionType == "purchase"

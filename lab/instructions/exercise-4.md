@@ -30,11 +30,11 @@ SELECT MenuItemId, MenuItemKey, IsActive FROM dbo.DimMenuItem;*+++
 
 1. From the top menu ribbon, select **+ New item**, a pane will open on the right side and on the filter text box on the top right of the pane, type +++*dataflow*+++ to filter the list of items. Select **Dataflow Gen2**.
 
-    ![Screenshot showing how to create a new Dataflow in Microsoft Fabric](media/create-dataflow.png)
+![Screenshot showing how to create a new Dataflow in Microsoft Fabric](media/create-dataflow.png)
 
 1. Name the new Dataflow +++*fc_commerce_dataflow*+++ and select **Create**.
 1. Once the Dataflow Gen2 has been created, it will open in a new tab in Fabric.
-    ![Screenshot showing the created Dataflow Gen2 in Microsoft Fabric](media/dataflow-created.png)
+![Screenshot showing the created Dataflow Gen2 in Microsoft Fabric](media/dataflow-created.png)
 1. In the Dataflow canvas, select **Get data from another source** to open the data source selection pane.
 1. In the data source selection pane, type +++*eventhouse*+++ in the filter text box on the top right of the pane to filter the list of items. In the OneLake catalog view, select the eventhouse you created in the previous exercise, +++*fc_commerce_eventhouse*+++.
 
