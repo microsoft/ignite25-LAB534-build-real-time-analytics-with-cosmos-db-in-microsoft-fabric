@@ -23,7 +23,7 @@ By the end of this exercise, you'll be able to:
 
 1. This opens a new tab in Fabric to the SQL analytics endpoint page for your Cosmos DB database. In the left explorer pane, expand **Schemas > fc_commerce_cosmos > Tables**.
 
-    Hee you will see the list of containers you created in Exercise 1, each represented as a table.
+    Here you will see the list of containers you created in Exercise 1, each represented as a table.
 
 1. From the top menu ribbon, select **New SQL query**. In the query editor that opens, enter the following query to analyze customer preferences by grouping customers by their favorite drink:
 

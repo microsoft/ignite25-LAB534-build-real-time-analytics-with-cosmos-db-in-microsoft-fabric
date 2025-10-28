@@ -34,8 +34,8 @@ using Microsoft.Extensions.Logging;
 // -----------------------
 // Configuration
 // -----------------------
-const string WorkspaceName = "Fourth Coffee Commerce - Lab 534";
-const string EventstreamName = "sample-pos-stream";
+const string WorkspaceName = "Fourth Coffee Commerce1 - Lab 534";
+const string EventstreamName = "sample-pos-stream3";
 const int SendIntervalMs = 3000; // 3s cadence
 
 // Data file paths

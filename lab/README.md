@@ -26,7 +26,7 @@ This lab contains 5 exercises, each with multiple steps. Complete all the steps 
 1. **Fabric Environment Setup**: Automated setup of the Fabric items needed for the lab.
 1. **Exercise 1**: Provisioning Cosmos DB in Fabric (Operational Data Store)
 1. **Exercise 2**: Batch Data Loading and Cross-Database Analytics (Cosmos DB to Data Warehouse)
-1. **Exercise 3**: Real-Time Streaming and Visualization of POS Events
+1. **Exercise 3**: Real-Time Streaming of POS Events
 1. **Exercise 4**: Build Personalization Model and Implement Reverse ETL
 1. **Exercise 5 (Optional)**: Serve Personalized Recommendations from Cosmos DB
 

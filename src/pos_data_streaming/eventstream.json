@@ -9,7 +9,7 @@
   "destinations": [],
   "streams": [
     {
-      "name": "pos-event-stream-stream",
+      "name": "pos-stream-eventstream",
       "type": "DefaultStream",
       "properties": {},
       "inputNodes": [
