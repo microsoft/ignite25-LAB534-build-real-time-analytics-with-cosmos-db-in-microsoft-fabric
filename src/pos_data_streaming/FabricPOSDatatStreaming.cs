@@ -34,8 +34,9 @@ using Microsoft.Extensions.Logging;
 // -----------------------
 // Configuration
 // -----------------------
-const string WorkspaceName = "Fourth Coffee Commerce1 - Lab 534";
-const string EventstreamName = "sample-pos-stream3";
+
+// const string WorkspaceName = "Fourth Coffee Commerce - Lab 534";
+const string EventstreamName = "pos-stream-eventstream";
 const int SendIntervalMs = 3000; // 3s cadence
 
 // Data file paths
@@ -44,6 +45,7 @@ var customersFilePath = Path.Combine(currentDir, "data", "nosql", "customers_con
 var shopsFilePath = Path.Combine(currentDir, "data", "nosql", "shops_container.json");
 var menuFilePath = Path.Combine(currentDir, "data", "nosql", "menu_container.json");
 var streamingTransactionsFilePath = Path.Combine(currentDir, "data", "streaming", "streaming_transactions.json");
+
 
 // Logger setup (simple console)
 using var loggerFactory = LoggerFactory.Create(builder =>
@@ -58,6 +60,13 @@ using var loggerFactory = LoggerFactory.Create(builder =>
         });
 });
 var logger = loggerFactory.CreateLogger("FabricPOSDatatStreaming");
+
+var WorkspaceName = Environment.GetEnvironmentVariable("FABRIC_WORKSPACE_NAME");
+if (string.IsNullOrWhiteSpace(WorkspaceName))
+{
+    logger.LogError("Environment variable FABRIC_WORKSPACE_NAME is not set. Please set it to the target workspace name.");
+    return;
+}
 
 // Azure auth and client
 var credential = new AzureCliCredential();
