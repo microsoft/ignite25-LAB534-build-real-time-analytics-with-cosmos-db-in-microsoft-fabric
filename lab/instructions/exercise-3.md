@@ -93,7 +93,7 @@ By the end of this exercise, you'll be able to:
 ## Build the Silver Layer for Analytics
 1. Replace the existing query in the query editor with the following KQL code to create a Silver layer table that aggregates total sales by menu item:
 
-+++*.create-or-alter function with (folder="Silver") vw_Pos_Silver() {
++++*.create-or-alter function with (folder="Silver") vw_Pos_Sales() {
     transactions_live
     // best available event timestamp
     | extend EventTs = coalesce(
@@ -200,31 +200,9 @@ By the end of this exercise, you'll be able to:
 1. You can now query the Silver layer views to perform analytics on the ingested streaming data. For example, to get total sales by menu item, use the following query:
 
 +++*
-vw_Pos_LineItems()
+vw_Pos_LineItems_Sales()
 | summarize TotalSales = sum(LineTotal), TotalQuantity = sum(Quantity) by MenuItemId, ItemName
 | order by TotalSales desc
 *+++
 
 1. Select **Run** to execute the query and view the results.
-
-## Create Dimensional Views
-1. Next, open the warehouse in your workspace. 
-
-1. Create a new SQL query by selecting the **New SQL Query** button in the warehouse page.
-
-![Screenshot showing how to create a new SQL query in the data warehouse](media/create-new-sql-query-warehouse.png)
-
-1. In the query window editor, paste the following SQL code to create views for the Dim tables:
-
-+++*CREATE OR ALTER VIEW dbo.vDimCustomerKey AS
-SELECT CustomerId, CustomerKey, IsActive FROM dbo.DimCustomer;
-
-CREATE OR ALTER VIEW dbo.vDimShopKey AS
-SELECT ShopId, ShopKey, IsActive FROM dbo.DimShop;
-
-CREATE OR ALTER VIEW dbo.vDimMenuItemKey AS
-SELECT MenuItemId, MenuItemKey, IsActive FROM dbo.DimMenuItem;*+++
-
-1. Select **Run** to execute the query and create the views in the Data Warehouse.
-
-![Screenshot showing creating dimensional views in data warehouse](media/create-dimensional-views.png)

@@ -248,7 +248,6 @@ internal record Shop(
 );
 
 internal record MenuItem(
-    [property: JsonPropertyName("menuItemKey")] int MenuItemKey,
     [property: JsonPropertyName("menuItemId")] string MenuItemId,
     [property: JsonPropertyName("menuItemName")] string MenuItemName,
     [property: JsonPropertyName("category")] string Category,
@@ -281,7 +280,6 @@ internal record Transaction(
 );
 
 internal record TransactionItem(
-    [property: JsonPropertyName("menuItemKey")] int MenuItemKey,
     [property: JsonPropertyName("menuItemId")] string MenuItemId,
     [property: JsonPropertyName("name")] string Name,
     [property: JsonPropertyName("category")] string Category,
@@ -381,7 +379,6 @@ internal class StreamingTransactionManager
             var totalPrice = Math.Round(quantity * unitPrice, 2);
             
             items.Add(new TransactionItem(
-                menuItem.MenuItemKey,
                 menuItem.MenuItemId,
                 menuItem.MenuItemName,
                 menuItem.Category,
