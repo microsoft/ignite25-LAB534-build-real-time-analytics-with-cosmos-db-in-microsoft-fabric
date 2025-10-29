@@ -40,12 +40,36 @@ SELECT MenuItemId, MenuItemKey, IsActive FROM dbo.DimMenuItem;*+++
 
 ![Screenshot showing how to select the Eventhouse as a data source](media/dataflow-select-eventhouse.png)
 
-1. In the Choose data pane, expand the folder, then the database, then select the +++*transactions_live*+++ table. Select **Create**.
+1. In the Choose data pane, expand the folder, then the database, then select the +++*vw_Pos_LineItems*+++ view. Select **Create**.
 
 ![Screenshot showing the selected Eventhouse table in Dataflow data source selection pane](media/dataflow-eventhouse-table-selected.png)
 
 ## Transform Data in Dataflow Gen2
 
-1. In the Dataflow canvas, select the +++*transactions_live*+++ table to start transforming the data.
-1. Use the transformation tools available in Dataflow Gen2 to clean and prepare the data for analysis. This may include filtering rows, selecting specific columns, and aggregating data.
-1. Once you have completed the transformations, select **Next** to proceed to the next step.
+1. In the Dataflow canvas, select the +++*vw_Pos_LineItems*+++ view to start transforming the data.
+1. Right click on the LineTotal column header and select **Rename**, then enter the new name ++*TotalAmount*++ in the column header.
+
+![Screenshot of renaming column in dataflow](media/rename-column-dataflow.png)
+
+1. In the vw_Pos_LineItems transformation, select the add destination icon in the top right corner of the transformation box and select **Warehouse**. This opens the Choose destination target pane.
+
+![Screenshot of adding a warehouse destination in dataflow](media/dataflow-add-warehouse-destination.png)
+
+1. Verify **Create new table** is selected in the destination target pane.
+1. Expand the warehouse folder and select your warehouse from the list.
+1. For the Table name, enter +++*stg_FactSales_Shaped*+++.
+1. Select **Next** to open the mapping pane.
+
+![Screenshot of selecting warehouse destination details in dataflow](media/dataflow-warehouse-destination-details.png)
+
+
+1. In the Choose destination settings pane, verify that the Update method is set to **Replace**, the Schema option on publish are set to **Fixed schema**, and that all columns from the source are mapped to the destination,
+
+> [!TIP]
+> You may need to set EventTimestamp and CreatedAt to the DateTime data type in the destination mapping.
+
+1. Select **Save settings** to create the warehouse destination.
+
+![Screenshot of warehouse destination mapping in dataflow with the Save settings button highlighted](media/dataflow-warehouse-destination-mapping.png)
+
+1. From the top menu ribbon, select **Publish** to publish the Dataflow changes.
