@@ -139,8 +139,11 @@ var warehouseDataRootPath = Path.Combine(Directory.GetCurrentDirectory(), "data"
 var dimDateCsvPath  = Path.Combine(warehouseDataRootPath, "DimDate.csv");
 var dimMenuCsvPath  = Path.Combine(warehouseDataRootPath, "DimMenu.csv");
 var dimShopCsvPath  = Path.Combine(warehouseDataRootPath, "DimShop.csv");
-var dimTimeCsvPath  = Path.Combine(warehouseDataRootPath, "DimTime.csv");
-var factSalesCsvPath = Path.Combine(warehouseDataRootPath, "FactSales_Transactions.csv");
+var dimTimeCsvPath = Path.Combine(warehouseDataRootPath, "DimTime.csv");
+var dimCustomerCsvPath  = Path.Combine(warehouseDataRootPath, "DimCustomer.csv");
+var factSalesCsvPath = Path.Combine(warehouseDataRootPath, "FactSales.csv");
+var factSalesLineItemsCsvPath = Path.Combine(warehouseDataRootPath, "FactSalesLineItem.csv");
+
 
 // -----------------------
 // Generic CSV -> Table loader
@@ -458,6 +461,25 @@ var dimMenuItemSpec = new TableSpec(
 // Deduplicate by MenuItemKey to satisfy PK; first occurrence wins
 await LoadTableFromCsvAsync(sqlConnection, dimMenuCsvPath, dimMenuItemSpec, logger, dedupeKeyColumn: "menuItemKey");
 
+//DimCustomer
+var dimCustomerSpec = new TableSpec(
+    "DimCustomer",
+    new[]
+    {
+        new ColumnSpec("CustomerKey", "int", Required: true, Convert: ToInt),
+        new ColumnSpec("CustomerId", "varchar(64)", Required: true),
+        new ColumnSpec("CustomerName", "varchar(128)"),
+        new ColumnSpec("Email", "varchar(128)"),
+        new ColumnSpec("PreferredAirport", "varchar(32)"),
+        new ColumnSpec("FavoriteDrink", "varchar(32)"),
+        new ColumnSpec("IsActive", "bit", Convert: ToBool),
+        new ColumnSpec("CreatedAt", "datetime2(3)", Convert: ToDateTime),
+        new ColumnSpec("UpdatedAt", "datetime2(3)", Convert: ToDateTime),
+    }
+);
+
+await LoadTableFromCsvAsync(sqlConnection, dimCustomerCsvPath, dimCustomerSpec, logger);
+
 // FactSales
 var factSalesSpec = new TableSpec(
     "FactSales",
@@ -468,22 +490,38 @@ var factSalesSpec = new TableSpec(
         new ColumnSpec("DateKey", "int", Required: true, Convert: ToInt),
         new ColumnSpec("TimeKey", "int", Required: true, Convert: ToInt),
         new ColumnSpec("CustomerKey", "int", Required: true, Convert: ToInt),
-        new ColumnSpec("ShopKey", "int", Required: true, Convert: ToInt),
-        new ColumnSpec("MenuItemKey", "int", Required: true, Convert: ToInt),
-        new ColumnSpec("Quantity", "int", Required: true, Convert: ToInt),
-        new ColumnSpec("UnitPrice", "decimal(10,2)", Required: true, Convert: ToDecimal),
+        new ColumnSpec("ShopKey", "int", Convert: ToInt),
+        new ColumnSpec("TotalQuantity", "int", Required: true, Convert: ToInt),
         new ColumnSpec("TotalAmount", "decimal(10,2)", Required: true, Convert: ToDecimal),
+        new ColumnSpec("PaymentMethod", "varchar(32)"),
         new ColumnSpec("LoyaltyPointsEarned", "int", Convert: ToInt),
         new ColumnSpec("LoyaltyPointsRedeemed", "int", Convert: ToInt),
-        new ColumnSpec("PaymentMethod", "varchar(32)"),
-        new ColumnSpec("Size", "varchar(32)"),
-        new ColumnSpec("SourceSystem", "varchar(50)"),
         new ColumnSpec("CreatedAt", "datetime2(3)", Convert: ToDateTime),
     }
 );
 
 await LoadTableFromCsvAsync(sqlConnection, factSalesCsvPath, factSalesSpec, logger);
 
+var factSalesLineItemsSpec = new TableSpec(
+    "FactSalesLineItems",
+    new[]
+    {
+        new ColumnSpec("TransactionId", "varchar(64)", Required: true),
+        new ColumnSpec("SalesKey", "bigint", Required: true, Convert: ToLong),
+        new ColumnSpec("LineNumber", "int", Required: true, Convert: ToInt),
+        new ColumnSpec("DateKey", "int", Required: true, Convert: ToInt),
+        new ColumnSpec("TimeKey", "int", Required: true, Convert: ToInt),
+        new ColumnSpec("MenuItemKey", "int", Required: true, Convert: ToInt),
+        new ColumnSpec("Quantity", "int", Required: true, Convert: ToInt),
+        new ColumnSpec("UnitPrice", "decimal(10,2)", Required: true, Convert: ToDecimal),
+        new ColumnSpec("LineTotal", "decimal(10,2)", Required: true, Convert: ToDecimal),
+        new ColumnSpec("PaymentMethod", "varchar(32)"),
+        new ColumnSpec("Size", "varchar(32)"),
+        new ColumnSpec("CreatedAt", "datetime2(3)", Convert: ToDateTime),
+    }
+);
+
+await LoadTableFromCsvAsync(sqlConnection, factSalesLineItemsCsvPath, factSalesLineItemsSpec, logger);
 
 /// <summary>
 /// Column specification for a target table.
