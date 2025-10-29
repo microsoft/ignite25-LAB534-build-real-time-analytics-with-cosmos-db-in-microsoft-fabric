@@ -6,6 +6,7 @@
 -- ============================================================================
 
 -- Drop fact tables first (due to foreign key dependencies)
+DROP TABLE IF EXISTS FactSalesLineItems;
 DROP TABLE IF EXISTS FactRecommendation;
 DROP TABLE IF EXISTS FactLoyalty;
 DROP TABLE IF EXISTS FactSales;
@@ -26,14 +27,13 @@ CREATE TABLE DimCustomer (
     CustomerKey INT NOT NULL,
     CustomerId VARCHAR(64) NOT NULL,
     CustomerName VARCHAR(128),
-    Email VARCHAR(256),
     PreferredAirport VARCHAR(32),
+    Email VARCHAR(256),
     FavoriteDrink VARCHAR(128),
-    LoyaltyTier VARCHAR(32), -- Bronze, Silver, Gold, Platinum
     RegistrationDate DATE,
     IsActive BIT,
-    CreatedAt DATETIME2(3),
-    UpdatedAt DATETIME2(3)
+    UpdatedAt DATETIME2(3),
+    CreatedAt DATETIME2(3)
 );
 
 -- 2. DimShop
@@ -103,11 +103,9 @@ CREATE TABLE FactSales (
     TimeKey INT NOT NULL,
     CustomerKey INT NOT NULL,
     ShopKey INT NOT NULL,
-    MenuItemKey INT NOT NULL,
     
     -- Measures
-    Quantity INT NOT NULL,
-    UnitPrice DECIMAL(10,2) NOT NULL,
+    TotalQuantity INT NOT NULL,
     TotalAmount DECIMAL(10,2) NOT NULL,
     
     -- Loyalty
@@ -116,14 +114,36 @@ CREATE TABLE FactSales (
     
     -- Attributes
     PaymentMethod VARCHAR(32),
-    Size VARCHAR(32), -- Small, Medium, Large
     
     -- Metadata
-    SourceSystem VARCHAR(50),
     CreatedAt DATETIME2(3)
 );
 
--- 7. FactLoyalty
+-- 7. FactSalesLineItems
+CREATE TABLE FactSalesLineItems (
+    TransactionId VARCHAR(64) NOT NULL,
+    SalesKey BIGINT NOT NULL,
+    LineNumber INT NOT NULL,
+    
+    -- Foreign Keys
+    DateKey INT NOT NULL,
+    TimeKey INT NOT NULL,
+    MenuItemKey INT NOT NULL,
+    
+    -- Measures
+    Quantity INT NOT NULL,
+    UnitPrice DECIMAL(10,2) NOT NULL,
+    LineTotal DECIMAL(10,2) NOT NULL,
+    
+    -- Attributes
+    PaymentMethod VARCHAR(32),
+    Size VARCHAR(32), -- Small, Medium, Large
+    
+    -- Metadata
+    CreatedAt DATETIME2(3)
+);
+
+-- 8. FactLoyalty
 CREATE TABLE FactLoyalty (
     LoyaltyKey BIGINT NOT NULL,
     LoyaltyTransactionId VARCHAR(64) NOT NULL,
@@ -146,7 +166,7 @@ CREATE TABLE FactLoyalty (
     CreatedAt DATETIME2(3)
 );
 
--- 8. FactRecommendation
+-- 9. FactRecommendation
 CREATE TABLE FactRecommendation (
     RecommendationKey BIGINT NOT NULL,
     RecommendationId VARCHAR(64) NOT NULL,
@@ -185,6 +205,7 @@ ALTER TABLE DimMenuItem ADD CONSTRAINT PK_DimMenuItem PRIMARY KEY NONCLUSTERED (
 ALTER TABLE DimDate ADD CONSTRAINT PK_DimDate PRIMARY KEY NONCLUSTERED (DateKey) NOT ENFORCED;
 ALTER TABLE DimTime ADD CONSTRAINT PK_DimTime PRIMARY KEY NONCLUSTERED (TimeKey) NOT ENFORCED;
 ALTER TABLE FactSales ADD CONSTRAINT PK_FactSales PRIMARY KEY NONCLUSTERED (SalesKey) NOT ENFORCED;
+ALTER TABLE FactSalesLineItems ADD CONSTRAINT PK_FactSalesLineItems PRIMARY KEY NONCLUSTERED (TransactionId, LineNumber) NOT ENFORCED;
 ALTER TABLE FactLoyalty ADD CONSTRAINT PK_FactLoyalty PRIMARY KEY NONCLUSTERED (LoyaltyKey) NOT ENFORCED;
 ALTER TABLE FactRecommendation ADD CONSTRAINT PK_FactRecommendation PRIMARY KEY NONCLUSTERED (RecommendationKey) NOT ENFORCED;
 
@@ -196,7 +217,11 @@ ALTER TABLE FactSales ADD CONSTRAINT FK_FactSales_Date FOREIGN KEY (DateKey) REF
 ALTER TABLE FactSales ADD CONSTRAINT FK_FactSales_Time FOREIGN KEY (TimeKey) REFERENCES DimTime(TimeKey) NOT ENFORCED;
 ALTER TABLE FactSales ADD CONSTRAINT FK_FactSales_Customer FOREIGN KEY (CustomerKey) REFERENCES DimCustomer(CustomerKey) NOT ENFORCED;
 ALTER TABLE FactSales ADD CONSTRAINT FK_FactSales_Shop FOREIGN KEY (ShopKey) REFERENCES DimShop(ShopKey) NOT ENFORCED;
-ALTER TABLE FactSales ADD CONSTRAINT FK_FactSales_MenuItem FOREIGN KEY (MenuItemKey) REFERENCES DimMenuItem(MenuItemKey) NOT ENFORCED;
+
+ALTER TABLE FactSalesLineItems ADD CONSTRAINT FK_FactSalesLineItems_Date FOREIGN KEY (DateKey) REFERENCES DimDate(DateKey) NOT ENFORCED;
+ALTER TABLE FactSalesLineItems ADD CONSTRAINT FK_FactSalesLineItems_Time FOREIGN KEY (TimeKey) REFERENCES DimTime(TimeKey) NOT ENFORCED;
+ALTER TABLE FactSalesLineItems ADD CONSTRAINT FK_FactSalesLineItems_MenuItem FOREIGN KEY (MenuItemKey) REFERENCES DimMenuItem(MenuItemKey) NOT ENFORCED;
+ALTER TABLE FactSalesLineItems ADD CONSTRAINT FK_FactSalesLineItems_Sales FOREIGN KEY (SalesKey) REFERENCES FactSales(SalesKey) NOT ENFORCED;
 
 ALTER TABLE FactLoyalty ADD CONSTRAINT FK_FactLoyalty_Date FOREIGN KEY (DateKey) REFERENCES DimDate(DateKey) NOT ENFORCED;
 ALTER TABLE FactLoyalty ADD CONSTRAINT FK_FactLoyalty_Customer FOREIGN KEY (CustomerKey) REFERENCES DimCustomer(CustomerKey) NOT ENFORCED;
@@ -223,8 +248,8 @@ ALTER TABLE FactLoyalty ADD CONSTRAINT UQ_FactLoyalty_LoyaltyTransactionId UNIQU
 -- ============================================================================
 -- Tables Created:
 -- Dimension Tables (5): DimCustomer, DimShop, DimMenuItem, DimDate, DimTime
--- Fact Tables (3): FactSales, FactLoyalty, FactRecommendation
--- Total Tables: 8
+-- Fact Tables (4): FactSales, FactSalesLineItems, FactLoyalty, FactRecommendation
+-- Total Tables: 9
 -- Indexes: Managed automatically by Fabric Data Warehouse
--- Foreign Key Constraints: 11
+-- Foreign Key Constraints: 8
 -- ============================================================================
