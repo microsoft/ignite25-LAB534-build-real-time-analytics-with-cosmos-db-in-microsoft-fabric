@@ -93,73 +93,106 @@ By the end of this exercise, you'll be able to:
 ## Build the Silver Layer for Analytics
 1. Replace the existing query in the query editor with the following KQL code to create a Silver layer table that aggregates total sales by menu item:
 
-+++*
-CREATE OR ALTER VIEW dbo.vDimCustomerKey AS
-SELECT CustomerId, CustomerKey, IsActive FROM dbo.DimCustomer;
-
-CREATE OR ALTER VIEW dbo.vDimShopKey AS
-SELECT ShopId, ShopKey, IsActive FROM dbo.DimShop;
-
-CREATE OR ALTER VIEW dbo.vDimMenuItemKey AS
-SELECT MenuItemId, MenuItemKey, IsActive FROM dbo.DimMenuItem;
-
-.create-or-alter function with (folder="Silver") vw_Pos_Silver() {
++++*.create-or-alter function with (folder="Silver") vw_Pos_Silver() {
     transactions_live
-    | where transactionType == "purchase"
-    | summarize arg_max(timestamp, *) by transactionId
+    // best available event timestamp
+    | extend EventTs = coalesce(
+        todatetime(column_ifexists("timestamp", datetime(null))),
+        todatetime(column_ifexists("EventEnqueuedUtcTime", datetime(null))),
+        todatetime(column_ifexists("EventProcessedUtcTime", datetime(null))),
+        ingestion_time()
+      )
+    // purchases only
+    | where tostring(column_ifexists("transactionType","")) == "purchase"
+    // project needed fields and make sure Items is an array (empty if missing)
     | project
-        TransactionId  = tostring(transactionId),
-        EventTimestamp = todatetime(timestamp),
-        CustomerId     = tostring(customerId),
-        ShopId         = tostring(shopId),
-        AirportId      = tostring(airportId),
-        PaymentMethod  = tostring(paymentMethod),
-        TotalAmount    = todouble(totalAmount),
-        LoyaltyPointsEarned   = toint(coalesce(loyaltyPointsEarned, 0)),
-        LoyaltyPointsRedeemed = toint(coalesce(loyaltyPointsRedeemed, 0)),
-        DateKey        = toint(format_datetime(todatetime(timestamp), "yyyyMMdd")),
-        TimeKey        = toint(format_datetime(todatetime(timestamp), "HHmmss")),
-        SourceSystem   = "CosmosDB",
-        CreatedAt      = todatetime(timestamp)
+        TransactionId = tostring(column_ifexists("transactionId","")),
+        EventTs,
+        CustomerId = tostring(column_ifexists("customerId","")),
+        ShopId     = tostring(column_ifexists("shopId","")),
+        PaymentMethod = tostring(column_ifexists("paymentMethod","")),
+        Items = iif(isnull(column_ifexists("items", dynamic(null))), dynamic([]), column_ifexists("items", dynamic(null))),
+        // optional top-level totals (may be null)
+        TotalQuantity_t = toint(column_ifexists("totalQuantity", int(null))),
+        TotalAmount_t   = todouble(column_ifexists("totalAmount",  real(null))),
+        LoyaltyPointsEarned   = toint(coalesce(column_ifexists("loyaltyPointsEarned", int(null)), 0)),
+        LoyaltyPointsRedeemed = toint(coalesce(column_ifexists("loyaltyPointsRedeemed", int(null)), 0))
+    // explode items (works even if empty array)
+    | mv-expand Items to typeof(dynamic)
+    | extend
+        qty  = toint(coalesce(Items.quantity, 0)),
+        unit = todouble(coalesce(Items.unitPrice, 0.0))
+    | extend
+        lt   = todouble(coalesce(Items.totalPrice, qty * unit))
+    // roll up per transaction
+    | summarize
+        TotalQuantity_i = sum(qty),
+        TotalAmount_i   = sum(lt),
+        EventTimestamp  = any(EventTs),
+        CustomerId      = any(CustomerId),
+        ShopId          = any(ShopId),
+        PaymentMethod   = any(PaymentMethod),
+        LoyaltyPointsEarned   = any(LoyaltyPointsEarned),
+        LoyaltyPointsRedeemed = any(LoyaltyPointsRedeemed),
+        TotalQuantity_t = any(TotalQuantity_t),
+        TotalAmount_t   = any(TotalAmount_t)
+      by TransactionId
+    // prefer top-level totals when present; else use item-derived
+    | extend
+        TotalQuantity = iif(isnotnull(TotalQuantity_t), TotalQuantity_t, TotalQuantity_i),
+        TotalAmount   = iif(isnotnull(TotalAmount_t),   TotalAmount_t,   TotalAmount_i),
+        DateKey   = toint(format_datetime(EventTimestamp, "yyyyMMdd")),
+        TimeKey   = toint(format_datetime(EventTimestamp, "HHmmss")),
+        CreatedAt = EventTimestamp
+    | project
+        TransactionId, DateKey, TimeKey,
+        CustomerId, ShopId,
+        TotalQuantity, TotalAmount,
+        PaymentMethod,
+        LoyaltyPointsEarned, LoyaltyPointsRedeemed,
+        CreatedAt
 }
 
-.create-or-alter function with (folder="Silver") vw_Pos_LineItems() {
-    let base =
-        transactions_live
-        | extend EventTs = coalesce(
-            todatetime(column_ifexists("timestamp", datetime(null))),
-            todatetime(column_ifexists("EventEnqueuedUtcTime", datetime(null))),
-            todatetime(column_ifexists("EventProcessedUtcTime", datetime(null))),
-            ingestion_time()
-          )
-        | where tostring(column_ifexists("transactionType","")) == "purchase"
-        | extend items = column_ifexists("items", dynamic(null))
-        | where isnotnull(items)
-        | mv-expand items;
-    base
+.create-or-alter function with (folder="Silver") vw_Pos_LineItems_Sales() {
+    transactions_live
+    | extend EventTs = coalesce(
+        todatetime(column_ifexists("timestamp", datetime(null))),
+        todatetime(column_ifexists("EventEnqueuedUtcTime", datetime(null))),
+        todatetime(column_ifexists("EventProcessedUtcTime", datetime(null))),
+        ingestion_time()
+      )
+    | where tostring(column_ifexists("transactionType","")) == "purchase"
+    | extend Items = column_ifexists("items", dynamic(null))
+    | where isnotnull(Items)
+    | mv-expand Items to typeof(dynamic)
     | extend
         TransactionId  = tostring(column_ifexists("transactionId","")),
         EventTimestamp = EventTs,
         CustomerId     = tostring(column_ifexists("customerId","")),
         ShopId         = tostring(column_ifexists("shopId","")),
-        AirportId      = tostring(column_ifexists("airportId","")),
-        PaymentMethod  = tostring(column_ifexists("paymentMethod","")),
-        MenuItemId     = tostring(todynamic(items)["menuItemId"]),
-        ItemName       = tostring(todynamic(items)["name"]),
-        Size           = tostring(coalesce(todynamic(items)["size"], "")),
-        Quantity       = toint(coalesce(todynamic(items)["quantity"], 1)),
-        UnitPrice      = todouble(coalesce(todynamic(items)["unitPrice"], 0.0))
+        MenuItemKey    = toint(coalesce(Items.menuItemKey, int(null))),
+        MenuItemId     = tostring(Items.menuItemId),
+        Size           = tostring(coalesce(Items.size, "")),
+        Quantity       = toint(coalesce(Items.quantity, 1)),
+        UnitPrice      = todouble(coalesce(Items.unitPrice, 0.0))
+    | extend LineTotal    = todouble(coalesce(Items.totalPrice, Quantity * UnitPrice)),
+             PaymentMethod = tostring(column_ifexists("paymentMethod",""))
+    | order by TransactionId asc, EventTimestamp asc, MenuItemId asc, Size asc
+    | serialize
+    | extend LineNumber = row_number(1, prev(TransactionId) != TransactionId)
     | extend
-        LineTotal    = todouble(coalesce(todynamic(items)["totalPrice"], Quantity * UnitPrice)),
-        DateKey      = toint(format_datetime(EventTimestamp, "yyyyMMdd")),
-        TimeKey      = toint(format_datetime(EventTimestamp, "HHmmss")),
-        SourceSystem = "CosmosDB",
-        CreatedAt    = EventTimestamp
-    | project TransactionId, EventTimestamp, CustomerId, ShopId, AirportId,
-              MenuItemId, ItemName, Size, Quantity, UnitPrice, LineTotal,
-              PaymentMethod, DateKey, TimeKey, SourceSystem, CreatedAt
-}
-*+++
+        DateKey  = toint(format_datetime(EventTimestamp, "yyyyMMdd")),
+        TimeKey  = toint(format_datetime(EventTimestamp, "HHmmss")),
+        CreatedAt = EventTs
+    | project
+        TransactionId, LineNumber,
+        DateKey, TimeKey,
+        // keep if you merge to Customer/Shop keys upstream; drop if not needed
+        CustomerId, ShopId,
+        MenuItemKey, MenuItemId,
+        Quantity, UnitPrice, LineTotal,
+        PaymentMethod, Size, CreatedAt
+}*+++
 
 1. Select **Run** to execute the code and create the Silver layer functions.
 ![Screenshot of creating silver layer functions in eventhouse](media/create-silver-layer-functions.png)
@@ -173,3 +206,25 @@ vw_Pos_LineItems()
 *+++
 
 1. Select **Run** to execute the query and view the results.
+
+## Create Dimensional Views
+1. Next, open the warehouse in your workspace. 
+
+1. Create a new SQL query by selecting the **New SQL Query** button in the warehouse page.
+
+![Screenshot showing how to create a new SQL query in the data warehouse](media/create-new-sql-query-warehouse.png)
+
+1. In the query window editor, paste the following SQL code to create views for the Dim tables:
+
++++*CREATE OR ALTER VIEW dbo.vDimCustomerKey AS
+SELECT CustomerId, CustomerKey, IsActive FROM dbo.DimCustomer;
+
+CREATE OR ALTER VIEW dbo.vDimShopKey AS
+SELECT ShopId, ShopKey, IsActive FROM dbo.DimShop;
+
+CREATE OR ALTER VIEW dbo.vDimMenuItemKey AS
+SELECT MenuItemId, MenuItemKey, IsActive FROM dbo.DimMenuItem;*+++
+
+1. Select **Run** to execute the query and create the views in the Data Warehouse.
+
+![Screenshot showing creating dimensional views in data warehouse](media/create-dimensional-views.png)
