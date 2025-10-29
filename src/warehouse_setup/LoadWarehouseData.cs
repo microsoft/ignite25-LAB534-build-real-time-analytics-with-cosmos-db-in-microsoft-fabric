@@ -468,11 +468,11 @@ var dimCustomerSpec = new TableSpec(
     {
         new ColumnSpec("CustomerKey", "int", Required: true, Convert: ToInt),
         new ColumnSpec("CustomerId", "varchar(64)", Required: true),
-        new ColumnSpec("FirstName", "varchar(64)"),
-        new ColumnSpec("LastName", "varchar(64)"),
+        new ColumnSpec("CustomerName", "varchar(128)"),
         new ColumnSpec("Email", "varchar(128)"),
-        new ColumnSpec("PhoneNumber", "varchar(32)"),
-        new ColumnSpec("LoyaltyMember", "bit", Convert: ToBool),
+        new ColumnSpec("PreferredAirport", "varchar(32)"),
+        new ColumnSpec("FavoriteDrink", "varchar(32)"),
+        new ColumnSpec("IsActive", "bit", Convert: ToBool),
         new ColumnSpec("CreatedAt", "datetime2(3)", Convert: ToDateTime),
         new ColumnSpec("UpdatedAt", "datetime2(3)", Convert: ToDateTime),
     }
