@@ -129,3 +129,16 @@ WITH (
 
   ## Reverse ETL and Build Personalization Model
 1. Continue to the next notebook in the workspace named `build_personalization_model.ipynb` to perform Reverse ETL and build a personalization model using the transformed data.
+1. In the notebook, locate the code cells where you need to provide your Cosmos DB and Data Warehouse details. Update the following variables with your specific information:
+   - `COSMOS_ENDPOINT`: The endpoint URL of your Cosmos DB account. You can find this in the Cosmos DB account settings under **Connection String**.
+   ![Screenshot showing how to find the Cosmos DB endpoint](media/cosmos-connection-string.png)
+   - `WAREHOUSE_SERVER`: The SQL endpoint of your data warehouse. You can find this by navigating to your data warehouse in Fabric, selecting **Settings** from the top menu ribbon, and copying the SQL endpoint from there. You can also use the same value you used in the previous notebook.
+1. After updating the variables, run all the cells in the notebook sequentially to perform the Reverse ETL process and build the personalization model. You can do this by selecting **Run All** from the top menu ribbon.
+![Screenshot of running all cells in the notebook](media/run-all-cells.png)
+1. Once the notebook has finished running, it will have updated the user profiles in Cosmos DB with the latest transaction data and built a personalization model based on customer purchase patterns.
+
+1. You can verify the updates in Cosmos DB by querying the customers collection to see the updated data.
+
+```sql
+SELECT TOP 10 * FROM c ORDER BY c.lastPurchaseDate DESC
+```
