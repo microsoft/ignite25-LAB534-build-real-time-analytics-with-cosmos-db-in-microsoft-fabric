@@ -29,7 +29,7 @@ On your virtual machine, you will find the lab repo pre-cloned on the desktop un
 
 1. Run the following command to authenticate to Microsft Fabric using Microsoft Entra Id:
 
-    +++*azd auth login*+++
+    +++*az login*+++
 
     This will open a new browser window where you can sign in with the following credentials:
 
