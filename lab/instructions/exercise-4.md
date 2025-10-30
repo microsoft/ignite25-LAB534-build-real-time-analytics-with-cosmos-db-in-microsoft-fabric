@@ -163,5 +163,12 @@ WITH (
 
   ![Screenshot showing loading data into data warehouse](media/load-data-into-warehouse.png)
 
+  1. Verify the data in the warehouse by running a few SELECT queries against the FactSales and FactSalesLineItems tables.
+
+  ```sql
+  SELECT TOP 10 * FROM dbo.FactSales order by CreatedAt desc;
+  SELECT TOP 10 * FROM dbo.FactSalesLineItems order by CreatedAt desc;
+  ```
+
   ## Reverse ETL and Build Personalization Model
 1. Continue to the next notebook in the workspace named `build_personalization_model.ipynb` to perform Reverse ETL and build a personalization model using the transformed data.
