@@ -1,4 +1,4 @@
-# Implement Reverse ETL and Build Personalization Model
+# Exercise 4: Implement Reverse ETL and Build Personalization Model
 
 In this exercise, you will create a Dataflow Gen2 to extract and transform data from the Eventhouse, update the user profiles in Cosmos DB, and then use that data to build a personalization model in a notebook.
 

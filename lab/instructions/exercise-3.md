@@ -1,4 +1,4 @@
-# Real-Time Streaming of POS Events
+# Exercise 3: Real-Time Streaming of POS Events
 
 In this exercise, you will ingest and query the streaming data and use the Kusto Query Language (KQL) to analyze it.
 

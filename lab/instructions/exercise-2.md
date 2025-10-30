@@ -1,4 +1,4 @@
-# Exercise 2: Batch Data Loading and Cross-Database Analytics (Cosmos DB to Data Warehouse)
+# Exercise 2: Cross-Database Analytics (Cosmos DB to Data Warehouse)
 
 In this exercise, you will explore how Cosmos DB in Microsoft Fabric automatically mirrors your data to OneLake, allowing for cross-database querying. You will also learn how to Cosmos DB integrates with other services within Fabric, such as lakehouses, notebooks, power BI etc.
 
@@ -23,7 +23,7 @@ By the end of this exercise, you'll be able to:
 
 1. This opens a new tab in Fabric to the SQL analytics endpoint page for your Cosmos DB database. In the left explorer pane, expand **Schemas > fc_commerce_cosmos > Tables**.
 
-    Here you will see the list of containers you created in Exercise 1, each represented as a table.
+    Here you will see the container you created in Exercise 1, represented as a table.
 
 1. From the top menu ribbon, select **New SQL query**. In the query editor that opens, enter the following query to analyze customer preferences by grouping customers by their favorite drink:
 
@@ -48,16 +48,19 @@ By the end of this exercise, you'll be able to:
 
     +++*SELECT
         JSON_VALUE(c.preferences, '$.favoriteDrink') AS FavoriteDrink,
-        COUNT(DISTINCT c.customerKey) AS TotalCustomers,
-        AVG(c.loyaltyPoints) AS AvgLoyaltyPoints,
-        SUM(fs.TotalAmount) AS TotalRevenue,
-        SUM(fs.LoyaltyPointsEarned) AS TotalPointsEarned,
-        SUM(fs.LoyaltyPointsRedeemed) AS TotalPointsRedeemed,
-        AVG(fs.Quantity) AS AvgItemsPerTransaction,
+        COUNT(DISTINCT c.customerId) AS TotalCustomers,
+        AVG(CAST(c.loyaltyPoints AS decimal(10,2))) AS AvgLoyaltyPoints,
+        SUM(COALESCE(fs.TotalAmount, 0.0)) AS TotalRevenue,
+        SUM(COALESCE(fs.LoyaltyPointsEarned, 0)) AS TotalPointsEarned,
+        SUM(COALESCE(fs.LoyaltyPointsRedeemed, 0)) AS TotalPointsRedeemed,
+        AVG(CAST(fs.TotalQuantity AS decimal(10,2))) AS AvgItemsPerOrder,
         COUNT(DISTINCT fs.TransactionId) AS TotalTransactions
-    FROM [fc_commerce_cosmos].[fc_commerce_cosmos].[customers] c
-    INNER JOIN [fc_commerce_wh].[dbo].[FactSales] fs ON c.customerKey = fs.CustomerKey
-    INNER JOIN [fc_commerce_cosmos].[fc_commerce_cosmos].[menuitems] mi ON fs.MenuItemKey = mi.menuItemKey
+    FROM [fc_commerce_cosmos].[fc_commerce_cosmos].[customers] AS c
+    LEFT JOIN [fc_commerce_wh].[dbo].[DimCustomer] AS dc
+        ON dc.CustomerId = c.customerId
+    LEFT JOIN [fc_commerce_wh].[dbo].[FactSales] AS fs
+        ON fs.CustomerKey = dc.CustomerKey
+    WHERE JSON_VALUE(c.preferences, '$.favoriteDrink') IS NOT NULL
     GROUP BY JSON_VALUE(c.preferences, '$.favoriteDrink')
     ORDER BY TotalRevenue DESC;*+++
 
@@ -78,11 +81,33 @@ By the end of this exercise, you'll be able to:
 
 1. In the **Select a data source type** dialog, select the **fc_commerce_cosmos** database from the list of available OneLake data sources, then select **Next**.
 
-1. On the next page, expand **Tables** > **fc_commerce_cosmos** schema, then select all four mirrored containers: **customers**, **recommendations**, **menuitems**, and **shops**. Select **Next**.
-
-    ![Screenshot showing how to select tables for the lakehouse shortcut](media/lakehouse-table-shortcut-selection.png)
+1. On the next page, expand **Tables** > **fc_commerce_cosmos** schema, then select the mirrored **customers** container. Select **Next**.
 
 1. On the final page, review the summary and select **Create** to create the table shortcuts in the lakehouse.
 
     ![Screenshot showing the lakehouse table shortcuts created](media/lakehouse-table-shortcuts-created.png)
 
+1. Once the data is in the lakehouse, you can use it in various Fabric services. For example, you can create a notebook to analyze the data.
+
+1. From the top menu ribbon, select **Open notebook** dropdown, then select **New notebook**.
+
+1. In a new code cell, enter the following code and  run it:
+
+    +++*display(spark.sql("""
+SELECT
+    get_json_object(c.preferences, '$.favoriteDrink') AS FavoriteDrink,
+    COUNT(*) AS CustomerCount,
+    AVG(CAST(c.loyaltyPoints AS float)) AS AvgLoyaltyPoints
+FROM customers AS c
+WHERE get_json_object(c.preferences, '$.favoriteDrink') IS NOT NULL
+GROUP BY get_json_object(c.preferences, '$.favoriteDrink')
+ORDER BY CustomerCount DESC
+"""))*+++
+
+    This code uses Spark SQL to query the mirrored Cosmos DB data in the lakehouse, analyzing customer preferences by favorite drink.
+
+    ![Screenshot showing the notebook results analyzing customer preferences](media/lakehouse-notebook-customer-preferences.png)
+
+## Next step
+
+> Select **Next >** in these instructions to go to the next part of the lab: **Exercise 3: Real-Time Streaming of POS Events**.
