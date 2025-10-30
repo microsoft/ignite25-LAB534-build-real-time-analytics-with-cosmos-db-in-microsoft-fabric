@@ -41,6 +41,7 @@ using Microsoft.Fabric.Api.Warehouse.Models;
 using Microsoft.Extensions.Logging;
 
 const string WarehouseName = "fc_commerce_wh";
+const string LakehouseName = "fc_commerce_lh";
 
 using var loggerFactory = LoggerFactory.Create(builder =>
 {
@@ -78,6 +79,28 @@ else
 {
     logger.LogInformation("Successfully retrieved workspace {WorkspaceName} with Id {WorkspaceId}", WorkspaceName, workspace.Id);
 }
+
+
+Lakehouse? lakehouse = null;
+try
+{
+    logger.LogInformation("Attempting lakehouse creation for {LakehouseName} in workspace {WorkspaceId}", LakehouseName, workspace.Id);
+    var lakehouseCreationResponse = await fabricClient.Lakehouse.Items.CreateLakehouseAsync(workspace.Id, new CreateLakehouseRequest(LakehouseName));
+    lakehouse = lakehouseCreationResponse.Value;
+    logger.LogInformation("Lakehouse created: {LakehouseName} Id {LakehouseId}", LakehouseName, lakehouse.Id);
+}
+catch (Exception ex) when (ex.Message.Contains("Failure getting LRO status", StringComparison.OrdinalIgnoreCase))
+{
+    // Ignore the  Azure.RequestFailedException: Failure getting LRO status
+    // TODO: Investigate further why this exception occurs yet the warehouse is created successfully.
+    // Try to retrieve the warehouse that was likely created despite the exception
+    logger.LogWarning(ex, "LRO status failure while creating warehouse {WarehouseName}; attempting lookup", WarehouseName);
+    lakehouse = await fabricClient.Warehouse.Items.ListWarehousesAsync(workspace.Id)
+        .FirstOrDefaultAsync(w => w.DisplayName == WarehouseName);
+    if (lakehouse is not null)
+        logger.LogInformation("Recovered warehouse after LRO issue: {WarehouseName} Id {WarehouseId}", WarehouseName, lakehouse.Id);
+}
+
 
 
 Warehouse? warehouse = null;
