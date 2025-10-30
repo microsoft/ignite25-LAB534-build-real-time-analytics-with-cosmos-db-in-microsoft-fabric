@@ -1,0 +1,54 @@
+[
+  {
+    "name": "shops",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/fc_commerce_cosmos/shops",
+        "itemId": "72a57759-8f0c-bfa0-481f-3dd170c2623f",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "CosmosDB"
+      }
+    }
+  },
+  {
+    "name": "recommendations",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/fc_commerce_cosmos/recommendations",
+        "itemId": "72a57759-8f0c-bfa0-481f-3dd170c2623f",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "CosmosDB"
+      }
+    }
+  },
+  {
+    "name": "menuitems",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/fc_commerce_cosmos/menuitems",
+        "itemId": "72a57759-8f0c-bfa0-481f-3dd170c2623f",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "CosmosDB"
+      }
+    }
+  },
+  {
+    "name": "customers",
+    "path": "/Tables/dbo",
+    "target": {
+      "type": "OneLake",
+      "oneLake": {
+        "path": "Tables/fc_commerce_cosmos/customers",
+        "itemId": "72a57759-8f0c-bfa0-481f-3dd170c2623f",
+        "workspaceId": "00000000-0000-0000-0000-000000000000",
+        "artifactType": "CosmosDB"
+      }
+    }
+  }
+]

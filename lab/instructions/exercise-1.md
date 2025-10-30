@@ -23,25 +23,11 @@ This is the first exercise in the lab where you will create a Cosmos DB database
     - **Container id**: +++*customers*+++
     - **Partition key**: +++*/customerId*+++
 
-    Select **OK** to create the container.
-
-1. Once the container has been created, repeat the previous step to create the following additional containers:
-
-    1. **Recommendations** container
-        - **Container id**: +++*recommendations*+++
-        - **Partition key**: +++*/customerId*+++
-
-    1. **Menu Items** container
-        - **Container id**: +++*menuitems*+++
-        - **Partition key**: +++*/shopId*+++
-
-    1. **Shops** container
-        - **Container id**: +++*shops*+++
-        - **Partition key**: +++*/airportId*+++
+    Select **OK** to create the container.=
 
 ## Load initial data
 
-You will now load initial data into the Cosmos DB containers you just created by uploading JSON files.
+You will now load initial data into the Cosmos DB container you just created by uploading JSON file.
 
 1. On the left explorer pane, select the **customers** container to open it then select **items**.
 
@@ -52,12 +38,6 @@ You will now load initial data into the Cosmos DB containers you just created by
 1. Back on the **Upload item** pane, select **Upload** to upload the file. Once the upload is complete, you will see the items listed in the container.
 
     ![Screenshot showing the uploaded items in the customers container](media/customers-container-items.png)
-
-1. Repeat the previous steps to upload the following files into their respective containers:
-
-    - **recommendations** container: *recommendations_container.json*
-    - **menuitems** container: *menu_container.json*
-    - **shops** container: *shops_container.json*
 
 ## Query the data
 
@@ -85,14 +65,16 @@ Let's perform some queries against the data you just uploaded to verify that eve
 
     ![Screenshot showing the results of the high value customers query](media/high-value-customers-query-results.png)
 
-1. Create another new SQL query in the same **customers** container to analyze the loyalty accounts for customers. Enter the following query in the query editor and execute it:
+1. Create another new SQL query in the same **customers** container to analyze customer recommendations. Enter the following query in the query editor and execute it:
 
     +++*SELECT c.customerId,
-        (SELECT VALUE SUM(t.amount) FROM t IN c.loyaltyTransactions WHERE t.type = "earning")    AS totalEarned,
-        (SELECT VALUE SUM(t.amount) FROM t IN c.loyaltyTransactions WHERE t.type = "redemption") AS totalRedeemed
+        (SELECT VALUE COUNT(1) FROM r IN c.recommendations) AS recommendationSets,
+        (SELECT VALUE COUNT(1) FROM r IN c.recommendations JOIN mi IN r.menuItems) AS totalRecommendedItems,
+        (SELECT VALUE ROUND(AVG(r.score), 4) FROM r IN c.recommendations) AS avgRecScore,
+        (SELECT VALUE MIN(r.expiresAt) FROM r IN c.recommendations) AS nextExpiryUtc
        FROM customers c*+++
 
-This query contains two correlated subqueries to calculate the total loyalty points earned and redeemed for each customer based on their loyalty transactions.
+This query uses correlated subqueries to count recommendation sets, total recommended items, the average recommendation score (rounded to four decimals), and the next recommendation expiry for each customer.
 
 Cosmos DB in Fabric supports rich querying capabilities including subqueries *(as demonstrated above)*, aggregate functions, scalar expressions, and more, enabling you to perform complex data analysis directly within the database.
 
@@ -107,4 +89,4 @@ Cosmos DB in Fabric supports rich querying capabilities including subqueries *(a
 
 ## Next step
 
-> Select **Next >** in these instructions to go to the next part of the lab: **Exercise 2:Batch Data Loading and Cross-Database Analytics (Cosmos DB to Data Warehouse)**
+> Select **Next >** in these instructions to go to the next part of the lab: **Exercise 2: Cross-Database Analytics (Cosmos DB to Data Warehouse)**

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "DataPipeline",
+    "displayName": "fc_cosmos_to_wh_pl"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c6aaca9c-99fc-8df9-4988-348e82f3c0f3"
+  }
+}

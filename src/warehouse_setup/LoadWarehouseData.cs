@@ -38,9 +38,11 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Fabric.Api;
 using Microsoft.Fabric.Api.Core.Models;
 using Microsoft.Fabric.Api.Warehouse.Models;
+using Microsoft.Fabric.Api.Lakehouse.Models;
 using Microsoft.Extensions.Logging;
 
 const string WarehouseName = "fc_commerce_wh";
+const string LakehouseName = "fc_commerce_lh";
 
 using var loggerFactory = LoggerFactory.Create(builder =>
 {
@@ -58,7 +60,7 @@ var logger = loggerFactory.CreateLogger("LoadWarehouseData");
 var credential = new AzureCliCredential();
 var fabricClient = new FabricClient(credential);
 
-var WorkspaceName = Environment.GetEnvironmentVariable("FABRIC_WORKSPACE_NAME");
+var WorkspaceName = Environment.GetEnvironmentVariable("FABRIC_WORKSPACE_NAME") ?? "Fourth Coffee Commerce - 56075671";
 if (string.IsNullOrWhiteSpace(WorkspaceName))
 {
     logger.LogError("Environment variable FABRIC_WORKSPACE_NAME is not set. Please set it to the target workspace name.");
@@ -80,6 +82,26 @@ else
 }
 
 
+Lakehouse? lakehouse = null;
+try
+{
+    logger.LogInformation("Attempting lakehouse creation for {LakehouseName} in workspace {WorkspaceId}", LakehouseName, workspace.Id);
+    var lakehouseCreationResponse = await fabricClient.Lakehouse.Items.CreateLakehouseAsync(workspace.Id, new CreateLakehouseRequest(LakehouseName));
+    lakehouse = lakehouseCreationResponse.Value;
+    logger.LogInformation("Lakehouse created: {LakehouseName} Id {LakehouseId}", LakehouseName, lakehouse.Id);
+}
+catch (Exception ex) when (ex.Message.Contains("Failure getting LRO status", StringComparison.OrdinalIgnoreCase))
+{
+    // Ignore the  Azure.RequestFailedException: Failure getting LRO status
+    // TODO: Investigate further why this exception occurs yet the warehouse is created successfully.
+    // Try to retrieve the lakehouse that was likely created despite the exception
+    logger.LogWarning(ex, "LRO status failure while creating lakehouse {LakehouseName}; attempting lookup", LakehouseName);
+    lakehouse = await fabricClient.Lakehouse.Items.ListLakehousesAsync(workspace.Id)
+        .FirstOrDefaultAsync(w => w.DisplayName == LakehouseName);
+    if (lakehouse is not null)
+        logger.LogInformation("Recovered lakehouse after LRO issue: {LakehouseName} Id {LakehouseId}", LakehouseName, lakehouse.Id);
+}
+
 Warehouse? warehouse = null;
 try
 {
@@ -94,18 +116,63 @@ catch (Exception ex) when (ex.Message.Contains("Failure getting LRO status", Str
     // TODO: Investigate further why this exception occurs yet the warehouse is created successfully.
     // Try to retrieve the warehouse that was likely created despite the exception
     logger.LogWarning(ex, "LRO status failure while creating warehouse {WarehouseName}; attempting lookup", WarehouseName);
-    warehouse = await fabricClient.Warehouse.Items.ListWarehousesAsync(workspace.Id)
-        .FirstOrDefaultAsync(w => w.DisplayName == WarehouseName);
-    if (warehouse is not null)
-        logger.LogInformation("Recovered warehouse after LRO issue: {WarehouseName} Id {WarehouseId}", WarehouseName, warehouse.Id);
+    const int maxWarehouseLookupRetries = 5;
+    for (var attempt = 1; attempt <= maxWarehouseLookupRetries && warehouse is null; attempt++)
+    {
+        if (attempt > 1)
+            await Task.Delay(TimeSpan.FromSeconds(5));
+
+        try
+        {
+            warehouse = await fabricClient.Warehouse.Items.ListWarehousesAsync(workspace.Id)
+                .FirstOrDefaultAsync(w => w.DisplayName == WarehouseName);
+        }
+        catch (Exception lookupEx)
+        {
+            logger.LogWarning(lookupEx, "Attempt {Attempt} to list warehouses failed for {WarehouseName}", attempt, WarehouseName);
+            continue;
+        }
+
+        if (warehouse is not null)
+        {
+            logger.LogInformation("Recovered warehouse after LRO issue: {WarehouseName} Id {WarehouseId}", WarehouseName, warehouse.Id);
+        }
+        else
+        {
+            logger.LogWarning("Attempt {Attempt} failed to locate warehouse {WarehouseName}", attempt, WarehouseName);
+        }
+    }
+
+    if (warehouse is null)
+        throw;
 }
 
-if (warehouse is null)
-{
-    logger.LogError("Failed to create or retrieve warehouse {WarehouseName}", WarehouseName);
-    throw new InvalidOperationException($"Failed to create or retrieve warehouse '{WarehouseName}'. Potential silent failure after LRO status error; investigatory comments retained.");
-}
 logger.LogInformation("Using warehouse {WarehouseName} with Id {WarehouseId}", WarehouseName, warehouse.Id);
+
+// Create a TXT file with all the important IDs
+var idsFilePath = Path.Combine(Directory.GetCurrentDirectory(), "fabric-guids.txt");
+var idsContent = new StringBuilder();
+idsContent.AppendLine("Microsoft Fabric Resource IDs");
+idsContent.AppendLine("Generated on: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+idsContent.AppendLine("=====================================");
+idsContent.AppendLine();
+idsContent.AppendLine($"Workspace Name: {WorkspaceName}");
+idsContent.AppendLine($"Workspace ID: {workspace.Id}");
+idsContent.AppendLine();
+if (lakehouse?.Id is not null)
+{
+    idsContent.AppendLine($"Lakehouse Name: {LakehouseName}");
+    idsContent.AppendLine($"Lakehouse ID: {lakehouse.Id}");
+    idsContent.AppendLine();
+}
+idsContent.AppendLine($"Warehouse Name: {WarehouseName}");
+idsContent.AppendLine($"Warehouse ID: {warehouse.Id}");
+idsContent.AppendLine();
+idsContent.AppendLine("=====================================");
+idsContent.AppendLine("Use these IDs for connecting to your Fabric resources");
+
+await File.WriteAllTextAsync(idsFilePath, idsContent.ToString());
+logger.LogInformation("Created IDs file at: {IdsFilePath}", idsFilePath);
 
 
 var warehouseConnectionString = $"Data Source={warehouse.Properties.ConnectionString},1433;Initial Catalog={WarehouseName};Encrypt=True;TrustServerCertificate=False";
