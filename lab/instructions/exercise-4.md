@@ -3,7 +3,8 @@
 In this exercise, you will create a Dataflow Gen2 to extract and transform data from the Eventhouse, update the user profiles in Cosmos DB, and then use that data to build a personalization model in a notebook.
 
 by the end of this exercise, you'll be able to:
-- Use Fabric Notebooks to extract and transform data, and build a personalization model
+
+- Create a Dataflow Gen2 to extract and transform data
 - Perform Reverse ETL to update user profiles in Cosmos DB
 
 ## Create Data Warehouse Views
@@ -39,9 +40,45 @@ FROM dbo.FactSales;*+++
 
 1. Browse to the Fabric workspace you created in the previous steps by selecting it from the left navigation pane if it is already open, or selecting **Workspaces** on the left navigation pane and then selecting it.
 
-1. From the top menu ribbon, select **→| Import** > **Notebook** > **From this computer**.
+1. From the top menu ribbon, select **+ New item**, a pane will open on the right side and on the filter text box on the top right of the pane, type +++*dataflow*+++ to filter the list of items. Select **Dataflow Gen2**.
 
-![Screenshot showing how to import a notebook in Fabric](media/import-notebook.png)
+  ![Screenshot showing how to create a new Dataflow in Microsoft Fabric](media/create-dataflow.png)
+
+1. Name the new Dataflow +++*fc_commerce_dataflow*+++ and select **Create**.
+1. Once the Dataflow Gen2 has been created, it will open in a new tab in Fabric.
+
+![Screenshot showing the created Dataflow Gen2 in Microsoft Fabric](media/dataflow-created.png)
+
+## Add Data Sources to Dataflow
+
+1. In the Dataflow canvas, select **Get data from another source** to open the data source selection pane.
+1. In the data source selection pane, type +++*eventhouse*+++ in the filter text box to filter the list of items. In the OneLake catalog view, select the eventhouse you created in the previous exercise, +++*fc_commerce_eventhouse*+++.
+
+  ![Screenshot showing how to select the Eventhouse as a data source](media/dataflow-select-eventhouse.png)
+
+1. In the Choose data pane, expand the folder, then the database, then select the **vw_Pos_Sales** and **vw_Pos_LineItems_Sales** views. Select **Create**.
+
+  ![Screenshot showing the selected Eventhouse views in Dataflow data source selection pane](media/dataflow-eventhouse-table-selected.png)
+
+1. In the Dataflow canvas, you will see the two views added as source transformations.
+1. In the top menu ribbon, select **New Query** > **Get data** to add another data source.
+1. In the OneLake catalog view, type +++*fc_commerce_wh*+++ in the filter text box to filter the list of items. Select the data warehouse you created in the previous exercise, +++*fc_commerce_wh*+++.
+
+  ![Screenshot showing how to select the Data Warehouse as a data source](media/dataflow-select-warehouse.png)
+
+1. In the Choose data pane, expand the folder, then the database, then select the **vDimCustomerKey**, **vDimShopKey**, **vDimMenuItemKey**, and **vFactSalesMaxKey** views. Select **Create**.
+
+  ![Screenshot showing the selected Data Warehouse views in Dataflow data source selection pane](media/dataflow-warehouse-tables-selected.png)
+
+## Transform and Load Data in Dataflow
+
+1. In the Dataflow canvas select *vw_Pos_Sales* to see the data preview and transformation options, then right click on the CreatedAt column header and select **Change type** > **Date/Time** from the dropdown.
+
+  ![Screenshot of changing column data type](media/dataflow-change-column-type.png)
+
+1. Right-click the +++*vw_Pos_Sales*+++ and select **Merge queries**.
+
+  ![Screenshot of selecting merge queries](media/dataflow-merge-queries.png)
 
 1. In the Import status pane, select **Upload**.
 
