@@ -1,0 +1,293 @@
+@page "/"
+@using CustomerDemoApp.Models
+@using CustomerDemoApp.Services
+@inject CosmosDbService CosmosService
+@inject IJSRuntime JSRuntime
+
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+            <div class="header-section text-center mb-4">
+                <h1 class="display-4 mb-2">
+                    <i class="bi bi-cup-hot me-2"></i>
+                    Customer Insights Demo
+                </h1>
+                <p class="lead text-muted">
+                    Explore personalized recommendations powered by Microsoft Fabric and Cosmos DB
+                </p>
+            </div>
+
+            @if (isLoading)
+            {
+                <div class="loading-container text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Loading customers...</span>
+                    </div>
+                    <p class="mt-3 text-muted">Loading customer data...</p>
+                </div>
+            }
+            else if (!string.IsNullOrEmpty(errorMessage))
+            {
+                <div class="alert alert-warning" role="alert">
+                    <i class="bi bi-exclamation-triangle me-2"></i>
+                    @errorMessage
+                </div>
+            }
+            else
+            {
+                <div class="customer-selector mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <i class="bi bi-person-circle me-2"></i>
+                                Select Customer
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row align-items-center">
+                                <div class="col-md-8">
+                                    <select class="form-select form-select-lg" @onchange="OnCustomerSelected">
+                                        <option value="">Choose a customer...</option>
+                                        @if (customers != null)
+                                        {
+                                            @foreach (var customer in customers)
+                                            {
+                                                <option value="@customer.Id">@customer.Name</option>
+                                            }
+                                        }
+                                    </select>
+                                </div>
+                                <div class="col-md-4 text-end">
+                                    <button class="btn btn-outline-primary" @onclick="LoadRandomCustomers" disabled="@isLoading">
+                                        <i class="bi bi-arrow-clockwise me-1"></i>
+                                        Refresh
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                @if (selectedCustomer != null)
+                {
+                    <div class="customer-details">
+                        <div class="row g-4">
+                            <!-- Customer Information Card -->
+                            <div class="col-lg-6">
+                                <div class="card h-100">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <i class="bi bi-person-badge me-2"></i>
+                                            Customer Information
+                                        </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="customer-info">
+                                            <div class="info-item mb-3">
+                                                <label class="form-label text-muted">Name</label>
+                                                <p class="h6 mb-0">@selectedCustomer.Name</p>
+                                            </div>
+                                            <div class="info-item mb-3">
+                                                <label class="form-label text-muted">Email</label>
+                                                <p class="mb-0">@selectedCustomer.Email</p>
+                                            </div>
+                                            <div class="info-item mb-3">
+                                                <label class="form-label text-muted">Loyalty Points</label>
+                                                <div class="d-flex align-items-center">
+                                                    <span class="badge bg-success rounded-pill fs-6 me-2">
+                                                        @selectedCustomer.LoyaltyPoints
+                                                    </span>
+                                                    <small class="text-muted">points earned</small>
+                                                </div>
+                                            </div>
+                                            @if (selectedCustomer.LastPurchaseDate != null)
+                                            {
+                                                <div class="info-item mb-3">
+                                                    <label class="form-label text-muted">Last Purchase</label>
+                                                    <p class="mb-0">@selectedCustomer.LastPurchaseDate?.ToString("MMM dd, yyyy")</p>
+                                                </div>
+                                            }
+                                            <div class="info-item">
+                                                <label class="form-label text-muted">Member Since</label>
+                                                <p class="mb-0">@selectedCustomer.RegisteredAt.ToString("MMM dd, yyyy")</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Preferences Card -->
+                            <div class="col-lg-6">
+                                <div class="card h-100">
+                                    <div class="card-header">
+                                        <h5 class="mb-0">
+                                            <i class="bi bi-heart me-2"></i>
+                                            Preferences
+                                        </h5>
+                                    </div>
+                                    <div class="card-body">
+                                        @if (selectedCustomer.Preferences != null)
+                                        {
+                                            <div class="preferences">
+                                                <div class="info-item mb-3">
+                                                    <label class="form-label text-muted">Favorite Drink</label>
+                                                    <p class="mb-0">
+                                                        <i class="bi bi-cup-hot text-primary me-1"></i>
+                                                        @selectedCustomer.Preferences.FavoriteDrink
+                                                    </p>
+                                                </div>
+                                                <div class="info-item mb-3">
+                                                    <label class="form-label text-muted">Preferred Airport</label>
+                                                    <p class="mb-0">
+                                                        <i class="bi bi-airplane text-primary me-1"></i>
+                                                        @selectedCustomer.Preferences.Airport
+                                                    </p>
+                                                </div>
+                                                @if (selectedCustomer.Preferences.DietaryRestrictions?.Any() == true)
+                                                {
+                                                    <div class="info-item mb-3">
+                                                        <label class="form-label text-muted">Dietary Restrictions</label>
+                                                        <div class="d-flex flex-wrap gap-1">
+                                                            @foreach (var restriction in selectedCustomer.Preferences.DietaryRestrictions)
+                                                            {
+                                                                <span class="badge bg-warning text-dark">@restriction</span>
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                }
+                                                @if (selectedCustomer.Preferences.NotificationPreferences != null)
+                                                {
+                                                    <div class="info-item">
+                                                        <label class="form-label text-muted">Notifications</label>
+                                                        <div class="d-flex gap-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" 
+                                                                       checked="@selectedCustomer.Preferences.NotificationPreferences.Email" 
+                                                                       disabled>
+                                                                <label class="form-check-label">Email</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox" 
+                                                                       checked="@selectedCustomer.Preferences.NotificationPreferences.Push" 
+                                                                       disabled>
+                                                                <label class="form-check-label">Push</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <p class="text-muted fst-italic">No preferences recorded</p>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Recommendations Card -->
+                            @if (selectedCustomer.Recommendations?.Any() == true)
+                            {
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="mb-0">
+                                                <i class="bi bi-stars me-2"></i>
+                                                Personalized Recommendations
+                                            </h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row g-3">
+                                                @foreach (var recommendation in selectedCustomer.Recommendations.Take(6))
+                                                {
+                                                    <div class="col-md-6 col-xl-4">
+                                                        <div class="recommendation-card">
+                                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                                <h6 class="mb-0">@recommendation.Name</h6>
+                                                                <span class="badge bg-primary rounded-pill">
+                                                                    @((recommendation.Score * 100).ToString("F0"))%
+                                                                </span>
+                                                            </div>
+                                                            <p class="text-muted small mb-0">@recommendation.Reason</p>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<Customer>? customers;
+    private Customer? selectedCustomer;
+    private bool isLoading = true;
+    private string errorMessage = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadRandomCustomers();
+    }
+
+    private async Task LoadRandomCustomers()
+    {
+        isLoading = true;
+        errorMessage = string.Empty;
+        selectedCustomer = null;
+        
+        try
+        {
+            customers = await CosmosService.GetRandomCustomersAsync(5);
+            
+            if (customers?.Any() != true)
+            {
+                errorMessage = "No customers found. Please ensure your Cosmos DB is configured with customer data.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Unable to load customers: {ex.Message}";
+            Console.WriteLine($"Error loading customers: {ex}");
+        }
+        finally
+        {
+            isLoading = false;
+            StateHasChanged();
+        }
+    }
+
+    private async Task OnCustomerSelected(ChangeEventArgs e)
+    {
+        var customerId = e.Value?.ToString();
+        
+        if (string.IsNullOrEmpty(customerId))
+        {
+            selectedCustomer = null;
+            return;
+        }
+
+        try
+        {
+            selectedCustomer = customers?.FirstOrDefault(c => c.Id == customerId);
+            
+            if (selectedCustomer == null)
+            {
+                selectedCustomer = await CosmosService.GetCustomerByIdAsync(customerId);
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = $"Error loading customer details: {ex.Message}";
+            Console.WriteLine($"Error loading customer {customerId}: {ex}");
+        }
+        
+        StateHasChanged();
+    }
+}
