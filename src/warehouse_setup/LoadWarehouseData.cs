@@ -60,7 +60,7 @@ var logger = loggerFactory.CreateLogger("LoadWarehouseData");
 var credential = new AzureCliCredential();
 var fabricClient = new FabricClient(credential);
 
-var WorkspaceName = Environment.GetEnvironmentVariable("FABRIC_WORKSPACE_NAME");
+var WorkspaceName = Environment.GetEnvironmentVariable("FABRIC_WORKSPACE_NAME") ?? "Fourth Coffee Commerce - 56075671";
 if (string.IsNullOrWhiteSpace(WorkspaceName))
 {
     logger.LogError("Environment variable FABRIC_WORKSPACE_NAME is not set. Please set it to the target workspace name.");
@@ -102,8 +102,6 @@ catch (Exception ex) when (ex.Message.Contains("Failure getting LRO status", Str
         logger.LogInformation("Recovered lakehouse after LRO issue: {LakehouseName} Id {LakehouseId}", LakehouseName, lakehouse.Id);
 }
 
-
-
 Warehouse? warehouse = null;
 try
 {
@@ -118,42 +116,35 @@ catch (Exception ex) when (ex.Message.Contains("Failure getting LRO status", Str
     // TODO: Investigate further why this exception occurs yet the warehouse is created successfully.
     // Try to retrieve the warehouse that was likely created despite the exception
     logger.LogWarning(ex, "LRO status failure while creating warehouse {WarehouseName}; attempting lookup", WarehouseName);
-    warehouse = await fabricClient.Warehouse.Items.ListWarehousesAsync(workspace.Id)
-        .FirstOrDefaultAsync(w => w.DisplayName == WarehouseName);
-    if (warehouse is not null)
-        logger.LogInformation("Recovered warehouse after LRO issue: {WarehouseName} Id {WarehouseId}", WarehouseName, warehouse.Id);
-}
-
-const int maxWarehouseLookupAttempts = 3;
-if (warehouse is null)
-{
-    for (var attempt = 1; attempt <= maxWarehouseLookupAttempts && warehouse is null; attempt++)
+    const int maxWarehouseLookupRetries = 5;
+    for (var attempt = 1; attempt <= maxWarehouseLookupRetries && warehouse is null; attempt++)
     {
-        logger.LogWarning("Warehouse {WarehouseName} unresolved; lookup attempt {Attempt}/{Total}", WarehouseName, attempt, maxWarehouseLookupAttempts);
+        if (attempt > 1)
+            await Task.Delay(TimeSpan.FromSeconds(5));
 
-        warehouse = await fabricClient.Warehouse.Items
-            .ListWarehousesAsync(workspace.Id)
-            .FirstOrDefaultAsync(w => w.DisplayName == WarehouseName);
+        try
+        {
+            warehouse = await fabricClient.Warehouse.Items.ListWarehousesAsync(workspace.Id)
+                .FirstOrDefaultAsync(w => w.DisplayName == WarehouseName);
+        }
+        catch (Exception lookupEx)
+        {
+            logger.LogWarning(lookupEx, "Attempt {Attempt} to list warehouses failed for {WarehouseName}", attempt, WarehouseName);
+            continue;
+        }
 
         if (warehouse is not null)
         {
-            logger.LogInformation("Warehouse {WarehouseName} resolved on attempt {Attempt}", WarehouseName, attempt);
-            break;
+            logger.LogInformation("Recovered warehouse after LRO issue: {WarehouseName} Id {WarehouseId}", WarehouseName, warehouse.Id);
         }
-
-        if (attempt < maxWarehouseLookupAttempts)
+        else
         {
-            var delay = TimeSpan.FromSeconds(2 * attempt);
-            logger.LogInformation("Waiting {DelaySeconds} seconds before next lookup attempt", delay.TotalSeconds);
-            await Task.Delay(delay);
+            logger.LogWarning("Attempt {Attempt} failed to locate warehouse {WarehouseName}", attempt, WarehouseName);
         }
     }
 
     if (warehouse is null)
-    {
-        logger.LogError("Failed to create or retrieve warehouse {WarehouseName} after {Attempts} attempts", WarehouseName, maxWarehouseLookupAttempts);
-        throw new InvalidOperationException($"Failed to create or retrieve warehouse '{WarehouseName}'. Potential silent failure after LRO status error; investigatory comments retained.");
-    }
+        throw;
 }
 
 logger.LogInformation("Using warehouse {WarehouseName} with Id {WarehouseId}", WarehouseName, warehouse.Id);
