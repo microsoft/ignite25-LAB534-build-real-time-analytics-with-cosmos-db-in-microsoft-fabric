@@ -73,9 +73,9 @@ By the end of this exercise, you'll be able to:
 
 ## Access mirrored data from a Fabric Lakehouse
 
-1. Navigate back to the workspace and select the **fc_commerce_lh** lakehouse that was created during the Fabric Environment Setup.
+1. Navigate back to the workspace. Select the existing lakehouse **fc_commerce_lh** you created in the Fabric Environment Setup.
 
-1. Right-click the **Tables** folder from the lakehouse explorer pane, then select **New shortcut**.
+1. In the lakehouse, right-click on the **dbo** schema in the **Tables** folder of the lakehouse explorer pane, then select **New table shortcut**.
 
 1. In the **New shortcut** dialog, select **Microsoft OneLake**.
 

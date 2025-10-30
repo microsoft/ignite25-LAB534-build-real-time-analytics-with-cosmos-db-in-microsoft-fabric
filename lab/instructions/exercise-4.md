@@ -35,7 +35,8 @@ FROM dbo.FactSales;*+++
 
   ![Screenshot showing creating dimensional views in data warehouse](media/create-dimensional-views.png)
 
-## Perform Transform and Load with Fabric Notebooks
+
+## Perform Transformation with Fabric Notebooks
 
 1. Browse to the Fabric workspace you created in the previous steps by selecting it from the left navigation pane if it is already open, or selecting **Workspaces** on the left navigation pane and then selecting it.
 
@@ -79,116 +80,88 @@ FROM dbo.FactSales;*+++
 
   ![Screenshot of selecting merge queries](media/dataflow-merge-queries.png)
 
-1. In the Merge pane, select +++*vDimCustomerKey*+++ as the second table to merge with.
-1. Select the +++*CustomerId*+++ column from both tables by double clicking on the column names.
-1. Verify that the Join kind is set to **Left outer (all from first, matching from second)** and select **OK**.
+1. In the Import status pane, select **Upload**.
 
-  ![Screenshot of merge queries pane](media/dataflow-merge-queries-pane.png)
-
-> [!TIP]
-> At this stage you may recieve a warning message about data privacy levels before you can resume any transformations. You can safely select continue and check "Ignore privacy level check for this document" and select **Save** for the purposes of this lab.
-
-1. In the new merged transformation, select the expand icon next to the **vDimCustomerKey** column header.
-
-  ![Screenshot of expanding merged columns button on vDimCustomerKey](media/dataflow-expand-merged-column.png)
-
-1. In the expand pane, deselect CustomerId, so CustomerKey and IsActive are selected. Select **OK**.
-  ![Screenshot of expand merged columns pane for vDimCustomerKey](media/dataflow-expand-merged-column-pane.png)
-
-1. Repeat steps 1-6 to merge **vw_Pos_Sales** with **vDimShopKey** on **ShopId**. Expand the merged columns to include only the ShopKey and IsActive columns from each view.
-
-  ![Screenshot of expanding merged columns button on vDimShopKey](media/dataflow-merge-queries-dimshop-pane.png)
-
-1. Your power query should now look like the following:
-
-  ![Screenshot of Dataflow Power Query after merging DimCustomer and DimShop](media/dataflow-power-query-after-merge.png)
-
-1. Select and highlight **vw_Pos_Sales**, then in the top menu ribbon select **Add Column** > **Index Column** > **From 1** from the dropdown to add another transformation step.
-
-  ![Screenshot of adding index column](media/dataflow-add-index-column.png)
-
-1. Right click on the new Index column header and select **Rename**, then enter the new name ++*LocalIndex*++ in the column header.
-
-1. Next,verify **vw_Pos_Sales** transformation is selected and select **Add Column** > **Custom Column** from the top menu ribbon.
-1. In the Custom Column pane, enter ++*MaxSalesKey*++ as the New column name.
-1. Select **Whole Number** as the Data type.
-1. In the Custom column formula box, enter the following formula to create a SalesKey based on the LocalIndex column:
-+++*let
-  t = dbo_vFactSalesMaxKey,
-  v = if Table.RowCount(t) > 0
-      then Record.Field(Table.First(t), "MaxSalesKey")
-      else 0
-in v*+++
-
-  ![Screenshot of custom column pane](media/dataflow-custom-column-pane.png)
-
-1. Select **OK** to create the new column.
-1. Create another custom column by selecting **Add Column** > **Custom Column** from the top menu ribbon.
-1. In the Custom Column pane, enter ++*SalesKey*++ as the New column name.
-1. Select **Whole Number** as the Data type.
-1. In the Custom column formula box, enter the following formula to create a SalesKey based on the LocalIndex column:
-+++*Number.From([MaxSalesKey]) + Number.From([LocalIndex])*+++
-1. Select **OK** to create the new column. SalesKey will be used as the primary key for the fact sales table and should start at 1001 if the MaxSalesKey in the warehouse is 1000.
-
-  ![Screenshot of custom column saleskey](media/dataflow-custom-column-saleskey.png)
-
-1. In the vw_Pos_Sales transformation, select the add destination icon in the top right corner of the transformation box and select **Warehouse**. This opens the destination pane.
-
-  ![Screenshot of adding a warehouse destination in dataflow](media/dataflow-add-warehouse-destination.png)
-
-1. In the Connect to data destination pane, verify your warehouse connection is selected in connection credentials. It should be the only one there. Select **Next** to open the destination target pane.
-1. Select **Existing table** is selected in the destination target pane.
-1. Expand the warehouse folder and select *FactSales*.
-1. Select **Next** to open the mapping pane.
-
-  ![Screenshot of selecting warehouse destination details in dataflow](media/dataflow-warehouse-destination-details-factsales.png)
-
-1. In the Choose destination settings pane, verify that the Update method is set to **Append**, and that all columns from the source are mapped to the destination.
-
-1. Select **Save settings** to create the warehouse destination.
-
-  ![Screenshot of warehouse destination mapping in dataflow with the Save settings button highlighted](media/dataflow-warehouse-destination-mapping-factsales.png)
-
-1. From the top menu ribbon, select **Publish** to publish the Dataflow changes.
-
-1. In the Dataflow canvas select *vw_Pos_LineItems_Sales* to see the data preview and transformation options, then right click on the CreatedAt column header and select **Change type** > **Date/Time** from the dropdown, similar to the **vw_Pos_Sales** transformation.
-
-  ![Screenshot of changing column data type](media/dataflow-change-column-type.png)
-
-1. Right-click the *vw_Pos_LineItems_Sales* and select **Merge queries**.
-
-  ![Screenshot of selecting merge queries](media/dataflow-merge-queries-lineitems.png)
-
-1. In the Merge pane, select *vDimMenuItemKey* as the second table to merge with.
-1. Select the *MenuItemId* column from both tables by double clicking on the column names.
-1. Verify that the Join kind is set to **Left outer (all from first, matching from second)** and select **OK**.
-  ![Screenshot of merge queries pane for line items](media/dataflow-merge-queries-lineitems-pane.png)
-
-1. In the new merged transformation, select the expand icon next to the **vDimMenuItemKey** column header.
-1. In the expand pane, deselect MenuItemId, so MenuItemKey and IsActive are selected. Select **OK**.
-![Screenshot of expand merged columns pane for vDimMenuItemKey](media/dataflow-expand-merged-column-pane-lineitems.png)
-
-1. In the vw_Pos_LineItems_Sales transformation, select the add destination icon in the top right corner of the transformation box and select **Warehouse**. This opens the destination pane.
-
-  ![Screenshot of adding a warehouse destination in dataflow](media/dataflow-add-warehouse-destination-lineitems.png)
-
-1. In the Connect to data destination pane, verify your warehouse connection is selected in connection credentials. It should be the only one there. Select **Next** to open the destination target pane.
-1. Select **Existing table** is selected in the destination target pane.
-1. Expand the warehouse folder and select *FactLineItems*.
-1. Select **Next** to open the mapping pane.
-
-  ![Screenshot of selecting warehouse destination details in dataflow](media/dataflow-warehouse-destination-details-factlineitems.png)
-
-1. In the Choose destination settings pane, verify that the Update method is set to **Append**, and that all columns from the source are mapped to the destination.
-
-1. Select **Save settings** to create the warehouse destination. (todo: update image)
-
-  ![Screenshot of warehouse destination mapping in dataflow with the Save settings button highlighted](media/dataflow-warehouse-destination-mapping-factlineitems.png)
-
-1. From the top menu ribbon, select **Save and Run** to publish the Dataflow changes.
-
-  ![Screenshot of saving and running dataflow](media/dataflow-save-and-run.png)
+1. In the file picker dialog, navigate to the location of this lab's source code folder on your computer, labeled src, then select the `transform_transactions.ipynb` notebook file and select **Open** to upload it.
 
 ![Screenshot showing the uploaded notebook in Fabric](media/uploaded-notebook.png)
 
-1. Once the notebook has been uploaded, it will appear in the workspace content list. Select the +++*transform_transactions.ipynb*+++ notebook to open it.
+1. Once the notebook has been uploaded, it will appear in the workspace. Select the `transform_transactions.ipynb` notebook to open it.
+1. To the left of the notebook, in the Explorer pane select **+ Add data items** > **Existing data sources**.
+![Screenshot of adding existing data source](media/add-existing-data-source.png)
+1. In the OneLake Catalog, select the **fc_commerce_lakehouse** lakehouse and then select **Connect**.
+
+![Screenshot of notebook connected to lakehouse](media/connected-lakehouse.png)
+
+1. In the notebook, locate the code cells where you need to provide your Fabric environment details. Update the following variables with your specific information:
+   - `kustoCluster`: The Kusto cluster URL for your Eventhouse. You can find this in the Eventhouse you configured earlier named `fc_commerce_eventhouse` In the Database Details pane to the right, select **Copy Query URI**.
+   ![Screenshot showing how to copy the Kusto cluster URL](media/copy-kusto-cluster-url.png)
+   - `workspace_guid`: The GUID of your Fabric workspace. You can find this in the txt file named `fabric_guids.txt` in the source code folder, or by copying it from the browser address bar when you have your Fabric workspace open (it is the first GUID in the URL).
+   - `lakehouse_guid`: The GUID of your lakehouse. You can find this in the txt file named `fabric_guids.txt` in the source code folder, or by copying it from the browser address bar when you have your lakehouse open (it is the second GUID in the URL).
+   - `SERVER`: The SQL endpoint of your data warehouse. You can find this by navigating to your data warehouse in Fabric, selecting **Settings** from the top menu ribbon, and copying the SQL endpoint from there.
+   ![Screenshot showing how to copy the SQL endpoint](media/copy-sql-endpoint.png)
+
+1. After updating the variables, run all the cells in the notebook sequentially to perform the data transformation and loading process. You can do this by selecting **Run All** from the top menu ribbon.
+![Screenshot of running all cells in the notebook](media/run-all-cells.png)
+
+1. Once the notebook has finished running, you should see two lakehouse urls printed at the end of the notebook execution. These URLs point to the Parquet files that were created in the lakehouse as part of the transformation process. You will use these files to load data into the data warehouse.
+![Screenshot showing the output URLs of the Parquet files](media/parquet-file-urls.png)
+
+## Load Transformed Data into Data Warehouse
+1. Open a new SQL query in your data warehouse by selecting the **New SQL Query** button in the warehouse page.
+1. In the query window editor, paste the following SQL code to load the transformed data into the FactSales and FactSalesLineItem tables using the Parquet files created in the previous step. Make sure to replace the placeholder URLs with the actual URLs printed at the end of the notebook execution.
+
++++*-- =============================
+-- COPY headers (FactSales)
+-- =============================
+COPY INTO dbo.FactSales
+(
+    SalesKey             1,
+    TransactionId        2,
+    DateKey              3,
+    TimeKey              4,
+    CustomerKey          5,
+    ShopKey              6,
+    TotalQuantity        7,
+    TotalAmount          8,
+    PaymentMethod        9,
+    LoyaltyPointsEarned 10,
+    LoyaltyPointsRedeemed 11,
+    CreatedAt           12
+)
+FROM '[lakehouse sales url]' 
+WITH (
+    FILE_TYPE = 'PARQUET'
+);
+
+
+
+-- =============================
+-- COPY lines (FactSalesLineItems)
+-- =============================
+COPY INTO dbo.FactSalesLineItems
+(
+    TransactionId  1,
+    SalesKey       2,
+    LineNumber     3,
+    DateKey        4,
+    TimeKey        5,
+    MenuItemKey    6,
+    Quantity       7,
+    UnitPrice      8,
+    LineTotal      9,
+    PaymentMethod 10,
+    Size          11,
+    CreatedAt     12
+)
+FROM '[lakehouse items urls]' 
+WITH (
+    FILE_TYPE = 'PARQUET'
+);*+++
+
+1. Select **Run** to execute the query and load the data into the warehouse.
+
+  ![Screenshot showing loading data into data warehouse](media/load-data-into-warehouse.png)
+
+  ## Reverse ETL and Build Personalization Model
+1. Continue to the next notebook in the workspace named `build_personalization_model.ipynb` to perform Reverse ETL and build a personalization model using the transformed data.
