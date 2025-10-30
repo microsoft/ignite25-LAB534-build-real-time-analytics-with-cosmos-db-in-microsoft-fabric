@@ -1,97 +1,38 @@
-# Welcome Ignite 2025 Creators!
-
-Thanks for creating content for Ignite!  Please follow this guidance so all ignite repos have the same look and feel.
-
-## How to contact Skillable?
-
-If you have issues with the Skillable environment, please follow these steps:
-
-1. Open an issue in the [Issues](../../issues) tab using the `New issue` button.
-1. Describe the problem, be descriptive, use screenshots if possible etc.
-1. Tag the following Skillable employees:
-   - @kylerosenthal
-   - @TubaMikeBob
-   - @Naimjones16
-   - @jmbauf
-1. Have all the discussions related to the issue in the issue itself.
-1. Once the issue is resolved, please mark it as Closed.
-
-## Put your docs in the docs folder
-
-This repo is configured for a user to view the docs through mkdocs.
-
-1. update the `mkdocs.yml` file to reference your session. Look particularly for the `site_name`, `site_author`, and `repo_name` tags.
-1. Subfolders in the docs folder will show up as tabs in the navigation bar.
-
-## Guidance
-
-1. Do not turn on github pages for this repo, traffic to github pages isn't captured in our metrics.
-1. Do not store slides or recordings in this repo
-
-## Update the badges!
-
-1. if the foundry discord and github links aren't appropriate for your session you can remove or change them.
-2. See shields.io for how to build your own dynamic or static badge for your community destinations, or other sample repos for how they've done
-3. Please limit your repo to one row of badges under the session title.
-
-## MCP Server
-1. This repo has an mcp.json file and is configured to let agents connect to the Learn MCP Server.
-
-> **Important** Make sure to avoid hardcoding sensitive information like API keys and other credentials by using input variables or environment files.
-
-
-## Update this readme below
-
-1. Fill out the content in this file, below the banner graphic, including the session code.
-2. Please embed links to Learn with your campaign codes!
-3. Add resources for your session to the Resources and Next Steps table
-4. Change the Content Owner section to your info
-5. Change the placeholder session code BRKXXX to your session code.
-
-## Improve SEO
-
-1. Update the Repo Info for this repo 
-    1. Click the gear icon⚙️ in the upper right.
-    1. Set a good description of this repo.
-    1. Add the technologies that you're using in this session.
-
-## Questions?
-
-Send them to [Mike Kinsman](mailto:mikki@microsoft.com) and [Laurent Bugnion](lbugnion@microsoft.com), or surface your question through your content leads.  We are also monitoring issues logged in the repos.
-
-## Finished?
-
-- Remove the folders that you don't need or didn't use, *please don't leave them empty with placeholder readmes*
-- Delete this line and everything above it!
-
 <p align="center">
 <img src="img/Banner-ignite-25.png" alt="decorative banner" width="1200"/>
 </p>
 
 # [Microsoft Ignite 2025](https://ignite.microsoft.com)
 
-## 🔥BRKXXX: Analytics with Microsoft Fabric: Data to AI-Powered Insights
+## 🔥LAB534: Build Real-Time Analytics with Cosmos DB in Microsoft Fabric
 
+[![Microsoft Fabric Community](https://img.shields.io/badge/Microsoft_Fabric-Community-orange?style=for-the-badge&logo=microsoft&logoColor=white)](https://community.fabric.microsoft.com/)
+[![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-Fabric-blue?style=for-the-badge&logo=microsoft&logoColor=white)](https://learn.microsoft.com/fabric/)
 [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)
 [![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=adff2f&logoColor=fff)](https://aka.ms/foundry/forum)
-
 ### Session Description
 
-*Add Session Description*
+Learn how to build a complete real-time analytics solution using Cosmos DB in Microsoft Fabric. This hands-on lab demonstrates how to create an operational data store, implement streaming data pipelines, build cross-database analytics, and deploy personalized recommendations using Reverse ETL patterns.
 
 ### 🧠 Learning Outcomes
 
 By the end of this session, learners will be able to:
 
--  
--
--
+- **Provision and configure** Cosmos DB in Microsoft Fabric as an operational data store
+- **Implement real-time streaming** using Eventstreams and KQL for POS transaction data
+- **Build cross-database analytics** leveraging Cosmos DB's automatic mirroring to OneLake
+- **Create data warehouses** and perform ETL operations from streaming to structured data
+- **Implement Reverse ETL** patterns to update operational systems with analytical insights
+- **Deploy personalized recommendation models** using machine learning and customer behavior data
 
 ### 💻 Technologies Used
 
-1.
-1.
-1.
+1. **Microsoft Fabric** - Unified analytics platform
+2. **Cosmos DB** - Operational NoSQL database
+3. **Eventstreams & KQL** - Real-time data streaming and querying
+4. **Data Warehouse** - Structured analytics storage
+5. **PySpark Notebooks** - Data processing and machine learning
+6. **OneLake** - Unified data lake storage
 
 ### 🌟 Microsoft Learn MCP Server
 
@@ -107,11 +48,93 @@ For more information, setup instructions for other dev clients, and to post comm
 
 | Resources          | Links                             | Description        |
 |:-------------------|:----------------------------------|:-------------------|
-| Ignite 2025 Next Steps | [https://aka.ms/Ignite25-Next-Steps](https://aka.ms/Ignite25-Next-Steps?ocid=ignite25_nextsteps_cnl) | Links to all repos for AI Tour 26 Sessions |
-| Azure AI Foundry Community Discord | [![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://discord.com/invite/ByRwuEEgH4)| Connect with the Azure AI Foundry Community! |
-| Learn at Ignite | [https://aka.ms/LearnAtIgnite](https://aka.ms/LearnAtIgnite?ocid=ignite25_nextsteps_github_cnl) | Continue learning on Microsoft Learn |
+| **Lab Instructions** | [Lab Exercises](./lab/instructions/) | Step-by-step hands-on lab exercises |
+| **Sample Data** | [Data Files](./data/) | NoSQL, relational, and streaming sample datasets |
+| **Notebooks** | [PySpark Notebooks](./src/notebooks/) | ML models for personalization and reverse ETL |
+| **Source Code** | [Code Samples](./src/) | C# streaming applications and data loaders |
+| Ignite 2025 Next Steps | [https://aka.ms/Ignite25-Next-Steps](https://aka.ms/Ignite25-Next-Steps?ocid=ignite25_nextsteps_cnl) | Links to all repos for Ignite 25 Sessions |
+| Microsoft Fabric Community | [https://community.fabric.microsoft.com/](https://community.fabric.microsoft.com/) | Connect with the Microsoft Fabric Community! |
+| Learn Microsoft Fabric | [https://learn.microsoft.com/fabric/](https://learn.microsoft.com/fabric/) | Comprehensive Fabric documentation and tutorials |
+| Cosmos DB in Fabric | [https://learn.microsoft.com/fabric/database/cosmos-db/](https://learn.microsoft.com/fabric/database/cosmos-db/) | Cosmos DB integration with Microsoft Fabric |
+
+## 🏗️ Lab Architecture
+
+This lab implements a modern real-time analytics architecture using Microsoft Fabric:
+
+```mermaid
+graph TB
+    A[POS Systems] --> B[Eventstream]
+    B --> C[Eventhouse/KQL]
+    B --> D[Data Warehouse]
+    
+    E[Customer Data] --> F[Cosmos DB]
+    F --> G[OneLake Mirror]
+    G --> H[Cross-DB Analytics]
+    
+    D --> I[Reverse ETL]
+    I --> F
+    
+    F --> J[ML Notebooks]
+    J --> K[Personalization Model]
+    K --> F
+    
+    C --> L[Real-time Dashboard]
+    D --> M[BI Reports]
+```
+
+### 🔄 Data Flow Overview
+
+1. **Operational Layer**: Cosmos DB stores customer profiles and transaction data
+2. **Streaming Layer**: Eventstreams capture real-time POS transactions  
+3. **Analytics Layer**: Data Warehouse provides structured analytics storage
+4. **Intelligence Layer**: ML notebooks generate personalized recommendations
+5. **Reverse ETL**: Analytics insights flow back to operational systems
+
+## 📋 Lab Exercises
+
+This hands-on lab consists of 5 progressive exercises:
+
+| Exercise | Focus Area | Duration | Key Technologies |
+|:---------|:-----------|:---------|:-----------------|
+| **[Exercise 1](./lab/instructions/exercise-1.md)** | Cosmos DB Setup | 15 min | Cosmos DB, NoSQL containers |
+| **[Exercise 2](./lab/instructions/exercise-2.md)** | Cross-Database Analytics | 20 min | SQL Endpoint, OneLake mirroring |
+| **[Exercise 3](./lab/instructions/exercise-3.md)** | Real-Time Streaming | 25 min | Eventstreams, KQL, Eventhouse |
+| **[Exercise 4](./lab/instructions/exercise-4.md)** | Reverse ETL & ML | 30 min | Data Warehouse, PySpark, ML models |
+| **[Exercise 5](./lab/instructions/exercise-5.md)** | Advanced Analytics | 20 min | Advanced KQL, Data relationships |
+
+**Total Lab Time**: ~2 hours
+
+### 🎯 Prerequisites
+
+- Access to Microsoft Fabric workspace with appropriate permissions
+- Basic familiarity with SQL, NoSQL databases, and data analytics concepts
+- Understanding of JSON data structures and REST APIs
+
+## 🚀 Getting Started
+
+1. **Clone this repository** to your local development environment
+2. **Access Microsoft Fabric** and create a new workspace for this lab
+3. **Start with Exercise 1** by following the [Lab Instructions](./lab/instructions/)
+4. **Use the provided sample data** from the [data](./data/) folder
+5. **Deploy notebooks and code** from the [src](./src/) folder as needed
+
+### 🗂️ Repository Structure
+
+```
+├── 📁 data/                          # Sample datasets
+│   ├── 📁 nosql/                     # Customer data for Cosmos DB
+│   ├── 📁 relational/                # Dimensional data for warehouse
+│   └── 📁 streaming/                 # Real-time transaction generators
+├── 📁 lab/                           # Lab exercise instructions
+│   └── 📁 instructions/              # Step-by-step exercise guides
+├── 📁 src/                           # Source code and notebooks
+│   ├── 📁 notebooks/                 # PySpark ML notebooks
+│   └── 📁 warehouse_setup/           # C# data loading utilities
+└── 📁 docs/                          # Additional documentation
+```
 
 ## Content Owners
+
 
 <!-- TODO: Add yourself as a content owner
 1. Change the src in the image tag to {your github url}.png
@@ -120,19 +143,19 @@ For more information, setup instructions for other dev clients, and to post comm
 
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE"
+    <td align="center"><a href="http://github.com/paladique">
+        <img src="https://github.com/paladique.png" width="100px;" alt="Jasmine Greenaway"
 "/><br />
-        <sub><b> INSERT NAME HERE
+        <sub><b>Jasmine Greenaway
 </b></sub></a><br />
             <a href="https://github.com/mikekinsman" title="talk">📢</a> 
     </td>
-    <td align="center"><a href="http://github.com/mikekinsman">
-        <img src="https://github.com/mikekinsman.png" width="100px;" alt="INSERT NAME HERE
+    <td align="center"><a href="http://github.com/jcardif">
+        <img src="https://github.com/jcardif.png" width="100px;" alt="Josh Ndemenge
 "/><br />
-        <sub><b>INSERT NAME HERE
+        <sub><b>Josh Ndemenge
 </b></sub></a><br />
-            <a href="https://github.com/mikekinsman" title="talk">📢</a> 
+            <a href="https://github.com/jcardif" title="talk">📢</a> 
     </td>
 </tr></table>
 
