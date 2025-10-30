@@ -38,9 +38,11 @@ using Microsoft.Data.SqlClient;
 using Microsoft.Fabric.Api;
 using Microsoft.Fabric.Api.Core.Models;
 using Microsoft.Fabric.Api.Warehouse.Models;
+using Microsoft.Fabric.Api.Lakehouse.Models;
 using Microsoft.Extensions.Logging;
 
 const string WarehouseName = "fc_commerce_wh";
+const string LakehouseName = "fc_commerce_lh";
 
 using var loggerFactory = LoggerFactory.Create(builder =>
 {
@@ -78,6 +80,28 @@ else
 {
     logger.LogInformation("Successfully retrieved workspace {WorkspaceName} with Id {WorkspaceId}", WorkspaceName, workspace.Id);
 }
+
+
+Lakehouse? lakehouse = null;
+try
+{
+    logger.LogInformation("Attempting lakehouse creation for {LakehouseName} in workspace {WorkspaceId}", LakehouseName, workspace.Id);
+    var lakehouseCreationResponse = await fabricClient.Lakehouse.Items.CreateLakehouseAsync(workspace.Id, new CreateLakehouseRequest(LakehouseName));
+    lakehouse = lakehouseCreationResponse.Value;
+    logger.LogInformation("Lakehouse created: {LakehouseName} Id {LakehouseId}", LakehouseName, lakehouse.Id);
+}
+catch (Exception ex) when (ex.Message.Contains("Failure getting LRO status", StringComparison.OrdinalIgnoreCase))
+{
+    // Ignore the  Azure.RequestFailedException: Failure getting LRO status
+    // TODO: Investigate further why this exception occurs yet the warehouse is created successfully.
+    // Try to retrieve the lakehouse that was likely created despite the exception
+    logger.LogWarning(ex, "LRO status failure while creating lakehouse {LakehouseName}; attempting lookup", LakehouseName);
+    lakehouse = await fabricClient.Lakehouse.Items.ListLakehousesAsync(workspace.Id)
+        .FirstOrDefaultAsync(w => w.DisplayName == LakehouseName);
+    if (lakehouse is not null)
+        logger.LogInformation("Recovered lakehouse after LRO issue: {LakehouseName} Id {LakehouseId}", LakehouseName, lakehouse.Id);
+}
+
 
 
 Warehouse? warehouse = null;
@@ -133,6 +157,31 @@ if (warehouse is null)
 }
 
 logger.LogInformation("Using warehouse {WarehouseName} with Id {WarehouseId}", WarehouseName, warehouse.Id);
+
+// Create a TXT file with all the important IDs
+var idsFilePath = Path.Combine(Directory.GetCurrentDirectory(), "fabric-guids.txt");
+var idsContent = new StringBuilder();
+idsContent.AppendLine("Microsoft Fabric Resource IDs");
+idsContent.AppendLine("Generated on: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+idsContent.AppendLine("=====================================");
+idsContent.AppendLine();
+idsContent.AppendLine($"Workspace Name: {WorkspaceName}");
+idsContent.AppendLine($"Workspace ID: {workspace.Id}");
+idsContent.AppendLine();
+if (lakehouse?.Id is not null)
+{
+    idsContent.AppendLine($"Lakehouse Name: {LakehouseName}");
+    idsContent.AppendLine($"Lakehouse ID: {lakehouse.Id}");
+    idsContent.AppendLine();
+}
+idsContent.AppendLine($"Warehouse Name: {WarehouseName}");
+idsContent.AppendLine($"Warehouse ID: {warehouse.Id}");
+idsContent.AppendLine();
+idsContent.AppendLine("=====================================");
+idsContent.AppendLine("Use these IDs for connecting to your Fabric resources");
+
+await File.WriteAllTextAsync(idsFilePath, idsContent.ToString());
+logger.LogInformation("Created IDs file at: {IdsFilePath}", idsFilePath);
 
 
 var warehouseConnectionString = $"Data Source={warehouse.Properties.ConnectionString},1433;Initial Catalog={WarehouseName};Encrypt=True;TrustServerCertificate=False";

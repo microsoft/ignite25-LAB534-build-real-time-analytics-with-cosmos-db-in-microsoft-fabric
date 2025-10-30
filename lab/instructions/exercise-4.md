@@ -6,7 +6,6 @@ by the end of this exercise, you'll be able to:
 
 - Create a Dataflow Gen2 to extract and transform data
 - Perform Reverse ETL to update user profiles in Cosmos DB
-- Build a personalization model in a Fabric notebook
 
 ## Create Data Warehouse Views
 
@@ -36,7 +35,7 @@ FROM dbo.FactSales;*+++
 
   ![Screenshot showing creating dimensional views in data warehouse](media/create-dimensional-views.png)
 
-## Create Dataflow Gen2
+## Perform Transform and Load with Fabric Notebooks
 
 1. Browse to the Fabric workspace you created in the previous steps by selecting it from the left navigation pane if it is already open, or selecting **Workspaces** on the left navigation pane and then selecting it.
 
@@ -190,6 +189,6 @@ in v*+++
 
   ![Screenshot of saving and running dataflow](media/dataflow-save-and-run.png)
 
-1. Check the recent runs pane to monitor the progress of the dataflow run. Once it shows as successful, you have successfully extracted, transformed, and loaded data from the Eventhouse to the Data Warehouse using Dataflow Gen2.
+![Screenshot showing the uploaded notebook in Fabric](media/uploaded-notebook.png)
 
-## Reverse ETL to Cosmos DB
+1. Once the notebook has been uploaded, it will appear in the workspace content list. Select the +++*transform_transactions.ipynb*+++ notebook to open it.
