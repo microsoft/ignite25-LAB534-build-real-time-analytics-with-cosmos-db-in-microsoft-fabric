@@ -27,16 +27,9 @@ On your virtual machine, you will find the lab repo pre-cloned on the desktop un
 
 1. Right-click on the **lab-534** folder on the desktop and select **Open in Terminal**.
 
-1. Run the following command to authenticate to Microsft Fabric using Microsoft Entra Id:
+1. Run the following command to authenticate to Microsoft Fabric using Microsoft Entra Id:
 
-    +++*az login*+++
-
-    This will open a new browser window where you can sign in with the following credentials:
-
-    - **Email**: +++@lab.CloudPortalCredential(User1).Username+++
-    - **Password**: +++@lab.CloudPortalCredential(User1).Password+++
-
-    Once you have signed in, close the browser window and return to the terminal and confirm that you are successfully authenticated.
+    +++*az login --user @lab.CloudPortalCredential(User1).Username --password @lab.CloudPortalCredential(User1).Password*+++
 
 1. In the same terminal window, run the following command to set a new environment variable for your Fabric workspace name:
 
@@ -51,7 +44,7 @@ On your virtual machine, you will find the lab repo pre-cloned on the desktop un
     > [!TIP]
     > Do not close the terminal windows even after completion. You will use this terminal again in later exercises to avoid setting up the environment variable again.
 
-1. Once the script has completed, navigate back to the Fabric Workspace in the web browser and inside the workspace, notice that a new Fabric Data Warehouse named *fc_commerce_wh* has been created. Select it to open.
+1. Once the script has completed, navigate back to the Fabric Workspace in the web browser and inside the workspace, notice that two new items have been created: a Fabric Data Warehouse **fc_commerce_wh** and a Fabric Lakehouse **fc_commerce_lh**. Select the **fc_commerce_wh** to open.
 
 1. On the left explorer pane, expand **dbo > Tables** to see the list of tables that have been created and loaded with data. Select any table to preview the data.
 
