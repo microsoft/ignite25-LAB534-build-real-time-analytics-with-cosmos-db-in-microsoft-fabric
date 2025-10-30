@@ -96,11 +96,12 @@ This hands-on lab consists of 5 progressive exercises:
 
 | Exercise | Focus Area | Duration | Key Technologies |
 |:---------|:-----------|:---------|:-----------------|
-| **[Exercise 1](./lab/instructions/exercise-1.md)** | Cosmos DB Setup | 15 min | Cosmos DB, NoSQL containers |
+|**[Fabric Environment Setup](./lab/instructions/fabric-environment-setup.md)**| Fabric Environment Setup | 10 min | Terminal, Microsoft Fabric |
+| **[Exercise 1](./lab/instructions/exercise-1.md)** | Provisioning Cosmos DB in Fabric  | 15 min | Cosmos DB, NoSQL containers |
 | **[Exercise 2](./lab/instructions/exercise-2.md)** | Cross-Database Analytics | 20 min | SQL Endpoint, OneLake mirroring |
 | **[Exercise 3](./lab/instructions/exercise-3.md)** | Real-Time Streaming | 25 min | Eventstreams, KQL, Eventhouse |
-| **[Exercise 4](./lab/instructions/exercise-4.md)** | Reverse ETL & ML | 30 min | Data Warehouse, PySpark, ML models |
-| **[Exercise 5](./lab/instructions/exercise-5.md)** | Advanced Analytics | 20 min | Advanced KQL, Data relationships |
+| **[Exercise 4](./lab/instructions/exercise-4.md)** | Reverse ETL & ML | 30 min | Data Warehouse, PySpark, Fabric Notebooks |
+| **[Exercise 5](./lab/instructions/exercise-5.md)** | Serve Personalized Recommendations from Cosmos DB | 20 min | C#, Cosmos DB in Fabric |
 
 **Total Lab Time**: ~2 hours
 
