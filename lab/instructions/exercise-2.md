@@ -88,4 +88,3 @@ By the end of this exercise, you'll be able to:
 
     ![Screenshot showing the lakehouse table shortcuts created](media/lakehouse-table-shortcuts-created.png)
 
-

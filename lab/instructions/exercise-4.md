@@ -1,4 +1,5 @@
 # Implement Reverse ETL and Build Personalization Model
+
 In this exercise, you will create a Dataflow Gen2 to extract and transform data from the Eventhouse, update the user profiles in Cosmos DB, and then use that data to build a personalization model in a notebook.
 
 by the end of this exercise, you'll be able to:
@@ -6,6 +7,7 @@ by the end of this exercise, you'll be able to:
 - Perform Reverse ETL to update user profiles in Cosmos DB
 
 ## Create Data Warehouse Views
+
 1. In your Fabric workspace, navigate to the Data Warehouse where you want to create views.
 1. Create a new SQL query by selecting the **New SQL Query** button in the warehouse page.
 
@@ -30,7 +32,7 @@ FROM dbo.FactSales;*+++
 
 1. Select **Run** to execute the query and create the views in the warehouse.
 
-![Screenshot showing creating dimensional views in data warehouse](media/create-dimensional-views.png)
+  ![Screenshot showing creating dimensional views in data warehouse](media/create-dimensional-views.png)
 
 
 ## Perform Transform and Load with Fabric Notebooks
