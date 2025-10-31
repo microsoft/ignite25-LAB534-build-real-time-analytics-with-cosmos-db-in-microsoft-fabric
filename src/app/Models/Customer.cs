@@ -26,7 +26,7 @@ public class Customer
     public CustomerPreferences? Preferences { get; set; }
 
     [JsonPropertyName("recommendations")]
-    public List<RecommendationGroup>? Recommendations { get; set; }
+    public List<MenuItem>? Recommendations { get; set; }
 
     [JsonPropertyName("registeredAt")]
     public DateTime RegisteredAt { get; set; }

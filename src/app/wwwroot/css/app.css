@@ -39,6 +39,21 @@ body {
     background: #e9ecef;
 }
 
+.recommendation-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.2s ease;
+}
+
+.recommendation-card:hover {
+    background: #ffffff;
+    border-color: #4a90e2;
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.15);
+    transform: translateY(-1px);
+}
+
 .badge-custom {
     background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
     color: white;

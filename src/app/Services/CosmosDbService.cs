@@ -128,7 +128,7 @@ public class CosmosDbService : ICustomerService, IDisposable
     {
         try
         {
-            var query = new QueryDefinition("SELECT * FROM c");
+            var query = new QueryDefinition("SELECT * FROM c where c.recommendations != null");
             var customers = new List<Customer>();
             
             using var iterator = _customersContainer.GetItemQueryIterator<Customer>(query);

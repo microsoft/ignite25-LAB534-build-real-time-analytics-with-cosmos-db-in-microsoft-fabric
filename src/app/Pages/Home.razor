@@ -10,7 +10,7 @@
             <div class="header-section text-center mb-4">
                 <h1 class="display-4 mb-2">
                     <i class="bi bi-cup-hot me-2"></i>
-                    Customer Insights Demo
+                    Fourth Coffee Customer Recommendations
                 </h1>
                 <p class="lead text-muted">
                     Explore personalized recommendations powered by Microsoft Fabric and Cosmos DB
@@ -209,31 +209,45 @@
                                         <div class="card-header">
                                             <h5 class="mb-0">
                                                 <i class="bi bi-stars me-2"></i>
-                                                Personalized Recommendations
+                                                Personalized Recommendations (@selectedCustomer.Recommendations.Count items)
                                             </h5>
                                         </div>
                                         <div class="card-body">
                                             <div class="row g-3">
-                                                @foreach (var recommendationGroup in selectedCustomer.Recommendations.Take(3))
+                                                @foreach (var menuItem in selectedCustomer.Recommendations.Take(6))
                                                 {
-                                                    @if (recommendationGroup.MenuItems?.Any() == true)
-                                                    {
-                                                        @foreach (var menuItem in recommendationGroup.MenuItems.Take(2))
-                                                        {
-                                                            <div class="col-md-6 col-xl-4">
-                                                                <div class="recommendation-card">
-                                                                    <div class="d-flex justify-content-between align-items-start mb-2">
-                                                                        <h6 class="mb-0">@menuItem.Name</h6>
-                                                                        <span class="badge bg-primary rounded-pill">
-                                                                            @((menuItem.Score * 100).ToString("F0"))%
-                                                                        </span>
-                                                                    </div>
-                                                                    <p class="text-muted small mb-0">@menuItem.Reason</p>
-                                                                </div>
+                                                    <div class="col-md-6 col-xl-4">
+                                                        <div class="recommendation-card">
+                                                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                                                <h6 class="mb-0">@menuItem.Name</h6>
+                                                                <span class="badge bg-primary rounded-pill">
+                                                                    @((menuItem.Score * 100).ToString("F0"))%
+                                                                </span>
                                                             </div>
-                                                        }
-                                                    }
+                                                            <p class="text-muted small mb-1">@menuItem.Reason</p>
+                                                            <small class="text-muted">Item ID: @menuItem.MenuItemId</small>
+                                                        </div>
+                                                    </div>
                                                 }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="mb-0">
+                                                <i class="bi bi-stars me-2"></i>
+                                                Personalized Recommendations
+                                            </h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="alert alert-info" role="alert">
+                                                <i class="bi bi-info-circle me-2"></i>
+                                                No recommendations available for this customer.
                                             </div>
                                         </div>
                                     </div>
