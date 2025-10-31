@@ -1,0 +1,38 @@
+﻿@inherits LayoutComponentBase
+
+<div class="app-frame">
+    <header class="app-header">
+        <div class="shell header-shell">
+            <div class="brand">
+                <span class="brand-mark" aria-hidden="true">
+                    <i class="bi bi-cup-hot"></i>
+                </span>
+                <div class="brand-copy">
+                    <p class="brand-title">Fourth Coffee Customer Studio</p>
+                    <p class="brand-subtitle">Powered by CosmosDB in Microsoft Fabric</p>
+                </div>
+            </div>
+            <div class="header-meta-group">
+                <span class="header-tag">Lab 534</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="app-main">
+        <div class="shell">
+            @Body
+        </div>
+    </main>
+
+    <footer class="app-footer">
+        <div class="shell">
+            <small>&copy; @DateTime.UtcNow. Microsoft Ignite 2025</small>
+        </div>
+    </footer>
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>

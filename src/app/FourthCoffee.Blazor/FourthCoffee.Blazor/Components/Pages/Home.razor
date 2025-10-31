@@ -1,0 +1,246 @@
+﻿@page "/"
+@rendermode InteractiveServer
+
+<PageTitle>Fourth Coffee Customer Recommendations</PageTitle>
+
+<div class="page-stack">
+    <section class="surface hero-panel">
+        <div class="hero-text">
+            <span class="eyebrow">
+                <i class="bi bi-stars me-2"></i>
+                Personalized intelligence
+            </span>
+            <h1 class="hero-title">Fourth Coffee customer recommendations</h1>
+            <p class="hero-description">
+                Explore curated experiences shaped by Microsoft Fabric analytics and Azure Cosmos DB.
+            </p>
+        </div>
+        <div class="hero-meta">
+            <div class="data-source-chip @(UsesLocalData ? "chip-warm" : "chip-success")" role="status" aria-live="polite">
+                <span class="chip-icon">
+                    <i class="bi bi-hdd-network"></i>
+                </span>
+                <div class="chip-content">
+                    <span class="chip-label">Data source</span>
+                    <span class="chip-value">@(UsesLocalData ? "Local JSON sample" : "Azure Cosmos DB")</span>
+                    <span class="chip-caption">
+                        @(UsesLocalData ? "Using curated lab data for a guided tour." : "Connected to a live, cloud-backed data store.")
+                    </span>
+                </div>
+            </div>
+            <div class="hero-selector">
+                <label for="customerSelect" class="input-label">Select a customer</label>
+                <div class="hero-selector-inputs">
+                    <select id="customerSelect" class="modern-select" @onchange="OnCustomerSelected" value="@(selectedCustomer?.Id ?? string.Empty)" aria-describedby="customerSelect-help">
+                        <option value="">Choose a customer...</option>
+                        @if (customers != null)
+                        {
+                            @foreach (var customer in customers)
+                            {
+                                <option value="@customer.Id">@customer.Name</option>
+                            }
+                        }
+                    </select>
+                    <button class="button-ghost" type="button" @onclick="LoadRandomCustomers" disabled="@isLoading">
+                        <i class="bi bi-arrow-clockwise"></i>
+                        Refresh list
+                    </button>
+                </div>
+                <small id="customerSelect-help" class="muted-text">A selection reveals personalized profile insights and offers.</small>
+            </div>
+        </div>
+    </section>
+
+    @if (isLoading)
+    {
+        <section class="surface state-card" role="status" aria-live="polite">
+            <div class="state-icon" aria-hidden="true">
+                <span class="loader"></span>
+            </div>
+            <h3>Loading customers</h3>
+            <p class="muted-text">Retrieving the latest customer insights...</p>
+        </section>
+    }
+    else if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <section class="surface state-card state-card-warning" role="alert">
+            <div class="state-icon" aria-hidden="true">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+            </div>
+            <h3>We couldn't load customers</h3>
+            <p>@errorMessage</p>
+        </section>
+    }
+    else
+    {
+        @if (selectedCustomer == null)
+        {
+            <section class="surface state-card">
+                <div class="state-icon" aria-hidden="true">
+                    <i class="bi bi-search"></i>
+                </div>
+                <h3>Pick a customer to begin</h3>
+                <p class="muted-text">Use the selector above to explore a guest's profile, preferences, and curated menu recommendations.</p>
+            </section>
+        }
+        else
+        {
+            <section class="grid-two">
+                <article class="surface card-pane">
+                    <header class="card-header">
+                        <span class="card-eyebrow"><i class="bi bi-person-vcard"></i> Customer profile</span>
+                        <h3>@selectedCustomer.Name</h3>
+                    </header>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <span class="info-label">Email</span>
+                            <span class="info-value">@selectedCustomer.Email</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Loyalty points</span>
+                            <span class="metric-pill"><i class="bi bi-stars"></i>@selectedCustomer.LoyaltyPoints</span>
+                        </div>
+                        @if (selectedCustomer.LastPurchaseDate != null)
+                        {
+                            <div class="info-item">
+                                <span class="info-label">Last purchase</span>
+                                <span class="info-value">@selectedCustomer.LastPurchaseDate?.ToString("MMM dd, yyyy")</span>
+                            </div>
+                        }
+                    </div>
+                </article>
+
+                <article class="surface card-pane">
+                    <header class="card-header">
+                        <span class="card-eyebrow"><i class="bi bi-heart"></i> Experience preferences</span>
+                        <h3>Personalized signals</h3>
+                    </header>
+                    @if (selectedCustomer.Preferences != null)
+                    {
+                        var preferences = selectedCustomer.Preferences;
+                        <div class="info-list">
+                            @if (!string.IsNullOrWhiteSpace(preferences.FavoriteDrink))
+                            {
+                                <div class="info-item">
+                                    <span class="info-label">Favorite drink</span>
+                                    <span class="info-value highlight"><i class="bi bi-cup-hot"></i>@preferences.FavoriteDrink</span>
+                                </div>
+                            }
+                            @if (!string.IsNullOrWhiteSpace(preferences.Airport)) 
+                            {
+                                <div class="info-item">
+                                    <span class="info-label">Preferred airport</span>
+                                    <span class="info-value"><i class="bi bi-airplane"></i>@preferences.Airport</span>
+                                </div>
+                            }
+                            @if (preferences.DietaryRestrictions?.Any() == true)
+                            {
+                                <div class="info-item">
+                                    <span class="info-label">Dietary considerations</span>
+                                    <div class="chip-group">
+                                        @foreach (var restriction in preferences.DietaryRestrictions)
+                                        {
+                                            <span class="chip chip-active">@restriction</span>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                            @if (preferences.NotificationPreferences != null)
+                            {
+                                <div class="info-item">
+                                    <span class="info-label">Notifications</span>
+                                    <div class="chip-group">
+                                        <span class="chip @(preferences.NotificationPreferences.Email ? "chip-active" : "chip-muted")">Email</span>
+                                        <span class="chip @(preferences.NotificationPreferences.Push ? "chip-active" : "chip-muted")">Push</span>
+                                    </div>
+                                </div>
+                            }
+                            @if (string.IsNullOrWhiteSpace(preferences.FavoriteDrink) &&
+                                            string.IsNullOrWhiteSpace(preferences.Airport) &&
+                                            (preferences.DietaryRestrictions?.Any() != true) &&
+                                            preferences.NotificationPreferences == null)
+                            {
+                                <p class="empty-state">No preference details captured yet.</p>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <p class="empty-state">No preference details captured yet.</p>
+                    }
+                </article>
+            </section>
+
+            <section class="surface card-pane">
+                <header class="card-header">
+                    <span class="card-eyebrow"><i class="bi bi-stars"></i> Recommendations</span>
+                    <h3>Menu moments tailored to @SelectedCustomerFirstName</h3>
+                    <p class="muted-text">Top picks are ordered by confidence score to keep the experience focused.</p>
+                </header>
+
+                @if (HasRecommendationGroups)
+                {
+                    <div class="recommendation-group-stack">
+                        @foreach (var group in GroupedRecommendations)
+                        {
+                            <section class="recommendation-group">
+                                <header class="recommendation-group-header">
+                                    <h4>@group.DateLabel</h4>
+                                </header>
+
+                                @foreach (var recommendation in group.Recommendations)
+                                {
+                                    <article class="recommendation-collection">
+                                        <div class="recommendation-meta">
+                                            @if (GetGeneratedLabel(recommendation) is { Length: > 0 } generatedLabel)
+                                            {
+                                                <span class="chip chip-muted">@generatedLabel</span>
+                                            }
+                                            @if (GetSourceLabel(recommendation) is { Length: > 0 } sourceLabel)
+                                            {
+                                                <span class="chip chip-outline">@sourceLabel</span>
+                                            }
+                                            @if (GetExpiresLabel(recommendation) is { Length: > 0 } expiresLabel)
+                                            {
+                                                <span class="chip chip-muted">@expiresLabel</span>
+                                            }
+                                        </div>
+
+                                        @if (recommendation.MenuItems?.Any() == true)
+                                        {
+                                            <div class="recommendation-grid">
+                                                @foreach (var menuItem in recommendation.MenuItems!)
+                                                {
+                                                    <article class="recommendation-card">
+                                                        <div class="recommendation-card-header">
+                                                            <h4>@menuItem.Name</h4>
+                                                            <span class="score-pill">@((menuItem.Score * 100).ToString("F0"))%</span>
+                                                        </div>
+                                                        <p class="muted-text">@menuItem.Reason</p>
+                                                        <span class="chip chip-outline">Item ID: @menuItem.MenuItemId</span>
+                                                    </article>
+                                                }
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <p class="muted-text">No menu items were included for this recommendation.</p>
+                                        }
+                                    </article>
+                                }
+                            </section>
+                        }
+                    </div>
+                }
+                else
+                {
+                    <div class="empty-state">
+                        <i class="bi bi-info-circle"></i>
+                        <p>No recommendations are available for this customer yet.</p>
+                    </div>
+                }
+            </section>
+        }
+    }
+</div>
+
