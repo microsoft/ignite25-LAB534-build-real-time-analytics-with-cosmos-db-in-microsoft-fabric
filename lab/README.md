@@ -59,11 +59,11 @@ Select **Next >** to go to set up your Fabric Environment.
 
 ===
 
-!INSTRUCTIONS [Exercise 3: Real-Time Streaming and Visualization of POS Events](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/refs/heads/main/lab/instructions/exercise-3.md)
+!INSTRUCTIONS [Exercise 3: Real-Time Streaming of POS Events](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/refs/heads/main/lab/instructions/exercise-3.md)
 
 ===
 
-!INSTRUCTIONS [Exercise 4: Build Personalization Model and Implement Reverse ETL](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/refs/heads/main/lab/instructions/exercise-4.md)
+!INSTRUCTIONS [Exercise 4: Implement Reverse ETL and Build Personalization Model](https://raw.githubusercontent.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric/refs/heads/main/lab/instructions/exercise-4.md)
 
 ===
 

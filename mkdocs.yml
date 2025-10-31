@@ -19,15 +19,16 @@
 
 
 # Project information .........................................
-site_name: "Session Title"
+site_name: "LAB534: Build Real-Time Analytics with Cosmos DB in Microsoft Fabric"
 site_url: 
-site_author: Content Creator
+site_author: Microsoft Ignite 2025
 site_description: >-
-  Demo mkdocs for Ignite Repos
+  Hands-on lab demonstrating real-time analytics, streaming data pipelines, 
+  cross-database analytics, and personalized recommendations using Cosmos DB in Microsoft Fabric.
 
 # Repository ..................................................
-repo_name: microsoft/Ignite25-Repo-Template
-repo_url: https://github.com/microsoft/Ignite25-Repo-Template
+repo_name: microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric
+repo_url: https://github.com/microsoft/ignite25-LAB534-build-real-time-analytics-with-cosmos-db-in-microsoft-fabric
 
 # Copyright ...................................................
 copyright: >
