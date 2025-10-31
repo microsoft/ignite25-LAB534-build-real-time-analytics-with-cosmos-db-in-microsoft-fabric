@@ -1,19 +1,13 @@
 ﻿@page "/"
 @rendermode InteractiveServer
+@implements IDisposable
 
 <PageTitle>Fourth Coffee Customer Recommendations</PageTitle>
 
 <div class="page-stack">
     <section class="surface hero-panel">
         <div class="hero-text">
-            <span class="eyebrow">
-                <i class="bi bi-stars me-2"></i>
-                Personalized intelligence
-            </span>
-            <h1 class="hero-title">Fourth Coffee customer recommendations</h1>
-            <p class="hero-description">
-                Explore curated experiences shaped by Microsoft Fabric analytics and Azure Cosmos DB.
-            </p>
+            <h2 class="hero-title">Fourth Coffee customer recommendations</h2>
         </div>
         <div class="hero-meta">
             <div class="data-source-chip @(UsesLocalData ? "chip-warm" : "chip-success")" role="status" aria-live="polite">
@@ -29,24 +23,81 @@
                 </div>
             </div>
             <div class="hero-selector">
-                <label for="customerSelect" class="input-label">Select a customer</label>
+                <label for="customerSearch" class="input-label">Find a customer</label>
                 <div class="hero-selector-inputs">
-                    <select id="customerSelect" class="modern-select" @onchange="OnCustomerSelected" value="@(selectedCustomer?.Id ?? string.Empty)" aria-describedby="customerSelect-help">
-                        <option value="">Choose a customer...</option>
-                        @if (customers != null)
-                        {
-                            @foreach (var customer in customers)
+                    <div class="customer-search">
+                        <div class="customer-search-control @(isCustomerDropdownOpen ? "is-open" : string.Empty)">
+                            <span class="customer-search-icon">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input
+                                id="customerSearch"
+                                type="search"
+                                class="customer-search-input"
+                                placeholder="Type a name or email..."
+                                value="@customerSearchText"
+                                @oninput="OnCustomerSearchInput"
+                                @onkeydown="OnCustomerSearchKeyDown"
+                                @onfocus="OpenCustomerDropdown"
+                                role="combobox"
+                                aria-autocomplete="list"
+                                aria-expanded="@isCustomerDropdownOpen"
+                                aria-controls="customerSearchList"
+                                aria-activedescendant="@GetActiveOptionId()"
+                                aria-describedby="customerSearch-help" />
+                            @if (!string.IsNullOrWhiteSpace(customerSearchText))
                             {
-                                <option value="@customer.Id">@customer.Name</option>
+                                <button type="button" class="customer-search-clear" @onclick="ClearCustomerSearch" aria-label="Clear customer search">
+                                    <i class="bi bi-x-lg"></i>
+                                </button>
                             }
+                            <button type="button" class="customer-search-toggle" @onclick="ToggleCustomerDropdown" aria-label="Toggle customer list">
+                                <i class="bi @(isCustomerDropdownOpen ? "bi-chevron-up" : "bi-chevron-down")"></i>
+                            </button>
+                        </div>
+                        @if (isCustomerDropdownOpen)
+                        {
+                            <div id="customerSearchList" class="customer-search-dropdown" role="listbox">
+                                @if (FilteredCustomers.Count > 0)
+                                {
+                                    @for (var i = 0; i < FilteredCustomers.Count; i++)
+                                    {
+                                        var customer = FilteredCustomers[i];
+                                        var optionId = GetCustomerOptionId(i);
+                                        var isSelected = selectedCustomer?.Id == customer.Id;
+                                        var isActive = highlightedCustomerIndex == i;
+
+                                        <button type="button"
+                                                id="@optionId"
+                                                class="customer-search-option @(isActive ? "is-active" : string.Empty) @(isSelected ? "is-selected" : string.Empty)"
+                                                role="option"
+                                                aria-selected="@isSelected"
+                                                @onclick="async () => await SelectCustomerAsync(customer.Id)"
+                                                @onmouseenter="() => highlightedCustomerIndex = i">
+                                            <span class="option-primary">@customer.Name</span>
+                                            @if (!string.IsNullOrWhiteSpace(customer.Email))
+                                            {
+                                                <span class="option-secondary">@customer.Email</span>
+                                            }
+                                        </button>
+                                    }
+                                }
+                                else
+                                {
+                                    <div class="customer-search-empty" role="status">
+                                        <i class="bi bi-info-circle"></i>
+                                        <span>No customers match the current search.</span>
+                                    </div>
+                                }
+                            </div>
                         }
-                    </select>
-                    <button class="button-ghost" type="button" @onclick="LoadRandomCustomers" disabled="@isLoading">
+                    </div>
+                    <button class="button-ghost" type="button" @onclick="LoadCustomersAsync" disabled="@isLoading">
                         <i class="bi bi-arrow-clockwise"></i>
                         Refresh list
                     </button>
                 </div>
-                <small id="customerSelect-help" class="muted-text">A selection reveals personalized profile insights and offers.</small>
+                <small id="customerSearch-help" class="muted-text">Search to reveal personalized profile insights and offers.</small>
             </div>
         </div>
     </section>
@@ -174,8 +225,7 @@
             <section class="surface card-pane">
                 <header class="card-header">
                     <span class="card-eyebrow"><i class="bi bi-stars"></i> Recommendations</span>
-                    <h3>Menu moments tailored to @SelectedCustomerFirstName</h3>
-                    <p class="muted-text">Top picks are ordered by confidence score to keep the experience focused.</p>
+                    <h3>Menu items tailored to @SelectedCustomerFirstName</h3>
                 </header>
 
                 @if (HasRecommendationGroups)

@@ -1,8 +1,14 @@
-﻿using FourthCoffee.Blazor.Interfaces;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
+using System.Threading;
+using System.Threading.Tasks;
+using FourthCoffee.Blazor.Interfaces;
 using FourthCoffee.Blazor.Models;
 using Microsoft.Extensions.Logging;
-using System.Diagnostics.CodeAnalysis;
-using System.Text.Json;
 
 namespace FourthCoffee.Blazor.Services
 {
@@ -58,16 +64,64 @@ namespace FourthCoffee.Blazor.Services
             return _customers;
         }
 
-        public async Task<List<Customer>> GetRandomCustomersAsync(int count = 5)
+        public async Task<List<Customer>> GetCustomersAsync(int maxCount = 25, CancellationToken cancellationToken = default)
         {
+            if (maxCount <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(maxCount), "The maximum number of customers must be greater than zero.");
+            }
+
             var customers = await LoadCustomersAsync();
 
-            if (!customers.Any())
-                return new List<Customer>();
+            return customers
+                .Where(c => c.Recommendations?.Any() == true)
+                .OrderByDescending(c => c.LastPurchaseDate ?? DateTime.MinValue)
+                .ThenBy(c => c.Name ?? string.Empty)
+                .Take(maxCount)
+                .ToList();
+        }
 
-            // Get random customers
+        public async Task<List<Customer>> SearchCustomersAsync(string searchText, int maxResults = 25, CancellationToken cancellationToken = default)
+        {
+            if (string.IsNullOrWhiteSpace(searchText))
+            {
+                return new List<Customer>();
+            }
+
+            if (maxResults <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(maxResults), "The maximum number of customers must be greater than zero.");
+            }
+
+            var comparison = StringComparison.CurrentCultureIgnoreCase;
+            var normalizedSearch = searchText.Trim();
+            var customers = await LoadCustomersAsync();
+
+            return customers
+                .Where(c => c.Recommendations?.Any() == true)
+                .Where(c => (!string.IsNullOrWhiteSpace(c.Name) && c.Name.Contains(normalizedSearch, comparison)) ||
+                            (!string.IsNullOrWhiteSpace(c.Email) && c.Email.Contains(normalizedSearch, comparison)))
+                .OrderByDescending(c => c.LastPurchaseDate ?? DateTime.MinValue)
+                .ThenBy(c => c.Name ?? string.Empty)
+                .Take(maxResults)
+                .ToList();
+        }
+
+        public async Task<List<Customer>> GetRandomCustomersAsync(int count = 5)
+        {
+            var seedCount = Math.Max(count * 4, count);
+            var seededCustomers = await GetCustomersAsync(seedCount, CancellationToken.None);
+
+            if (seededCustomers.Count <= count)
+            {
+                return seededCustomers;
+            }
+
             var random = new Random();
-            return customers.OrderBy(x => random.Next()).Take(count).ToList();
+            return seededCustomers
+                .OrderBy(_ => random.Next())
+                .Take(count)
+                .ToList();
         }
 
         public async Task<Customer?> GetCustomerByIdAsync(string customerId)
