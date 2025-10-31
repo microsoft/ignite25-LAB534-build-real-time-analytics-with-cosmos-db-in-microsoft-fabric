@@ -476,19 +476,22 @@ namespace FourthCoffee.Blazor.Components.Pages
                 return Array.Empty<RecommendationGroup>();
             }
 
-            var topRecommendations = selectedCustomer.Recommendations
-                .OrderByDescending(rec => rec.GeneratedAt ?? DateTime.MinValue)
-                .ThenByDescending(rec => rec.Score)
-                .Take(MaxRecommendationsToDisplay)
-                .ToList();
+            // Create a single recommendation group from the flattened MenuItem list
+            var fakeRecommendation = new Recommendation
+            {
+                RecommendationId = $"rec-{selectedCustomer.Id}",
+                MenuItems = selectedCustomer.Recommendations,
+                Score = selectedCustomer.Recommendations.Average(r => r.Score),
+                GeneratedAt = DateTime.Now,
+                ExpiresAt = DateTime.Now.AddDays(7),
+                Source = "ai-personalization-engine"
+            };
 
-            return topRecommendations
-                .GroupBy(rec => rec.GeneratedAt?.Date)
-                .Select(group => new RecommendationGroup(
-                    group.Key,
-                    group.OrderByDescending(rec => rec.GeneratedAt ?? DateTime.MinValue).ToList()))
-                .OrderByDescending(group => group.Date ?? DateTime.MinValue)
-                .ToList();
+            var group = new RecommendationGroup(
+                DateTime.Now.Date,
+                new List<Recommendation> { fakeRecommendation });
+
+            return new List<RecommendationGroup> { group };
         }
 
         protected sealed record RecommendationGroup(DateTime? Date, IReadOnlyList<Recommendation> Recommendations)
