@@ -9,8 +9,14 @@ builder.Services.AddServerSideBlazor();
 // Configure HttpClient for server-side Blazor
 builder.Services.AddHttpClient();
 
+ var config = builder.Configuration
+    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
+    .AddEnvironmentVariables()
+    .Build();
+
 // Configure customer service - now we can use Azure CLI credentials!
-var cosmosEndpoint = "";
+var cosmosEndpoint = config["CosmosDb:Endpoint"];
 var databaseName = "fc_commerce_cosmos";
 var containerName = "customers";
 
