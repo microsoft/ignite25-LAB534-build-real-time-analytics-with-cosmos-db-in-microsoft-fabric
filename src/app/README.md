@@ -23,10 +23,7 @@ A **Blazor Server** application that demonstrates personalized customer recommen
 
 ## Quick Start
 
-### 1. Clone and Navigate
-```bash
-cd src/app
-```
+### 1. Clone Repository
 
 ### 2. Authenticate with Azure
 ```bash
@@ -34,32 +31,19 @@ az login
 ```
 
 ### 3. Configure Cosmos DB Connection
-Update the endpoint in `Program.cs`:
-```csharp
-builder.Services.AddSingleton<ICustomerService>(provider =>
-{
-    var endpointUri = "https://YOUR-FABRIC-COSMOS-ENDPOINT.ze6.sql.cosmos.fabric.microsoft.com:443/";
-    var databaseName = "fc_commerce_cosmos";
-    var containerName = "customers";
-    
-    try
-    {
-        return new CosmosDbService(endpointUri, databaseName, containerName);
-    }
-    catch
-    {
-        return new LocalJsonCustomerService("wwwroot/data/customers.json");
-    }
-});
-```
+1. Open this folder in your favorite IDE (e.g., Visual Studio Code).
+1. Set the Cosmos DB endpoint environment variable with your endpoint (you can find this in your Fabric workspace under the Cosmos DB connection details):
 
-### 4. Run the Application
 ```bash
-dotnet run
+$env:CosmosDb:Endpoint="https://YOUR-FABRIC-COSMOS-ENDPOINT.ze6.sql.cosmos.fabric.microsoft.com:443/"
 ```
 
-The app will start at `http://localhost:5000` (or as displayed in the console).
+1. Run the Application
+```bash
+dotnet run --project src/app/FourthCoffee.Blazor/FourthCoffee.Blazor.csproj
+```
 
+The app will start at `http://localhost:5108` (or as displayed in the console).
 
 ## 🧪 Lab Integration
 
