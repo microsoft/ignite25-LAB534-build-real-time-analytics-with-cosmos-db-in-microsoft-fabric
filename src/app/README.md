@@ -17,7 +17,99 @@ A simplified Blazor WebAssembly SPA that demonstrates personalized customer reco
 
 ## Setup Instructions
 
-### 1. Configure Cosmos DB Connection
+### Important: Microsoft Fabric Cosmos DB Considerations
+
+This application has been optimized for **Microsoft Fabric Cosmos DB**, which has some differences from regular Azure Cosmos DB:
+
+#### Key Differences:
+- ✅ **Connection Mode**: Uses Gateway mode (required for Fabric)
+- ✅ **Authentication**: Azure CLI credentials supported in Blazor Server
+- ⚠️ **Limitations**: Some SDK operations are not supported in Fabric
+- 🔧 **Error Handling**: Enhanced error messages for Fabric-specific issues
+
+#### Common Fabric Error:
+If you see: `"Operation Read on resource Address is not supported for Azure Cosmos DB database in Microsoft Fabric"`
+- This is a **Fabric limitation**, not a configuration issue
+- The app automatically handles this with appropriate error messaging
+- Consider using local JSON fallback for development if needed
+
+### Data Source Options
+
+The application supports two data sources and will automatically choose the appropriate one:
+
+#### 1. Microsoft Fabric Cosmos DB (Primary)
+When a valid Fabric Cosmos DB endpoint is provided, the application connects using Azure CLI credentials.
+
+#### 2. Local JSON File (Fallback)
+When no valid endpoint is configured, the application automatically falls back to using a local JSON file (`wwwroot/data/customers.json`) containing sample customer data.
+
+### Enhanced Logging
+
+The application provides detailed logging to help developers understand the data source being used:
+
+**Console Output Examples:**
+
+**Fallback Mode (Default):**
+```
+=== Customer Data Service Configuration ===
+🔄 FALLBACK MODE: Using local JSON file for customer data
+   Reason: Cosmos DB connection string not configured
+   Data source: /wwwroot/data/customers.json
+   **To use Cosmos DB: Update connection string in Program.cs
+
+**Testing the fail-fast behavior:**
+
+To test what happens when Cosmos DB connection fails, temporarily change the connection string in Program.cs to an invalid value:
+
+```csharp
+var cosmosConnectionString = "AccountEndpoint=https://invalid.documents.azure.com:443/;AccountKey=invalid;";
+```
+
+The application will fail immediately with detailed error messages, which is the intended behavior.
+===========================================
+
+🔄 Loading customer data from local JSON file...
+✅ Successfully loaded 500 customers from data/customers.json
+```
+
+**Cosmos DB Mode (Success):**
+```
+🌐 COSMOS DB MODE: Attempting to connect to Cosmos DB
+   Database: YourDatabase
+   Container: customers
+   Connection string: [CONFIGURED]
+   Note: App will fail if connection cannot be established
+🔄 Initializing Cosmos DB connection...
+✅ Cosmos DB client initialized successfully
+```
+
+**Cosmos DB Mode (Failure - App will crash):**
+```
+🌐 COSMOS DB MODE: Attempting to connect to Cosmos DB
+   Database: YourDatabase
+   Container: customers
+   Connection string: [CONFIGURED]
+   Note: App will fail if connection cannot be established
+🔄 Initializing Cosmos DB connection...
+❌ CRITICAL: Failed to initialize Cosmos DB client
+   Error: [Detailed error message]
+   Database: YourDatabase
+   Container: customers
+   Please check:
+   - Connection string is valid
+   - Database and container exist
+   - Network connectivity to Cosmos DB
+   - Account keys are not expired
+```
+
+**Important:** When a real Cosmos DB connection string is provided, the application will **fail immediately** if the connection cannot be established. This is intentional behavior to ensure developers know when their Cosmos DB configuration is incorrect.
+
+**UI Indicator:**
+The application header shows a badge indicating the current data source:
+- 🟡 **Local JSON File** - Using sample data from local file  
+- 🟢 **Azure Cosmos DB** - Connected to live database
+
+### 1. Configure Cosmos DB Connection (Optional)
 
 Update the connection details in `Program.cs`:
 
@@ -26,6 +118,11 @@ var cosmosConnectionString = "YOUR_COSMOS_DB_CONNECTION_STRING_HERE";
 var databaseName = "YOUR_DATABASE_NAME";
 var containerName = "customers";
 ```
+
+**Note**: The application will use the local JSON fallback if the connection string is:
+- Empty or null
+- Set to `"YOUR_COSMOS_DB_CONNECTION_STRING_HERE"` (default placeholder)
+- Starts with `"YOUR_"` (any placeholder value)
 
 You can find your Cosmos DB connection string in:
 - Azure Portal → Your Cosmos DB Account → Keys → Primary Connection String

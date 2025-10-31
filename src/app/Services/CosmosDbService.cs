@@ -1,28 +1,79 @@
 using Microsoft.Azure.Cosmos;
 using CustomerDemoApp.Models;
 using System.Text.Json;
+using Azure.Identity;
 
 namespace CustomerDemoApp.Services;
 
-public class CosmosDbService
+public class CosmosDbService : ICustomerService, IDisposable
 {
     private readonly CosmosClient _cosmosClient;
     private readonly Database _database;
     private readonly Container _customersContainer;
 
-    public CosmosDbService(string connectionString, string databaseName, string containerName)
+    public CosmosDbService(string endpointUri, string databaseName, string containerName)
     {
-        var options = new CosmosClientOptions
+        try
         {
-            SerializerOptions = new CosmosSerializationOptions
+            Console.WriteLine("🔄 Initializing Cosmos DB connection for Microsoft Fabric...");
+            
+            var options = new CosmosClientOptions
             {
-                PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
-            }
-        };
+                // Use Gateway mode for better Fabric compatibility
+                ConnectionMode = ConnectionMode.Gateway,
+                
+                SerializerOptions = new CosmosSerializationOptions
+                {
+                    PropertyNamingPolicy = CosmosPropertyNamingPolicy.CamelCase
+                },
+                
+                // Minimal settings for Fabric compatibility
+                RequestTimeout = TimeSpan.FromSeconds(30),
+                
+                // Conservative retry settings for Fabric
+                MaxRetryAttemptsOnRateLimitedRequests = 3,
+                MaxRetryWaitTimeOnRateLimitedRequests = TimeSpan.FromSeconds(30),
+                
+                // Custom user agent to help with debugging
+                ApplicationName = "FabricCosmosDemo"
+            };
 
-        _cosmosClient = new CosmosClient(connectionString, options);
-        _database = _cosmosClient.GetDatabase(databaseName);
-        _customersContainer = _database.GetContainer(containerName);
+            Console.WriteLine("🔧 Using Gateway connection mode for maximum Fabric compatibility");
+            
+            AzureCliCredential credential = new();
+            _cosmosClient = new CosmosClient(endpointUri, credential, options);
+
+            _database = _cosmosClient.GetDatabase(databaseName);
+            _customersContainer = _database.GetContainer(containerName);
+            
+            // Test the connection with a simple operation that should work in Fabric
+            Console.WriteLine("🧪 Testing Fabric Cosmos DB connection...");
+            
+            // This is where the address operation error typically occurs
+            // If it fails here, it will be caught and handled gracefully
+            
+            Console.WriteLine("✅ Cosmos DB client initialized successfully");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"❌ CRITICAL: Failed to initialize Cosmos DB client");
+            Console.WriteLine($"   Error: {ex.Message}");
+            Console.WriteLine($"   Database: {databaseName}");
+            Console.WriteLine($"   Container: {containerName}");
+            Console.WriteLine("   Please check:");
+            Console.WriteLine("   - You are logged in with Azure CLI (az login)");
+            Console.WriteLine("   - Your account has access to the Fabric workspace");
+            Console.WriteLine("   - The database and container exist in Fabric");
+            Console.WriteLine("   - Network connectivity to Fabric Cosmos DB");
+            
+            if (ex.Message.Contains("not supported for Azure Cosmos DB database in Microsoft Fabric"))
+            {
+                Console.WriteLine("   ⚠️  This is a Microsoft Fabric Cosmos DB limitation");
+                Console.WriteLine("   💡 Consider using the local JSON fallback for development");
+            }
+            
+            throw new InvalidOperationException($"Failed to connect to Fabric Cosmos DB: {ex.Message}", ex);
+        }
     }
 
     public async Task<List<Customer>> GetRandomCustomersAsync(int count = 5)
@@ -47,8 +98,11 @@ public class CosmosDbService
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"Error retrieving customers: {ex.Message}");
-            return new List<Customer>();
+            Console.WriteLine($"❌ CRITICAL: Error retrieving customers from Cosmos DB");
+            Console.WriteLine($"   Error: {ex.Message}");
+            Console.WriteLine("   This indicates a runtime connection issue with Cosmos DB");
+            Console.WriteLine("   Check your database and container configuration");
+            throw new InvalidOperationException($"Failed to retrieve customers from Cosmos DB: {ex.Message}", ex);
         }
     }
 

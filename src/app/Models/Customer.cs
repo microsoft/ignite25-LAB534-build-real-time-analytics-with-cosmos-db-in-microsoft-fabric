@@ -26,7 +26,7 @@ public class Customer
     public CustomerPreferences? Preferences { get; set; }
 
     [JsonPropertyName("recommendations")]
-    public List<Recommendation>? Recommendations { get; set; }
+    public List<RecommendationGroup>? Recommendations { get; set; }
 
     [JsonPropertyName("registeredAt")]
     public DateTime RegisteredAt { get; set; }
@@ -57,6 +57,42 @@ public class NotificationPreferences
 
     [JsonPropertyName("push")]
     public bool Push { get; set; }
+}
+
+public class RecommendationGroup
+{
+    [JsonPropertyName("recommendationId")]
+    public string RecommendationId { get; set; } = string.Empty;
+
+    [JsonPropertyName("menuItems")]
+    public List<MenuItem>? MenuItems { get; set; }
+
+    [JsonPropertyName("score")]
+    public double Score { get; set; }
+
+    [JsonPropertyName("generatedAt")]
+    public DateTime? GeneratedAt { get; set; }
+
+    [JsonPropertyName("expiresAt")]
+    public DateTime? ExpiresAt { get; set; }
+
+    [JsonPropertyName("source")]
+    public string Source { get; set; } = string.Empty;
+}
+
+public class MenuItem
+{
+    [JsonPropertyName("menuItemId")]
+    public string MenuItemId { get; set; } = string.Empty;
+
+    [JsonPropertyName("name")]
+    public string Name { get; set; } = string.Empty;
+
+    [JsonPropertyName("score")]
+    public double Score { get; set; }
+
+    [JsonPropertyName("reason")]
+    public string Reason { get; set; } = string.Empty;
 }
 
 public class Recommendation

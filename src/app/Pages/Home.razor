@@ -1,7 +1,7 @@
 @page "/"
 @using CustomerDemoApp.Models
 @using CustomerDemoApp.Services
-@inject CosmosDbService CosmosService
+@inject ICustomerService CustomerService
 @inject IJSRuntime JSRuntime
 
 <div class="container-fluid">
@@ -15,6 +15,26 @@
                 <p class="lead text-muted">
                     Explore personalized recommendations powered by Microsoft Fabric and Cosmos DB
                 </p>
+                
+                <!-- Data Source Indicator -->
+                <div class="alert alert-info d-flex align-items-center" role="alert">
+                    <i class="bi bi-info-circle me-2"></i>
+                    <span>
+                        <strong>Data Source:</strong> 
+                        <span id="data-source-indicator">
+                            @if (CustomerService is LocalJsonCustomerService)
+                            {
+                                <span class="badge bg-warning text-dark">Local JSON File</span>
+                                <small class="text-muted ms-2">Using sample data from local file</small>
+                            }
+                            else
+                            {
+                                <span class="badge bg-success">Azure Cosmos DB</span>
+                                <small class="text-muted ms-2">Connected to live database</small>
+                            }
+                        </span>
+                    </span>
+                </div>
             </div>
 
             @if (isLoading)
@@ -107,10 +127,6 @@
                                                     <p class="mb-0">@selectedCustomer.LastPurchaseDate?.ToString("MMM dd, yyyy")</p>
                                                 </div>
                                             }
-                                            <div class="info-item">
-                                                <label class="form-label text-muted">Member Since</label>
-                                                <p class="mb-0">@selectedCustomer.RegisteredAt.ToString("MMM dd, yyyy")</p>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -198,19 +214,25 @@
                                         </div>
                                         <div class="card-body">
                                             <div class="row g-3">
-                                                @foreach (var recommendation in selectedCustomer.Recommendations.Take(6))
+                                                @foreach (var recommendationGroup in selectedCustomer.Recommendations.Take(3))
                                                 {
-                                                    <div class="col-md-6 col-xl-4">
-                                                        <div class="recommendation-card">
-                                                            <div class="d-flex justify-content-between align-items-start mb-2">
-                                                                <h6 class="mb-0">@recommendation.Name</h6>
-                                                                <span class="badge bg-primary rounded-pill">
-                                                                    @((recommendation.Score * 100).ToString("F0"))%
-                                                                </span>
+                                                    @if (recommendationGroup.MenuItems?.Any() == true)
+                                                    {
+                                                        @foreach (var menuItem in recommendationGroup.MenuItems.Take(2))
+                                                        {
+                                                            <div class="col-md-6 col-xl-4">
+                                                                <div class="recommendation-card">
+                                                                    <div class="d-flex justify-content-between align-items-start mb-2">
+                                                                        <h6 class="mb-0">@menuItem.Name</h6>
+                                                                        <span class="badge bg-primary rounded-pill">
+                                                                            @((menuItem.Score * 100).ToString("F0"))%
+                                                                        </span>
+                                                                    </div>
+                                                                    <p class="text-muted small mb-0">@menuItem.Reason</p>
+                                                                </div>
                                                             </div>
-                                                            <p class="text-muted small mb-0">@recommendation.Reason</p>
-                                                        </div>
-                                                    </div>
+                                                        }
+                                                    }
                                                 }
                                             </div>
                                         </div>
@@ -244,11 +266,11 @@
         
         try
         {
-            customers = await CosmosService.GetRandomCustomersAsync(5);
+            customers = await CustomerService.GetRandomCustomersAsync(5);
             
             if (customers?.Any() != true)
             {
-                errorMessage = "No customers found. Please ensure your Cosmos DB is configured with customer data.";
+                errorMessage = "No customers found. Please ensure your customer data is available.";
             }
         }
         catch (Exception ex)
@@ -279,7 +301,7 @@
             
             if (selectedCustomer == null)
             {
-                selectedCustomer = await CosmosService.GetCustomerByIdAsync(customerId);
+                selectedCustomer = await CustomerService.GetCustomerByIdAsync(customerId);
             }
         }
         catch (Exception ex)
