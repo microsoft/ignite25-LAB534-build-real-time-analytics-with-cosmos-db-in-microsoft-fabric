@@ -1,6 +1,6 @@
 # Fourth Coffee Customer Recommendations App
 
-![Fourth Coffee Banner](img/fourth-coffee-app.jpeg)
+![Fourth Coffee Banner](img/fourth-coffee-app.png)
 
 A **Blazor Server** application that demonstrates personalized customer recommendations powered by **Microsoft Fabric** and **Cosmos DB**. Built for Microsoft Ignite 2025 Lab LAB534.
 
