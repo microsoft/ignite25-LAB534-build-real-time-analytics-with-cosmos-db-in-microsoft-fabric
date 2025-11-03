@@ -49,14 +49,15 @@ Let's perform some queries against the data you just uploaded to verify that eve
 
 1. In the query editor that opens, enter the following query to retrieve the top ten high value customers based on their total loyalty points:
 
-    +++*SELECT TOP 10 VALUE {
-    "customerId": c.customerId,
-    "name": c.name,
-    "loyaltyPoints": c.loyaltyPoints,
-    "airport": c.preferences.airport
-    }
-    FROM customers AS c
-    ORDER BY c.loyaltyPoints DESC*+++
+```
+SELECT TOP 10
+      c.customerId,    
+      c.name,    
+      c.loyaltyPoints,    
+      c.preferences.airport    
+FROM c  
+ORDER BY c.loyaltyPoints DESC
+```
 
 1. Select the **Execute Query** button on the top menu ribbon to run the query. You should see the results displayed below the query editor.
 
