@@ -10,6 +10,9 @@ By the end of this exercise, you'll be able to:
 
 ## Create an Eventhouse
 
+1. In the same terminal window from the environment setup run the following command to execute the C# file that will create an Eventstream and generate streaming data:
+   +++*dotnet run .\src\warehouse_setup\FabricPOSDatatStreaming.cs*+++
+   
 1. You have already created an Eventstream in the Fabric Environment Setup exercise. You will now create an Eventhouse to ingest and store the streaming data. Navigate to your Fabric workspace and select **+ New item** from the top menu ribbon.
 
 1. In the **New item** pane that opens on the right side, type +++*eventhouse*+++ in the filter text box on the top right of the pane to filter the list of items. Select **Eventhouse (Preview)**.
