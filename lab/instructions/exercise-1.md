@@ -68,25 +68,28 @@ ORDER BY c.loyaltyPoints DESC
 
 1. Create another new SQL query in the same **customers** container to analyze customer recommendations. Enter the following query in the query editor and execute it:
 
-    +++*SELECT c.customerId,
-        (SELECT VALUE COUNT(1) FROM r IN c.recommendations) AS recommendationSets,
-        (SELECT VALUE COUNT(1) FROM r IN c.recommendations JOIN mi IN r.menuItems) AS totalRecommendedItems,
-        (SELECT VALUE ROUND(AVG(r.score), 4) FROM r IN c.recommendations) AS avgRecScore,
-        (SELECT VALUE MIN(r.expiresAt) FROM r IN c.recommendations) AS nextExpiryUtc
-       FROM customers c*+++
+```
+SELECT c.customerId,
+    (SELECT VALUE COUNT(1) FROM r IN c.recommendations) AS recommendationSets,
+    (SELECT VALUE COUNT(1) FROM r IN c.recommendations JOIN mi IN r.menuItems) AS totalRecommendedItems,
+    (SELECT VALUE ROUND(AVG(r.score), 4) FROM r IN c.recommendations) AS avgRecScore,
+    (SELECT VALUE MIN(r.expiresAt) FROM r IN c.recommendations) AS nextExpiryUtc
+FROM customers c
+```
 
 This query uses correlated subqueries to count recommendation sets, total recommended items, the average recommendation score (rounded to four decimals), and the next recommendation expiry for each customer.
 
 Cosmos DB in Fabric supports rich querying capabilities including subqueries *(as demonstrated above)*, aggregate functions, scalar expressions, and more, enabling you to perform complex data analysis directly within the database.
 
 1. In a new query editor, enter the following query to demonstrate scalar expressions. This query calculates a customer's membership tier based on their total loyalty points:
-
-    +++*SELECT c.customerId,
+```
+        SELECT c.customerId,
         c.name,
         c.loyaltyPoints,
             IIF(c.loyaltyPoints >= 1000, "Gold",
                 IIF(c.loyaltyPoints >= 500, "Silver", "Bronze")) AS membershipTier
-        FROM customers c*+++
+        FROM customers c
+```
 
 ## Next step
 
