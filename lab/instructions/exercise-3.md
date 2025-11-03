@@ -82,10 +82,10 @@ By the end of this exercise, you'll be able to:
 1. Select the **fc_commerce_eventhouse** database from the left explorer pane.
 1. In the database, select the **transactions_live** table.
 
-    ![Screenshot of the transactions_live table selected in the eventhouse](media/transactions_live_table.png)
+    ![Screenshot of the transactions_live table selected in the eventhouse](media/transactions-live-table.png)
 
 1. In the top ribbon select **Query with code** button and select *Show any 100 records* from the dropdown.
-    ![Screenshot of Query with code in top ribbon of eventhouse](media/query-with-code-eventhouse-button.png)
+    ![Screenshot of Query with code in top ribbon of eventhouse](media/query-with-code.png)
 
 1. In the new query editor tab, select **Run** to verify that data is being ingested into the Eventhouse in real-time.
 
