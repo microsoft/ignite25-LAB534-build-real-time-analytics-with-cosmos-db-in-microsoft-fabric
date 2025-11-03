@@ -16,7 +16,8 @@ by the end of this exercise, you'll be able to:
 
 1. In the query window editor, paste the following SQL code to create views in the warehouse:
 
-+++*CREATE OR ALTER VIEW dbo.vDimCustomerKey AS
+```sql
+CREATE OR ALTER VIEW dbo.vDimCustomerKey AS
 SELECT CustomerId, CustomerKey, IsActive FROM dbo.DimCustomer;
 
 CREATE OR ALTER VIEW dbo.vDimShopKey AS
@@ -29,7 +30,8 @@ CREATE OR ALTER VIEW dbo.vFactSalesMaxKey AS
 SELECT
   MaxSalesKey = COALESCE(MAX(SalesKey), 0),
   ExistingTxnCount = COUNT(*)
-FROM dbo.FactSales;*+++
+FROM dbo.FactSales;
+```
 
 1. Select **Run** to execute the query and create the views in the warehouse.
 
@@ -68,7 +70,8 @@ FROM dbo.FactSales;*+++
 1. Open a new SQL query in your data warehouse by selecting the **New SQL Query** button in the warehouse page.
 1. In the query window editor, paste the following SQL code to load the transformed data into the FactSales and FactSalesLineItem tables using the Parquet files created in the previous step. Make sure to replace the placeholder URLs with the actual URLs printed at the end of the notebook execution.
 
-+++*-- =============================
+```sql
+-- =============================
 -- COPY headers (FactSales)
 -- =============================
 COPY INTO dbo.FactSales
@@ -114,7 +117,8 @@ COPY INTO dbo.FactSalesLineItems
 FROM '[lakehouse items urls]' 
 WITH (
     FILE_TYPE = 'PARQUET'
-);*+++
+);
+```
 
 1. Select **Run** to execute the query and load the data into the warehouse.
 
@@ -127,7 +131,7 @@ WITH (
   SELECT TOP 10 * FROM dbo.FactSalesLineItems order by CreatedAt desc;
   ```
 
-  ## Reverse ETL and Build Personalization Model
+## Reverse ETL and Build Personalization Model
 1. Continue to the next notebook in the workspace named `build_personalization_model.ipynb` to perform Reverse ETL and build a personalization model using the transformed data.
 1. In the notebook, locate the code cells where you need to provide your Cosmos DB and Data Warehouse details. Update the following variables with your specific information:
    - `COSMOS_ENDPOINT`: The endpoint URL of your Cosmos DB account. You can find this in the Cosmos DB account settings under **Connection String**.
