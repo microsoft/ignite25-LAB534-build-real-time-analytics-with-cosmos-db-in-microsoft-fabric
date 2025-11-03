@@ -95,7 +95,8 @@ By the end of this exercise, you'll be able to:
 
 1. Replace the existing query in the query editor with the following KQL code to create a Silver layer table that aggregates total sales by menu item:
 
-+++*.create-or-alter function with (folder="Silver") vw_Pos_Sales() {
+```
+.create-or-alter function with (folder="Silver") vw_Pos_Sales() {
     transactions_live
     // best available event timestamp
     | extend EventTs = coalesce(
@@ -194,17 +195,18 @@ By the end of this exercise, you'll be able to:
         MenuItemKey, MenuItemId,
         Quantity, UnitPrice, LineTotal,
         PaymentMethod, Size, CreatedAt
-}*+++
+}
+```
 
 1. Select **Run** to execute the code and create the Silver layer functions.
 ![Screenshot of creating silver layer functions in eventhouse](media/create-silver-layer-functions.png)
 
 1. You can now query the Silver layer views to perform analytics on the ingested streaming data. For example, to get total sales by menu item, use the following query:
 
-+++*
+```
 vw_Pos_LineItems_Sales()
 | summarize TotalSales = sum(LineTotal), TotalQuantity = sum(Quantity) by MenuItemId, ItemName
 | order by TotalSales desc
-*+++
+```
 
 1. Select **Run** to execute the query and view the results.
