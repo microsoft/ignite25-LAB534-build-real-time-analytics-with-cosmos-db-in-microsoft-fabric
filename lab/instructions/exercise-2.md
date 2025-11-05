@@ -27,13 +27,14 @@ By the end of this exercise, you'll be able to:
 
 1. From the top menu ribbon, select **New SQL query**. In the query editor that opens, enter the following query to analyze customer preferences by grouping customers by their favorite drink:
 
-    +++*SELECT
-            JSON_VALUE(c.preferences, '$.favoriteDrink') AS drink,
-            COUNT(1) AS customerCount
-        FROM [fc_commerce_cosmos].[fc_commerce_cosmos].[customers] AS c
-        GROUP BY JSON_VALUE(c.preferences, '$.favoriteDrink')
-        ORDER BY COUNT(1) DESC*+++
-
+```
+SELECT
+    JSON_VALUE(c.preferences, '$.favoriteDrink') AS drink,
+    COUNT(1) AS customerCount
+FROM [fc_commerce_cosmos].[fc_commerce_cosmos].[customers] AS c
+GROUP BY JSON_VALUE(c.preferences, '$.favoriteDrink')
+ORDER BY COUNT(1) DESC
+```
 1. Select **Run** to execute the query. The results will show the most popular drinks ordered by customer count, with the most popular drinks appearing first.
 
     ![Screenshot showing the results of the customer preferences query](media/customer-preferences-query-results.png)
@@ -46,23 +47,25 @@ By the end of this exercise, you'll be able to:
 
 1. Open a new SQL query editor, then enter the following query to analyze which favorite drinks drive the most revenue and loyalty engagement by combining data from both Cosmos DB and the Data Warehouse:
 
-    +++*SELECT
-        JSON_VALUE(c.preferences, '$.favoriteDrink') AS FavoriteDrink,
-        COUNT(DISTINCT c.customerId) AS TotalCustomers,
-        AVG(CAST(c.loyaltyPoints AS decimal(10,2))) AS AvgLoyaltyPoints,
-        SUM(COALESCE(fs.TotalAmount, 0.0)) AS TotalRevenue,
-        SUM(COALESCE(fs.LoyaltyPointsEarned, 0)) AS TotalPointsEarned,
-        SUM(COALESCE(fs.LoyaltyPointsRedeemed, 0)) AS TotalPointsRedeemed,
-        AVG(CAST(fs.TotalQuantity AS decimal(10,2))) AS AvgItemsPerOrder,
-        COUNT(DISTINCT fs.TransactionId) AS TotalTransactions
-    FROM [fc_commerce_cosmos].[fc_commerce_cosmos].[customers] AS c
-    LEFT JOIN [fc_commerce_wh].[dbo].[DimCustomer] AS dc
-        ON dc.CustomerId = c.customerId
-    LEFT JOIN [fc_commerce_wh].[dbo].[FactSales] AS fs
-        ON fs.CustomerKey = dc.CustomerKey
-    WHERE JSON_VALUE(c.preferences, '$.favoriteDrink') IS NOT NULL
-    GROUP BY JSON_VALUE(c.preferences, '$.favoriteDrink')
-    ORDER BY TotalRevenue DESC;*+++
+```
+SELECT
+    JSON_VALUE(c.preferences, '$.favoriteDrink') AS FavoriteDrink,
+    COUNT(DISTINCT c.customerId) AS TotalCustomers,
+    AVG(CAST(c.loyaltyPoints AS decimal(10,2))) AS AvgLoyaltyPoints,
+    SUM(COALESCE(fs.TotalAmount, 0.0)) AS TotalRevenue,
+    SUM(COALESCE(fs.LoyaltyPointsEarned, 0)) AS TotalPointsEarned,
+    SUM(COALESCE(fs.LoyaltyPointsRedeemed, 0)) AS TotalPointsRedeemed,
+    AVG(CAST(fs.TotalQuantity AS decimal(10,2))) AS AvgItemsPerOrder,
+    COUNT(DISTINCT fs.TransactionId) AS TotalTransactions
+FROM [fc_commerce_cosmos].[fc_commerce_cosmos].[customers] AS c
+LEFT JOIN [fc_commerce_wh].[dbo].[DimCustomer] AS dc
+    ON dc.CustomerId = c.customerId
+LEFT JOIN [fc_commerce_wh].[dbo].[FactSales] AS fs
+    ON fs.CustomerKey = dc.CustomerKey
+WHERE JSON_VALUE(c.preferences, '$.favoriteDrink') IS NOT NULL
+GROUP BY JSON_VALUE(c.preferences, '$.favoriteDrink')
+ORDER BY TotalRevenue DESC;
+```
 
 1. Select **Run** to execute the query. This cross-database query demonstrates the power of Fabric's unified analytics platform by seamlessly joining:
     - Customer preference data from Cosmos DB (`customers` container)
@@ -93,7 +96,8 @@ By the end of this exercise, you'll be able to:
 
 1. In a new code cell, enter the following code and  run it:
 
-    +++*display(spark.sql("""
+```
+display(spark.sql("""
 SELECT
     get_json_object(c.preferences, '$.favoriteDrink') AS FavoriteDrink,
     COUNT(*) AS CustomerCount,
@@ -102,7 +106,8 @@ FROM customers AS c
 WHERE get_json_object(c.preferences, '$.favoriteDrink') IS NOT NULL
 GROUP BY get_json_object(c.preferences, '$.favoriteDrink')
 ORDER BY CustomerCount DESC
-"""))*+++
+"""))
+```
 
     This code uses Spark SQL to query the mirrored Cosmos DB data in the lakehouse, analyzing customer preferences by favorite drink.
 
