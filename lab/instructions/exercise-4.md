@@ -1,11 +1,13 @@
 # Exercise 4: Implement Reverse ETL and Build Personalization Model
 
-In this exercise, you will create a Dataflow Gen2 to extract and transform data from the Eventhouse, update the user profiles in Cosmos DB, and then use that data to build a personalization model in a notebook.
+In this exercise, you will work with Fabric Notebooks to extract and transform data from the Eventhouse, update the user profiles in Cosmos DB, and then use that data to build a personalization model.
 
 by the end of this exercise, you'll be able to:
 
-- Create a Dataflow Gen2 to extract and transform data
-- Perform Reverse ETL to update user profiles in Cosmos DB
+- Use Fabric Notebooks and Spark to extract and transform data
+- Use the Parquet format for staging data in a Lakehouse
+- Perform Reverse ETL with Python
+- Build a recommendation recommendation model using min-max normalization as part of the preprocessing pipeline.
 
 ## Create Data Warehouse Views
 
@@ -146,3 +148,5 @@ WITH (
 ```sql
 SELECT TOP 10 * FROM c ORDER BY c.lastPurchaseDate DESC
 ```
+
+> If you have time, complete the bonus step by selecting **Next >** in these instructions to go to the next part of the lab: **Exercise 5: IServe Personalized Recommendations from Cosmos DB**.
