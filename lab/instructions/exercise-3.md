@@ -198,7 +198,7 @@ By the end of this exercise, you'll be able to:
 }
 ```
 
-1. Select **Run** to execute the code and create the Silver layer functions.
+1. Execute each query by highlighting one at a time (this can be achieved by adding your cursor anywhere in the query), then selecting **Run** to execute the code to create the Silver layer functions.
 ![Screenshot of creating silver layer functions in eventhouse](media/create-silver-layer-functions.png)
 
 1. You can now query the Silver layer views to perform analytics on the ingested streaming data. For example, to get total sales by menu item, use the following query:
@@ -210,3 +210,6 @@ vw_Pos_LineItems_Sales()
 ```
 
 1. Select **Run** to execute the query and view the results.
+   
+> Select **Next >** in these instructions to go to the next part of the lab: **Exercise 4: Implement Reverse ETL and Build Personalization Model**.
+
