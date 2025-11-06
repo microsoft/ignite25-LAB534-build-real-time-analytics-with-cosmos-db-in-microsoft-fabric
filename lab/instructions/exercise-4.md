@@ -19,16 +19,16 @@ by the end of this exercise, you'll be able to:
 1. In the query window editor, paste the following SQL code to create views in the warehouse:
 
 ```sql
-CREATE OR ALTER VIEW dbo.vDimCustomerKey AS
+CREATE OR ALTER VIEW dbo.vDimCustomerKey AS 
 SELECT CustomerId, CustomerKey, IsActive FROM dbo.DimCustomer;
 
-CREATE OR ALTER VIEW dbo.vDimShopKey AS
+CREATE OR ALTER VIEW dbo.vDimShopKey AS 
 SELECT ShopId, ShopKey, IsActive FROM dbo.DimShop;
 
-CREATE OR ALTER VIEW dbo.vDimMenuItemKey AS
+CREATE OR ALTER VIEW dbo.vDimMenuItemKey AS 
 SELECT MenuItemId, MenuItemKey, IsActive FROM dbo.DimMenuItem;
 
-CREATE OR ALTER VIEW dbo.vFactSalesMaxKey AS
+CREATE OR ALTER VIEW dbo.vFactSalesMaxKey AS 
 SELECT
   MaxSalesKey = COALESCE(MAX(SalesKey), 0),
   ExistingTxnCount = COUNT(*)
