@@ -6,7 +6,7 @@ By the end of this exercise, you'll be able to:
 
 - Access Cosmos DB mirrored data in OneLake
 - Query Cosmos DB data using the SQL analytics endpoint
-- Build a scheduled notebook to perform batch data loading from Cosmos DB to a Fabric Data Warehouse
+- Run cross-database queries with Cosmos DB
 
 ## Access Cosmos DB mirrored data in OneLake
 
