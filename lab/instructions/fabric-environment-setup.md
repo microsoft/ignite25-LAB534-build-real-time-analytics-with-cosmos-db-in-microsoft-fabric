@@ -13,10 +13,9 @@ This includes creating a new *Fabric workspace*, automated creation of a *Fabric
    - **Email**: +++@lab.CloudPortalCredential(User1).Username+++
    - **Password**: +++@lab.CloudPortalCredential(User1).Password+++
 
+1. Enter your email in the next authentication step, if prompted.
 
 1. If prompted for a Temporary Access Pass, select **Use password** under the textbox and enter your password: +++@lab.CloudPortalCredential(User1).Password+++ .
-
-1. Enter your email in the next authentication step, if prompted.
 
 1. If you come across the Fabric signup prompt, you do not need to fill out the information. Close the tab, open another tab and return to +++https://app.fabric.microsoft.com+++ to get back to the main Fabric UI.
 
