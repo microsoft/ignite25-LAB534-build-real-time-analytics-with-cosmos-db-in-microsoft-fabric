@@ -206,7 +206,7 @@ By the end of this exercise, you'll be able to:
 
 ```
 vw_Pos_LineItems_Sales()
-| summarize TotalSales = sum(LineTotal), TotalQuantity = sum(Quantity) by MenuItemId, ItemName
+| summarize TotalSales = sum(LineTotal), TotalQuantity = sum(Quantity) by MenuItemId, MenuItemName
 | order by TotalSales desc
 ```
 
