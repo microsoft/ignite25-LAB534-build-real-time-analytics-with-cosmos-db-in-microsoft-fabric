@@ -13,6 +13,16 @@ This includes creating a new *Fabric workspace*, automated creation of a *Fabric
    - **Email**: +++@lab.CloudPortalCredential(User1).Username+++
    - **Password**: +++@lab.CloudPortalCredential(User1).Password+++
 
+
+1. If prompted for a Temporary Access Pass, select **Use password** under the textbox and enter your password: +++@lab.CloudPortalCredential(User1).Password+++ .
+
+1. Enter your email in the next authentication step, if prompted.
+
+1. If you come across the Fabric signup prompt, you do not need to fill out the information. Close the tab, open another tab and return to +++https://app.fabric.microsoft.com+++ to get back to the main Fabric UI.
+
+   ![Screenshot showing the Fabric signup prompt](media/fabric-signup-prompt.png)
+
+
 1. From the left navigation pane, select **Workspaces**, the select **+ New workspace**.
 
     ![Screenshot showing how to create a new workspace in Microsoft Fabric](media/create-new-workspace.png)
@@ -23,9 +33,9 @@ This includes creating a new *Fabric workspace*, automated creation of a *Fabric
 
 ## Access the lab repository and set up the Fabric Data Warehouse
 
-On your virtual machine, you will find the lab repo pre-cloned on the desktop under the folder named **Desktop > lab-534**. This is the complete lab repository as available on [our repo](https://aka.ms/). <!--TODO: Add aka.ms link to repo-->
+On your virtual machine, you will find the lab repo pre-cloned on the desktop under the folder named **Desktop > Lab534**. This is the complete lab repository as available on [our repo](https://aka.ms/). <!--TODO: Add aka.ms link to repo-->
 
-1. Right-click on the **lab-534** folder on the desktop and select **Open in Terminal**.
+1. Right-click on the **Lab534** folder on the desktop and select **Open in Terminal**.
 
 1. Run the following command to authenticate to Microsoft Fabric using Microsoft Entra Id:
 

@@ -42,8 +42,8 @@ const int SendIntervalMs = 3000; // 3s cadence
 // Data file paths
 var currentDir = Directory.GetCurrentDirectory();
 var customersFilePath = Path.Combine(currentDir, "data", "nosql", "customers_container.json");
-var shopsFilePath = Path.Combine(currentDir, "data", "nosql", "shops_container.json");
-var menuFilePath = Path.Combine(currentDir, "data", "nosql", "menu_container.json");
+var shopsFilePath = Path.Combine(currentDir, "data", "relational", "DimShop.csv");
+var menuFilePath = Path.Combine(currentDir, "data", "relational", "DimMenu.csv");
 var streamingTransactionsFilePath = Path.Combine(currentDir, "data", "streaming", "streaming_transactions.json");
 
 
@@ -85,13 +85,13 @@ if (!File.Exists(streamingTransactionsFilePath))
     throw new FileNotFoundException($"Streaming transactions file not found: {streamingTransactionsFilePath}");
 
 var customersJson = await File.ReadAllTextAsync(customersFilePath);
-var shopsJson = await File.ReadAllTextAsync(shopsFilePath);
-var menuJson = await File.ReadAllTextAsync(menuFilePath);
+var shopsText = await File.ReadAllTextAsync(shopsFilePath);
+var menuText = await File.ReadAllTextAsync(menuFilePath);
 var streamingTransactionsJson = await File.ReadAllTextAsync(streamingTransactionsFilePath);
 
 var customers = JsonSerializer.Deserialize(customersJson, TransactionJsonContext.Default.CustomerArray)!;
-var shops = JsonSerializer.Deserialize(shopsJson, TransactionJsonContext.Default.ShopArray)!;
-var menuItems = JsonSerializer.Deserialize(menuJson, TransactionJsonContext.Default.MenuItemArray)!;
+var shops = ParseShopsFromCsv(shopsText);
+var menuItems = ParseMenuItemsFromCsv(menuText);
 var predefinedTransactions = JsonSerializer.Deserialize(streamingTransactionsJson, TransactionJsonContext.Default.TransactionArray)!;
 
 logger.LogInformation("Loaded {CustomerCount} customers, {ShopCount} shops, {MenuCount} menu items, {TransactionCount} predefined transactions", 
@@ -238,6 +238,84 @@ while (!cts.IsCancellationRequested)
 }
 
 logger.LogInformation("Stopped POS transaction streaming");
+
+// CSV parsing functions
+static Shop[] ParseShopsFromCsv(string csvText)
+{
+    var lines = csvText.Split('\n');
+    var shops = new List<Shop>();
+    
+    // Skip header row
+    for (int i = 1; i < lines.Length; i++)
+    {
+        var line = lines[i].Trim();
+        if (string.IsNullOrEmpty(line)) continue;
+        
+        var parts = line.Split(',');
+        if (parts.Length >= 4)
+        {
+            var shopId = parts[1].Trim();
+            var airportId = parts[3].Trim();
+            shops.Add(new Shop(shopId, airportId));
+        }
+    }
+    
+    return shops.ToArray();
+}
+
+static MenuItem[] ParseMenuItemsFromCsv(string csvText)
+{
+    var lines = csvText.Split('\n');
+    var menuItemDict = new Dictionary<string, List<MenuItemSize>>();
+    var menuItemInfo = new Dictionary<string, (string name, string category, string subcategory)>();
+    
+    // Skip header row
+    for (int i = 1; i < lines.Length; i++)
+    {
+        var line = lines[i].Trim();
+        if (string.IsNullOrEmpty(line)) continue;
+        
+        var parts = line.Split(',');
+        if (parts.Length >= 7)
+        {
+            var menuItemId = parts[1].Trim();
+            var menuItemName = parts[2].Trim();
+            var category = parts[3].Trim();
+            var subcategory = parts[4].Trim();
+            var size = parts[5].Trim();
+            
+            if (decimal.TryParse(parts[6].Trim(), out var price))
+            {
+                // Store item info (same for all sizes)
+                if (!menuItemInfo.ContainsKey(menuItemId))
+                {
+                    menuItemInfo[menuItemId] = (menuItemName, category, subcategory);
+                }
+                
+                // Add size info
+                if (!menuItemDict.ContainsKey(menuItemId))
+                {
+                    menuItemDict[menuItemId] = new List<MenuItemSize>();
+                }
+                
+                menuItemDict[menuItemId].Add(new MenuItemSize(size, price));
+            }
+        }
+    }
+    
+    // Convert to MenuItem array
+    var menuItems = new List<MenuItem>();
+    foreach (var kvp in menuItemDict)
+    {
+        var itemId = kvp.Key;
+        var sizes = kvp.Value.ToArray();
+        var info = menuItemInfo[itemId];
+        
+        menuItems.Add(new MenuItem(itemId, info.name, info.category, info.subcategory, sizes));
+    }
+    
+    return menuItems.ToArray();
+}
 
 // Data models for seed data
 internal record Customer(

@@ -78,11 +78,11 @@ ORDER BY TotalRevenue DESC;
 
 1. Navigate back to the workspace. Select the existing lakehouse **fc_commerce_lh** you created in the Fabric Environment Setup.
 
-1. In the lakehouse, right-click on the **dbo** schema in the **Tables** folder of the lakehouse explorer pane, then select **New table shortcut**.
+1. In the lakehouse, right-click on the **Tables** folder of the lakehouse explorer pane, then select **New shortcut**.
 
 1. In the **New shortcut** dialog, select **Microsoft OneLake**.
 
-1. In the **Select a data source type** dialog, select the **fc_commerce_cosmos** database from the list of available OneLake data sources, then select **Next**.
+1. In the next dialog, select the **fc_commerce_cosmos** database from the list of available OneLake data sources, then select **Next**.
 
 1. On the next page, expand **Tables** > **fc_commerce_cosmos** schema, then select the mirrored **customers** container. Select **Next**.
 
@@ -109,9 +109,9 @@ ORDER BY CustomerCount DESC
 """))
 ```
 
-    This code uses Spark SQL to query the mirrored Cosmos DB data in the lakehouse, analyzing customer preferences by favorite drink.
+This code uses Spark SQL to query the mirrored Cosmos DB data in the lakehouse, analyzing customer preferences by favorite drink.
 
-    ![Screenshot showing the notebook results analyzing customer preferences](media/lakehouse-notebook-customer-preferences.png)
+![Screenshot showing the notebook results analyzing customer preferences](media/lakehouse-notebook-customer-preferences.png)
 
 ## Next step
 

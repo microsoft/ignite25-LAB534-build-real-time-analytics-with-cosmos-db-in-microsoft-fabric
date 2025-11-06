@@ -11,7 +11,7 @@ By the end of this exercise, you'll be able to:
 ## Create an Eventhouse
 
 1. In the same terminal window from the environment setup run the following command to execute the C# file that will create an Eventstream and generate streaming data:
-   +++*dotnet run .\src\warehouse_setup\FabricPOSDatatStreaming.cs*+++
+   +++*dotnet run .\src\pos_data_streaming\FabricPOSDatatStreaming.cs*+++
    
 1. You have already created an Eventstream in the Fabric Environment Setup exercise. You will now create an Eventhouse to ingest and store the streaming data. Navigate to your Fabric workspace and select **+ New item** from the top menu ribbon.
 
@@ -175,6 +175,7 @@ By the end of this exercise, you'll be able to:
         ShopId         = tostring(column_ifexists("shopId","")),
         MenuItemKey    = toint(coalesce(Items.menuItemKey, int(null))),
         MenuItemId     = tostring(Items.menuItemId),
+        MenuItemName   = tostring(Items.name),
         Size           = tostring(coalesce(Items.size, "")),
         Quantity       = toint(coalesce(Items.quantity, 1)),
         UnitPrice      = todouble(coalesce(Items.unitPrice, 0.0))
@@ -192,7 +193,7 @@ By the end of this exercise, you'll be able to:
         DateKey, TimeKey,
         // keep if you merge to Customer/Shop keys upstream; drop if not needed
         CustomerId, ShopId,
-        MenuItemKey, MenuItemId,
+        MenuItemKey, MenuItemId, MenuItemName,
         Quantity, UnitPrice, LineTotal,
         PaymentMethod, Size, CreatedAt
 }

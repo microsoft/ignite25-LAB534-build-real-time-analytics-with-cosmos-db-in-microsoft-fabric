@@ -23,7 +23,7 @@ This is the first exercise in the lab where you will create a Cosmos DB database
     - **Container id**: +++*customers*+++
     - **Partition key**: +++*/customerId*+++
 
-    Select **OK** to create the container.=
+    Select **OK** to create the container.
 
 ## Load initial data
 
@@ -33,7 +33,7 @@ You will now load initial data into the Cosmos DB container you just created by 
 
 1. From the top menu ribbon, select **Upload item**. On the **Upload item** pane that opens on the right side, select the folder icon to browse for the file to upload.
 
-1. On the file picker dialog, navigate to the lab repo folder on the desktop at **Desktop > lab-534 > data > nosql > customers_container.json**, select the file and then select **Open**.
+1. On the file picker dialog, navigate to the lab repo folder on the desktop at **Desktop > Lab534 > data > nosql > customers_container.json**, select the file and then select **Open**.
 
 1. Back on the **Upload item** pane, select **Upload** to upload the file. Once the upload is complete, you will see the items listed in the container.
 
@@ -82,13 +82,14 @@ This query uses correlated subqueries to count recommendation sets, total recomm
 Cosmos DB in Fabric supports rich querying capabilities including subqueries *(as demonstrated above)*, aggregate functions, scalar expressions, and more, enabling you to perform complex data analysis directly within the database.
 
 1. In a new query editor, enter the following query to demonstrate scalar expressions. This query calculates a customer's membership tier based on their total loyalty points:
+
 ```
-        SELECT c.customerId,
-        c.name,
-        c.loyaltyPoints,
-            IIF(c.loyaltyPoints >= 1000, "Gold",
-                IIF(c.loyaltyPoints >= 500, "Silver", "Bronze")) AS membershipTier
-        FROM customers c
+SELECT c.customerId,
+c.name,
+c.loyaltyPoints,
+    IIF(c.loyaltyPoints >= 1000, "Gold",
+        IIF(c.loyaltyPoints >= 500, "Silver", "Bronze")) AS membershipTier
+FROM customers c
 ```
 
 ## Next step

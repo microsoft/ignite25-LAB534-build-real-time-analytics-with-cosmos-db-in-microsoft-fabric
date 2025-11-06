@@ -35,7 +35,7 @@ SELECT
 FROM dbo.FactSales;
 ```
 
-1. Select **Run** to execute the query and create the views in the warehouse.
+1. Highlight each command one at a time and select **Run** to execute each command and create the views in the warehouse.
 
   ![Screenshot showing creating dimensional views in data warehouse](media/create-dimensional-views.png)
 
