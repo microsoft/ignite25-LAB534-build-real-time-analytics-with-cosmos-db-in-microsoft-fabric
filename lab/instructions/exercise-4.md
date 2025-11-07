@@ -54,12 +54,17 @@ FROM dbo.FactSales;
 
 1. Once the notebooks have been uploaded, they will appear in the workspace content list. Select the `transform_transactions.ipynb` notebook to open it.
 
+1. On the left side of the notebook, you'll see the Explorer pane, select **Add data items** > **Existing data sources** and select **fc_commerce_lh** to add the Lakehouse as a data source to the notebook.
+
+![Screenshot showing the Explorer pane with data source](media/add-lakehouse-to-notebook.png)
+
 1. In the notebook, locate the code cells where you need to provide your Fabric environment details. Update the following variables with your specific information:
-   - `kustoCluster`: The Kusto cluster URL for your Eventhouse. You can find this in the Eventhouse you configured earlier named `fc_commerce_eventhouse` In the Database Details pane to the right, select **Copy Query URI**.
+   - **kustoCluster**: The Kusto cluster URL for your Eventhouse. You can find this in the Eventhouse you configured earlier named `fc_commerce_eventhouse` In the Database Details pane to the right, select **Copy Query URI**.
    ![Screenshot showing how to copy the Kusto cluster URL](media/copy-kusto-cluster-url.png)
-   - `workspace_guid`: The GUID of your Fabric workspace. You can find this in the txt file named `fabric_guids.txt` in the source code folder, or by copying it from the browser address bar when you have your Fabric workspace open (it is the first GUID in the URL).
-   - `lakehouse_guid`: The GUID of your lakehouse. You can find this in the txt file named `fabric_guids.txt` in the source code folder, or by copying it from the browser address bar when you have your lakehouse open (it is the second GUID in the URL).
-   - `SERVER`: The SQL endpoint of your data warehouse. You can find this by navigating to your data warehouse in Fabric, selecting **Settings** from the top menu ribbon, and copying the SQL endpoint from there.
+   - **workspace_guid**: The GUID of your Fabric workspace. You can find this in the txt file named **fabric_guids.txt** in the source code folder, or by copying it from the browser address bar when you have your Fabric workspace open (it is the first GUID in the URL).
+   - **WAREHOUSE**: `fc_commerce_wh`. You can find this by navigating to your data warehouse in Fabric and copying the database name from the top of the page.
+   - **lakehouse_guid**: The GUID of your lakehouse. You can find this in the txt file named **fabric_guids.txt** in the source code folder, or by copying it from the browser address bar when you have your lakehouse open (it is the second GUID in the URL).
+   - **SERVER**: The SQL endpoint of your data warehouse. You can find this by navigating to your data warehouse in Fabric, selecting **Settings** from the top menu ribbon, and copying the SQL endpoint from there.
    ![Screenshot showing how to copy the SQL endpoint](media/copy-sql-endpoint.png)
 
 1. After updating the variables, run all the cells in the notebook sequentially to perform the data transformation and loading process. You can do this by selecting **Run All** from the top menu ribbon.

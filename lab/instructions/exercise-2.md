@@ -74,7 +74,44 @@ ORDER BY TotalRevenue DESC;
 
     ![Screenshot showing the results of the cross-database query](media/cross-database-query-results.png)
 
+## Access mirrored data from a Fabric Lakehouse
 
+1. Navigate back to the workspace. Select the existing lakehouse **fc_commerce_lh** you created in the Fabric Environment Setup.
+
+1. In the lakehouse, select **Get data**, then select **New shortcut**.
+
+1. In the **New shortcut** dialog, select **Microsoft OneLake**.
+
+1. In the next dialog, select the **fc_commerce_cosmos** database from the list of available OneLake data sources, then select **Next**.
+
+1. On the next page, expand **Tables** > **fc_commerce_cosmos** schema, then select the mirrored **customers** container. Select **Next**.
+
+1. On the final page, review the summary and select **Create** to create the table shortcuts in the lakehouse.
+
+    ![Screenshot showing the lakehouse table shortcuts created](media/lakehouse-table-shortcuts-created.png)
+
+1. Once the data is in the lakehouse, you can use it in various Fabric services. For example, you can create a notebook to analyze the data.
+
+1. From the top menu ribbon, select **Open notebook** dropdown, then select **New notebook**.
+
+1. In a new code cell, enter the following code and  run it:
+
+```
+display(spark.sql("""
+SELECT
+    get_json_object(c.preferences, '$.favoriteDrink') AS FavoriteDrink,
+    COUNT(*) AS CustomerCount,
+    AVG(CAST(c.loyaltyPoints AS float)) AS AvgLoyaltyPoints
+FROM customers AS c
+WHERE get_json_object(c.preferences, '$.favoriteDrink') IS NOT NULL
+GROUP BY get_json_object(c.preferences, '$.favoriteDrink')
+ORDER BY CustomerCount DESC
+"""))
+```
+
+This code uses Spark SQL to query the mirrored Cosmos DB data in the lakehouse, analyzing customer preferences by favorite drink.
+
+![Screenshot showing the notebook results analyzing customer preferences](media/lakehouse-notebook-customer-preferences.png)
 ## Next step
 
 > Select **Next >** in these instructions to go to the next part of the lab: **Exercise 3: Real-Time Streaming of POS Events**.
