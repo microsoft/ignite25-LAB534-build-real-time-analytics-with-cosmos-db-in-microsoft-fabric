@@ -29,7 +29,7 @@ This lab contains 5 exercises, each with multiple steps. Complete all the steps 
 1. **Exercise 4**: Build Personalization Model and Implement Reverse ETL
 1. **Exercise 5 (Optional)**: Serve Personalized Recommendations from Cosmos DB
 
-Don't worry if you run out of time to complete the entire lab. All of these exercises available on [our repo](https://aka.ms/). <!--TODO: Add aka.ms link to repo-->
+Don't worry if you run out of time to complete the entire lab. All of these exercises available on [our repo](https://aka.ms/cosmos-fabric-real-time-exercise).
 
 ## Get Started
 
