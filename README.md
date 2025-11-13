@@ -27,12 +27,13 @@ By the end of this session, learners will be able to:
 
 ### 💻 Technologies Used
 
-1. **Microsoft Fabric** - Unified analytics platform
-2. **Cosmos DB** - Operational NoSQL database
-3. **Eventstreams & KQL** - Real-time data streaming and querying
-4. **Data Warehouse** - Structured analytics storage
-5. **PySpark Notebooks** - Data processing and machine learning
-6. **OneLake** - Unified data lake storage
+1. [**Microsoft Fabric**](https://learn.microsoft.com/fabric/fundamentals/microsoft-fabric-overview) - Unified analytics platform
+2. [**Cosmos DB in Microsoft Fabric**](https://learn.microsoft.com/fabric/database/cosmos-db/overview) - Operational NoSQL database
+3. [**Real-Time Intelligence Workload**](https://learn.microsoft.com/fabric/real-time-intelligence/) - Real-time data streaming, querying, and analytics
+4. [**Data Warehouse**](https://learn.microsoft.com/fabric/data-warehouse/data-warehousing) - Structured analytics storage
+5. [**Fabric Notebooks**](https://learn.microsoft.com/fabric/data-engineering/how-to-use-notebook) -  Primary code item for developing Apache Spark jobs and machine learning experiments
+6. [**OneLake**](https://learn.microsoft.com/fabric/onelake/onelake-overview) - Unified data lake storage
+7. [**.NET 10**](https://learn.microsoft.com/dotnet/core/whats-new/dotnet-10/overview) - The fastest .NET yet with improvements across the runtime, workloads, and languages
 
 ### Microsoft Learn MCP Server
 
