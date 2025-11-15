@@ -53,6 +53,7 @@ For more information, setup instructions for other dev clients, and to post comm
 | **Sample Data** | [Data Files](./data/) | NoSQL, relational, and streaming sample datasets |
 | **Notebooks** | [PySpark Notebooks](./src/notebooks/) | ML models for personalization and reverse ETL |
 | **Source Code** | [Code Samples](./src/) | C# streaming applications and data loaders |
+| Learn at Ignite 2025 | [https://aka.ms/LearnAtIgnite](https://aka.ms/LearnAtIgnite) | Learn more about Ignite 2025 sessions and topics |
 | Ignite 2025 Next Steps | [https://aka.ms/Ignite25-Next-Steps](https://aka.ms/Ignite25-Next-Steps?ocid=ignite25_nextsteps_cnl) | Links to all repos for Ignite 2025 Sessions |
 | Microsoft Fabric Community | [https://community.fabric.microsoft.com/](https://community.fabric.microsoft.com/) | Connect with the Microsoft Fabric Community! |
 | Learn Microsoft Fabric | [https://learn.microsoft.com/fabric/](https://learn.microsoft.com/fabric/) | Comprehensive Fabric documentation and tutorials |
