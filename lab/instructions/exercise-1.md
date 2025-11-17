@@ -10,7 +10,7 @@ This is the first exercise in the lab where you will create a Cosmos DB database
 
     ![Screenshot showing how to create a new Cosmos DB in Microsoft Fabric](media/create-cosmos-db.png)
 
-1. Name the new database +++*fc_commerce_cosmos*+++ and select **Create**.
+1. Name the new database `fc_commerce_cosmos` and select **Create**.
 
 1. Once the Cosmos DB database has been created, it will open in a new tab in Fabric.
 
@@ -20,8 +20,8 @@ This is the first exercise in the lab where you will create a Cosmos DB database
 
 1. In the **New container** pane that opens on the right side, provide the following details to create a new **customers** container:
 
-    - **Container id**: +++*customers*+++
-    - **Partition key**: +++*/customerId*+++
+    - **Container id**: `customers`
+    - **Partition key**: `/customerId`
 
     Select **OK** to create the container.
 
@@ -49,15 +49,15 @@ Let's perform some queries against the data you just uploaded to verify that eve
 
 1. In the query editor that opens, enter the following query to retrieve the top ten high value customers based on their total loyalty points:
 
-```
-SELECT TOP 10
-      c.customerId,    
-      c.name,    
-      c.loyaltyPoints,    
-      c.preferences.airport    
-FROM c  
-ORDER BY c.loyaltyPoints DESC
-```
+    ```SQL
+    SELECT TOP 10
+        c.customerId,    
+        c.name,    
+        c.loyaltyPoints,    
+        c.preferences.airport    
+    FROM c  
+    ORDER BY c.loyaltyPoints DESC
+    ```
 
 1. Select the **Execute Query** button on the top menu ribbon to run the query. You should see the results displayed below the query editor.
 
@@ -68,7 +68,7 @@ ORDER BY c.loyaltyPoints DESC
 
 1. Create another new SQL query in the same **customers** container to analyze customer recommendations. Enter the following query in the query editor and execute it:
 
-```
+```SQL
 SELECT c.customerId,
     (SELECT VALUE COUNT(1) FROM r IN c.recommendations) AS recommendationSets,
     (SELECT VALUE COUNT(1) FROM r IN c.recommendations JOIN mi IN r.menuItems) AS totalRecommendedItems,
@@ -83,7 +83,7 @@ Cosmos DB in Fabric supports rich querying capabilities including subqueries *(a
 
 1. In a new query editor, enter the following query to demonstrate scalar expressions. This query calculates a customer's membership tier based on their total loyalty points:
 
-```
+```SQL
 SELECT c.customerId,
 c.name,
 c.loyaltyPoints,

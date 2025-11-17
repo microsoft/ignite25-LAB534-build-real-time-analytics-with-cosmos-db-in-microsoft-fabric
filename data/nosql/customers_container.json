@@ -2,7 +2,7 @@
   {
     "id": "customer-001",
     "customerId": "customer-001",
-    "name": "Olivia Doe",
+    "name": "Olivia Smith",
     "email": "olivia.doe@example.com",
     "loyaltyPoints": 36,
     "lastPurchaseDate": "2025-10-11T12:04:10Z",
@@ -65,7 +65,7 @@
   {
     "id": "customer-002",
     "customerId": "customer-002",
-    "name": "Noah Brown",
+    "name": "Olivia Johnson",
     "email": "noah.brown@example.com",
     "loyaltyPoints": 30,
     "lastPurchaseDate": "2025-09-20T17:07:58Z",
@@ -128,7 +128,7 @@
   {
     "id": "customer-003",
     "customerId": "customer-003",
-    "name": "Olivia Jones",
+    "name": "Olivia Williams",
     "email": "olivia.jones@example.com",
     "loyaltyPoints": 37,
     "lastPurchaseDate": "2025-08-27T21:35:08Z",
@@ -193,7 +193,7 @@
   {
     "id": "customer-004",
     "customerId": "customer-004",
-    "name": "Jane Jones",
+    "name": "Olivia Brown",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 3,
     "lastPurchaseDate": "2025-08-19T07:52:31Z",
@@ -258,7 +258,7 @@
   {
     "id": "customer-005",
     "customerId": "customer-005",
-    "name": "Ava Jones",
+    "name": "Olivia Jones",
     "email": "ava.jones@example.com",
     "loyaltyPoints": 24,
     "lastPurchaseDate": "2025-09-13T12:58:49Z",
@@ -321,7 +321,7 @@
   {
     "id": "customer-006",
     "customerId": "customer-006",
-    "name": "Jane Brown",
+    "name": "Olivia Garcia",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 48,
     "lastPurchaseDate": "2025-10-02T00:26:48Z",
@@ -384,7 +384,7 @@
   {
     "id": "customer-007",
     "customerId": "customer-007",
-    "name": "Jane Johnson",
+    "name": "Olivia Miller",
     "email": "jane.johnson@example.com",
     "loyaltyPoints": 9,
     "lastPurchaseDate": "2025-08-06T11:25:20Z",
@@ -447,7 +447,7 @@
   {
     "id": "customer-008",
     "customerId": "customer-008",
-    "name": "Emma Doe",
+    "name": "Olivia Davis",
     "email": "emma.doe@example.com",
     "loyaltyPoints": 33,
     "lastPurchaseDate": "2025-10-02T06:57:26Z",
@@ -512,7 +512,7 @@
   {
     "id": "customer-009",
     "customerId": "customer-009",
-    "name": "Ava Williams",
+    "name": "Olivia Rodriguez",
     "email": "ava.williams@example.com",
     "loyaltyPoints": 47,
     "lastPurchaseDate": "2025-10-08T12:01:53Z",
@@ -575,7 +575,7 @@
   {
     "id": "customer-010",
     "customerId": "customer-010",
-    "name": "Jane Johnson",
+    "name": "Olivia Martinez",
     "email": "jane.johnson@example.com",
     "loyaltyPoints": 16,
     "lastPurchaseDate": "2025-09-21T08:54:27Z",
@@ -638,7 +638,7 @@
   {
     "id": "customer-011",
     "customerId": "customer-011",
-    "name": "Emma Jones",
+    "name": "Olivia Hernandez",
     "email": "emma.jones@example.com",
     "loyaltyPoints": 17,
     "lastPurchaseDate": "2025-08-13T04:42:58Z",
@@ -703,7 +703,7 @@
   {
     "id": "customer-012",
     "customerId": "customer-012",
-    "name": "Sophia Williams",
+    "name": "Olivia Lopez",
     "email": "sophia.williams@example.com",
     "loyaltyPoints": 3,
     "lastPurchaseDate": "2025-10-14T10:46:48Z",
@@ -768,7 +768,7 @@
   {
     "id": "customer-013",
     "customerId": "customer-013",
-    "name": "Mason Brown",
+    "name": "Olivia Gonzalez",
     "email": "mason.brown@example.com",
     "loyaltyPoints": 28,
     "lastPurchaseDate": "2025-10-14T06:10:50Z",
@@ -831,7 +831,7 @@
   {
     "id": "customer-014",
     "customerId": "customer-014",
-    "name": "Lucas Johnson",
+    "name": "Olivia Wilson",
     "email": "lucas.johnson@example.com",
     "loyaltyPoints": 33,
     "lastPurchaseDate": "2025-10-11T21:11:41Z",
@@ -894,7 +894,7 @@
   {
     "id": "customer-015",
     "customerId": "customer-015",
-    "name": "Ava Jones",
+    "name": "Olivia Anderson",
     "email": "ava.jones@example.com",
     "loyaltyPoints": 25,
     "lastPurchaseDate": "2025-10-01T20:29:23Z",
@@ -959,7 +959,7 @@
   {
     "id": "customer-016",
     "customerId": "customer-016",
-    "name": "Olivia Brown",
+    "name": "Olivia Thomas",
     "email": "olivia.brown@example.com",
     "loyaltyPoints": 23,
     "lastPurchaseDate": "2025-09-30T13:05:54Z",
@@ -1022,7 +1022,7 @@
   {
     "id": "customer-017",
     "customerId": "customer-017",
-    "name": "Emma Doe",
+    "name": "Olivia Taylor",
     "email": "emma.doe@example.com",
     "loyaltyPoints": 64,
     "lastPurchaseDate": "2025-10-08T06:00:54Z",
@@ -1085,7 +1085,7 @@
   {
     "id": "customer-018",
     "customerId": "customer-018",
-    "name": "Liam Brown",
+    "name": "Olivia Moore",
     "email": "liam.brown@example.com",
     "loyaltyPoints": 22,
     "lastPurchaseDate": "2025-09-09T15:34:04Z",
@@ -1148,7 +1148,7 @@
   {
     "id": "customer-019",
     "customerId": "customer-019",
-    "name": "Ava Jones",
+    "name": "Olivia Jackson",
     "email": "ava.jones@example.com",
     "loyaltyPoints": 13,
     "lastPurchaseDate": "2025-10-14T20:42:35Z",
@@ -1211,7 +1211,7 @@
   {
     "id": "customer-020",
     "customerId": "customer-020",
-    "name": "Liam Garcia",
+    "name": "Olivia Martin",
     "email": "liam.garcia@example.com",
     "loyaltyPoints": 31,
     "lastPurchaseDate": "2025-10-05T04:13:25Z",
@@ -1274,7 +1274,7 @@
   {
     "id": "customer-021",
     "customerId": "customer-021",
-    "name": "Sophia Brown",
+    "name": "Olivia Lee",
     "email": "sophia.brown@example.com",
     "loyaltyPoints": 36,
     "lastPurchaseDate": "2025-09-30T10:09:35Z",
@@ -1340,7 +1340,7 @@
   {
     "id": "customer-022",
     "customerId": "customer-022",
-    "name": "Jane Smith",
+    "name": "Olivia Perez",
     "email": "jane.smith@example.com",
     "loyaltyPoints": 26,
     "lastPurchaseDate": "2025-10-09T14:28:33Z",
@@ -1403,7 +1403,7 @@
   {
     "id": "customer-023",
     "customerId": "customer-023",
-    "name": "Sophia Doe",
+    "name": "Olivia Thompson",
     "email": "sophia.doe@example.com",
     "loyaltyPoints": 40,
     "lastPurchaseDate": "2025-10-08T12:19:34Z",
@@ -1466,7 +1466,7 @@
   {
     "id": "customer-024",
     "customerId": "customer-024",
-    "name": "Emma Johnson",
+    "name": "Olivia White",
     "email": "emma.johnson@example.com",
     "loyaltyPoints": 32,
     "lastPurchaseDate": "2025-09-14T09:29:19Z",
@@ -1529,7 +1529,7 @@
   {
     "id": "customer-025",
     "customerId": "customer-025",
-    "name": "Sophia Doe",
+    "name": "Olivia Harris",
     "email": "sophia.doe@example.com",
     "loyaltyPoints": 19,
     "lastPurchaseDate": "2025-09-20T17:16:27Z",
@@ -1594,7 +1594,7 @@
   {
     "id": "customer-026",
     "customerId": "customer-026",
-    "name": "Mason Smith",
+    "name": "Olivia Sanchez",
     "email": "mason.smith@example.com",
     "loyaltyPoints": 28,
     "lastPurchaseDate": "2025-10-09T03:41:41Z",
@@ -1657,7 +1657,7 @@
   {
     "id": "customer-027",
     "customerId": "customer-027",
-    "name": "Sophia Garcia",
+    "name": "Olivia Clark",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 3,
     "lastPurchaseDate": "2025-08-02T23:24:18Z",
@@ -1720,7 +1720,7 @@
   {
     "id": "customer-028",
     "customerId": "customer-028",
-    "name": "Lucas Miller",
+    "name": "Olivia Ramirez",
     "email": "lucas.miller@example.com",
     "loyaltyPoints": 52,
     "lastPurchaseDate": "2025-09-26T21:05:49Z",
@@ -1783,7 +1783,7 @@
   {
     "id": "customer-029",
     "customerId": "customer-029",
-    "name": "Sophia Garcia",
+    "name": "Olivia Lewis",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 28,
     "lastPurchaseDate": "2025-10-02T07:58:20Z",
@@ -1846,7 +1846,7 @@
   {
     "id": "customer-030",
     "customerId": "customer-030",
-    "name": "Sophia Doe",
+    "name": "Olivia Robinson",
     "email": "sophia.doe@example.com",
     "loyaltyPoints": 93,
     "lastPurchaseDate": "2025-10-08T09:15:52Z",
@@ -1909,7 +1909,7 @@
   {
     "id": "customer-031",
     "customerId": "customer-031",
-    "name": "John Smith",
+    "name": "Olivia Walker",
     "email": "john.smith@example.com",
     "loyaltyPoints": 65,
     "lastPurchaseDate": "2025-10-13T07:10:47Z",
@@ -1972,7 +1972,7 @@
   {
     "id": "customer-032",
     "customerId": "customer-032",
-    "name": "Noah Doe",
+    "name": "Olivia Young",
     "email": "noah.doe@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-09-17T01:17:45Z",
@@ -2035,7 +2035,7 @@
   {
     "id": "customer-033",
     "customerId": "customer-033",
-    "name": "Mason Miller",
+    "name": "Olivia Allen",
     "email": "mason.miller@example.com",
     "loyaltyPoints": 34,
     "lastPurchaseDate": "2025-10-14T14:31:24Z",
@@ -2098,7 +2098,7 @@
   {
     "id": "customer-034",
     "customerId": "customer-034",
-    "name": "Mason Doe",
+    "name": "Olivia King",
     "email": "mason.doe@example.com",
     "loyaltyPoints": 34,
     "lastPurchaseDate": "2025-09-28T20:17:19Z",
@@ -2161,7 +2161,7 @@
   {
     "id": "customer-035",
     "customerId": "customer-035",
-    "name": "Jane Doe",
+    "name": "Olivia Wright",
     "email": "jane.doe@example.com",
     "loyaltyPoints": 34,
     "lastPurchaseDate": "2025-09-19T04:51:55Z",
@@ -2224,7 +2224,7 @@
   {
     "id": "customer-036",
     "customerId": "customer-036",
-    "name": "John Jones",
+    "name": "Olivia Scott",
     "email": "john.jones@example.com",
     "loyaltyPoints": 8,
     "lastPurchaseDate": "2025-10-14T18:03:14Z",
@@ -2290,7 +2290,7 @@
   {
     "id": "customer-037",
     "customerId": "customer-037",
-    "name": "Sophia Williams",
+    "name": "Olivia Torres",
     "email": "sophia.williams@example.com",
     "loyaltyPoints": 24,
     "lastPurchaseDate": "2025-10-07T15:42:22Z",
@@ -2353,7 +2353,7 @@
   {
     "id": "customer-038",
     "customerId": "customer-038",
-    "name": "Jane Garcia",
+    "name": "Olivia Nguyen",
     "email": "jane.garcia@example.com",
     "loyaltyPoints": 62,
     "lastPurchaseDate": "2025-10-01T03:32:34Z",
@@ -2416,7 +2416,7 @@
   {
     "id": "customer-039",
     "customerId": "customer-039",
-    "name": "Jane Doe",
+    "name": "Olivia Hill",
     "email": "jane.doe@example.com",
     "loyaltyPoints": 13,
     "lastPurchaseDate": "2025-09-07T14:49:39Z",
@@ -2479,7 +2479,7 @@
   {
     "id": "customer-040",
     "customerId": "customer-040",
-    "name": "Olivia Jones",
+    "name": "Olivia Flores",
     "email": "olivia.jones@example.com",
     "loyaltyPoints": 28,
     "lastPurchaseDate": "2025-09-21T00:09:35Z",
@@ -2542,7 +2542,7 @@
   {
     "id": "customer-041",
     "customerId": "customer-041",
-    "name": "Noah Jones",
+    "name": "Olivia Green",
     "email": "noah.jones@example.com",
     "loyaltyPoints": 28,
     "lastPurchaseDate": "2025-09-23T22:21:47Z",
@@ -2605,7 +2605,7 @@
   {
     "id": "customer-042",
     "customerId": "customer-042",
-    "name": "Noah Williams",
+    "name": "Olivia Adams",
     "email": "noah.williams@example.com",
     "loyaltyPoints": 7,
     "lastPurchaseDate": "2025-09-27T14:38:33Z",
@@ -2671,7 +2671,7 @@
   {
     "id": "customer-043",
     "customerId": "customer-043",
-    "name": "John Doe",
+    "name": "Olivia Nelson",
     "email": "john.doe@example.com",
     "loyaltyPoints": 47,
     "lastPurchaseDate": "2025-10-03T17:04:49Z",
@@ -2734,7 +2734,7 @@
   {
     "id": "customer-044",
     "customerId": "customer-044",
-    "name": "Sophia Doe",
+    "name": "Olivia Baker",
     "email": "sophia.doe@example.com",
     "loyaltyPoints": 33,
     "lastPurchaseDate": "2025-10-04T10:01:44Z",
@@ -2797,7 +2797,7 @@
   {
     "id": "customer-045",
     "customerId": "customer-045",
-    "name": "Noah Doe",
+    "name": "Olivia Hall",
     "email": "noah.doe@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-08-13T05:47:02Z",
@@ -2860,7 +2860,7 @@
   {
     "id": "customer-046",
     "customerId": "customer-046",
-    "name": "Emma Smith",
+    "name": "Olivia Rivera",
     "email": "emma.smith@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-08-15T06:57:34Z",
@@ -2923,7 +2923,7 @@
   {
     "id": "customer-047",
     "customerId": "customer-047",
-    "name": "Ava Williams",
+    "name": "Olivia Campbell",
     "email": "ava.williams@example.com",
     "loyaltyPoints": 40,
     "lastPurchaseDate": "2025-09-27T07:38:26Z",
@@ -2986,7 +2986,7 @@
   {
     "id": "customer-048",
     "customerId": "customer-048",
-    "name": "Mason Williams",
+    "name": "Olivia Mitchell",
     "email": "mason.williams@example.com",
     "loyaltyPoints": 40,
     "lastPurchaseDate": "2025-09-22T10:29:29Z",
@@ -3049,7 +3049,7 @@
   {
     "id": "customer-049",
     "customerId": "customer-049",
-    "name": "Jane Smith",
+    "name": "Liam Smith",
     "email": "jane.smith@example.com",
     "loyaltyPoints": 42,
     "lastPurchaseDate": "2025-10-03T12:53:28Z",
@@ -3112,7 +3112,7 @@
   {
     "id": "customer-050",
     "customerId": "customer-050",
-    "name": "Sophia Miller",
+    "name": "Liam Johnson",
     "email": "sophia.miller@example.com",
     "loyaltyPoints": 26,
     "lastPurchaseDate": "2025-10-09T17:57:43Z",
@@ -3175,7 +3175,7 @@
   {
     "id": "customer-051",
     "customerId": "customer-051",
-    "name": "Emma Miller",
+    "name": "Liam Williams",
     "email": "emma.miller@example.com",
     "loyaltyPoints": 13,
     "lastPurchaseDate": "2025-08-18T14:01:54Z",
@@ -3238,7 +3238,7 @@
   {
     "id": "customer-052",
     "customerId": "customer-052",
-    "name": "Lucas Johnson",
+    "name": "Liam Brown",
     "email": "lucas.johnson@example.com",
     "loyaltyPoints": 67,
     "lastPurchaseDate": "2025-10-14T17:30:20Z",
@@ -3301,7 +3301,7 @@
   {
     "id": "customer-053",
     "customerId": "customer-053",
-    "name": "Olivia Doe",
+    "name": "Liam Jones",
     "email": "olivia.doe@example.com",
     "loyaltyPoints": 14,
     "lastPurchaseDate": "2025-10-06T07:12:10Z",
@@ -3364,7 +3364,7 @@
   {
     "id": "customer-054",
     "customerId": "customer-054",
-    "name": "Jane Brown",
+    "name": "Liam Garcia",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 71,
     "lastPurchaseDate": "2025-10-15T01:00:53Z",
@@ -3427,7 +3427,7 @@
   {
     "id": "customer-055",
     "customerId": "customer-055",
-    "name": "John Johnson",
+    "name": "Liam Miller",
     "email": "john.johnson@example.com",
     "loyaltyPoints": 24,
     "lastPurchaseDate": "2025-10-07T16:14:02Z",
@@ -3490,7 +3490,7 @@
   {
     "id": "customer-056",
     "customerId": "customer-056",
-    "name": "Olivia Williams",
+    "name": "Liam Davis",
     "email": "olivia.williams@example.com",
     "loyaltyPoints": 3,
     "lastPurchaseDate": "2025-08-24T08:17:48Z",
@@ -3556,7 +3556,7 @@
   {
     "id": "customer-057",
     "customerId": "customer-057",
-    "name": "Lucas Doe",
+    "name": "Liam Rodriguez",
     "email": "lucas.doe@example.com",
     "loyaltyPoints": 66,
     "lastPurchaseDate": "2025-09-29T11:35:40Z",
@@ -3619,7 +3619,7 @@
   {
     "id": "customer-058",
     "customerId": "customer-058",
-    "name": "Sophia Jones",
+    "name": "Liam Martinez",
     "email": "sophia.jones@example.com",
     "loyaltyPoints": 49,
     "lastPurchaseDate": "2025-10-09T02:51:49Z",
@@ -3682,7 +3682,7 @@
   {
     "id": "customer-059",
     "customerId": "customer-059",
-    "name": "Mason Jones",
+    "name": "Liam Hernandez",
     "email": "mason.jones@example.com",
     "loyaltyPoints": 19,
     "lastPurchaseDate": "2025-10-08T13:40:22Z",
@@ -3747,7 +3747,7 @@
   {
     "id": "customer-060",
     "customerId": "customer-060",
-    "name": "Liam Garcia",
+    "name": "Liam Lopez",
     "email": "liam.garcia@example.com",
     "loyaltyPoints": 60,
     "lastPurchaseDate": "2025-10-12T06:33:06Z",
@@ -3810,7 +3810,7 @@
   {
     "id": "customer-061",
     "customerId": "customer-061",
-    "name": "Noah Miller",
+    "name": "Liam Gonzalez",
     "email": "noah.miller@example.com",
     "loyaltyPoints": 20,
     "lastPurchaseDate": "2025-10-11T05:09:05Z",
@@ -3873,7 +3873,7 @@
   {
     "id": "customer-062",
     "customerId": "customer-062",
-    "name": "Emma Williams",
+    "name": "Liam Wilson",
     "email": "emma.williams@example.com",
     "loyaltyPoints": 19,
     "lastPurchaseDate": "2025-10-13T20:39:06Z",
@@ -3936,7 +3936,7 @@
   {
     "id": "customer-063",
     "customerId": "customer-063",
-    "name": "Mason Garcia",
+    "name": "Liam Anderson",
     "email": "mason.garcia@example.com",
     "loyaltyPoints": 22,
     "lastPurchaseDate": "2025-10-12T03:27:56Z",
@@ -3999,7 +3999,7 @@
   {
     "id": "customer-064",
     "customerId": "customer-064",
-    "name": "Lucas Garcia",
+    "name": "Liam Thomas",
     "email": "lucas.garcia@example.com",
     "loyaltyPoints": 31,
     "lastPurchaseDate": "2025-10-13T04:45:42Z",
@@ -4062,7 +4062,7 @@
   {
     "id": "customer-065",
     "customerId": "customer-065",
-    "name": "John Johnson",
+    "name": "Liam Taylor",
     "email": "john.johnson@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-09-28T20:45:17Z",
@@ -4125,7 +4125,7 @@
   {
     "id": "customer-066",
     "customerId": "customer-066",
-    "name": "Mason Smith",
+    "name": "Liam Moore",
     "email": "mason.smith@example.com",
     "loyaltyPoints": 38,
     "lastPurchaseDate": "2025-10-12T12:59:35Z",
@@ -4188,7 +4188,7 @@
   {
     "id": "customer-067",
     "customerId": "customer-067",
-    "name": "John Williams",
+    "name": "Liam Jackson",
     "email": "john.williams@example.com",
     "loyaltyPoints": 40,
     "lastPurchaseDate": "2025-09-27T18:38:00Z",
@@ -4254,7 +4254,7 @@
   {
     "id": "customer-068",
     "customerId": "customer-068",
-    "name": "Olivia Brown",
+    "name": "Liam Martin",
     "email": "olivia.brown@example.com",
     "loyaltyPoints": 35,
     "lastPurchaseDate": "2025-10-10T02:58:39Z",
@@ -4317,7 +4317,7 @@
   {
     "id": "customer-069",
     "customerId": "customer-069",
-    "name": "Lucas Jones",
+    "name": "Liam Lee",
     "email": "lucas.jones@example.com",
     "loyaltyPoints": 29,
     "lastPurchaseDate": "2025-10-05T07:37:16Z",
@@ -4380,7 +4380,7 @@
   {
     "id": "customer-070",
     "customerId": "customer-070",
-    "name": "Ava Miller",
+    "name": "Liam Perez",
     "email": "ava.miller@example.com",
     "loyaltyPoints": 57,
     "lastPurchaseDate": "2025-10-12T18:49:15Z",
@@ -4446,7 +4446,7 @@
   {
     "id": "customer-071",
     "customerId": "customer-071",
-    "name": "Liam Brown",
+    "name": "Liam Thompson",
     "email": "liam.brown@example.com",
     "loyaltyPoints": 27,
     "lastPurchaseDate": "2025-09-18T22:00:02Z",
@@ -4509,7 +4509,7 @@
   {
     "id": "customer-072",
     "customerId": "customer-072",
-    "name": "Mason Smith",
+    "name": "Liam White",
     "email": "mason.smith@example.com",
     "loyaltyPoints": 25,
     "lastPurchaseDate": "2025-09-21T22:18:14Z",
@@ -4572,7 +4572,7 @@
   {
     "id": "customer-073",
     "customerId": "customer-073",
-    "name": "Sophia Johnson",
+    "name": "Liam Harris",
     "email": "sophia.johnson@example.com",
     "loyaltyPoints": 50,
     "lastPurchaseDate": "2025-09-20T13:25:31Z",
@@ -4635,7 +4635,7 @@
   {
     "id": "customer-074",
     "customerId": "customer-074",
-    "name": "Olivia Garcia",
+    "name": "Liam Sanchez",
     "email": "olivia.garcia@example.com",
     "loyaltyPoints": 28,
     "lastPurchaseDate": "2025-10-15T14:36:47Z",
@@ -4698,7 +4698,7 @@
   {
     "id": "customer-075",
     "customerId": "customer-075",
-    "name": "John Smith",
+    "name": "Liam Clark",
     "email": "john.smith@example.com",
     "loyaltyPoints": 44,
     "lastPurchaseDate": "2025-10-15T07:22:47Z",
@@ -4761,7 +4761,7 @@
   {
     "id": "customer-076",
     "customerId": "customer-076",
-    "name": "Lucas Doe",
+    "name": "Liam Ramirez",
     "email": "lucas.doe@example.com",
     "loyaltyPoints": 29,
     "lastPurchaseDate": "2025-09-19T02:28:08Z",
@@ -4826,7 +4826,7 @@
   {
     "id": "customer-077",
     "customerId": "customer-077",
-    "name": "Ava Doe",
+    "name": "Liam Lewis",
     "email": "ava.doe@example.com",
     "loyaltyPoints": 16,
     "lastPurchaseDate": "2025-09-20T20:11:19Z",
@@ -4889,7 +4889,7 @@
   {
     "id": "customer-078",
     "customerId": "customer-078",
-    "name": "John Johnson",
+    "name": "Liam Robinson",
     "email": "john.johnson@example.com",
     "loyaltyPoints": 21,
     "lastPurchaseDate": "2025-10-08T13:22:00Z",
@@ -4952,7 +4952,7 @@
   {
     "id": "customer-079",
     "customerId": "customer-079",
-    "name": "John Garcia",
+    "name": "Liam Walker",
     "email": "john.garcia@example.com",
     "loyaltyPoints": 4,
     "lastPurchaseDate": "2025-08-23T11:03:32Z",
@@ -5015,7 +5015,7 @@
   {
     "id": "customer-080",
     "customerId": "customer-080",
-    "name": "Mason Doe",
+    "name": "Liam Young",
     "email": "mason.doe@example.com",
     "loyaltyPoints": 5,
     "lastPurchaseDate": "2025-09-04T01:39:52Z",
@@ -5078,7 +5078,7 @@
   {
     "id": "customer-081",
     "customerId": "customer-081",
-    "name": "Sophia Miller",
+    "name": "Liam Allen",
     "email": "sophia.miller@example.com",
     "loyaltyPoints": 74,
     "lastPurchaseDate": "2025-10-14T04:12:45Z",
@@ -5141,7 +5141,7 @@
   {
     "id": "customer-082",
     "customerId": "customer-082",
-    "name": "John Smith",
+    "name": "Liam King",
     "email": "john.smith@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-10-09T23:54:24Z",
@@ -5204,7 +5204,7 @@
   {
     "id": "customer-083",
     "customerId": "customer-083",
-    "name": "Jane Garcia",
+    "name": "Liam Wright",
     "email": "jane.garcia@example.com",
     "loyaltyPoints": 34,
     "lastPurchaseDate": "2025-10-03T19:34:28Z",
@@ -5267,7 +5267,7 @@
   {
     "id": "customer-084",
     "customerId": "customer-084",
-    "name": "Noah Williams",
+    "name": "Liam Scott",
     "email": "noah.williams@example.com",
     "loyaltyPoints": 41,
     "lastPurchaseDate": "2025-08-30T08:12:19Z",
@@ -5332,7 +5332,7 @@
   {
     "id": "customer-085",
     "customerId": "customer-085",
-    "name": "Liam Jones",
+    "name": "Liam Torres",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 29,
     "lastPurchaseDate": "2025-10-11T11:54:42Z",
@@ -5397,7 +5397,7 @@
   {
     "id": "customer-086",
     "customerId": "customer-086",
-    "name": "Sophia Williams",
+    "name": "Liam Nguyen",
     "email": "sophia.williams@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-09-30T00:40:38Z",
@@ -5460,7 +5460,7 @@
   {
     "id": "customer-087",
     "customerId": "customer-087",
-    "name": "Emma Doe",
+    "name": "Liam Hill",
     "email": "emma.doe@example.com",
     "loyaltyPoints": 52,
     "lastPurchaseDate": "2025-10-14T09:04:12Z",
@@ -5523,7 +5523,7 @@
   {
     "id": "customer-088",
     "customerId": "customer-088",
-    "name": "Sophia Johnson",
+    "name": "Liam Flores",
     "email": "sophia.johnson@example.com",
     "loyaltyPoints": 51,
     "lastPurchaseDate": "2025-10-06T19:32:35Z",
@@ -5589,7 +5589,7 @@
   {
     "id": "customer-089",
     "customerId": "customer-089",
-    "name": "Mason Garcia",
+    "name": "Liam Green",
     "email": "mason.garcia@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-10-05T02:10:46Z",
@@ -5652,7 +5652,7 @@
   {
     "id": "customer-090",
     "customerId": "customer-090",
-    "name": "Liam Doe",
+    "name": "Liam Adams",
     "email": "liam.doe@example.com",
     "loyaltyPoints": 48,
     "lastPurchaseDate": "2025-10-14T19:26:00Z",
@@ -5715,7 +5715,7 @@
   {
     "id": "customer-091",
     "customerId": "customer-091",
-    "name": "Liam Jones",
+    "name": "Liam Nelson",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 28,
     "lastPurchaseDate": "2025-09-21T18:09:01Z",
@@ -5778,7 +5778,7 @@
   {
     "id": "customer-092",
     "customerId": "customer-092",
-    "name": "Jane Smith",
+    "name": "Liam Baker",
     "email": "jane.smith@example.com",
     "loyaltyPoints": 12,
     "lastPurchaseDate": "2025-10-02T20:33:19Z",
@@ -5841,7 +5841,7 @@
   {
     "id": "customer-093",
     "customerId": "customer-093",
-    "name": "Emma Smith",
+    "name": "Liam Hall",
     "email": "emma.smith@example.com",
     "loyaltyPoints": 30,
     "lastPurchaseDate": "2025-09-02T09:26:27Z",
@@ -5904,7 +5904,7 @@
   {
     "id": "customer-094",
     "customerId": "customer-094",
-    "name": "Noah Williams",
+    "name": "Liam Rivera",
     "email": "noah.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -5969,7 +5969,7 @@
   {
     "id": "customer-095",
     "customerId": "customer-095",
-    "name": "Mason Williams",
+    "name": "Liam Campbell",
     "email": "mason.williams@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-10-09T17:38:05Z",
@@ -6032,7 +6032,7 @@
   {
     "id": "customer-096",
     "customerId": "customer-096",
-    "name": "Noah Brown",
+    "name": "Liam Mitchell",
     "email": "noah.brown@example.com",
     "loyaltyPoints": 17,
     "lastPurchaseDate": "2025-09-25T17:46:31Z",
@@ -6095,7 +6095,7 @@
   {
     "id": "customer-097",
     "customerId": "customer-097",
-    "name": "Jane Jones",
+    "name": "Emma Smith",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 33,
     "lastPurchaseDate": "2025-08-15T02:26:43Z",
@@ -6223,7 +6223,7 @@
   {
     "id": "customer-099",
     "customerId": "customer-099",
-    "name": "Emma Johnson",
+    "name": "Emma Williams",
     "email": "emma.johnson@example.com",
     "loyaltyPoints": 37,
     "lastPurchaseDate": "2025-10-06T16:48:29Z",
@@ -6288,7 +6288,7 @@
   {
     "id": "customer-100",
     "customerId": "customer-100",
-    "name": "Noah Johnson",
+    "name": "Emma Brown",
     "email": "noah.johnson@example.com",
     "loyaltyPoints": 19,
     "lastPurchaseDate": "2025-09-24T09:32:14Z",
@@ -6351,7 +6351,7 @@
   {
     "id": "customer-101",
     "customerId": "customer-101",
-    "name": "John Doe",
+    "name": "Emma Jones",
     "email": "john.doe@example.com",
     "loyaltyPoints": 48,
     "lastPurchaseDate": "2025-10-12T18:03:45Z",
@@ -6414,7 +6414,7 @@
   {
     "id": "customer-102",
     "customerId": "customer-102",
-    "name": "Mason Brown",
+    "name": "Emma Garcia",
     "email": "mason.brown@example.com",
     "loyaltyPoints": 24,
     "lastPurchaseDate": "2025-10-05T06:25:32Z",
@@ -6477,7 +6477,7 @@
   {
     "id": "customer-103",
     "customerId": "customer-103",
-    "name": "Liam Garcia",
+    "name": "Emma Miller",
     "email": "liam.garcia@example.com",
     "loyaltyPoints": 6,
     "lastPurchaseDate": "2025-09-19T16:20:29Z",
@@ -6542,7 +6542,7 @@
   {
     "id": "customer-104",
     "customerId": "customer-104",
-    "name": "Noah Garcia",
+    "name": "Emma Davis",
     "email": "noah.garcia@example.com",
     "loyaltyPoints": 37,
     "lastPurchaseDate": "2025-10-14T09:54:54Z",
@@ -6605,7 +6605,7 @@
   {
     "id": "customer-105",
     "customerId": "customer-105",
-    "name": "Ava Miller",
+    "name": "Emma Rodriguez",
     "email": "ava.miller@example.com",
     "loyaltyPoints": 13,
     "lastPurchaseDate": "2025-10-05T16:24:23Z",
@@ -6668,7 +6668,7 @@
   {
     "id": "customer-106",
     "customerId": "customer-106",
-    "name": "Liam Williams",
+    "name": "Emma Martinez",
     "email": "liam.williams@example.com",
     "loyaltyPoints": 30,
     "lastPurchaseDate": "2025-10-15T13:08:58Z",
@@ -6731,7 +6731,7 @@
   {
     "id": "customer-107",
     "customerId": "customer-107",
-    "name": "Emma Smith",
+    "name": "Emma Hernandez",
     "email": "emma.smith@example.com",
     "loyaltyPoints": 59,
     "lastPurchaseDate": "2025-10-09T04:42:28Z",
@@ -6794,7 +6794,7 @@
   {
     "id": "customer-108",
     "customerId": "customer-108",
-    "name": "John Johnson",
+    "name": "Emma Lopez",
     "email": "john.johnson@example.com",
     "loyaltyPoints": 34,
     "lastPurchaseDate": "2025-10-07T09:47:54Z",
@@ -6857,7 +6857,7 @@
   {
     "id": "customer-109",
     "customerId": "customer-109",
-    "name": "Sophia Jones",
+    "name": "Emma Gonzalez",
     "email": "sophia.jones@example.com",
     "loyaltyPoints": 64,
     "lastPurchaseDate": "2025-10-13T16:45:03Z",
@@ -6920,7 +6920,7 @@
   {
     "id": "customer-110",
     "customerId": "customer-110",
-    "name": "John Brown",
+    "name": "Emma Wilson",
     "email": "john.brown@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-09-26T03:36:57Z",
@@ -6983,7 +6983,7 @@
   {
     "id": "customer-111",
     "customerId": "customer-111",
-    "name": "Emma Williams",
+    "name": "Emma Anderson",
     "email": "emma.williams@example.com",
     "loyaltyPoints": 44,
     "lastPurchaseDate": "2025-08-31T07:47:11Z",
@@ -7049,7 +7049,7 @@
   {
     "id": "customer-112",
     "customerId": "customer-112",
-    "name": "Noah Jones",
+    "name": "Emma Thomas",
     "email": "noah.jones@example.com",
     "loyaltyPoints": 55,
     "lastPurchaseDate": "2025-10-10T13:37:57Z",
@@ -7112,7 +7112,7 @@
   {
     "id": "customer-113",
     "customerId": "customer-113",
-    "name": "Mason Jones",
+    "name": "Emma Taylor",
     "email": "mason.jones@example.com",
     "loyaltyPoints": 5,
     "lastPurchaseDate": "2025-10-09T16:31:38Z",
@@ -7177,7 +7177,7 @@
   {
     "id": "customer-114",
     "customerId": "customer-114",
-    "name": "Liam Williams",
+    "name": "Emma Moore",
     "email": "liam.williams@example.com",
     "loyaltyPoints": 16,
     "lastPurchaseDate": "2025-09-10T17:09:26Z",
@@ -7240,7 +7240,7 @@
   {
     "id": "customer-115",
     "customerId": "customer-115",
-    "name": "Jane Doe",
+    "name": "Emma Jackson",
     "email": "jane.doe@example.com",
     "loyaltyPoints": 14,
     "lastPurchaseDate": "2025-09-26T05:09:36Z",
@@ -7306,7 +7306,7 @@
   {
     "id": "customer-116",
     "customerId": "customer-116",
-    "name": "Lucas Doe",
+    "name": "Emma Martin",
     "email": "lucas.doe@example.com",
     "loyaltyPoints": 23,
     "lastPurchaseDate": "2025-09-11T14:53:25Z",
@@ -7371,7 +7371,7 @@
   {
     "id": "customer-117",
     "customerId": "customer-117",
-    "name": "Mason Miller",
+    "name": "Emma Lee",
     "email": "mason.miller@example.com",
     "loyaltyPoints": 66,
     "lastPurchaseDate": "2025-10-13T21:13:07Z",
@@ -7434,7 +7434,7 @@
   {
     "id": "customer-118",
     "customerId": "customer-118",
-    "name": "Emma Doe",
+    "name": "Emma Perez",
     "email": "emma.doe@example.com",
     "loyaltyPoints": 58,
     "lastPurchaseDate": "2025-10-05T17:40:53Z",
@@ -7497,7 +7497,7 @@
   {
     "id": "customer-119",
     "customerId": "customer-119",
-    "name": "Liam Doe",
+    "name": "Emma Thompson",
     "email": "liam.doe@example.com",
     "loyaltyPoints": 24,
     "lastPurchaseDate": "2025-10-12T22:32:29Z",
@@ -7563,7 +7563,7 @@
   {
     "id": "customer-120",
     "customerId": "customer-120",
-    "name": "Sophia Doe",
+    "name": "Emma White",
     "email": "sophia.doe@example.com",
     "loyaltyPoints": 29,
     "lastPurchaseDate": "2025-10-14T11:14:49Z",
@@ -7626,7 +7626,7 @@
   {
     "id": "customer-121",
     "customerId": "customer-121",
-    "name": "Olivia Garcia",
+    "name": "Emma Harris",
     "email": "olivia.garcia@example.com",
     "loyaltyPoints": 28,
     "lastPurchaseDate": "2025-09-22T15:32:19Z",
@@ -7692,7 +7692,7 @@
   {
     "id": "customer-122",
     "customerId": "customer-122",
-    "name": "Ava Doe",
+    "name": "Emma Sanchez",
     "email": "ava.doe@example.com",
     "loyaltyPoints": 26,
     "lastPurchaseDate": "2025-10-06T01:37:06Z",
@@ -7755,7 +7755,7 @@
   {
     "id": "customer-123",
     "customerId": "customer-123",
-    "name": "Ava Williams",
+    "name": "Emma Clark",
     "email": "ava.williams@example.com",
     "loyaltyPoints": 5,
     "lastPurchaseDate": "2025-10-12T19:25:29Z",
@@ -7818,7 +7818,7 @@
   {
     "id": "customer-124",
     "customerId": "customer-124",
-    "name": "Jane Miller",
+    "name": "Emma Ramirez",
     "email": "jane.miller@example.com",
     "loyaltyPoints": 55,
     "lastPurchaseDate": "2025-10-15T11:09:50Z",
@@ -7881,7 +7881,7 @@
   {
     "id": "customer-125",
     "customerId": "customer-125",
-    "name": "John Johnson",
+    "name": "Emma Lewis",
     "email": "john.johnson@example.com",
     "loyaltyPoints": 55,
     "lastPurchaseDate": "2025-10-14T15:16:24Z",
@@ -7944,7 +7944,7 @@
   {
     "id": "customer-126",
     "customerId": "customer-126",
-    "name": "Olivia Williams",
+    "name": "Emma Robinson",
     "email": "olivia.williams@example.com",
     "loyaltyPoints": 26,
     "lastPurchaseDate": "2025-10-12T01:22:44Z",
@@ -8007,7 +8007,7 @@
   {
     "id": "customer-127",
     "customerId": "customer-127",
-    "name": "Liam Doe",
+    "name": "Emma Walker",
     "email": "liam.doe@example.com",
     "loyaltyPoints": 21,
     "lastPurchaseDate": "2025-09-27T09:55:08Z",
@@ -8070,7 +8070,7 @@
   {
     "id": "customer-128",
     "customerId": "customer-128",
-    "name": "Ava Doe",
+    "name": "Emma Young",
     "email": "ava.doe@example.com",
     "loyaltyPoints": 28,
     "lastPurchaseDate": "2025-09-16T07:27:43Z",
@@ -8133,7 +8133,7 @@
   {
     "id": "customer-129",
     "customerId": "customer-129",
-    "name": "Mason Doe",
+    "name": "Emma Allen",
     "email": "mason.doe@example.com",
     "loyaltyPoints": 4,
     "lastPurchaseDate": "2025-09-25T04:03:45Z",
@@ -8196,7 +8196,7 @@
   {
     "id": "customer-130",
     "customerId": "customer-130",
-    "name": "John Doe",
+    "name": "Emma King",
     "email": "john.doe@example.com",
     "loyaltyPoints": 11,
     "lastPurchaseDate": "2025-10-14T20:58:57Z",
@@ -8259,7 +8259,7 @@
   {
     "id": "customer-131",
     "customerId": "customer-131",
-    "name": "Lucas Garcia",
+    "name": "Emma Wright",
     "email": "lucas.garcia@example.com",
     "loyaltyPoints": 15,
     "lastPurchaseDate": "2025-09-05T08:20:16Z",
@@ -8322,7 +8322,7 @@
   {
     "id": "customer-132",
     "customerId": "customer-132",
-    "name": "Sophia Williams",
+    "name": "Emma Scott",
     "email": "sophia.williams@example.com",
     "loyaltyPoints": 20,
     "lastPurchaseDate": "2025-09-30T11:49:07Z",
@@ -8385,7 +8385,7 @@
   {
     "id": "customer-133",
     "customerId": "customer-133",
-    "name": "Jane Brown",
+    "name": "Emma Torres",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 8,
     "lastPurchaseDate": "2025-09-18T16:51:24Z",
@@ -8448,7 +8448,7 @@
   {
     "id": "customer-134",
     "customerId": "customer-134",
-    "name": "Lucas Brown",
+    "name": "Emma Nguyen",
     "email": "lucas.brown@example.com",
     "loyaltyPoints": 63,
     "lastPurchaseDate": "2025-10-10T21:58:16Z",
@@ -8511,7 +8511,7 @@
   {
     "id": "customer-135",
     "customerId": "customer-135",
-    "name": "Ava Garcia",
+    "name": "Emma Hill",
     "email": "ava.garcia@example.com",
     "loyaltyPoints": 32,
     "lastPurchaseDate": "2025-10-08T19:37:21Z",
@@ -8574,7 +8574,7 @@
   {
     "id": "customer-136",
     "customerId": "customer-136",
-    "name": "Lucas Smith",
+    "name": "Emma Flores",
     "email": "lucas.smith@example.com",
     "loyaltyPoints": 10,
     "lastPurchaseDate": "2025-08-27T01:23:43Z",
@@ -8637,7 +8637,7 @@
   {
     "id": "customer-137",
     "customerId": "customer-137",
-    "name": "Olivia Johnson",
+    "name": "Emma Green",
     "email": "olivia.johnson@example.com",
     "loyaltyPoints": 105,
     "lastPurchaseDate": "2025-10-08T23:48:09Z",
@@ -8700,7 +8700,7 @@
   {
     "id": "customer-138",
     "customerId": "customer-138",
-    "name": "Liam Doe",
+    "name": "Emma Adams",
     "email": "liam.doe@example.com",
     "loyaltyPoints": 43,
     "lastPurchaseDate": "2025-09-28T04:30:09Z",
@@ -8763,7 +8763,7 @@
   {
     "id": "customer-139",
     "customerId": "customer-139",
-    "name": "Sophia Johnson",
+    "name": "Emma Nelson",
     "email": "sophia.johnson@example.com",
     "loyaltyPoints": 73,
     "lastPurchaseDate": "2025-10-11T02:57:45Z",
@@ -8826,7 +8826,7 @@
   {
     "id": "customer-140",
     "customerId": "customer-140",
-    "name": "Olivia Miller",
+    "name": "Emma Baker",
     "email": "olivia.miller@example.com",
     "loyaltyPoints": 17,
     "lastPurchaseDate": "2025-10-07T20:03:48Z",
@@ -8889,7 +8889,7 @@
   {
     "id": "customer-141",
     "customerId": "customer-141",
-    "name": "Sophia Brown",
+    "name": "Emma Hall",
     "email": "sophia.brown@example.com",
     "loyaltyPoints": 30,
     "lastPurchaseDate": "2025-10-14T18:40:45Z",
@@ -8952,7 +8952,7 @@
   {
     "id": "customer-142",
     "customerId": "customer-142",
-    "name": "Emma Garcia",
+    "name": "Emma Rivera",
     "email": "emma.garcia@example.com",
     "loyaltyPoints": 32,
     "lastPurchaseDate": "2025-10-04T08:05:40Z",
@@ -9015,7 +9015,7 @@
   {
     "id": "customer-143",
     "customerId": "customer-143",
-    "name": "Noah Brown",
+    "name": "Emma Campbell",
     "email": "noah.brown@example.com",
     "loyaltyPoints": 14,
     "lastPurchaseDate": "2025-10-02T15:35:51Z",
@@ -9078,7 +9078,7 @@
   {
     "id": "customer-144",
     "customerId": "customer-144",
-    "name": "Jane Brown",
+    "name": "Emma Mitchell",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 29,
     "lastPurchaseDate": "2025-10-14T21:37:58Z",
@@ -9143,7 +9143,7 @@
   {
     "id": "customer-145",
     "customerId": "customer-145",
-    "name": "Mason Williams",
+    "name": "Noah Smith",
     "email": "mason.williams@example.com",
     "loyaltyPoints": 32,
     "lastPurchaseDate": "2025-10-11T23:33:47Z",
@@ -9206,7 +9206,7 @@
   {
     "id": "customer-146",
     "customerId": "customer-146",
-    "name": "Noah Miller",
+    "name": "Noah Johnson",
     "email": "noah.miller@example.com",
     "loyaltyPoints": 49,
     "lastPurchaseDate": "2025-09-29T01:09:38Z",
@@ -9269,7 +9269,7 @@
   {
     "id": "customer-147",
     "customerId": "customer-147",
-    "name": "Liam Doe",
+    "name": "Noah Williams",
     "email": "liam.doe@example.com",
     "loyaltyPoints": 63,
     "lastPurchaseDate": "2025-10-09T15:43:53Z",
@@ -9332,7 +9332,7 @@
   {
     "id": "customer-148",
     "customerId": "customer-148",
-    "name": "Ava Jones",
+    "name": "Noah Brown",
     "email": "ava.jones@example.com",
     "loyaltyPoints": 50,
     "lastPurchaseDate": "2025-10-14T13:57:52Z",
@@ -9395,7 +9395,7 @@
   {
     "id": "customer-149",
     "customerId": "customer-149",
-    "name": "Emma Johnson",
+    "name": "Noah Jones",
     "email": "emma.johnson@example.com",
     "loyaltyPoints": 39,
     "lastPurchaseDate": "2025-10-04T17:08:20Z",
@@ -9458,7 +9458,7 @@
   {
     "id": "customer-150",
     "customerId": "customer-150",
-    "name": "Mason Doe",
+    "name": "Noah Garcia",
     "email": "mason.doe@example.com",
     "loyaltyPoints": 73,
     "lastPurchaseDate": "2025-10-12T07:07:06Z",
@@ -9521,7 +9521,7 @@
   {
     "id": "customer-151",
     "customerId": "customer-151",
-    "name": "Jane Jones",
+    "name": "Noah Miller",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-10-10T14:24:19Z",
@@ -9587,7 +9587,7 @@
   {
     "id": "customer-152",
     "customerId": "customer-152",
-    "name": "John Williams",
+    "name": "Noah Davis",
     "email": "john.williams@example.com",
     "loyaltyPoints": 4,
     "lastPurchaseDate": "2025-09-03T02:43:44Z",
@@ -9650,7 +9650,7 @@
   {
     "id": "customer-153",
     "customerId": "customer-153",
-    "name": "Emma Brown",
+    "name": "Noah Rodriguez",
     "email": "emma.brown@example.com",
     "loyaltyPoints": 25,
     "lastPurchaseDate": "2025-10-07T02:06:12Z",
@@ -9713,7 +9713,7 @@
   {
     "id": "customer-154",
     "customerId": "customer-154",
-    "name": "Mason Williams",
+    "name": "Noah Martinez",
     "email": "mason.williams@example.com",
     "loyaltyPoints": 12,
     "lastPurchaseDate": "2025-10-10T16:05:28Z",
@@ -9776,7 +9776,7 @@
   {
     "id": "customer-155",
     "customerId": "customer-155",
-    "name": "Lucas Miller",
+    "name": "Noah Hernandez",
     "email": "lucas.miller@example.com",
     "loyaltyPoints": 27,
     "lastPurchaseDate": "2025-10-12T12:13:14Z",
@@ -9839,7 +9839,7 @@
   {
     "id": "customer-156",
     "customerId": "customer-156",
-    "name": "Lucas Garcia",
+    "name": "Noah Lopez",
     "email": "lucas.garcia@example.com",
     "loyaltyPoints": 3,
     "lastPurchaseDate": "2025-09-04T15:34:57Z",
@@ -9905,7 +9905,7 @@
   {
     "id": "customer-157",
     "customerId": "customer-157",
-    "name": "Ava Miller",
+    "name": "Noah Gonzalez",
     "email": "ava.miller@example.com",
     "loyaltyPoints": 27,
     "lastPurchaseDate": "2025-09-25T13:50:45Z",
@@ -9968,7 +9968,7 @@
   {
     "id": "customer-158",
     "customerId": "customer-158",
-    "name": "Ava Johnson",
+    "name": "Noah Wilson",
     "email": "ava.johnson@example.com",
     "loyaltyPoints": 97,
     "lastPurchaseDate": "2025-10-14T21:54:46Z",
@@ -10031,7 +10031,7 @@
   {
     "id": "customer-159",
     "customerId": "customer-159",
-    "name": "Olivia Williams",
+    "name": "Noah Anderson",
     "email": "olivia.williams@example.com",
     "loyaltyPoints": 43,
     "lastPurchaseDate": "2025-09-15T10:21:02Z",
@@ -10094,7 +10094,7 @@
   {
     "id": "customer-160",
     "customerId": "customer-160",
-    "name": "Liam Williams",
+    "name": "Noah Thomas",
     "email": "liam.williams@example.com",
     "loyaltyPoints": 13,
     "lastPurchaseDate": "2025-10-12T01:20:13Z",
@@ -10157,7 +10157,7 @@
   {
     "id": "customer-161",
     "customerId": "customer-161",
-    "name": "Olivia Jones",
+    "name": "Noah Taylor",
     "email": "olivia.jones@example.com",
     "loyaltyPoints": 64,
     "lastPurchaseDate": "2025-10-13T23:54:12Z",
@@ -10220,7 +10220,7 @@
   {
     "id": "customer-162",
     "customerId": "customer-162",
-    "name": "John Miller",
+    "name": "Noah Moore",
     "email": "john.miller@example.com",
     "loyaltyPoints": 45,
     "lastPurchaseDate": "2025-09-27T19:13:19Z",
@@ -10285,7 +10285,7 @@
   {
     "id": "customer-163",
     "customerId": "customer-163",
-    "name": "Mason Brown",
+    "name": "Noah Jackson",
     "email": "mason.brown@example.com",
     "loyaltyPoints": 29,
     "lastPurchaseDate": "2025-10-13T13:15:02Z",
@@ -10348,7 +10348,7 @@
   {
     "id": "customer-164",
     "customerId": "customer-164",
-    "name": "Olivia Brown",
+    "name": "Noah Martin",
     "email": "olivia.brown@example.com",
     "loyaltyPoints": 8,
     "lastPurchaseDate": "2025-10-05T07:16:13Z",
@@ -10411,7 +10411,7 @@
   {
     "id": "customer-165",
     "customerId": "customer-165",
-    "name": "Sophia Garcia",
+    "name": "Noah Lee",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 23,
     "lastPurchaseDate": "2025-09-21T00:23:08Z",
@@ -10474,7 +10474,7 @@
   {
     "id": "customer-166",
     "customerId": "customer-166",
-    "name": "Sophia Williams",
+    "name": "Noah Perez",
     "email": "sophia.williams@example.com",
     "loyaltyPoints": 43,
     "lastPurchaseDate": "2025-10-04T06:42:05Z",
@@ -10537,7 +10537,7 @@
   {
     "id": "customer-167",
     "customerId": "customer-167",
-    "name": "Jane Jones",
+    "name": "Noah Thompson",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-10-05T11:08:38Z",
@@ -10600,7 +10600,7 @@
   {
     "id": "customer-168",
     "customerId": "customer-168",
-    "name": "Olivia Doe",
+    "name": "Noah White",
     "email": "olivia.doe@example.com",
     "loyaltyPoints": 44,
     "lastPurchaseDate": "2025-10-12T20:13:03Z",
@@ -10663,7 +10663,7 @@
   {
     "id": "customer-169",
     "customerId": "customer-169",
-    "name": "Jane Doe",
+    "name": "Noah Harris",
     "email": "jane.doe@example.com",
     "loyaltyPoints": 40,
     "lastPurchaseDate": "2025-09-22T00:26:56Z",
@@ -10728,7 +10728,7 @@
   {
     "id": "customer-170",
     "customerId": "customer-170",
-    "name": "Mason Garcia",
+    "name": "Noah Sanchez",
     "email": "mason.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -10793,7 +10793,7 @@
   {
     "id": "customer-171",
     "customerId": "customer-171",
-    "name": "Noah Miller",
+    "name": "Noah Clark",
     "email": "noah.miller@example.com",
     "loyaltyPoints": 34,
     "lastPurchaseDate": "2025-10-14T12:21:18Z",
@@ -10856,7 +10856,7 @@
   {
     "id": "customer-172",
     "customerId": "customer-172",
-    "name": "Liam Miller",
+    "name": "Noah Ramirez",
     "email": "liam.miller@example.com",
     "loyaltyPoints": 12,
     "lastPurchaseDate": "2025-10-10T13:45:12Z",
@@ -10919,7 +10919,7 @@
   {
     "id": "customer-173",
     "customerId": "customer-173",
-    "name": "John Johnson",
+    "name": "Noah Lewis",
     "email": "john.johnson@example.com",
     "loyaltyPoints": 30,
     "lastPurchaseDate": "2025-10-12T23:19:24Z",
@@ -10982,7 +10982,7 @@
   {
     "id": "customer-174",
     "customerId": "customer-174",
-    "name": "Emma Garcia",
+    "name": "Noah Robinson",
     "email": "emma.garcia@example.com",
     "loyaltyPoints": 59,
     "lastPurchaseDate": "2025-10-12T18:50:17Z",
@@ -11045,7 +11045,7 @@
   {
     "id": "customer-175",
     "customerId": "customer-175",
-    "name": "Liam Johnson",
+    "name": "Noah Walker",
     "email": "liam.johnson@example.com",
     "loyaltyPoints": 20,
     "lastPurchaseDate": "2025-10-14T20:41:41Z",
@@ -11108,7 +11108,7 @@
   {
     "id": "customer-176",
     "customerId": "customer-176",
-    "name": "Noah Johnson",
+    "name": "Noah Young",
     "email": "noah.johnson@example.com",
     "loyaltyPoints": 39,
     "lastPurchaseDate": "2025-10-05T00:51:34Z",
@@ -11173,7 +11173,7 @@
   {
     "id": "customer-177",
     "customerId": "customer-177",
-    "name": "Ava Jones",
+    "name": "Noah Allen",
     "email": "ava.jones@example.com",
     "loyaltyPoints": 7,
     "lastPurchaseDate": "2025-10-06T01:11:51Z",
@@ -11236,7 +11236,7 @@
   {
     "id": "customer-178",
     "customerId": "customer-178",
-    "name": "Lucas Jones",
+    "name": "Noah King",
     "email": "lucas.jones@example.com",
     "loyaltyPoints": 15,
     "lastPurchaseDate": "2025-10-15T03:30:25Z",
@@ -11299,7 +11299,7 @@
   {
     "id": "customer-179",
     "customerId": "customer-179",
-    "name": "Mason Brown",
+    "name": "Noah Wright",
     "email": "mason.brown@example.com",
     "loyaltyPoints": 62,
     "lastPurchaseDate": "2025-10-12T04:41:02Z",
@@ -11362,7 +11362,7 @@
   {
     "id": "customer-180",
     "customerId": "customer-180",
-    "name": "Sophia Johnson",
+    "name": "Noah Scott",
     "email": "sophia.johnson@example.com",
     "loyaltyPoints": 25,
     "lastPurchaseDate": "2025-08-23T02:27:18Z",
@@ -11425,7 +11425,7 @@
   {
     "id": "customer-181",
     "customerId": "customer-181",
-    "name": "Liam Garcia",
+    "name": "Noah Torres",
     "email": "liam.garcia@example.com",
     "loyaltyPoints": 4,
     "lastPurchaseDate": "2025-08-16T23:01:40Z",
@@ -11488,7 +11488,7 @@
   {
     "id": "customer-182",
     "customerId": "customer-182",
-    "name": "Liam Miller",
+    "name": "Noah Nguyen",
     "email": "liam.miller@example.com",
     "loyaltyPoints": 16,
     "lastPurchaseDate": "2025-10-13T07:54:14Z",
@@ -11554,7 +11554,7 @@
   {
     "id": "customer-183",
     "customerId": "customer-183",
-    "name": "John Jones",
+    "name": "Noah Hill",
     "email": "john.jones@example.com",
     "loyaltyPoints": 70,
     "lastPurchaseDate": "2025-10-02T19:33:17Z",
@@ -11617,7 +11617,7 @@
   {
     "id": "customer-184",
     "customerId": "customer-184",
-    "name": "Mason Miller",
+    "name": "Noah Flores",
     "email": "mason.miller@example.com",
     "loyaltyPoints": 5,
     "lastPurchaseDate": "2025-09-28T16:48:32Z",
@@ -11680,7 +11680,7 @@
   {
     "id": "customer-185",
     "customerId": "customer-185",
-    "name": "Ava Doe",
+    "name": "Noah Green",
     "email": "ava.doe@example.com",
     "loyaltyPoints": 11,
     "lastPurchaseDate": "2025-08-17T07:44:03Z",
@@ -11743,7 +11743,7 @@
   {
     "id": "customer-186",
     "customerId": "customer-186",
-    "name": "Jane Jones",
+    "name": "Noah Adams",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 52,
     "lastPurchaseDate": "2025-10-11T03:52:56Z",
@@ -11806,7 +11806,7 @@
   {
     "id": "customer-187",
     "customerId": "customer-187",
-    "name": "Liam Johnson",
+    "name": "Noah Nelson",
     "email": "liam.johnson@example.com",
     "loyaltyPoints": 32,
     "lastPurchaseDate": "2025-10-11T16:37:30Z",
@@ -11869,7 +11869,7 @@
   {
     "id": "customer-188",
     "customerId": "customer-188",
-    "name": "John Miller",
+    "name": "Noah Baker",
     "email": "john.miller@example.com",
     "loyaltyPoints": 46,
     "lastPurchaseDate": "2025-10-15T06:23:27Z",
@@ -11932,7 +11932,7 @@
   {
     "id": "customer-189",
     "customerId": "customer-189",
-    "name": "Sophia Williams",
+    "name": "Noah Hall",
     "email": "sophia.williams@example.com",
     "loyaltyPoints": 60,
     "lastPurchaseDate": "2025-09-26T23:34:43Z",
@@ -11995,7 +11995,7 @@
   {
     "id": "customer-190",
     "customerId": "customer-190",
-    "name": "Sophia Miller",
+    "name": "Noah Rivera",
     "email": "sophia.miller@example.com",
     "loyaltyPoints": 53,
     "lastPurchaseDate": "2025-10-09T09:32:39Z",
@@ -12058,7 +12058,7 @@
   {
     "id": "customer-191",
     "customerId": "customer-191",
-    "name": "Noah Williams",
+    "name": "Noah Campbell",
     "email": "noah.williams@example.com",
     "loyaltyPoints": 19,
     "lastPurchaseDate": "2025-10-11T13:10:29Z",
@@ -12124,7 +12124,7 @@
   {
     "id": "customer-192",
     "customerId": "customer-192",
-    "name": "Jane Doe",
+    "name": "Noah Mitchell",
     "email": "jane.doe@example.com",
     "loyaltyPoints": 24,
     "lastPurchaseDate": "2025-08-28T12:46:44Z",
@@ -12187,7 +12187,7 @@
   {
     "id": "customer-193",
     "customerId": "customer-193",
-    "name": "Mason Brown",
+    "name": "Ava Smith",
     "email": "mason.brown@example.com",
     "loyaltyPoints": 17,
     "lastPurchaseDate": "2025-10-04T10:25:46Z",
@@ -12250,7 +12250,7 @@
   {
     "id": "customer-194",
     "customerId": "customer-194",
-    "name": "Olivia Johnson",
+    "name": "Ava Johnson",
     "email": "olivia.johnson@example.com",
     "loyaltyPoints": 10,
     "lastPurchaseDate": "2025-09-27T14:22:53Z",
@@ -12313,7 +12313,7 @@
   {
     "id": "customer-195",
     "customerId": "customer-195",
-    "name": "Emma Garcia",
+    "name": "Ava Williams",
     "email": "emma.garcia@example.com",
     "loyaltyPoints": 43,
     "lastPurchaseDate": "2025-10-03T08:21:49Z",
@@ -12376,7 +12376,7 @@
   {
     "id": "customer-196",
     "customerId": "customer-196",
-    "name": "Jane Doe",
+    "name": "Ava Brown",
     "email": "jane.doe@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-09-13T23:24:06Z",
@@ -12442,7 +12442,7 @@
   {
     "id": "customer-197",
     "customerId": "customer-197",
-    "name": "Olivia Brown",
+    "name": "Ava Jones",
     "email": "olivia.brown@example.com",
     "loyaltyPoints": 41,
     "lastPurchaseDate": "2025-09-19T05:19:30Z",
@@ -12505,7 +12505,7 @@
   {
     "id": "customer-198",
     "customerId": "customer-198",
-    "name": "Noah Johnson",
+    "name": "Ava Garcia",
     "email": "noah.johnson@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-10-11T15:25:34Z",
@@ -12568,7 +12568,7 @@
   {
     "id": "customer-199",
     "customerId": "customer-199",
-    "name": "Emma Jones",
+    "name": "Ava Miller",
     "email": "emma.jones@example.com",
     "loyaltyPoints": 22,
     "lastPurchaseDate": "2025-09-03T16:24:30Z",
@@ -12634,7 +12634,7 @@
   {
     "id": "customer-200",
     "customerId": "customer-200",
-    "name": "Mason Jones",
+    "name": "Ava Davis",
     "email": "mason.jones@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-09-28T19:32:05Z",
@@ -12697,7 +12697,7 @@
   {
     "id": "customer-201",
     "customerId": "customer-201",
-    "name": "Emma Garcia",
+    "name": "Ava Rodriguez",
     "email": "emma.garcia@example.com",
     "loyaltyPoints": 3,
     "lastPurchaseDate": "2025-10-05T20:40:20Z",
@@ -12760,7 +12760,7 @@
   {
     "id": "customer-202",
     "customerId": "customer-202",
-    "name": "Ava Smith",
+    "name": "Ava Martinez",
     "email": "ava.smith@example.com",
     "loyaltyPoints": 17,
     "lastPurchaseDate": "2025-10-08T14:42:04Z",
@@ -12823,7 +12823,7 @@
   {
     "id": "customer-203",
     "customerId": "customer-203",
-    "name": "Lucas Miller",
+    "name": "Ava Hernandez",
     "email": "lucas.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -12886,7 +12886,7 @@
   {
     "id": "customer-204",
     "customerId": "customer-204",
-    "name": "Noah Williams",
+    "name": "Ava Lopez",
     "email": "noah.williams@example.com",
     "loyaltyPoints": 20,
     "lastPurchaseDate": "2025-09-20T16:55:50Z",
@@ -12952,7 +12952,7 @@
   {
     "id": "customer-205",
     "customerId": "customer-205",
-    "name": "Noah Smith",
+    "name": "Ava Gonzalez",
     "email": "noah.smith@example.com",
     "loyaltyPoints": 47,
     "lastPurchaseDate": "2025-10-09T07:27:52Z",
@@ -13015,7 +13015,7 @@
   {
     "id": "customer-206",
     "customerId": "customer-206",
-    "name": "Emma Johnson",
+    "name": "Ava Wilson",
     "email": "emma.johnson@example.com",
     "loyaltyPoints": 2,
     "lastPurchaseDate": "2025-08-27T03:30:15Z",
@@ -13078,7 +13078,7 @@
   {
     "id": "customer-207",
     "customerId": "customer-207",
-    "name": "Noah Jones",
+    "name": "Ava Anderson",
     "email": "noah.jones@example.com",
     "loyaltyPoints": 50,
     "lastPurchaseDate": "2025-10-02T14:32:03Z",
@@ -13141,7 +13141,7 @@
   {
     "id": "customer-208",
     "customerId": "customer-208",
-    "name": "Mason Brown",
+    "name": "Ava Thomas",
     "email": "mason.brown@example.com",
     "loyaltyPoints": 34,
     "lastPurchaseDate": "2025-09-18T18:37:08Z",
@@ -13204,7 +13204,7 @@
   {
     "id": "customer-209",
     "customerId": "customer-209",
-    "name": "Sophia Smith",
+    "name": "Ava Taylor",
     "email": "sophia.smith@example.com",
     "loyaltyPoints": 73,
     "lastPurchaseDate": "2025-10-06T04:52:55Z",
@@ -13267,7 +13267,7 @@
   {
     "id": "customer-210",
     "customerId": "customer-210",
-    "name": "Noah Miller",
+    "name": "Ava Moore",
     "email": "noah.miller@example.com",
     "loyaltyPoints": 19,
     "lastPurchaseDate": "2025-10-09T13:09:21Z",
@@ -13330,7 +13330,7 @@
   {
     "id": "customer-211",
     "customerId": "customer-211",
-    "name": "Sophia Garcia",
+    "name": "Ava Jackson",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 26,
     "lastPurchaseDate": "2025-10-08T04:31:28Z",
@@ -13393,7 +13393,7 @@
   {
     "id": "customer-212",
     "customerId": "customer-212",
-    "name": "Emma Brown",
+    "name": "Ava Martin",
     "email": "emma.brown@example.com",
     "loyaltyPoints": 11,
     "lastPurchaseDate": "2025-09-20T05:05:46Z",
@@ -13456,7 +13456,7 @@
   {
     "id": "customer-213",
     "customerId": "customer-213",
-    "name": "Liam Brown",
+    "name": "Ava Lee",
     "email": "liam.brown@example.com",
     "loyaltyPoints": 7,
     "lastPurchaseDate": "2025-10-01T18:19:05Z",
@@ -13519,7 +13519,7 @@
   {
     "id": "customer-214",
     "customerId": "customer-214",
-    "name": "Olivia Williams",
+    "name": "Ava Perez",
     "email": "olivia.williams@example.com",
     "loyaltyPoints": 23,
     "lastPurchaseDate": "2025-09-02T08:09:19Z",
@@ -13582,7 +13582,7 @@
   {
     "id": "customer-215",
     "customerId": "customer-215",
-    "name": "Ava Garcia",
+    "name": "Ava Thompson",
     "email": "ava.garcia@example.com",
     "loyaltyPoints": 17,
     "lastPurchaseDate": "2025-10-06T08:30:26Z",
@@ -13645,7 +13645,7 @@
   {
     "id": "customer-216",
     "customerId": "customer-216",
-    "name": "Ava Smith",
+    "name": "Ava White",
     "email": "ava.smith@example.com",
     "loyaltyPoints": 29,
     "lastPurchaseDate": "2025-10-06T05:13:19Z",
@@ -13708,7 +13708,7 @@
   {
     "id": "customer-217",
     "customerId": "customer-217",
-    "name": "Liam Jones",
+    "name": "Ava Harris",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 37,
     "lastPurchaseDate": "2025-10-09T22:22:41Z",
@@ -13771,7 +13771,7 @@
   {
     "id": "customer-218",
     "customerId": "customer-218",
-    "name": "Emma Garcia",
+    "name": "Ava Sanchez",
     "email": "emma.garcia@example.com",
     "loyaltyPoints": 19,
     "lastPurchaseDate": "2025-10-13T09:56:05Z",
@@ -13834,7 +13834,7 @@
   {
     "id": "customer-219",
     "customerId": "customer-219",
-    "name": "Sophia Garcia",
+    "name": "Ava Clark",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 21,
     "lastPurchaseDate": "2025-10-02T08:32:05Z",
@@ -13897,7 +13897,7 @@
   {
     "id": "customer-220",
     "customerId": "customer-220",
-    "name": "Emma Johnson",
+    "name": "Ava Ramirez",
     "email": "emma.johnson@example.com",
     "loyaltyPoints": 26,
     "lastPurchaseDate": "2025-10-14T15:52:25Z",
@@ -13960,7 +13960,7 @@
   {
     "id": "customer-221",
     "customerId": "customer-221",
-    "name": "Lucas Garcia",
+    "name": "Ava Lewis",
     "email": "lucas.garcia@example.com",
     "loyaltyPoints": 29,
     "lastPurchaseDate": "2025-10-13T03:52:26Z",
@@ -14025,7 +14025,7 @@
   {
     "id": "customer-222",
     "customerId": "customer-222",
-    "name": "John Williams",
+    "name": "Ava Robinson",
     "email": "john.williams@example.com",
     "loyaltyPoints": 23,
     "lastPurchaseDate": "2025-09-24T20:46:39Z",
@@ -14088,7 +14088,7 @@
   {
     "id": "customer-223",
     "customerId": "customer-223",
-    "name": "John Williams",
+    "name": "Ava Walker",
     "email": "john.williams@example.com",
     "loyaltyPoints": 5,
     "lastPurchaseDate": "2025-08-18T20:42:20Z",
@@ -14154,7 +14154,7 @@
   {
     "id": "customer-224",
     "customerId": "customer-224",
-    "name": "Sophia Garcia",
+    "name": "Ava Young",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 29,
     "lastPurchaseDate": "2025-10-08T12:46:32Z",
@@ -14217,7 +14217,7 @@
   {
     "id": "customer-225",
     "customerId": "customer-225",
-    "name": "Mason Jones",
+    "name": "Ava Allen",
     "email": "mason.jones@example.com",
     "loyaltyPoints": 28,
     "lastPurchaseDate": "2025-09-25T07:37:31Z",
@@ -14280,7 +14280,7 @@
   {
     "id": "customer-226",
     "customerId": "customer-226",
-    "name": "John Doe",
+    "name": "Ava King",
     "email": "john.doe@example.com",
     "loyaltyPoints": 37,
     "lastPurchaseDate": "2025-09-28T06:19:10Z",
@@ -14343,7 +14343,7 @@
   {
     "id": "customer-227",
     "customerId": "customer-227",
-    "name": "Ava Miller",
+    "name": "Ava Wright",
     "email": "ava.miller@example.com",
     "loyaltyPoints": 36,
     "lastPurchaseDate": "2025-10-08T05:09:05Z",
@@ -14406,7 +14406,7 @@
   {
     "id": "customer-228",
     "customerId": "customer-228",
-    "name": "Sophia Brown",
+    "name": "Ava Scott",
     "email": "sophia.brown@example.com",
     "loyaltyPoints": 26,
     "lastPurchaseDate": "2025-10-07T11:08:50Z",
@@ -14469,7 +14469,7 @@
   {
     "id": "customer-229",
     "customerId": "customer-229",
-    "name": "Mason Jones",
+    "name": "Ava Torres",
     "email": "mason.jones@example.com",
     "loyaltyPoints": 18,
     "lastPurchaseDate": "2025-09-04T23:05:57Z",
@@ -14532,7 +14532,7 @@
   {
     "id": "customer-230",
     "customerId": "customer-230",
-    "name": "Sophia Miller",
+    "name": "Ava Nguyen",
     "email": "sophia.miller@example.com",
     "loyaltyPoints": 36,
     "lastPurchaseDate": "2025-09-14T23:33:23Z",
@@ -14595,7 +14595,7 @@
   {
     "id": "customer-231",
     "customerId": "customer-231",
-    "name": "Noah Johnson",
+    "name": "Ava Hill",
     "email": "noah.johnson@example.com",
     "loyaltyPoints": 23,
     "lastPurchaseDate": "2025-09-21T23:38:35Z",
@@ -14658,7 +14658,7 @@
   {
     "id": "customer-232",
     "customerId": "customer-232",
-    "name": "John Doe",
+    "name": "Ava Flores",
     "email": "john.doe@example.com",
     "loyaltyPoints": 13,
     "lastPurchaseDate": "2025-09-24T23:52:48Z",
@@ -14721,7 +14721,7 @@
   {
     "id": "customer-233",
     "customerId": "customer-233",
-    "name": "Emma Garcia",
+    "name": "Ava Green",
     "email": "emma.garcia@example.com",
     "loyaltyPoints": 43,
     "lastPurchaseDate": "2025-10-11T13:05:18Z",
@@ -14787,7 +14787,7 @@
   {
     "id": "customer-234",
     "customerId": "customer-234",
-    "name": "Mason Garcia",
+    "name": "Ava Adams",
     "email": "mason.garcia@example.com",
     "loyaltyPoints": 47,
     "lastPurchaseDate": "2025-10-06T19:07:53Z",
@@ -14850,7 +14850,7 @@
   {
     "id": "customer-235",
     "customerId": "customer-235",
-    "name": "John Doe",
+    "name": "Ava Nelson",
     "email": "john.doe@example.com",
     "loyaltyPoints": 6,
     "lastPurchaseDate": "2025-09-29T09:03:29Z",
@@ -14913,7 +14913,7 @@
   {
     "id": "customer-236",
     "customerId": "customer-236",
-    "name": "Olivia Williams",
+    "name": "Ava Baker",
     "email": "olivia.williams@example.com",
     "loyaltyPoints": 38,
     "lastPurchaseDate": "2025-08-26T07:18:36Z",
@@ -14976,7 +14976,7 @@
   {
     "id": "customer-237",
     "customerId": "customer-237",
-    "name": "Sophia Garcia",
+    "name": "Ava Hall",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 11,
     "lastPurchaseDate": "2025-10-06T17:33:18Z",
@@ -15041,7 +15041,7 @@
   {
     "id": "customer-238",
     "customerId": "customer-238",
-    "name": "Lucas Smith",
+    "name": "Ava Rivera",
     "email": "lucas.smith@example.com",
     "loyaltyPoints": 22,
     "lastPurchaseDate": "2025-08-30T20:16:53Z",
@@ -15104,7 +15104,7 @@
   {
     "id": "customer-239",
     "customerId": "customer-239",
-    "name": "Lucas Johnson",
+    "name": "Ava Campbell",
     "email": "lucas.johnson@example.com",
     "loyaltyPoints": 22,
     "lastPurchaseDate": "2025-09-16T04:35:02Z",
@@ -15170,7 +15170,7 @@
   {
     "id": "customer-240",
     "customerId": "customer-240",
-    "name": "Liam Miller",
+    "name": "Ava Mitchell",
     "email": "liam.miller@example.com",
     "loyaltyPoints": 35,
     "lastPurchaseDate": "2025-10-09T03:41:45Z",
@@ -15233,7 +15233,7 @@
   {
     "id": "customer-241",
     "customerId": "customer-241",
-    "name": "Ava Doe",
+    "name": "Ethan Smith",
     "email": "ava.doe@example.com",
     "loyaltyPoints": 27,
     "lastPurchaseDate": "2025-10-04T20:21:20Z",
@@ -15296,7 +15296,7 @@
   {
     "id": "customer-242",
     "customerId": "customer-242",
-    "name": "Liam Doe",
+    "name": "Ethan Johnson",
     "email": "liam.doe@example.com",
     "loyaltyPoints": 2,
     "lastPurchaseDate": "2025-10-12T13:05:06Z",
@@ -15361,7 +15361,7 @@
   {
     "id": "customer-243",
     "customerId": "customer-243",
-    "name": "Liam Brown",
+    "name": "Ethan Williams",
     "email": "liam.brown@example.com",
     "loyaltyPoints": 16,
     "lastPurchaseDate": "2025-10-08T04:13:38Z",
@@ -15424,7 +15424,7 @@
   {
     "id": "customer-244",
     "customerId": "customer-244",
-    "name": "Emma Brown",
+    "name": "Ethan Brown",
     "email": "emma.brown@example.com",
     "loyaltyPoints": 69,
     "lastPurchaseDate": "2025-09-30T21:29:52Z",
@@ -15487,7 +15487,7 @@
   {
     "id": "customer-245",
     "customerId": "customer-245",
-    "name": "Olivia Johnson",
+    "name": "Ethan Jones",
     "email": "olivia.johnson@example.com",
     "loyaltyPoints": 17,
     "lastPurchaseDate": "2025-09-27T10:07:29Z",
@@ -15550,7 +15550,7 @@
   {
     "id": "customer-246",
     "customerId": "customer-246",
-    "name": "Mason Garcia",
+    "name": "Ethan Garcia",
     "email": "mason.garcia@example.com",
     "loyaltyPoints": 43,
     "lastPurchaseDate": "2025-10-11T02:58:11Z",
@@ -15613,7 +15613,7 @@
   {
     "id": "customer-247",
     "customerId": "customer-247",
-    "name": "John Williams",
+    "name": "Ethan Miller",
     "email": "john.williams@example.com",
     "loyaltyPoints": 35,
     "lastPurchaseDate": "2025-10-13T21:08:50Z",
@@ -15676,7 +15676,7 @@
   {
     "id": "customer-248",
     "customerId": "customer-248",
-    "name": "Liam Williams",
+    "name": "Ethan Davis",
     "email": "liam.williams@example.com",
     "loyaltyPoints": 25,
     "lastPurchaseDate": "2025-09-21T11:39:54Z",
@@ -15739,7 +15739,7 @@
   {
     "id": "customer-249",
     "customerId": "customer-249",
-    "name": "John Jones",
+    "name": "Ethan Rodriguez",
     "email": "john.jones@example.com",
     "loyaltyPoints": 2,
     "lastPurchaseDate": "2025-08-13T10:01:57Z",
@@ -15802,7 +15802,7 @@
   {
     "id": "customer-250",
     "customerId": "customer-250",
-    "name": "Jane Smith",
+    "name": "Ethan Martinez",
     "email": "jane.smith@example.com",
     "loyaltyPoints": 50,
     "lastPurchaseDate": "2025-10-03T11:01:32Z",
@@ -15865,7 +15865,7 @@
   {
     "id": "customer-251",
     "customerId": "customer-251",
-    "name": "Lucas Garcia",
+    "name": "Ethan Hernandez",
     "email": "lucas.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -15928,7 +15928,7 @@
   {
     "id": "customer-252",
     "customerId": "customer-252",
-    "name": "Emma Smith",
+    "name": "Ethan Lopez",
     "email": "emma.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -15994,7 +15994,7 @@
   {
     "id": "customer-253",
     "customerId": "customer-253",
-    "name": "John Johnson",
+    "name": "Ethan Gonzalez",
     "email": "john.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16060,7 +16060,7 @@
   {
     "id": "customer-254",
     "customerId": "customer-254",
-    "name": "Lucas Johnson",
+    "name": "Ethan Wilson",
     "email": "lucas.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16123,7 +16123,7 @@
   {
     "id": "customer-255",
     "customerId": "customer-255",
-    "name": "John Smith",
+    "name": "Ethan Anderson",
     "email": "john.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16186,7 +16186,7 @@
   {
     "id": "customer-256",
     "customerId": "customer-256",
-    "name": "Olivia Johnson",
+    "name": "Ethan Thomas",
     "email": "olivia.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16252,7 +16252,7 @@
   {
     "id": "customer-257",
     "customerId": "customer-257",
-    "name": "Jane Garcia",
+    "name": "Ethan Taylor",
     "email": "jane.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16315,7 +16315,7 @@
   {
     "id": "customer-258",
     "customerId": "customer-258",
-    "name": "Olivia Miller",
+    "name": "Ethan Moore",
     "email": "olivia.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16378,7 +16378,7 @@
   {
     "id": "customer-259",
     "customerId": "customer-259",
-    "name": "Lucas Smith",
+    "name": "Ethan Jackson",
     "email": "lucas.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16441,7 +16441,7 @@
   {
     "id": "customer-260",
     "customerId": "customer-260",
-    "name": "John Jones",
+    "name": "Ethan Martin",
     "email": "john.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16504,7 +16504,7 @@
   {
     "id": "customer-261",
     "customerId": "customer-261",
-    "name": "Ava Johnson",
+    "name": "Ethan Lee",
     "email": "ava.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16567,7 +16567,7 @@
   {
     "id": "customer-262",
     "customerId": "customer-262",
-    "name": "Noah Doe",
+    "name": "Ethan Perez",
     "email": "noah.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16630,7 +16630,7 @@
   {
     "id": "customer-263",
     "customerId": "customer-263",
-    "name": "Olivia Williams",
+    "name": "Ethan Thompson",
     "email": "olivia.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16693,7 +16693,7 @@
   {
     "id": "customer-264",
     "customerId": "customer-264",
-    "name": "Mason Smith",
+    "name": "Ethan White",
     "email": "mason.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16756,7 +16756,7 @@
   {
     "id": "customer-265",
     "customerId": "customer-265",
-    "name": "Lucas Miller",
+    "name": "Ethan Harris",
     "email": "lucas.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16819,7 +16819,7 @@
   {
     "id": "customer-266",
     "customerId": "customer-266",
-    "name": "Jane Jones",
+    "name": "Ethan Sanchez",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16882,7 +16882,7 @@
   {
     "id": "customer-267",
     "customerId": "customer-267",
-    "name": "Jane Jones",
+    "name": "Ethan Clark",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -16948,7 +16948,7 @@
   {
     "id": "customer-268",
     "customerId": "customer-268",
-    "name": "Liam Johnson",
+    "name": "Ethan Ramirez",
     "email": "liam.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17011,7 +17011,7 @@
   {
     "id": "customer-269",
     "customerId": "customer-269",
-    "name": "Jane Brown",
+    "name": "Ethan Lewis",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17074,7 +17074,7 @@
   {
     "id": "customer-270",
     "customerId": "customer-270",
-    "name": "John Miller",
+    "name": "Ethan Robinson",
     "email": "john.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17137,7 +17137,7 @@
   {
     "id": "customer-271",
     "customerId": "customer-271",
-    "name": "Olivia Garcia",
+    "name": "Ethan Walker",
     "email": "olivia.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17200,7 +17200,7 @@
   {
     "id": "customer-272",
     "customerId": "customer-272",
-    "name": "Emma Brown",
+    "name": "Ethan Young",
     "email": "emma.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17263,7 +17263,7 @@
   {
     "id": "customer-273",
     "customerId": "customer-273",
-    "name": "Olivia Jones",
+    "name": "Ethan Allen",
     "email": "olivia.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17329,7 +17329,7 @@
   {
     "id": "customer-274",
     "customerId": "customer-274",
-    "name": "Liam Johnson",
+    "name": "Ethan King",
     "email": "liam.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17392,7 +17392,7 @@
   {
     "id": "customer-275",
     "customerId": "customer-275",
-    "name": "Emma Smith",
+    "name": "Ethan Wright",
     "email": "emma.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17455,7 +17455,7 @@
   {
     "id": "customer-276",
     "customerId": "customer-276",
-    "name": "Noah Garcia",
+    "name": "Ethan Scott",
     "email": "noah.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17518,7 +17518,7 @@
   {
     "id": "customer-277",
     "customerId": "customer-277",
-    "name": "John Williams",
+    "name": "Ethan Torres",
     "email": "john.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17584,7 +17584,7 @@
   {
     "id": "customer-278",
     "customerId": "customer-278",
-    "name": "Liam Jones",
+    "name": "Ethan Nguyen",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17649,7 +17649,7 @@
   {
     "id": "customer-279",
     "customerId": "customer-279",
-    "name": "Olivia Johnson",
+    "name": "Ethan Hill",
     "email": "olivia.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17714,7 +17714,7 @@
   {
     "id": "customer-280",
     "customerId": "customer-280",
-    "name": "Mason Jones",
+    "name": "Ethan Flores",
     "email": "mason.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17777,7 +17777,7 @@
   {
     "id": "customer-281",
     "customerId": "customer-281",
-    "name": "Lucas Jones",
+    "name": "Ethan Green",
     "email": "lucas.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17840,7 +17840,7 @@
   {
     "id": "customer-282",
     "customerId": "customer-282",
-    "name": "John Jones",
+    "name": "Ethan Adams",
     "email": "john.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17903,7 +17903,7 @@
   {
     "id": "customer-283",
     "customerId": "customer-283",
-    "name": "Liam Johnson",
+    "name": "Ethan Nelson",
     "email": "liam.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -17966,7 +17966,7 @@
   {
     "id": "customer-284",
     "customerId": "customer-284",
-    "name": "Olivia Doe",
+    "name": "Ethan Baker",
     "email": "olivia.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18029,7 +18029,7 @@
   {
     "id": "customer-285",
     "customerId": "customer-285",
-    "name": "Emma Doe",
+    "name": "Ethan Hall",
     "email": "emma.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18095,7 +18095,7 @@
   {
     "id": "customer-286",
     "customerId": "customer-286",
-    "name": "Ava Smith",
+    "name": "Ethan Rivera",
     "email": "ava.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18158,7 +18158,7 @@
   {
     "id": "customer-287",
     "customerId": "customer-287",
-    "name": "Emma Jones",
+    "name": "Ethan Campbell",
     "email": "emma.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18221,7 +18221,7 @@
   {
     "id": "customer-288",
     "customerId": "customer-288",
-    "name": "Mason Jones",
+    "name": "Ethan Mitchell",
     "email": "mason.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18284,7 +18284,7 @@
   {
     "id": "customer-289",
     "customerId": "customer-289",
-    "name": "Olivia Brown",
+    "name": "Sophia Smith",
     "email": "olivia.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18347,7 +18347,7 @@
   {
     "id": "customer-290",
     "customerId": "customer-290",
-    "name": "Emma Doe",
+    "name": "Sophia Johnson",
     "email": "emma.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18410,7 +18410,7 @@
   {
     "id": "customer-291",
     "customerId": "customer-291",
-    "name": "Liam Brown",
+    "name": "Sophia Williams",
     "email": "liam.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18473,7 +18473,7 @@
   {
     "id": "customer-292",
     "customerId": "customer-292",
-    "name": "Sophia Jones",
+    "name": "Sophia Brown",
     "email": "sophia.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18536,7 +18536,7 @@
   {
     "id": "customer-293",
     "customerId": "customer-293",
-    "name": "Mason Smith",
+    "name": "Sophia Jones",
     "email": "mason.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18599,7 +18599,7 @@
   {
     "id": "customer-294",
     "customerId": "customer-294",
-    "name": "Jane Miller",
+    "name": "Sophia Garcia",
     "email": "jane.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18662,7 +18662,7 @@
   {
     "id": "customer-295",
     "customerId": "customer-295",
-    "name": "John Doe",
+    "name": "Sophia Miller",
     "email": "john.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18725,7 +18725,7 @@
   {
     "id": "customer-296",
     "customerId": "customer-296",
-    "name": "Mason Garcia",
+    "name": "Sophia Davis",
     "email": "mason.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18788,7 +18788,7 @@
   {
     "id": "customer-297",
     "customerId": "customer-297",
-    "name": "Mason Miller",
+    "name": "Sophia Rodriguez",
     "email": "mason.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18851,7 +18851,7 @@
   {
     "id": "customer-298",
     "customerId": "customer-298",
-    "name": "Jane Miller",
+    "name": "Sophia Martinez",
     "email": "jane.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18914,7 +18914,7 @@
   {
     "id": "customer-299",
     "customerId": "customer-299",
-    "name": "Olivia Doe",
+    "name": "Sophia Hernandez",
     "email": "olivia.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -18977,7 +18977,7 @@
   {
     "id": "customer-300",
     "customerId": "customer-300",
-    "name": "Ava Johnson",
+    "name": "Sophia Lopez",
     "email": "ava.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19040,7 +19040,7 @@
   {
     "id": "customer-301",
     "customerId": "customer-301",
-    "name": "Ava Brown",
+    "name": "Sophia Gonzalez",
     "email": "ava.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19103,7 +19103,7 @@
   {
     "id": "customer-302",
     "customerId": "customer-302",
-    "name": "John Miller",
+    "name": "Sophia Wilson",
     "email": "john.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19166,7 +19166,7 @@
   {
     "id": "customer-303",
     "customerId": "customer-303",
-    "name": "Emma Miller",
+    "name": "Sophia Anderson",
     "email": "emma.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19229,7 +19229,7 @@
   {
     "id": "customer-304",
     "customerId": "customer-304",
-    "name": "Jane Jones",
+    "name": "Sophia Thomas",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19292,7 +19292,7 @@
   {
     "id": "customer-305",
     "customerId": "customer-305",
-    "name": "Jane Brown",
+    "name": "Sophia Taylor",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19355,7 +19355,7 @@
   {
     "id": "customer-306",
     "customerId": "customer-306",
-    "name": "Jane Jones",
+    "name": "Sophia Moore",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19418,7 +19418,7 @@
   {
     "id": "customer-307",
     "customerId": "customer-307",
-    "name": "Mason Brown",
+    "name": "Sophia Jackson",
     "email": "mason.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19481,7 +19481,7 @@
   {
     "id": "customer-308",
     "customerId": "customer-308",
-    "name": "Olivia Williams",
+    "name": "Sophia Martin",
     "email": "olivia.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19544,7 +19544,7 @@
   {
     "id": "customer-309",
     "customerId": "customer-309",
-    "name": "Olivia Doe",
+    "name": "Sophia Lee",
     "email": "olivia.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19607,7 +19607,7 @@
   {
     "id": "customer-310",
     "customerId": "customer-310",
-    "name": "Lucas Jones",
+    "name": "Sophia Perez",
     "email": "lucas.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19672,7 +19672,7 @@
   {
     "id": "customer-311",
     "customerId": "customer-311",
-    "name": "Emma Jones",
+    "name": "Sophia Thompson",
     "email": "emma.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19735,7 +19735,7 @@
   {
     "id": "customer-312",
     "customerId": "customer-312",
-    "name": "Ava Jones",
+    "name": "Sophia White",
     "email": "ava.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19798,7 +19798,7 @@
   {
     "id": "customer-313",
     "customerId": "customer-313",
-    "name": "Emma Johnson",
+    "name": "Sophia Harris",
     "email": "emma.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19864,7 +19864,7 @@
   {
     "id": "customer-314",
     "customerId": "customer-314",
-    "name": "Noah Smith",
+    "name": "Sophia Sanchez",
     "email": "noah.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19927,7 +19927,7 @@
   {
     "id": "customer-315",
     "customerId": "customer-315",
-    "name": "Emma Williams",
+    "name": "Sophia Clark",
     "email": "emma.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -19990,7 +19990,7 @@
   {
     "id": "customer-316",
     "customerId": "customer-316",
-    "name": "Jane Brown",
+    "name": "Sophia Ramirez",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20053,7 +20053,7 @@
   {
     "id": "customer-317",
     "customerId": "customer-317",
-    "name": "Liam Johnson",
+    "name": "Sophia Lewis",
     "email": "liam.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20119,7 +20119,7 @@
   {
     "id": "customer-318",
     "customerId": "customer-318",
-    "name": "Noah Jones",
+    "name": "Sophia Robinson",
     "email": "noah.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20182,7 +20182,7 @@
   {
     "id": "customer-319",
     "customerId": "customer-319",
-    "name": "John Doe",
+    "name": "Sophia Walker",
     "email": "john.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20245,7 +20245,7 @@
   {
     "id": "customer-320",
     "customerId": "customer-320",
-    "name": "Mason Miller",
+    "name": "Sophia Young",
     "email": "mason.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20310,7 +20310,7 @@
   {
     "id": "customer-321",
     "customerId": "customer-321",
-    "name": "Lucas Williams",
+    "name": "Sophia Allen",
     "email": "lucas.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20373,7 +20373,7 @@
   {
     "id": "customer-322",
     "customerId": "customer-322",
-    "name": "Liam Williams",
+    "name": "Sophia King",
     "email": "liam.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20436,7 +20436,7 @@
   {
     "id": "customer-323",
     "customerId": "customer-323",
-    "name": "Ava Jones",
+    "name": "Sophia Wright",
     "email": "ava.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20499,7 +20499,7 @@
   {
     "id": "customer-324",
     "customerId": "customer-324",
-    "name": "Jane Brown",
+    "name": "Sophia Scott",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20562,7 +20562,7 @@
   {
     "id": "customer-325",
     "customerId": "customer-325",
-    "name": "Ava Brown",
+    "name": "Sophia Torres",
     "email": "ava.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20625,7 +20625,7 @@
   {
     "id": "customer-326",
     "customerId": "customer-326",
-    "name": "Lucas Garcia",
+    "name": "Sophia Nguyen",
     "email": "lucas.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20688,7 +20688,7 @@
   {
     "id": "customer-327",
     "customerId": "customer-327",
-    "name": "Liam Garcia",
+    "name": "Sophia Hill",
     "email": "liam.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20751,7 +20751,7 @@
   {
     "id": "customer-328",
     "customerId": "customer-328",
-    "name": "Sophia Jones",
+    "name": "Sophia Flores",
     "email": "sophia.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20816,7 +20816,7 @@
   {
     "id": "customer-329",
     "customerId": "customer-329",
-    "name": "Ava Garcia",
+    "name": "Sophia Green",
     "email": "ava.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20882,7 +20882,7 @@
   {
     "id": "customer-330",
     "customerId": "customer-330",
-    "name": "Mason Brown",
+    "name": "Sophia Adams",
     "email": "mason.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -20948,7 +20948,7 @@
   {
     "id": "customer-331",
     "customerId": "customer-331",
-    "name": "Lucas Brown",
+    "name": "Sophia Nelson",
     "email": "lucas.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21011,7 +21011,7 @@
   {
     "id": "customer-332",
     "customerId": "customer-332",
-    "name": "Jane Brown",
+    "name": "Sophia Baker",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21074,7 +21074,7 @@
   {
     "id": "customer-333",
     "customerId": "customer-333",
-    "name": "Liam Johnson",
+    "name": "Sophia Hall",
     "email": "liam.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21137,7 +21137,7 @@
   {
     "id": "customer-334",
     "customerId": "customer-334",
-    "name": "John Brown",
+    "name": "Sophia Rivera",
     "email": "john.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21200,7 +21200,7 @@
   {
     "id": "customer-335",
     "customerId": "customer-335",
-    "name": "Sophia Jones",
+    "name": "Sophia Campbell",
     "email": "sophia.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21265,7 +21265,7 @@
   {
     "id": "customer-336",
     "customerId": "customer-336",
-    "name": "Liam Smith",
+    "name": "Sophia Mitchell",
     "email": "liam.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21328,7 +21328,7 @@
   {
     "id": "customer-337",
     "customerId": "customer-337",
-    "name": "Mason Miller",
+    "name": "Mason Smith",
     "email": "mason.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21391,7 +21391,7 @@
   {
     "id": "customer-338",
     "customerId": "customer-338",
-    "name": "Olivia Doe",
+    "name": "Mason Johnson",
     "email": "olivia.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21454,7 +21454,7 @@
   {
     "id": "customer-339",
     "customerId": "customer-339",
-    "name": "Olivia Brown",
+    "name": "Mason Williams",
     "email": "olivia.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21517,7 +21517,7 @@
   {
     "id": "customer-340",
     "customerId": "customer-340",
-    "name": "Ava Brown",
+    "name": "Mason Brown",
     "email": "ava.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21580,7 +21580,7 @@
   {
     "id": "customer-341",
     "customerId": "customer-341",
-    "name": "Noah Johnson",
+    "name": "Mason Jones",
     "email": "noah.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21643,7 +21643,7 @@
   {
     "id": "customer-342",
     "customerId": "customer-342",
-    "name": "Jane Brown",
+    "name": "Mason Garcia",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21709,7 +21709,7 @@
   {
     "id": "customer-343",
     "customerId": "customer-343",
-    "name": "Mason Johnson",
+    "name": "Mason Miller",
     "email": "mason.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21774,7 +21774,7 @@
   {
     "id": "customer-344",
     "customerId": "customer-344",
-    "name": "Noah Brown",
+    "name": "Mason Davis",
     "email": "noah.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21837,7 +21837,7 @@
   {
     "id": "customer-345",
     "customerId": "customer-345",
-    "name": "Mason Smith",
+    "name": "Mason Rodriguez",
     "email": "mason.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21900,7 +21900,7 @@
   {
     "id": "customer-346",
     "customerId": "customer-346",
-    "name": "Ava Doe",
+    "name": "Mason Martinez",
     "email": "ava.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -21965,7 +21965,7 @@
   {
     "id": "customer-347",
     "customerId": "customer-347",
-    "name": "Lucas Brown",
+    "name": "Mason Hernandez",
     "email": "lucas.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22028,7 +22028,7 @@
   {
     "id": "customer-348",
     "customerId": "customer-348",
-    "name": "Sophia Miller",
+    "name": "Mason Lopez",
     "email": "sophia.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22094,7 +22094,7 @@
   {
     "id": "customer-349",
     "customerId": "customer-349",
-    "name": "Lucas Miller",
+    "name": "Mason Gonzalez",
     "email": "lucas.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22159,7 +22159,7 @@
   {
     "id": "customer-350",
     "customerId": "customer-350",
-    "name": "Noah Smith",
+    "name": "Mason Wilson",
     "email": "noah.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22222,7 +22222,7 @@
   {
     "id": "customer-351",
     "customerId": "customer-351",
-    "name": "Lucas Williams",
+    "name": "Mason Anderson",
     "email": "lucas.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22285,7 +22285,7 @@
   {
     "id": "customer-352",
     "customerId": "customer-352",
-    "name": "Sophia Brown",
+    "name": "Mason Thomas",
     "email": "sophia.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22348,7 +22348,7 @@
   {
     "id": "customer-353",
     "customerId": "customer-353",
-    "name": "John Johnson",
+    "name": "Mason Taylor",
     "email": "john.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22411,7 +22411,7 @@
   {
     "id": "customer-354",
     "customerId": "customer-354",
-    "name": "John Johnson",
+    "name": "Mason Moore",
     "email": "john.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22477,7 +22477,7 @@
   {
     "id": "customer-355",
     "customerId": "customer-355",
-    "name": "Noah Miller",
+    "name": "Mason Jackson",
     "email": "noah.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22540,7 +22540,7 @@
   {
     "id": "customer-356",
     "customerId": "customer-356",
-    "name": "Lucas Doe",
+    "name": "Mason Martin",
     "email": "lucas.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22603,7 +22603,7 @@
   {
     "id": "customer-357",
     "customerId": "customer-357",
-    "name": "Olivia Smith",
+    "name": "Mason Lee",
     "email": "olivia.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22666,7 +22666,7 @@
   {
     "id": "customer-358",
     "customerId": "customer-358",
-    "name": "Mason Miller",
+    "name": "Mason Perez",
     "email": "mason.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22729,7 +22729,7 @@
   {
     "id": "customer-359",
     "customerId": "customer-359",
-    "name": "Ava Garcia",
+    "name": "Mason Thompson",
     "email": "ava.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22792,7 +22792,7 @@
   {
     "id": "customer-360",
     "customerId": "customer-360",
-    "name": "Ava Williams",
+    "name": "Mason White",
     "email": "ava.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22855,7 +22855,7 @@
   {
     "id": "customer-361",
     "customerId": "customer-361",
-    "name": "Olivia Doe",
+    "name": "Mason Harris",
     "email": "olivia.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22918,7 +22918,7 @@
   {
     "id": "customer-362",
     "customerId": "customer-362",
-    "name": "Liam Williams",
+    "name": "Mason Sanchez",
     "email": "liam.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -22981,7 +22981,7 @@
   {
     "id": "customer-363",
     "customerId": "customer-363",
-    "name": "Noah Garcia",
+    "name": "Mason Clark",
     "email": "noah.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23044,7 +23044,7 @@
   {
     "id": "customer-364",
     "customerId": "customer-364",
-    "name": "Emma Smith",
+    "name": "Mason Ramirez",
     "email": "emma.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23107,7 +23107,7 @@
   {
     "id": "customer-365",
     "customerId": "customer-365",
-    "name": "Ava Jones",
+    "name": "Mason Lewis",
     "email": "ava.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23170,7 +23170,7 @@
   {
     "id": "customer-366",
     "customerId": "customer-366",
-    "name": "Emma Garcia",
+    "name": "Mason Robinson",
     "email": "emma.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23235,7 +23235,7 @@
   {
     "id": "customer-367",
     "customerId": "customer-367",
-    "name": "Mason Smith",
+    "name": "Mason Walker",
     "email": "mason.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23298,7 +23298,7 @@
   {
     "id": "customer-368",
     "customerId": "customer-368",
-    "name": "Liam Jones",
+    "name": "Mason Young",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23361,7 +23361,7 @@
   {
     "id": "customer-369",
     "customerId": "customer-369",
-    "name": "Liam Jones",
+    "name": "Mason Allen",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23424,7 +23424,7 @@
   {
     "id": "customer-370",
     "customerId": "customer-370",
-    "name": "Jane Williams",
+    "name": "Mason King",
     "email": "jane.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23487,7 +23487,7 @@
   {
     "id": "customer-371",
     "customerId": "customer-371",
-    "name": "John Brown",
+    "name": "Mason Wright",
     "email": "john.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23550,7 +23550,7 @@
   {
     "id": "customer-372",
     "customerId": "customer-372",
-    "name": "Liam Smith",
+    "name": "Mason Scott",
     "email": "liam.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23613,7 +23613,7 @@
   {
     "id": "customer-373",
     "customerId": "customer-373",
-    "name": "Jane Miller",
+    "name": "Mason Torres",
     "email": "jane.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23676,7 +23676,7 @@
   {
     "id": "customer-374",
     "customerId": "customer-374",
-    "name": "Mason Smith",
+    "name": "Mason Nguyen",
     "email": "mason.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23739,7 +23739,7 @@
   {
     "id": "customer-375",
     "customerId": "customer-375",
-    "name": "Olivia Doe",
+    "name": "Mason Hill",
     "email": "olivia.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23804,7 +23804,7 @@
   {
     "id": "customer-376",
     "customerId": "customer-376",
-    "name": "John Jones",
+    "name": "Mason Flores",
     "email": "john.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23867,7 +23867,7 @@
   {
     "id": "customer-377",
     "customerId": "customer-377",
-    "name": "Mason Miller",
+    "name": "Mason Green",
     "email": "mason.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23930,7 +23930,7 @@
   {
     "id": "customer-378",
     "customerId": "customer-378",
-    "name": "Sophia Garcia",
+    "name": "Mason Adams",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -23993,7 +23993,7 @@
   {
     "id": "customer-379",
     "customerId": "customer-379",
-    "name": "Mason Smith",
+    "name": "Mason Nelson",
     "email": "mason.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24056,7 +24056,7 @@
   {
     "id": "customer-380",
     "customerId": "customer-380",
-    "name": "Sophia Williams",
+    "name": "Mason Baker",
     "email": "sophia.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24119,7 +24119,7 @@
   {
     "id": "customer-381",
     "customerId": "customer-381",
-    "name": "Lucas Smith",
+    "name": "Mason Hall",
     "email": "lucas.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24185,7 +24185,7 @@
   {
     "id": "customer-382",
     "customerId": "customer-382",
-    "name": "Noah Smith",
+    "name": "Mason Rivera",
     "email": "noah.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24251,7 +24251,7 @@
   {
     "id": "customer-383",
     "customerId": "customer-383",
-    "name": "Noah Johnson",
+    "name": "Mason Campbell",
     "email": "noah.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24314,7 +24314,7 @@
   {
     "id": "customer-384",
     "customerId": "customer-384",
-    "name": "Sophia Brown",
+    "name": "Mason Mitchell",
     "email": "sophia.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24377,7 +24377,7 @@
   {
     "id": "customer-385",
     "customerId": "customer-385",
-    "name": "Jane Johnson",
+    "name": "Isabella Smith",
     "email": "jane.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24440,7 +24440,7 @@
   {
     "id": "customer-386",
     "customerId": "customer-386",
-    "name": "Olivia Brown",
+    "name": "Isabella Johnson",
     "email": "olivia.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24505,7 +24505,7 @@
   {
     "id": "customer-387",
     "customerId": "customer-387",
-    "name": "John Jones",
+    "name": "Isabella Williams",
     "email": "john.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24570,7 +24570,7 @@
   {
     "id": "customer-388",
     "customerId": "customer-388",
-    "name": "John Brown",
+    "name": "Isabella Brown",
     "email": "john.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24633,7 +24633,7 @@
   {
     "id": "customer-389",
     "customerId": "customer-389",
-    "name": "John Jones",
+    "name": "Isabella Jones",
     "email": "john.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24699,7 +24699,7 @@
   {
     "id": "customer-390",
     "customerId": "customer-390",
-    "name": "Lucas Doe",
+    "name": "Isabella Garcia",
     "email": "lucas.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24762,7 +24762,7 @@
   {
     "id": "customer-391",
     "customerId": "customer-391",
-    "name": "Ava Miller",
+    "name": "Isabella Miller",
     "email": "ava.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24825,7 +24825,7 @@
   {
     "id": "customer-392",
     "customerId": "customer-392",
-    "name": "Lucas Garcia",
+    "name": "Isabella Davis",
     "email": "lucas.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24888,7 +24888,7 @@
   {
     "id": "customer-393",
     "customerId": "customer-393",
-    "name": "Noah Williams",
+    "name": "Isabella Rodriguez",
     "email": "noah.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -24953,7 +24953,7 @@
   {
     "id": "customer-394",
     "customerId": "customer-394",
-    "name": "Liam Jones",
+    "name": "Isabella Martinez",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25016,7 +25016,7 @@
   {
     "id": "customer-395",
     "customerId": "customer-395",
-    "name": "Liam Jones",
+    "name": "Isabella Hernandez",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25079,7 +25079,7 @@
   {
     "id": "customer-396",
     "customerId": "customer-396",
-    "name": "Sophia Doe",
+    "name": "Isabella Lopez",
     "email": "sophia.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25142,7 +25142,7 @@
   {
     "id": "customer-397",
     "customerId": "customer-397",
-    "name": "John Doe",
+    "name": "Isabella Gonzalez",
     "email": "john.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25205,7 +25205,7 @@
   {
     "id": "customer-398",
     "customerId": "customer-398",
-    "name": "Jane Smith",
+    "name": "Isabella Wilson",
     "email": "jane.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25268,7 +25268,7 @@
   {
     "id": "customer-399",
     "customerId": "customer-399",
-    "name": "Liam Johnson",
+    "name": "Isabella Anderson",
     "email": "liam.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25331,7 +25331,7 @@
   {
     "id": "customer-400",
     "customerId": "customer-400",
-    "name": "Olivia Garcia",
+    "name": "Isabella Thomas",
     "email": "olivia.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25394,7 +25394,7 @@
   {
     "id": "customer-401",
     "customerId": "customer-401",
-    "name": "Olivia Brown",
+    "name": "Isabella Taylor",
     "email": "olivia.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25457,7 +25457,7 @@
   {
     "id": "customer-402",
     "customerId": "customer-402",
-    "name": "Noah Smith",
+    "name": "Isabella Moore",
     "email": "noah.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25522,7 +25522,7 @@
   {
     "id": "customer-403",
     "customerId": "customer-403",
-    "name": "Liam Smith",
+    "name": "Isabella Jackson",
     "email": "liam.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25585,7 +25585,7 @@
   {
     "id": "customer-404",
     "customerId": "customer-404",
-    "name": "Emma Miller",
+    "name": "Isabella Martin",
     "email": "emma.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25650,7 +25650,7 @@
   {
     "id": "customer-405",
     "customerId": "customer-405",
-    "name": "Liam Williams",
+    "name": "Isabella Lee",
     "email": "liam.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25713,7 +25713,7 @@
   {
     "id": "customer-406",
     "customerId": "customer-406",
-    "name": "Liam Doe",
+    "name": "Isabella Perez",
     "email": "liam.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25776,7 +25776,7 @@
   {
     "id": "customer-407",
     "customerId": "customer-407",
-    "name": "Liam Jones",
+    "name": "Isabella Thompson",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25839,7 +25839,7 @@
   {
     "id": "customer-408",
     "customerId": "customer-408",
-    "name": "Ava Smith",
+    "name": "Isabella White",
     "email": "ava.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25902,7 +25902,7 @@
   {
     "id": "customer-409",
     "customerId": "customer-409",
-    "name": "Lucas Brown",
+    "name": "Isabella Harris",
     "email": "lucas.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -25965,7 +25965,7 @@
   {
     "id": "customer-410",
     "customerId": "customer-410",
-    "name": "Emma Johnson",
+    "name": "Isabella Sanchez",
     "email": "emma.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26028,7 +26028,7 @@
   {
     "id": "customer-411",
     "customerId": "customer-411",
-    "name": "Noah Miller",
+    "name": "Isabella Clark",
     "email": "noah.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26091,7 +26091,7 @@
   {
     "id": "customer-412",
     "customerId": "customer-412",
-    "name": "Ava Doe",
+    "name": "Isabella Ramirez",
     "email": "ava.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26154,7 +26154,7 @@
   {
     "id": "customer-413",
     "customerId": "customer-413",
-    "name": "Sophia Jones",
+    "name": "Isabella Lewis",
     "email": "sophia.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26220,7 +26220,7 @@
   {
     "id": "customer-414",
     "customerId": "customer-414",
-    "name": "Liam Williams",
+    "name": "Isabella Robinson",
     "email": "liam.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26283,7 +26283,7 @@
   {
     "id": "customer-415",
     "customerId": "customer-415",
-    "name": "Emma Johnson",
+    "name": "Isabella Walker",
     "email": "emma.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26346,7 +26346,7 @@
   {
     "id": "customer-416",
     "customerId": "customer-416",
-    "name": "Lucas Jones",
+    "name": "Isabella Young",
     "email": "lucas.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26409,7 +26409,7 @@
   {
     "id": "customer-417",
     "customerId": "customer-417",
-    "name": "Emma Johnson",
+    "name": "Isabella Allen",
     "email": "emma.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26474,7 +26474,7 @@
   {
     "id": "customer-418",
     "customerId": "customer-418",
-    "name": "Mason Garcia",
+    "name": "Isabella King",
     "email": "mason.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26537,7 +26537,7 @@
   {
     "id": "customer-419",
     "customerId": "customer-419",
-    "name": "John Brown",
+    "name": "Isabella Wright",
     "email": "john.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26600,7 +26600,7 @@
   {
     "id": "customer-420",
     "customerId": "customer-420",
-    "name": "Noah Garcia",
+    "name": "Isabella Scott",
     "email": "noah.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26665,7 +26665,7 @@
   {
     "id": "customer-421",
     "customerId": "customer-421",
-    "name": "John Miller",
+    "name": "Isabella Torres",
     "email": "john.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26728,7 +26728,7 @@
   {
     "id": "customer-422",
     "customerId": "customer-422",
-    "name": "Sophia Brown",
+    "name": "Isabella Nguyen",
     "email": "sophia.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26791,7 +26791,7 @@
   {
     "id": "customer-423",
     "customerId": "customer-423",
-    "name": "Ava Doe",
+    "name": "Isabella Hill",
     "email": "ava.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26857,7 +26857,7 @@
   {
     "id": "customer-424",
     "customerId": "customer-424",
-    "name": "Olivia Brown",
+    "name": "Isabella Flores",
     "email": "olivia.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26920,7 +26920,7 @@
   {
     "id": "customer-425",
     "customerId": "customer-425",
-    "name": "John Brown",
+    "name": "Isabella Green",
     "email": "john.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -26983,7 +26983,7 @@
   {
     "id": "customer-426",
     "customerId": "customer-426",
-    "name": "Ava Doe",
+    "name": "Isabella Adams",
     "email": "ava.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27046,7 +27046,7 @@
   {
     "id": "customer-427",
     "customerId": "customer-427",
-    "name": "John Miller",
+    "name": "Isabella Nelson",
     "email": "john.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27111,7 +27111,7 @@
   {
     "id": "customer-428",
     "customerId": "customer-428",
-    "name": "Sophia Doe",
+    "name": "Isabella Baker",
     "email": "sophia.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27177,7 +27177,7 @@
   {
     "id": "customer-429",
     "customerId": "customer-429",
-    "name": "Ava Garcia",
+    "name": "Isabella Hall",
     "email": "ava.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27240,7 +27240,7 @@
   {
     "id": "customer-430",
     "customerId": "customer-430",
-    "name": "John Miller",
+    "name": "Isabella Rivera",
     "email": "john.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27303,7 +27303,7 @@
   {
     "id": "customer-431",
     "customerId": "customer-431",
-    "name": "Olivia Miller",
+    "name": "Isabella Campbell",
     "email": "olivia.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27366,7 +27366,7 @@
   {
     "id": "customer-432",
     "customerId": "customer-432",
-    "name": "Mason Smith",
+    "name": "Isabella Mitchell",
     "email": "mason.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27429,7 +27429,7 @@
   {
     "id": "customer-433",
     "customerId": "customer-433",
-    "name": "Liam Jones",
+    "name": "Logan Smith",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27492,7 +27492,7 @@
   {
     "id": "customer-434",
     "customerId": "customer-434",
-    "name": "Liam Miller",
+    "name": "Logan Johnson",
     "email": "liam.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27555,7 +27555,7 @@
   {
     "id": "customer-435",
     "customerId": "customer-435",
-    "name": "Noah Garcia",
+    "name": "Logan Williams",
     "email": "noah.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27618,7 +27618,7 @@
   {
     "id": "customer-436",
     "customerId": "customer-436",
-    "name": "John Garcia",
+    "name": "Logan Brown",
     "email": "john.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27683,7 +27683,7 @@
   {
     "id": "customer-437",
     "customerId": "customer-437",
-    "name": "Olivia Miller",
+    "name": "Logan Jones",
     "email": "olivia.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27746,7 +27746,7 @@
   {
     "id": "customer-438",
     "customerId": "customer-438",
-    "name": "Sophia Jones",
+    "name": "Logan Garcia",
     "email": "sophia.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27809,7 +27809,7 @@
   {
     "id": "customer-439",
     "customerId": "customer-439",
-    "name": "Lucas Doe",
+    "name": "Logan Miller",
     "email": "lucas.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27872,7 +27872,7 @@
   {
     "id": "customer-440",
     "customerId": "customer-440",
-    "name": "Lucas Brown",
+    "name": "Logan Davis",
     "email": "lucas.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27935,7 +27935,7 @@
   {
     "id": "customer-441",
     "customerId": "customer-441",
-    "name": "Olivia Brown",
+    "name": "Logan Rodriguez",
     "email": "olivia.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -27998,7 +27998,7 @@
   {
     "id": "customer-442",
     "customerId": "customer-442",
-    "name": "Noah Miller",
+    "name": "Logan Martinez",
     "email": "noah.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28061,7 +28061,7 @@
   {
     "id": "customer-443",
     "customerId": "customer-443",
-    "name": "Liam Jones",
+    "name": "Logan Hernandez",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28124,7 +28124,7 @@
   {
     "id": "customer-444",
     "customerId": "customer-444",
-    "name": "Mason Williams",
+    "name": "Logan Lopez",
     "email": "mason.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28187,7 +28187,7 @@
   {
     "id": "customer-445",
     "customerId": "customer-445",
-    "name": "Ava Williams",
+    "name": "Logan Gonzalez",
     "email": "ava.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28250,7 +28250,7 @@
   {
     "id": "customer-446",
     "customerId": "customer-446",
-    "name": "Lucas Johnson",
+    "name": "Logan Wilson",
     "email": "lucas.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28315,7 +28315,7 @@
   {
     "id": "customer-447",
     "customerId": "customer-447",
-    "name": "Lucas Brown",
+    "name": "Logan Anderson",
     "email": "lucas.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28378,7 +28378,7 @@
   {
     "id": "customer-448",
     "customerId": "customer-448",
-    "name": "Noah Brown",
+    "name": "Logan Thomas",
     "email": "noah.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28441,7 +28441,7 @@
   {
     "id": "customer-449",
     "customerId": "customer-449",
-    "name": "Mason Williams",
+    "name": "Logan Taylor",
     "email": "mason.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28504,7 +28504,7 @@
   {
     "id": "customer-450",
     "customerId": "customer-450",
-    "name": "Jane Doe",
+    "name": "Logan Moore",
     "email": "jane.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28567,7 +28567,7 @@
   {
     "id": "customer-451",
     "customerId": "customer-451",
-    "name": "Noah Miller",
+    "name": "Logan Jackson",
     "email": "noah.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28633,7 +28633,7 @@
   {
     "id": "customer-452",
     "customerId": "customer-452",
-    "name": "Sophia Garcia",
+    "name": "Logan Martin",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28696,7 +28696,7 @@
   {
     "id": "customer-453",
     "customerId": "customer-453",
-    "name": "John Williams",
+    "name": "Logan Lee",
     "email": "john.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28759,7 +28759,7 @@
   {
     "id": "customer-454",
     "customerId": "customer-454",
-    "name": "Jane Brown",
+    "name": "Logan Perez",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28822,7 +28822,7 @@
   {
     "id": "customer-455",
     "customerId": "customer-455",
-    "name": "Jane Jones",
+    "name": "Logan Thompson",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28885,7 +28885,7 @@
   {
     "id": "customer-456",
     "customerId": "customer-456",
-    "name": "Emma Williams",
+    "name": "Logan White",
     "email": "emma.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -28948,7 +28948,7 @@
   {
     "id": "customer-457",
     "customerId": "customer-457",
-    "name": "Noah Johnson",
+    "name": "Logan Harris",
     "email": "noah.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29011,7 +29011,7 @@
   {
     "id": "customer-458",
     "customerId": "customer-458",
-    "name": "Lucas Williams",
+    "name": "Logan Sanchez",
     "email": "lucas.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29074,7 +29074,7 @@
   {
     "id": "customer-459",
     "customerId": "customer-459",
-    "name": "Mason Miller",
+    "name": "Logan Clark",
     "email": "mason.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29137,7 +29137,7 @@
   {
     "id": "customer-460",
     "customerId": "customer-460",
-    "name": "Emma Doe",
+    "name": "Logan Ramirez",
     "email": "emma.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29200,7 +29200,7 @@
   {
     "id": "customer-461",
     "customerId": "customer-461",
-    "name": "Jane Williams",
+    "name": "Logan Lewis",
     "email": "jane.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29263,7 +29263,7 @@
   {
     "id": "customer-462",
     "customerId": "customer-462",
-    "name": "Jane Jones",
+    "name": "Logan Robinson",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29326,7 +29326,7 @@
   {
     "id": "customer-463",
     "customerId": "customer-463",
-    "name": "Lucas Garcia",
+    "name": "Logan Walker",
     "email": "lucas.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29389,7 +29389,7 @@
   {
     "id": "customer-464",
     "customerId": "customer-464",
-    "name": "Liam Brown",
+    "name": "Logan Young",
     "email": "liam.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29452,7 +29452,7 @@
   {
     "id": "customer-465",
     "customerId": "customer-465",
-    "name": "Ava Johnson",
+    "name": "Logan Allen",
     "email": "ava.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29515,7 +29515,7 @@
   {
     "id": "customer-466",
     "customerId": "customer-466",
-    "name": "Noah Williams",
+    "name": "Logan King",
     "email": "noah.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29578,7 +29578,7 @@
   {
     "id": "customer-467",
     "customerId": "customer-467",
-    "name": "Noah Smith",
+    "name": "Logan Wright",
     "email": "noah.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29641,7 +29641,7 @@
   {
     "id": "customer-468",
     "customerId": "customer-468",
-    "name": "Mason Williams",
+    "name": "Logan Scott",
     "email": "mason.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29704,7 +29704,7 @@
   {
     "id": "customer-469",
     "customerId": "customer-469",
-    "name": "Liam Brown",
+    "name": "Logan Torres",
     "email": "liam.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29767,7 +29767,7 @@
   {
     "id": "customer-470",
     "customerId": "customer-470",
-    "name": "Sophia Garcia",
+    "name": "Logan Nguyen",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29830,7 +29830,7 @@
   {
     "id": "customer-471",
     "customerId": "customer-471",
-    "name": "Ava Johnson",
+    "name": "Logan Hill",
     "email": "ava.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29893,7 +29893,7 @@
   {
     "id": "customer-472",
     "customerId": "customer-472",
-    "name": "Mason Smith",
+    "name": "Logan Flores",
     "email": "mason.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -29956,7 +29956,7 @@
   {
     "id": "customer-473",
     "customerId": "customer-473",
-    "name": "Olivia Johnson",
+    "name": "Logan Green",
     "email": "olivia.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30019,7 +30019,7 @@
   {
     "id": "customer-474",
     "customerId": "customer-474",
-    "name": "John Williams",
+    "name": "Logan Adams",
     "email": "john.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30085,7 +30085,7 @@
   {
     "id": "customer-475",
     "customerId": "customer-475",
-    "name": "Liam Miller",
+    "name": "Logan Nelson",
     "email": "liam.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30148,7 +30148,7 @@
   {
     "id": "customer-476",
     "customerId": "customer-476",
-    "name": "John Johnson",
+    "name": "Logan Baker",
     "email": "john.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30211,7 +30211,7 @@
   {
     "id": "customer-477",
     "customerId": "customer-477",
-    "name": "Olivia Garcia",
+    "name": "Logan Hall",
     "email": "olivia.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30274,7 +30274,7 @@
   {
     "id": "customer-478",
     "customerId": "customer-478",
-    "name": "Liam Smith",
+    "name": "Logan Rivera",
     "email": "liam.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30339,7 +30339,7 @@
   {
     "id": "customer-479",
     "customerId": "customer-479",
-    "name": "Mason Williams",
+    "name": "Logan Campbell",
     "email": "mason.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30402,7 +30402,7 @@
   {
     "id": "customer-480",
     "customerId": "customer-480",
-    "name": "Jane Brown",
+    "name": "Logan Mitchell",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30468,7 +30468,7 @@
   {
     "id": "customer-481",
     "customerId": "customer-481",
-    "name": "Olivia Jones",
+    "name": "Mia Smith",
     "email": "olivia.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30531,7 +30531,7 @@
   {
     "id": "customer-482",
     "customerId": "customer-482",
-    "name": "John Garcia",
+    "name": "Mia Johnson",
     "email": "john.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30596,7 +30596,7 @@
   {
     "id": "customer-483",
     "customerId": "customer-483",
-    "name": "Sophia Brown",
+    "name": "Mia Williams",
     "email": "sophia.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30659,7 +30659,7 @@
   {
     "id": "customer-484",
     "customerId": "customer-484",
-    "name": "Jane Brown",
+    "name": "Mia Brown",
     "email": "jane.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30722,7 +30722,7 @@
   {
     "id": "customer-485",
     "customerId": "customer-485",
-    "name": "Sophia Garcia",
+    "name": "Mia Jones",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30785,7 +30785,7 @@
   {
     "id": "customer-486",
     "customerId": "customer-486",
-    "name": "Liam Jones",
+    "name": "Mia Garcia",
     "email": "liam.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30848,7 +30848,7 @@
   {
     "id": "customer-487",
     "customerId": "customer-487",
-    "name": "Sophia Brown",
+    "name": "Mia Miller",
     "email": "sophia.brown@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30913,7 +30913,7 @@
   {
     "id": "customer-488",
     "customerId": "customer-488",
-    "name": "Olivia Smith",
+    "name": "Mia Davis",
     "email": "olivia.smith@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -30976,7 +30976,7 @@
   {
     "id": "customer-489",
     "customerId": "customer-489",
-    "name": "Liam Doe",
+    "name": "Mia Rodriguez",
     "email": "liam.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -31041,7 +31041,7 @@
   {
     "id": "customer-490",
     "customerId": "customer-490",
-    "name": "Sophia Jones",
+    "name": "Mia Martinez",
     "email": "sophia.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -31104,7 +31104,7 @@
   {
     "id": "customer-491",
     "customerId": "customer-491",
-    "name": "Olivia Doe",
+    "name": "Mia Hernandez",
     "email": "olivia.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -31167,7 +31167,7 @@
   {
     "id": "customer-492",
     "customerId": "customer-492",
-    "name": "Lucas Miller",
+    "name": "Mia Lopez",
     "email": "lucas.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -31230,7 +31230,7 @@
   {
     "id": "customer-493",
     "customerId": "customer-493",
-    "name": "Jane Jones",
+    "name": "Mia Gonzalez",
     "email": "jane.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -31293,7 +31293,7 @@
   {
     "id": "customer-494",
     "customerId": "customer-494",
-    "name": "Ava Garcia",
+    "name": "Mia Wilson",
     "email": "ava.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -31356,7 +31356,7 @@
   {
     "id": "customer-495",
     "customerId": "customer-495",
-    "name": "Emma Johnson",
+    "name": "Mia Anderson",
     "email": "emma.johnson@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -31419,7 +31419,7 @@
   {
     "id": "customer-496",
     "customerId": "customer-496",
-    "name": "Liam Doe",
+    "name": "Mia Thomas",
     "email": "liam.doe@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -31485,7 +31485,7 @@
   {
     "id": "customer-497",
     "customerId": "customer-497",
-    "name": "Sophia Jones",
+    "name": "Mia Taylor",
     "email": "sophia.jones@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -31550,7 +31550,7 @@
   {
     "id": "customer-498",
     "customerId": "customer-498",
-    "name": "John Miller",
+    "name": "Mia Moore",
     "email": "john.miller@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -31613,7 +31613,7 @@
   {
     "id": "customer-499",
     "customerId": "customer-499",
-    "name": "Jane Williams",
+    "name": "Mia Jackson",
     "email": "jane.williams@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
@@ -31679,7 +31679,7 @@
   {
     "id": "customer-500",
     "customerId": "customer-500",
-    "name": "Sophia Garcia",
+    "name": "Mia Martin",
     "email": "sophia.garcia@example.com",
     "loyaltyPoints": 0,
     "lastPurchaseDate": null,
