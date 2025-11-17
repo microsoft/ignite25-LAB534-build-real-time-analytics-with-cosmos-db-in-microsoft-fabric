@@ -11,15 +11,16 @@ By the end of this exercise, you'll be able to:
 ## Create an Eventhouse
 
 1. In the same terminal window from the environment setup run the following command to execute the C# file that will create an Eventstream and generate streaming data:
-   +++*dotnet run .\src\pos_data_streaming\FabricPOSDatatStreaming.cs*+++
-   
+
+   `dotnet run .\src\pos_data_streaming\FabricPOSDatatStreaming.cs`
+
 1. You have already created an Eventstream in the Fabric Environment Setup exercise. You will now create an Eventhouse to ingest and store the streaming data. Navigate to your Fabric workspace and select **+ New item** from the top menu ribbon.
 
 1. In the **New item** pane that opens on the right side, type +++*eventhouse*+++ in the filter text box on the top right of the pane to filter the list of items. Select **Eventhouse (Preview)**.
 
     ![Screenshot showing how to create a new Eventhouse in Microsoft Fabric](media/create-eventhouse.png)
 
-1. Name the new Eventhouse +++*fc_commerce_eventhouse*+++ and select **Create**.
+1. Name the new Eventhouse `fc_commerce_eventhouse` and select **Create**.
 
     ![Screenshot showing the new Eventhouse popup in Microsoft Fabric](media/eventhouse-popup.png)
 
@@ -46,15 +47,15 @@ By the end of this exercise, you'll be able to:
 
     1. Verify that the data ingestion mode is set to **Event processing before ingestion**.
 
-1. For the Destination name, enter +++*fc-eventhouse*+++.
+1. For the Destination name, enter `fc-eventhouse`.
 
 1. Select your workspace, this should be the workspace that your eventstream is in.
 
-1. Select the Eventhouse you created earlier, +++*fc_commerce_eventhouse*+++.
+1. Select the Eventhouse you created earlier, **fc_commerce_eventhouse**.
 
-1. For the KQL Database, select  +++*fc_commerce_eventhouse*+++.
+1. For the KQL Database, select  **fc_commerce_eventhouse**.
 
-1. For the KQL Destination Table, select **Create new** below the empty dropdown and enter the name +++*transactions_live*+++ and select **Done**.
+1. For the KQL Destination Table, select **Create new** below the empty dropdown and enter the name `transactions_live` and select **Done**.
 
     ![Screenshot of creating a new KQL destination table.](media/create-kql-destination-table.png)
 
@@ -95,7 +96,7 @@ By the end of this exercise, you'll be able to:
 
 1. Replace the existing query in the query editor with the following KQL code to create a Silver layer table that aggregates total sales by menu item:
 
-```
+```kusto
 .create-or-alter function with (folder="Silver") vw_Pos_Sales() {
     transactions_live
     // best available event timestamp
