@@ -29,7 +29,7 @@ By the end of this exercise, you'll be able to:
 
 ## Connect your Eventstream output to a KQL Database
 
-1. In Fabric, open your Eventstream.
+1. In Fabric, go to your workspace and open your Eventstream named `pos-stream-eventstream`.
 
 1. Hover over to the right of the eventstream name and select the **+** icon. It will open a context menu.
 
