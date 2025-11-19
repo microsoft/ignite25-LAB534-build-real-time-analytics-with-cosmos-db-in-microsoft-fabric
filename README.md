@@ -8,8 +8,8 @@
 
 [![Microsoft Fabric Community](https://img.shields.io/badge/Microsoft_Fabric-Community-orange?style=for-the-badge&logo=microsoft&logoColor=white)](https://community.fabric.microsoft.com/)
 [![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-Fabric-blue?style=for-the-badge&logo=microsoft&logoColor=white)](https://learn.microsoft.com/fabric/)
-[![Microsoft Azure AI Foundry Discord](https://dcbadge.limes.pink/api/server/ByRwuEEgH4)](https://aka.ms/AIFoundryDiscord-Ignite25)
-[![Azure AI Foundry Developer Forum](https://img.shields.io/badge/GitHub-Azure_AI_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=adff2f&logoColor=fff)](https://aka.ms/AIFoundryForum-Ignite25)
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://aka.ms/MicrosoftFoundry-Ignite25)
+[![Microsoft Foundry Developer Forum](https://img.shields.io/badge/GitHub-Microsoft_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=adff2f&logoColor=fff)](https://aka.ms/MicrosoftFoundryForum-Ignite25)
 ### Session Description
 
 Learn how to build a complete real-time analytics solution using Cosmos DB in Microsoft Fabric. This hands-on lab demonstrates how to create an operational data store, implement streaming data pipelines, build cross-database analytics, and deploy personalized recommendations using Reverse ETL patterns.
