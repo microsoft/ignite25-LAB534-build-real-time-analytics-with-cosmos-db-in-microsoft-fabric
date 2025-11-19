@@ -20,19 +20,23 @@ by the end of this exercise, you'll be able to:
 
 ```sql
 CREATE OR ALTER VIEW dbo.vDimCustomerKey AS 
-SELECT CustomerId, CustomerKey, IsActive FROM dbo.DimCustomer;
+SELECT CustomerId, CustomerKey, IsActive FROM dbo.DimCustomer
+GO
 
 CREATE OR ALTER VIEW dbo.vDimShopKey AS 
-SELECT ShopId, ShopKey, IsActive FROM dbo.DimShop;
+SELECT ShopId, ShopKey, IsActive FROM dbo.DimShop
+GO
 
 CREATE OR ALTER VIEW dbo.vDimMenuItemKey AS 
-SELECT MenuItemId, MenuItemKey, IsActive FROM dbo.DimMenuItem;
+SELECT MenuItemId, MenuItemKey, IsActive FROM dbo.DimMenuItem
+GO
 
 CREATE OR ALTER VIEW dbo.vFactSalesMaxKey AS 
 SELECT
   MaxSalesKey = COALESCE(MAX(SalesKey), 0),
   ExistingTxnCount = COUNT(*)
-FROM dbo.FactSales;
+FROM dbo.FactSales
+GO
 ```
 
 1. Highlight each command one at a time and select **Run** to execute each command and create the views in the warehouse.
